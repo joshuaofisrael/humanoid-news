@@ -53,6 +53,19 @@ Every article gets one AI-generated, hyper-realistic 16:9 photo, supplied as a f
 - Fallbacks if no photo has been supplied yet: `"image":{"art":"chip|factory|hazard","accent":"#22d3ee","alt":"..."}` (generated illustration, also captioned). Third-party photos (CC0, press) are no longer the default; if one is ever used, give `kind`, `credit`, `license`, `source_url` and no `ai` flag, and never use stock-agency images.
 - Homepage hero: `src-img/humanoid-hero-photo.jpg` (1200/1920 WebP + JPEG, preloaded for LCP) and also the default og:image. To change it, replace that file and rebuild.
 
+### 3b. Inline images (AI-generated, throughout each article)
+House rule for every news article: a hero plus an AI-generated inline image roughly every 2-3 paragraphs (short articles: at least one, after paragraph 2).
+1. Grok Bot generates the picture and saves it as `/workspace/humanoid-assets/<article-slug>-N.jpg` (N = 1, 2, ...; 16:9, at least 1280 px wide). Never generate or use images of real people, real logos on products, or fabricated events; keep scenes generic and say so in `note`.
+2. In the article in `content/articles.json` add (one object per image):
+   `"inline_images":[{"file":"<slug>-1.jpg","alt":"Descriptive alt text of what is visible","caption":"Illustration of ... (optional)","insert_after_paragraph":2,"brief":"prompt/scene description for the generator","note":"Generic illustration; not a photo of ..."}]`
+   - `file`: name inside `/workspace/humanoid-assets/` (or an absolute path).
+   - `insert_after_paragraph`: 1-based; `2` puts the figure after the second paragraph of `body`. Several images may use different numbers.
+   - `alt`: required, descriptive, plain text. `caption`: optional description; the build always appends **"AI-generated image"**.
+   - `brief`: optional, only used for the TODO list in `images.md`.
+3. Run the build. It copies the source to `src-img/inline/`, writes `docs/img/<slug>-N-600.webp` and `-1200.webp` (width 1200, height from the source aspect), emits `<figure class="inl">` with srcset, `width`/`height`, `loading="lazy"`, the caption, and adds the image to the article's JSON-LD.
+4. `images.md` lists every built inline image with licence "generated, owned by Joshua Israel Ventures LLC". Entries whose file is not there yet are skipped (the site still builds) and listed under "TODO (images)" in `images.md`; the build prints `[inline pending]`.
+5. Check the figure visually, then commit including `src-img/inline/`.
+
 ### 4. Build, commit, deploy, ping
 ```bash
 python3 build.py

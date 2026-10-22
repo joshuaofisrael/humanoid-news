@@ -73,3 +73,4 @@ figcaption{font-size:.82rem;color:var(--mute);margin-top:8px}
 .hero-photo .w{display:block;position:relative;width:100%;padding-top:56px;padding-bottom:56px}.hero-tx{max-width:600px}
 .hero-photo p{color:#cbd5e1}.hero-photo .cap{font-size:.78rem;color:#9fb0c3;margin:18px 0 0}
 @media(max-width:760px){.hero-photo{min-height:0}.hero-shade{background:linear-gradient(0deg,#0a0e14f5,#0a0e14d9 55%,#0a0e14a8)}.hero-photo .w{padding-top:40px;padding-bottom:36px}}
+.prose figure.inl{margin:28px 0}.prose figure.inl img{width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line);display:block;background:var(--card)}

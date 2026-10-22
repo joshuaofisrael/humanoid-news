@@ -16,5 +16,10 @@ House rule: imagery is AI-generated hyper-realistic photography (supplied as fil
 
 ## TODO (images)
 
+- [ ] Generate `tesla-optimus-deliveries-late-2027-1.jpg` in /workspace/humanoid-assets/ for `tesla-optimus-deliveries-late-2027` (inline image 1, after paragraph 2): A generic humanoid robot being assembled on a clean, high-volume factory line, with technicians in safety glasses and no visible brand logos.
+- [ ] Generate `fotex-unitree-hive-grocery-restocking-pilot-1.jpg` in /workspace/humanoid-assets/ for `fotex-unitree-hive-grocery-restocking-pilot` (inline image 1, after paragraph 2): A white humanoid robot working in an empty supermarket aisle at night, scanning shelves of packaged goods under dim store lighting.
+- [ ] Generate `nvidia-isaac-agile-one-sn-reference-humanoid-1.jpg` in /workspace/humanoid-assets/ for `nvidia-isaac-agile-one-sn-reference-humanoid` (inline image 1, after paragraph 2): A humanoid robot in a robotics development lab, with an engineer at a workstation showing a simulation view of a robot, no readable brand logos.
+- [ ] Generate `korea-safety-rules-robros-humanoids-factories-1.jpg` in /workspace/humanoid-assets/ for `korea-safety-rules-robros-humanoids-factories` (inline image 1, after paragraph 2): A humanoid robot walking along a marked safety lane on a factory floor beside a human worker in a hard hat and high-visibility vest, with floor markings and a safety light visible.
+- [ ] Generate `minerva-humanoids-10m-pre-seed-general-catalyst-1.jpg` in /workspace/humanoid-assets/ for `minerva-humanoids-10m-pre-seed-general-catalyst` (inline image 1, after paragraph 2): A humanoid robot inspecting industrial equipment in a hazardous plant environment while a specialist operates it remotely from a control room.
 - [ ] Optional: replace the CC0 Optimus photo (tesla-optimus-deliveries-late-2027) with an AI-generated hyper-realistic photo per the house rule; Tesla branding/bystander reflections are visible in the current one.
 - [ ] Optional: replace generated illustrations (korea-safety..., nvidia-isaac..., minerva-humanoids...) with AI-generated hyper-realistic photos when supplied.

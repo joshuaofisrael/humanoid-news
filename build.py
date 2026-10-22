@@ -77,6 +77,35 @@ def img_tag(name, alt, eager=False, sizes="(max-width:760px) 100vw, 520px", r=""
     return (f'<img src="{r}img/{name}-1200.webp" srcset="{r}img/{name}-600.webp 600w, {r}img/{name}-1200.webp 1200w" sizes="{sizes}" '
             f'width="1200" height="630" alt="{esc(alt)}" {ld} decoding="async">')
 
+
+# ---------------------------------------------------------------- inline images
+ASSETS_DIR = "/workspace/humanoid-assets"
+def make_inline(slug, n, spec):
+    """Convert one inline_images entry. Returns dict(w,h,name) or None when the source file has not been supplied yet."""
+    import shutil
+    from PIL import Image
+    f = spec["file"]
+    p = f if os.path.isabs(f) else os.path.join(ASSETS_DIR, f)
+    keep = os.path.join("src-img", "inline", os.path.basename(f))
+    if os.path.exists(p):
+        os.makedirs("src-img/inline", exist_ok=True)
+        if os.path.abspath(p) != os.path.abspath(keep): shutil.copyfile(p, keep)
+    elif os.path.exists(keep): p = keep
+    else:
+        print(f"  [inline pending] {slug}-{n}: {f} not found"); return None
+    im = Image.open(p).convert("RGB"); W, H = im.size
+    name = f"{slug}-{n}"; w = 1200; h = round(H * w / W)
+    os.makedirs(OUT + "/img", exist_ok=True)
+    im.resize((w, h), Image.LANCZOS).save(f"{OUT}/img/{name}-1200.webp", "WEBP", quality=76, method=6)
+    im.resize((600, round(H * 600 / W)), Image.LANCZOS).save(f"{OUT}/img/{name}-600.webp", "WEBP", quality=74, method=6)
+    return {"name": name, "w": w, "h": h, "w6": 600, "h6": round(H * 600 / W), "src": p, "srcw": W}
+
+def inline_fig(m, spec):
+    cap = (esc(spec["caption"]).rstrip(". ") + ". " if spec.get("caption") else "") + "AI-generated image"
+    return (f'<figure class="inl"><img src="../img/{m["name"]}-1200.webp" srcset="../img/{m["name"]}-600.webp 600w, ../img/{m["name"]}-1200.webp 1200w" '
+            f'sizes="(max-width:760px) 100vw, 720px" width="{m["w"]}" height="{m["h"]}" alt="{esc(spec["alt"])}" loading="lazy" decoding="async">'
+            f'<figcaption>{cap}</figcaption></figure>')
+
 def is_ai(im): return bool(im.get("ai")) or "art" in im
 AI_LICENCE = "generated, owned by Joshua Israel Ventures LLC"
 def credit_html(im):
@@ -164,9 +193,17 @@ for a in A:
           "mainEntityOfPage": u, "isAccessibleForFree": True, "inLanguage": "en", "author": {"@type": "Organization", "name": NAME + " Staff"}, "publisher": PUB, "isBasedOn": [s["url"] for s in a["sources"]]}
     ld["image"] = [{"@type": "ImageObject", "url": a["_og"]["url"], "width": 1200, "height": 630}] if a["_og"] else [SITE_URL + "/img/og-default.jpg"]
     fig = ""
+    # (inline images are added to JSON-LD after they are built, below)
     if has_img(a):
         fig = f'<div class="a-hero"><figure>{img_tag(a["slug"], a["image"]["alt"], True, "(max-width:980px) 100vw, 980px", "../")}<figcaption>{credit_html(a["image"])}</figcaption></figure></div>'
-    body = "".join(f'<p{" class=lede" if i == 0 else ""}>{p}</p>' for i, p in enumerate(a["body"]))
+    ins = {}
+    a["_inl"] = []
+    for n, sp in enumerate(a.get("inline_images", []), 1):
+        m = make_inline(a["slug"], n, sp)
+        if m: ins.setdefault(int(sp["insert_after_paragraph"]), []).append(inline_fig(m, sp)); a["_inl"].append((m, sp))
+    body = "".join(f'<p{" class=lede" if i == 0 else ""}>{p}</p>' + "".join(ins.get(i + 1, [])) for i, p in enumerate(a["body"]))
+    if isinstance(ld.get("image"), list):
+        ld["image"] += [{"@type": "ImageObject", "url": f"{SITE_URL}/img/{m['name']}-1200.webp", "width": m["w"], "height": m["h"], "caption": sp.get("caption") or sp["alt"]} for m, sp in a["_inl"]]
     why = ""
     if a.get("kind") == "trending" and a.get("why"):
         why = '<aside class="why"><h2>Why it\'s trending</h2><ul>' + "".join(f"<li>{w}</li>" for w in a["why"]) + "</ul></aside>"
@@ -214,6 +251,11 @@ for a in A:
     im = a["image"]
     if is_ai(im): L2.append(f"| {a['slug']}.jpg | {a['slug']} | {'AI-generated photo' if 'src' in im else 'Generated illustration'} | AI-generated image | {AI_LICENCE} | {im.get('src','n/a')} | {im.get('note','')} |")
     else: L2.append(f"| {a['slug']}.jpg | {a['slug']} | {im.get('kind','photo')} | {im['credit']} | {im['license']} | {im.get('source_url','')} | {im.get('note','')} |")
-L2 += ["", "## TODO (images)", ""] + [f"- [ ] {t}" for t in TODO_IMAGES]
+for a in A:
+    for m, sp in a["_inl"]:
+        L2.append(f"| {m['name']}-600/1200.webp | {a['slug']} (inline, after paragraph {sp['insert_after_paragraph']}) | AI-generated photo | AI-generated image | {AI_LICENCE} | {os.path.basename(sp['file'])} | {m['srcw']}px-wide source; {sp.get('note','')} |")
+pending = [f"Generate `{sp['file']}` in /workspace/humanoid-assets/ for `{a['slug']}` (inline image {n}, after paragraph {sp['insert_after_paragraph']}): {sp.get('brief', sp['alt'])}"
+           for a in A for n, sp in enumerate(a.get("inline_images", []), 1) if sp not in [x[1] for x in a["_inl"]]]
+L2 += ["", "## TODO (images)", ""] + [f"- [ ] {t}" for t in pending + TODO_IMAGES]
 open("images.md", "w").write("\n".join(L2) + "\n")
 print("built", len(A), "articles")

@@ -1,134 +1,184 @@
 [
- {
-  "slug": "tesla-optimus-deliveries-late-2027",
-  "date": "2026-10-22",
-  "cat": "Tesla",
-  "title": "Tesla pushes external Optimus deliveries to late 2027",
-  "summary": "Tesla now targets the end of 2027 for delivering Optimus humanoids to outside customers, citing unsolved problems with the hands, durability and AI.",
-  "body": [
-   "<strong>Short answer:</strong> On Tesla's Q3 2026 earnings call, Elon Musk said external Optimus deliveries should start around the end of 2027, after the company solves remaining issues with the robot's hands, reliability and AI.",
-   "Musk said early Optimus production has begun on a high-volume line in Fremont, in space formerly used for Model S and Model X. Most of a line designed for about one million robots a year is installed, but he said reaching that rate could take at least a year because parts of the design are still changing.",
-   "A Tesla engineer identified the hand as one of the hardest hardware areas, alongside custom gears with reliability concerns. On software, Tesla plans to build 10,000 to 20,000 robots to practise tasks in what it calls an \"Optimus Academy\", and intends to put its AI5 chip in Optimus around April 2027, according to Electrek's account of the call.",
-   "First external customers are expected to be industrial jobs that are dangerous, repetitive or need round-the-clock operation."
-  ],
-  "sources": [
-   {
-    "title": "Electrek: Tesla pushes Optimus deliveries to late 2027",
-    "url": "https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/"
-   }
-  ],
-  "image": {
-   "src": "src-img/optimus.jpg",
-   "crop": [
-    0,
-    0.32,
-    1.0
-   ],
-   "kind": "photo (CC0)",
-   "alt": "A Tesla Optimus humanoid robot standing inside a glass display case in a shopping mall",
-   "credit": "X120412",
-   "license": "CC0 1.0",
-   "source_url": "https://commons.wikimedia.org/wiki/File:Optimus_HK.jpg",
-   "note": "Wikimedia Commons file 'Optimus HK.jpg'. Tesla branding visible on the display; incidental bystander reflections."
+  {
+    "slug": "tesla-optimus-deliveries-late-2027",
+    "date": "2026-10-22",
+    "cat": "Tesla",
+    "title": "Tesla pushes external Optimus deliveries to late 2027",
+    "summary": "Tesla now targets the end of 2027 for delivering Optimus humanoids to outside customers, citing unsolved problems with the hands, durability and AI.",
+    "body": [
+      "<strong>Short answer:</strong> On Tesla's Q3 2026 earnings call, Elon Musk said external Optimus deliveries should start around the end of 2027, after the company solves remaining issues with the robot's hands, reliability and AI.",
+      "Musk said early Optimus production has begun on a high-volume line in Fremont, in space formerly used for Model S and Model X. Most of a line designed for about one million robots a year is installed, but he said reaching that rate could take at least a year because parts of the design are still changing.",
+      "A Tesla engineer identified the hand as one of the hardest hardware areas, alongside custom gears with reliability concerns. On software, Tesla plans to build 10,000 to 20,000 robots to practise tasks in what it calls an \"Optimus Academy\", and intends to put its AI5 chip in Optimus around April 2027, according to Electrek's account of the call.",
+      "First external customers are expected to be industrial jobs that are dangerous, repetitive or need round-the-clock operation."
+    ],
+    "sources": [
+      {
+        "title": "Electrek: Tesla pushes Optimus deliveries to late 2027",
+        "url": "https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/"
+      }
+    ],
+    "image": {
+      "src": "src-img/optimus.jpg",
+      "crop": [
+        0,
+        0.32,
+        1.0
+      ],
+      "kind": "photo (CC0)",
+      "alt": "A Tesla Optimus humanoid robot standing inside a glass display case in a shopping mall",
+      "credit": "X120412",
+      "license": "CC0 1.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Optimus_HK.jpg",
+      "note": "Wikimedia Commons file 'Optimus HK.jpg'. Tesla branding visible on the display; incidental bystander reflections."
+    },
+    "inline_images": [
+      {
+        "file": "tesla-optimus-deliveries-late-2027-1.jpg",
+        "alt": "A humanoid robot standing on a factory assembly line while technicians in safety glasses check its torso",
+        "caption": "Illustration of humanoid robot production",
+        "insert_after_paragraph": 2,
+        "brief": "A generic humanoid robot being assembled on a clean, high-volume factory line, with technicians in safety glasses and no visible brand logos.",
+        "note": "Generic illustration of humanoid robot production; not a photo of Tesla's Fremont line or any real person."
+      }
+    ]
+  },
+  {
+    "slug": "fotex-unitree-hive-grocery-restocking-pilot",
+    "date": "2026-10-22",
+    "cat": "Unitree",
+    "title": "Danish grocer Føtex pilots Unitree humanoids for overnight restocking",
+    "summary": "Salling Group's Føtex chain is trialling humanoid robots built on Unitree hardware and HIVE Robots software to restock shelves after closing.",
+    "body": [
+      "<strong>Short answer:</strong> Føtex, part of Denmark's Salling Group, has begun a multi-year pilot with Danish start-up HIVE Robots in which humanoid robots restock grocery shelves after hours at a store in Lyngby, north of Copenhagen.",
+      "Unitree manufactures the robot hardware while HIVE Robots builds the control software and manages machine learning. Trials run after closing time to provide a controlled environment for testing and data collection.",
+      "In training zones, human \"robot pilots\" use VR headsets and handheld controllers to guide the robots through tasks such as picking up bags of pasta and placing them on shelves. The current prototypes move more slowly than human staff.",
+      "Føtex says a humanoid form factor lets the robots work in aisles designed for people without costly store redesigns."
+    ],
+    "sources": [
+      {
+        "title": "ESM Magazine: Føtex pilots humanoid robots",
+        "url": "https://www.esmmagazine.com/technology/salling-groups-fotex-pilots-humanoid-robots-via-multi-year-hive-partnership-324091"
+      }
+    ],
+    "image": {
+      "src": "src-img/humanoid-grocery-photo.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "A white humanoid robot restocking a supermarket shelf and holding a paper grocery bag (AI-generated image)",
+      "note": "Generic illustration of grocery restocking; not a photo of the actual Foetex/Unitree/HIVE robot."
+    },
+    "inline_images": [
+      {
+        "file": "fotex-unitree-hive-grocery-restocking-pilot-1.jpg",
+        "alt": "A white humanoid robot scanning shelves of packaged goods in an empty supermarket aisle at night",
+        "caption": "Illustration of overnight shelf restocking",
+        "insert_after_paragraph": 2,
+        "brief": "A white humanoid robot working in an empty supermarket aisle at night, scanning shelves of packaged goods under dim store lighting.",
+        "note": "Generic overnight store-restocking scene; not a photo of the actual Føtex store, Unitree or HIVE robot."
+      }
+    ]
+  },
+  {
+    "slug": "korea-safety-rules-robros-humanoids-factories",
+    "date": "2026-10-14",
+    "cat": "Policy",
+    "title": "South Korea eases safety rules to put 20 humanoids on factory floors",
+    "summary": "Korean regulators relaxed rules written for stationary industrial robots, clearing the way for 20 Robros humanoids to work in factories.",
+    "body": [
+      "<strong>Short answer:</strong> South Korea has eased safety regulations originally written for fixed industrial robots, allowing mobile humanoid robots to work on factory floors. Twenty AI-powered bipedal humanoids from Korean developer Robros are set to be deployed, including at Nepes.",
+      "Existing rules were designed for stationary robot arms operating behind barriers, which did not fit robots that walk among workers. The change is one of the first regulatory moves anywhere aimed specifically at enabling humanoids in production environments.",
+      "The deployments span manufacturing settings across several industries, according to the Seoul Economic Daily."
+    ],
+    "sources": [
+      {
+        "title": "Seoul Economic Daily: Korea clears safety rules for humanoid robots",
+        "url": "https://en.sedaily.com/finance/2026/10/14/korea-clears-safety-rules-to-put-20-humanoid-robots-on"
+      }
+    ],
+    "image": {
+      "art": "factory",
+      "accent": "#22d3ee",
+      "alt": "Illustration of a humanoid robot beside a gear on a factory floor"
+    },
+    "inline_images": [
+      {
+        "file": "korea-safety-rules-robros-humanoids-factories-1.jpg",
+        "alt": "A humanoid robot walking along a marked safety lane next to a worker in a hard hat on a factory floor",
+        "caption": "Illustration of a humanoid sharing a factory floor with workers",
+        "insert_after_paragraph": 2,
+        "brief": "A humanoid robot walking along a marked safety lane on a factory floor beside a human worker in a hard hat and high-visibility vest, with floor markings and a safety light visible.",
+        "note": "Generic illustration of humanoids and workers sharing a factory floor; not a photo of any Korean plant, regulator or company."
+      }
+    ]
+  },
+  {
+    "slug": "nvidia-isaac-agile-one-sn-reference-humanoid",
+    "date": "2026-10-20",
+    "cat": "NVIDIA",
+    "title": "NVIDIA expands Isaac platform with Agile ONE SN reference humanoid",
+    "summary": "NVIDIA announced new Isaac frameworks, simulation pipelines and data, plus a humanoid reference platform from Agile Robots built on Isaac GR00T.",
+    "body": [
+      "<strong>Short answer:</strong> NVIDIA has expanded its Isaac robotics platform with new frameworks, simulation pipelines and training data, and Agile Robots announced Agile ONE SN, a humanoid reference platform built on NVIDIA Isaac GR00T.",
+      "According to NVIDIA, Agile ONE SN runs on NVIDIA Jetson Thor with planned integration of the NVIDIA Halos safety stack, aiming to give developers and researchers a complete platform for humanoid research.",
+      "Reference designs like this lower the barrier for labs and start-ups that want to work on humanoid software without building hardware from scratch."
+    ],
+    "sources": [
+      {
+        "title": "NVIDIA Newsroom: NVIDIA advances Isaac platform",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data"
+      }
+    ],
+    "image": {
+      "art": "chip",
+      "accent": "#a3e635",
+      "alt": "Illustration of a humanoid robot next to a computing chip"
+    },
+    "inline_images": [
+      {
+        "file": "nvidia-isaac-agile-one-sn-reference-humanoid-1.jpg",
+        "alt": "A humanoid robot in a robotics lab beside an engineer at a workstation showing a robot simulation",
+        "caption": "Illustration of reference-humanoid development",
+        "insert_after_paragraph": 2,
+        "brief": "A humanoid robot in a robotics development lab, with an engineer at a workstation showing a simulation view of a robot, no readable brand logos.",
+        "note": "Generic robotics-lab scene; not a photo of NVIDIA's Agile ONE SN or any real person."
+      }
+    ]
+  },
+  {
+    "slug": "minerva-humanoids-10m-pre-seed-general-catalyst",
+    "date": "2026-10-06",
+    "cat": "Funding",
+    "title": "Minerva Humanoids raises $10M to build robots for dangerous jobs",
+    "summary": "San Francisco start-up Minerva Humanoids emerged from stealth with about $10 million led by General Catalyst for its semi-autonomous humanoid, Roger.",
+    "body": [
+      "<strong>Short answer:</strong> Minerva Humanoids has raised approximately $10 million in pre-seed funding led by General Catalyst, with Long Journey Ventures and Credo Ventures co-leading, to build humanoid robots for hazardous work in oil and gas and public safety.",
+      "Its robot, Roger, is semi-autonomous: trained specialists apply their expertise remotely while staying physically away from danger, for example when responding to a suspected explosive or doing hazardous work at an energy site.",
+      "The company was founded by CEO Sandor Felber and CTO Maurice Rahme and says it is launching its first paid pilots this autumn. Other participants include Hugging Face and Codecademy, among others."
+    ],
+    "sources": [
+      {
+        "title": "Minerva Humanoids press release",
+        "url": "https://www.minervahumanoids.com/press/minerva-humanoids-raises-10m-pre-seed-led-by-general-catalyst"
+      }
+    ],
+    "image": {
+      "art": "hazard",
+      "accent": "#22d3ee",
+      "alt": "Illustration of a humanoid robot beside a hazard warning triangle"
+    },
+    "inline_images": [
+      {
+        "file": "minerva-humanoids-10m-pre-seed-general-catalyst-1.jpg",
+        "alt": "A humanoid robot inspecting pipes and valves in an industrial plant while a specialist works at a remote control station",
+        "caption": "Illustration of remote operation in dangerous work",
+        "insert_after_paragraph": 2,
+        "brief": "A humanoid robot inspecting industrial equipment in a hazardous plant environment while a specialist operates it remotely from a control room.",
+        "note": "Generic illustration of remote operation in dangerous work; not a photo of Minerva's robot Roger or its staff."
+      }
+    ]
   }
- },
- {
-  "slug": "fotex-unitree-hive-grocery-restocking-pilot",
-  "date": "2026-10-22",
-  "cat": "Unitree",
-  "title": "Danish grocer Føtex pilots Unitree humanoids for overnight restocking",
-  "summary": "Salling Group's Føtex chain is trialling humanoid robots built on Unitree hardware and HIVE Robots software to restock shelves after closing.",
-  "body": [
-   "<strong>Short answer:</strong> Føtex, part of Denmark's Salling Group, has begun a multi-year pilot with Danish start-up HIVE Robots in which humanoid robots restock grocery shelves after hours at a store in Lyngby, north of Copenhagen.",
-   "Unitree manufactures the robot hardware while HIVE Robots builds the control software and manages machine learning. Trials run after closing time to provide a controlled environment for testing and data collection.",
-   "In training zones, human \"robot pilots\" use VR headsets and handheld controllers to guide the robots through tasks such as picking up bags of pasta and placing them on shelves. The current prototypes move more slowly than human staff.",
-   "Føtex says a humanoid form factor lets the robots work in aisles designed for people without costly store redesigns."
-  ],
-  "sources": [
-   {
-    "title": "ESM Magazine: Føtex pilots humanoid robots",
-    "url": "https://www.esmmagazine.com/technology/salling-groups-fotex-pilots-humanoid-robots-via-multi-year-hive-partnership-324091"
-   }
-  ],
-  "image": {
-   "src": "src-img/humanoid-grocery-photo.jpg",
-   "crop": [
-    0,
-    0.05,
-    1.0
-   ],
-   "ai": true,
-   "alt": "A white humanoid robot restocking a supermarket shelf and holding a paper grocery bag (AI-generated image)",
-   "note": "Generic illustration of grocery restocking; not a photo of the actual Foetex/Unitree/HIVE robot."
-  }
- },
- {
-  "slug": "korea-safety-rules-robros-humanoids-factories",
-  "date": "2026-10-14",
-  "cat": "Policy",
-  "title": "South Korea eases safety rules to put 20 humanoids on factory floors",
-  "summary": "Korean regulators relaxed rules written for stationary industrial robots, clearing the way for 20 Robros humanoids to work in factories.",
-  "body": [
-   "<strong>Short answer:</strong> South Korea has eased safety regulations originally written for fixed industrial robots, allowing mobile humanoid robots to work on factory floors. Twenty AI-powered bipedal humanoids from Korean developer Robros are set to be deployed, including at Nepes.",
-   "Existing rules were designed for stationary robot arms operating behind barriers, which did not fit robots that walk among workers. The change is one of the first regulatory moves anywhere aimed specifically at enabling humanoids in production environments.",
-   "The deployments span manufacturing settings across several industries, according to the Seoul Economic Daily."
-  ],
-  "sources": [
-   {
-    "title": "Seoul Economic Daily: Korea clears safety rules for humanoid robots",
-    "url": "https://en.sedaily.com/finance/2026/10/14/korea-clears-safety-rules-to-put-20-humanoid-robots-on"
-   }
-  ],
-  "image": {
-   "art": "factory",
-   "accent": "#22d3ee",
-   "alt": "Illustration of a humanoid robot beside a gear on a factory floor"
-  }
- },
- {
-  "slug": "nvidia-isaac-agile-one-sn-reference-humanoid",
-  "date": "2026-10-20",
-  "cat": "NVIDIA",
-  "title": "NVIDIA expands Isaac platform with Agile ONE SN reference humanoid",
-  "summary": "NVIDIA announced new Isaac frameworks, simulation pipelines and data, plus a humanoid reference platform from Agile Robots built on Isaac GR00T.",
-  "body": [
-   "<strong>Short answer:</strong> NVIDIA has expanded its Isaac robotics platform with new frameworks, simulation pipelines and training data, and Agile Robots announced Agile ONE SN, a humanoid reference platform built on NVIDIA Isaac GR00T.",
-   "According to NVIDIA, Agile ONE SN runs on NVIDIA Jetson Thor with planned integration of the NVIDIA Halos safety stack, aiming to give developers and researchers a complete platform for humanoid research.",
-   "Reference designs like this lower the barrier for labs and start-ups that want to work on humanoid software without building hardware from scratch."
-  ],
-  "sources": [
-   {
-    "title": "NVIDIA Newsroom: NVIDIA advances Isaac platform",
-    "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data"
-   }
-  ],
-  "image": {
-   "art": "chip",
-   "accent": "#a3e635",
-   "alt": "Illustration of a humanoid robot next to a computing chip"
-  }
- },
- {
-  "slug": "minerva-humanoids-10m-pre-seed-general-catalyst",
-  "date": "2026-10-06",
-  "cat": "Funding",
-  "title": "Minerva Humanoids raises $10M to build robots for dangerous jobs",
-  "summary": "San Francisco start-up Minerva Humanoids emerged from stealth with about $10 million led by General Catalyst for its semi-autonomous humanoid, Roger.",
-  "body": [
-   "<strong>Short answer:</strong> Minerva Humanoids has raised approximately $10 million in pre-seed funding led by General Catalyst, with Long Journey Ventures and Credo Ventures co-leading, to build humanoid robots for hazardous work in oil and gas and public safety.",
-   "Its robot, Roger, is semi-autonomous: trained specialists apply their expertise remotely while staying physically away from danger, for example when responding to a suspected explosive or doing hazardous work at an energy site.",
-   "The company was founded by CEO Sandor Felber and CTO Maurice Rahme and says it is launching its first paid pilots this autumn. Other participants include Hugging Face and Codecademy, among others."
-  ],
-  "sources": [
-   {
-    "title": "Minerva Humanoids press release",
-    "url": "https://www.minervahumanoids.com/press/minerva-humanoids-raises-10m-pre-seed-led-by-general-catalyst"
-   }
-  ],
-  "image": {
-   "art": "hazard",
-   "accent": "#22d3ee",
-   "alt": "Illustration of a humanoid robot beside a hazard warning triangle"
-  }
- }
 ]
