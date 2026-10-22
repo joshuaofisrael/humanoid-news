@@ -51,18 +51,15 @@
    }
   ],
   "image": {
-   "src": "src-img/g1.jpg",
+   "src": "src-img/humanoid-grocery-photo.jpg",
    "crop": [
     0,
-    0.07,
+    0.05,
     1.0
    ],
-   "kind": "photo (CC0)",
-   "alt": "A Unitree G1 humanoid robot with a glowing blue visor at a trade show",
-   "credit": "Sayanesy",
-   "license": "CC0 1.0",
-   "source_url": "https://commons.wikimedia.org/wiki/File:Unitree_G1.jpg",
-   "note": "LICENCE CHECK: appears to be a low-resolution still frame (UAV expo 2024); uploader's CC0 claim is unverified. Replace if in doubt. Shows a Unitree G1, not the robot used in the Foetex pilot."
+   "ai": true,
+   "alt": "A white humanoid robot restocking a supermarket shelf and holding a paper grocery bag (AI-generated image)",
+   "note": "Generic illustration of grocery restocking; not a photo of the actual Foetex/Unitree/HIVE robot."
   }
  },
  {

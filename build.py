@@ -13,9 +13,13 @@ NAME = "Humanoid News"; LLC = "Joshua Israel Ventures LLC"; EMAIL = "hello@examp
 CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
-OUT = "docs"; ASSET_VER = "3"
+OUT = "docs"; ASSET_VER = "4"
 # ----------------------------------------------------------------
 
+TODO_IMAGES = [
+    "Optional: replace the CC0 Optimus photo (tesla-optimus-deliveries-late-2027) with an AI-generated hyper-realistic photo per the house rule; Tesla branding/bystander reflections are visible in the current one.",
+    "Optional: replace generated illustrations (korea-safety..., nvidia-isaac..., minerva-humanoids...) with AI-generated hyper-realistic photos when supplied.",
+]
 A = json.load(open("content/articles.json", encoding="utf-8"))
 A.sort(key=lambda a: a["date"], reverse=True)
 PUB = {"@type": "Organization", "name": LLC, "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
@@ -25,12 +29,9 @@ def fd(d): return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
 
 MARK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0a0e14"/><rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#22d3ee" stroke-opacity=".35"/><path d="M20 22a6 6 0 0 1 6-6h12a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6z" fill="none" stroke="#22d3ee" stroke-width="3"/><rect x="24" y="25" width="16" height="6" rx="3" fill="#a3e635"/><path d="M32 16v-5M26 42v6h12v-6M14 30h6M44 30h6" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="10" r="2.5" fill="#22d3ee"/></svg>'
 
-HERO_SVG = '''<svg class="hero-art" viewBox="0 0 420 340" role="img" aria-label="Illustration of a humanoid robot with glowing circuit lines"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
-<g fill="none" stroke="#22d3ee" stroke-opacity=".5" stroke-width="2" class="flow"><path d="M0 70h90l30 30h60"/><path d="M420 90h-80l-30 30h-40"/><path d="M0 260h100l30-30h50"/><path d="M420 250h-90l-30-30h-50"/><path d="M210 0v40"/></g>
-<g fill="#22d3ee"><circle class="pulse" cx="90" cy="70" r="4"/><circle class="pulse" cx="340" cy="90" r="4" style="animation-delay:.6s"/><circle class="pulse" cx="100" cy="260" r="4" style="animation-delay:1.2s"/><circle class="pulse" cx="330" cy="250" r="4" style="animation-delay:1.8s"/></g>
-<g class="float"><g fill="#0e1722" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"><rect x="160" y="42" width="100" height="84" rx="26"/><rect x="195" y="126" width="30" height="16"/><path d="M130 160a30 30 0 0 1 30-18h100a30 30 0 0 1 30 18l8 78H122z"/><rect x="92" y="150" width="32" height="96" rx="16"/><rect x="296" y="150" width="32" height="96" rx="16"/><rect x="170" y="238" width="32" height="70" rx="12"/><rect x="218" y="238" width="32" height="70" rx="12"/></g>
-<rect x="176" y="72" width="68" height="24" rx="12" fill="#06101a" stroke="#22d3ee" stroke-opacity=".6"/><rect class="eye" x="196" y="79" width="28" height="10" rx="5" fill="#a3e635"/><path d="M210 42V26" stroke="#22d3ee" stroke-width="3"/><circle class="pulse" cx="210" cy="22" r="5" fill="#22d3ee"/>
-<g fill="none" stroke="#22d3ee" stroke-opacity=".7" stroke-width="2"><path d="M170 190h80M170 210h50"/><circle cx="238" cy="206" r="9"/></g></g></svg>'''
+HERO_SVG = '''<svg class="hero-fx" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g fill="none" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2" class="flow"><path d="M560 60h180l40 40h160"/><path d="M1200 140h-160l-40 40h-90"/><path d="M620 470h160l50-50h140"/><path d="M1200 400h-120l-40-40h-80"/></g>
+<g fill="#22d3ee"><circle class="pulse" cx="740" cy="60" r="5"/><circle class="pulse" cx="1000" cy="180" r="5" style="animation-delay:.6s"/><circle class="pulse" cx="780" cy="470" r="5" style="animation-delay:1.2s"/><circle class="pulse" cx="1040" cy="360" r="5" style="animation-delay:1.8s"/></g></svg>'''
 
 def art_svg(kind, accent="#22d3ee"):
     """Original generated 1200x630 illustration (graphite + circuit lines + motif)."""
@@ -76,12 +77,13 @@ def img_tag(name, alt, eager=False, sizes="(max-width:760px) 100vw, 520px", r=""
     return (f'<img src="{r}img/{name}-1200.webp" srcset="{r}img/{name}-600.webp 600w, {r}img/{name}-1200.webp 1200w" sizes="{sizes}" '
             f'width="1200" height="630" alt="{esc(alt)}" {ld} decoding="async">')
 
+def is_ai(im): return bool(im.get("ai")) or "art" in im
+AI_LICENCE = "generated, owned by Joshua Israel Ventures LLC"
 def credit_html(im):
-    if im.get("art") is not None: return "Illustration: original artwork by Humanoid News."
+    if is_ai(im): return "AI-generated image"
     s = f'Photo: {esc(im["credit"])}'
     if im.get("source_url"): s += f' · <a href="{esc(im["source_url"])}" rel="noopener">Source</a>'
-    s += f' · {esc(im["license"])}'
-    return s
+    return s + f' · {esc(im["license"])}'
 
 # ---------------------------------------------------------------- page shell
 def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None, base=None, extra_head=""):
@@ -121,7 +123,13 @@ try:
     cairosvg.svg2png(bytestring=MARK.encode(), write_to=OUT + "/logo.png", output_width=512, output_height=512)
 except ImportError:
     print("WARN: cairosvg missing; kept existing icon PNGs")
-make_images("og-default", {"art": "chip"})
+HERO_SPEC = {"src": "src-img/humanoid-hero-photo.jpg", "crop": [0, 0.05, 1.0], "ai": True, "alt": "Dark metallic humanoid robot with glowing cyan eyes in a factory"}
+make_images("og-default", HERO_SPEC)
+from PIL import Image as _I
+_h = _I.open(HERO_SPEC["src"]).convert("RGB")
+_h.resize((1920, 1080), _I.LANCZOS).save(OUT + "/img/hero-1920.webp", "WEBP", quality=70, method=6)
+_h.resize((1200, 675), _I.LANCZOS).save(OUT + "/img/hero-1200.webp", "WEBP", quality=74, method=6)
+_h.save(OUT + "/img/hero.jpg", "JPEG", quality=76, optimize=True, progressive=True)
 if os.path.exists(OUT + "/og.svg"): os.remove(OUT + "/og.svg")
 
 def has_img(a): return bool(a.get("image"))
@@ -145,8 +153,10 @@ if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it
 sections += '<section class="sec" id="latest"><div class="w"><h2 class="sh">Latest news</h2><div class="grid">' + "".join(card(a, feat=(i == 0), eager=(i == 0)) for i, a in enumerate(rest)) + '</div></div></section>'
 cos = ["Tesla Optimus", "Figure", "Agility Digit", "Boston Dynamics Atlas", "Unitree", "1X NEO", "Apptronik", "UBTECH", "XPeng IRON", "NVIDIA GR00T"]
 sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join(f"<li>{c}</li>" for c in cos) + "</ul></div></section>"
-hero = f'<section class="hero"><div class="w"><div><span class="kicker">Humanoid robotics · daily</span><h1>The humanoid robot race, <em>answered first.</em></h1><p>{esc(DESC)}</p><a class="btn" href="#latest">Read the latest</a><a class="btn ghost" href="feed.xml">RSS feed</a></div>{HERO_SVG}</div></section>'
-page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + sections, 0)
+hero = (f'<section class="hero hero-photo"><picture><source type="image/webp" srcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" sizes="100vw">'
+        f'<img class="hero-bg" src="img/hero.jpg" width="1920" height="1080" alt="Dark metallic humanoid robot with glowing cyan eyes in a factory (AI-generated image)" fetchpriority="high" decoding="async"></picture>'
+        f'<div class="hero-shade"></div>{HERO_SVG}<div class="w"><div class="hero-tx"><span class="kicker">Humanoid robotics · daily</span><h1>The humanoid robot race, <em>answered first.</em></h1><p>{esc(DESC)}</p><a class="btn" href="#latest">Read the latest</a><a class="btn ghost" href="feed.xml">RSS feed</a><p class="cap">AI-generated image</p></div></div></section>')
+page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + sections, 0, extra_head='<link rel="preload" as="image" type="image/webp" href="img/hero-1200.webp" imagesrcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">')
 
 for a in A:
     u = f"{SITE_URL}/news/{a['slug']}.html"
@@ -195,12 +205,15 @@ if os.path.exists("docs/CNAME") is False and SITE_URL.startswith("https://") and
 
 # images.md: source + licence per image
 L2 = ["# Image credits and licences", "", "Generated by `build.py` from `content/articles.json`. Do not edit by hand; add a `note` in the article's `image` object instead.", "",
+      "House rule: imagery is AI-generated hyper-realistic photography (supplied as files via /workspace) with the caption 'AI-generated image'.", "",
       "| Image | Used in | Type | Credit | Licence | Source | Note |", "|---|---|---|---|---|---|---|",
-      "| og-default.jpg, favicon, logo | Site-wide | Generated | Humanoid News original artwork | Owned by Joshua Israel Ventures LLC | n/a | |"]
+      f"| hero.jpg, hero-1200/1920.webp, og-default.jpg | Homepage hero + default og:image | AI-generated photo | AI-generated image | {AI_LICENCE} | src-img/humanoid-hero-photo.jpg | 1280x720 source; 1920 variant is upscaled |",
+      f"| favicon, logo, icons | Site-wide | Generated | Humanoid News original artwork | {AI_LICENCE} | n/a | |"]
 for a in A:
     if not has_img(a): continue
     im = a["image"]
-    if "art" in im: L2.append(f"| {a['slug']}.jpg | {a['slug']} | Generated | Humanoid News original artwork | Owned by Joshua Israel Ventures LLC | n/a | {im.get('note','')} |")
+    if is_ai(im): L2.append(f"| {a['slug']}.jpg | {a['slug']} | {'AI-generated photo' if 'src' in im else 'Generated illustration'} | AI-generated image | {AI_LICENCE} | {im.get('src','n/a')} | {im.get('note','')} |")
     else: L2.append(f"| {a['slug']}.jpg | {a['slug']} | {im.get('kind','photo')} | {im['credit']} | {im['license']} | {im.get('source_url','')} | {im.get('note','')} |")
+L2 += ["", "## TODO (images)", ""] + [f"- [ ] {t}" for t in TODO_IMAGES]
 open("images.md", "w").write("\n".join(L2) + "\n")
 print("built", len(A), "articles")

@@ -65,3 +65,11 @@ figcaption{font-size:.82rem;color:var(--mute);margin-top:8px}
 @keyframes rise{from{opacity:.55;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media(max-width:760px){.hero .w{grid-template-columns:1fr;padding-top:28px}.hero-art{max-height:220px;order:-1}.grid{grid-template-columns:1fr}.card.feat{grid-template-columns:1fr}.card.feat .im{aspect-ratio:1200/630;min-height:0}nav a{margin-left:14px}body{font-size:16.5px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* photo hero */
+.hero-photo{min-height:460px;display:flex;align-items:center;background:#0a0e14}.hero-photo:before{display:none}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%;transform:scaleX(-1)}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,#0a0e14f2 0%,#0a0e14e0 32%,#0a0e1470 62%,#0a0e1420 100%),linear-gradient(0deg,#0a0e14 0%,transparent 28%)}
+.hero-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-photo .w{display:block;position:relative;width:100%;padding-top:56px;padding-bottom:56px}.hero-tx{max-width:600px}
+.hero-photo p{color:#cbd5e1}.hero-photo .cap{font-size:.78rem;color:#9fb0c3;margin:18px 0 0}
+@media(max-width:760px){.hero-photo{min-height:0}.hero-shade{background:linear-gradient(0deg,#0a0e14f5,#0a0e14d9 55%,#0a0e14a8)}.hero-photo .w{padding-top:40px;padding-bottom:36px}}

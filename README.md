@@ -41,14 +41,17 @@ Same as an article plus two fields:
 ```
 It gets a "Trending" tag, a highlighted "Why it's trending" box on the page, and appears in the "Why it's trending" section on the home page (latest 4). Bullets must be verifiable from `sources`; don't invent metrics (views, searches) you haven't seen.
 
-### 3. Images (every article should have one; `image` object)
-- **Generated illustration** (always allowed, no licence risk):
-  `"image":{"art":"chip|factory|hazard","accent":"#22d3ee","alt":"Describe the picture"}`
-- **Open-licence photo** (CC0 / public domain preferred; CC BY / BY-SA only with credit shown): find on Wikimedia Commons, check the file's licence box, download the original into `src-img/`, then:
-  `"image":{"src":"src-img/name.jpg","crop":[left,top,width],"kind":"photo (CC0)","alt":"...","credit":"Author","license":"CC0 1.0","source_url":"https://commons.wikimedia.org/wiki/File:...","note":"anything needing a later check"}`
-  `crop` = fractions of the source: `[left, top, width]`; height is derived (1200:630). Check the crop visually.
-- **Press image, fair-use illustration** (only where legal and clearly editorial about that product/event): save a *small, low-resolution* copy in `src-img/`, then use `"kind":"press image (fair use)"`, `credit` = company/photographer, `source_url` = the page you took it from, and a `note` saying why it's used. Never use stock-agency images (Getty, Shutterstock, AP, Reuters, etc.).
-- Always write real `alt` text. `build.py` outputs a 1200×630 JPEG (used for og:image/twitter), plus 1200w and 600w WebP for the page (lazy-loaded, width/height set). `images.md` is regenerated on each build with source and licence per image — put anything needing a licence double-check in `note`.
+### 3. Images (house rule: AI-generated hyper-realistic photos)
+Every article gets one AI-generated, hyper-realistic 16:9 photo, supplied as a file via `/workspace` (e.g. `/workspace/humanoid-assets/<name>.jpg`, ideally 1920x1080 or at least 1280x720). Steps:
+1. Copy it into `src-img/` (e.g. `cp /workspace/humanoid-assets/x.jpg src-img/<slug>.jpg`).
+2. Add to the article in `content/articles.json`:
+   `"image":{"src":"src-img/<slug>.jpg","crop":[0,0.05,1.0],"ai":true,"alt":"Describe what is visible","note":"Generic illustration; not a photo of the actual product/event"}`
+   `crop` = `[left, top, width]` as fractions of the source; height is derived (1200:630). Check the crop visually.
+3. The build outputs a 1200x630 JPEG (og:image/twitter), plus 600w/1200w WebP (lazy-loaded, width/height set) and shows the caption **"AI-generated image"** under the picture. Captions are automatic for `"ai":true` and for the built-in `"art"` illustrations; never remove them.
+4. `images.md` is regenerated on every build with the licence note "generated, owned by Joshua Israel Ventures LLC". Open items go in `TODO_IMAGES` at the top of `build.py` (they print under "TODO" in `images.md`).
+- AI images must be clearly generic illustrations: don't depict real people, real logos or a specific real product/event as if it were a photograph of it. Say so in `note` when the article is about a specific robot.
+- Fallbacks if no photo has been supplied yet: `"image":{"art":"chip|factory|hazard","accent":"#22d3ee","alt":"..."}` (generated illustration, also captioned). Third-party photos (CC0, press) are no longer the default; if one is ever used, give `kind`, `credit`, `license`, `source_url` and no `ai` flag, and never use stock-agency images.
+- Homepage hero: `src-img/humanoid-hero-photo.jpg` (1200/1920 WebP + JPEG, preloaded for LCP) and also the default og:image. To change it, replace that file and rebuild.
 
 ### 4. Build, commit, deploy, ping
 ```bash
