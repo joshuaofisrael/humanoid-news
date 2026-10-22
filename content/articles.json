@@ -16,7 +16,21 @@
     "title": "Electrek: Tesla pushes Optimus deliveries to late 2027",
     "url": "https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/"
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/optimus.jpg",
+   "crop": [
+    0,
+    0.32,
+    1.0
+   ],
+   "kind": "photo (CC0)",
+   "alt": "A Tesla Optimus humanoid robot standing inside a glass display case in a shopping mall",
+   "credit": "X120412",
+   "license": "CC0 1.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Optimus_HK.jpg",
+   "note": "Wikimedia Commons file 'Optimus HK.jpg'. Tesla branding visible on the display; incidental bystander reflections."
+  }
  },
  {
   "slug": "fotex-unitree-hive-grocery-restocking-pilot",
@@ -35,7 +49,21 @@
     "title": "ESM Magazine: Føtex pilots humanoid robots",
     "url": "https://www.esmmagazine.com/technology/salling-groups-fotex-pilots-humanoid-robots-via-multi-year-hive-partnership-324091"
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/g1.jpg",
+   "crop": [
+    0,
+    0.07,
+    1.0
+   ],
+   "kind": "photo (CC0)",
+   "alt": "A Unitree G1 humanoid robot with a glowing blue visor at a trade show",
+   "credit": "Sayanesy",
+   "license": "CC0 1.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Unitree_G1.jpg",
+   "note": "LICENCE CHECK: appears to be a low-resolution still frame (UAV expo 2024); uploader's CC0 claim is unverified. Replace if in doubt. Shows a Unitree G1, not the robot used in the Foetex pilot."
+  }
  },
  {
   "slug": "korea-safety-rules-robros-humanoids-factories",
@@ -53,7 +81,12 @@
     "title": "Seoul Economic Daily: Korea clears safety rules for humanoid robots",
     "url": "https://en.sedaily.com/finance/2026/10/14/korea-clears-safety-rules-to-put-20-humanoid-robots-on"
    }
-  ]
+  ],
+  "image": {
+   "art": "factory",
+   "accent": "#22d3ee",
+   "alt": "Illustration of a humanoid robot beside a gear on a factory floor"
+  }
  },
  {
   "slug": "nvidia-isaac-agile-one-sn-reference-humanoid",
@@ -71,7 +104,12 @@
     "title": "NVIDIA Newsroom: NVIDIA advances Isaac platform",
     "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data"
    }
-  ]
+  ],
+  "image": {
+   "art": "chip",
+   "accent": "#a3e635",
+   "alt": "Illustration of a humanoid robot next to a computing chip"
+  }
  },
  {
   "slug": "minerva-humanoids-10m-pre-seed-general-catalyst",
@@ -89,6 +127,11 @@
     "title": "Minerva Humanoids press release",
     "url": "https://www.minervahumanoids.com/press/minerva-humanoids-raises-10m-pre-seed-led-by-general-catalyst"
    }
-  ]
+  ],
+  "image": {
+   "art": "hazard",
+   "accent": "#22d3ee",
+   "alt": "Illustration of a humanoid robot beside a hazard warning triangle"
+  }
  }
 ]
