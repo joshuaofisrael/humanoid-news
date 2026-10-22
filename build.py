@@ -10,7 +10,7 @@ import json, os, html, datetime, shutil, re
 # ---------------------------------------------------------------- config
 SITE_URL = "https://humanoidbeat.com"  # <-- ONLY place to change the domain
 NAME = "Humanoid News"; LLC = "Joshua Israel Ventures LLC"; EMAIL = "hello@example.com"
-CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "")  # Cloudflare Web Analytics token; "" = disabled
+CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
 OUT = "docs"; ASSET_VER = "3"
