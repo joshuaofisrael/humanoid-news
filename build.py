@@ -2,7 +2,7 @@
 """Static site generator for Humanoid News.
 DOMAIN CHANGE: edit SITE_URL below, run `python3 build.py`, add CNAME file, commit."""
 import json, os, html, datetime
-SITE_URL = "https://joshuaofisrael.github.io/humanoid-news"  # <-- ONLY place to change
+SITE_URL = "https://humanoidbeat.com"  # <-- ONLY place to change
 NAME="Humanoid News"; LLC="Joshua Israel Ventures LLC"; EMAIL="hello@example.com"
 INDEXNOW_KEY="7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC="Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."

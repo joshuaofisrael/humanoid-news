@@ -49,4 +49,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://joshuaofisrael.github.io/humanoid-news/sitemap.xml
+Sitemap: https://humanoidbeat.com/sitemap.xml
