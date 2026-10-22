@@ -1,101 +1,206 @@
 #!/usr/bin/env python3
-"""Static site generator for Humanoid News.
-DOMAIN CHANGE: edit SITE_URL below, run `python3 build.py`, add CNAME file, commit."""
-import json, os, html, datetime
-SITE_URL = "https://humanoidbeat.com"  # <-- ONLY place to change
-NAME="Humanoid News"; LLC="Joshua Israel Ventures LLC"; EMAIL="hello@example.com"
-INDEXNOW_KEY="7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
-DESC="Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
-OUT="docs"
-A=[
-dict(slug="tesla-optimus-deliveries-late-2027",date="2026-10-22",cat="Tesla",
-title="Tesla pushes external Optimus deliveries to late 2027",
-summary="Tesla now targets the end of 2027 for delivering Optimus humanoids to outside customers, citing unsolved problems with the hands, durability and AI.",
-body=["<strong>Short answer:</strong> On Tesla's Q3 2026 earnings call, Elon Musk said external Optimus deliveries should start around the end of 2027, after the company solves remaining issues with the robot's hands, reliability and AI.",
-"Musk said early Optimus production has begun on a high-volume line in Fremont, in space formerly used for Model S and Model X. Most of a line designed for about one million robots a year is installed, but he said reaching that rate could take at least a year because parts of the design are still changing.",
-"A Tesla engineer identified the hand as one of the hardest hardware areas, alongside custom gears with reliability concerns. On software, Tesla plans to build 10,000 to 20,000 robots to practise tasks in what it calls an \"Optimus Academy\", and intends to put its AI5 chip in Optimus around April 2027, according to Electrek's account of the call.",
-"First external customers are expected to be industrial jobs that are dangerous, repetitive or need round-the-clock operation."],
-sources=[("Electrek: Tesla pushes Optimus deliveries to late 2027","https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/")]),
-dict(slug="fotex-unitree-hive-grocery-restocking-pilot",date="2026-10-22",cat="Unitree",
-title="Danish grocer Føtex pilots Unitree humanoids for overnight restocking",
-summary="Salling Group's Føtex chain is trialling humanoid robots built on Unitree hardware and HIVE Robots software to restock shelves after closing.",
-body=["<strong>Short answer:</strong> Føtex, part of Denmark's Salling Group, has begun a multi-year pilot with Danish start-up HIVE Robots in which humanoid robots restock grocery shelves after hours at a store in Lyngby, north of Copenhagen.",
-"Unitree manufactures the robot hardware while HIVE Robots builds the control software and manages machine learning. Trials run after closing time to provide a controlled environment for testing and data collection.",
-"In training zones, human \"robot pilots\" use VR headsets and handheld controllers to guide the robots through tasks such as picking up bags of pasta and placing them on shelves. The current prototypes move more slowly than human staff.",
-"Føtex says a humanoid form factor lets the robots work in aisles designed for people without costly store redesigns."],
-sources=[("ESM Magazine: Føtex pilots humanoid robots","https://www.esmmagazine.com/technology/salling-groups-fotex-pilots-humanoid-robots-via-multi-year-hive-partnership-324091")]),
-dict(slug="korea-safety-rules-robros-humanoids-factories",date="2026-10-14",cat="Policy",
-title="South Korea eases safety rules to put 20 humanoids on factory floors",
-summary="Korean regulators relaxed rules written for stationary industrial robots, clearing the way for 20 Robros humanoids to work in factories.",
-body=["<strong>Short answer:</strong> South Korea has eased safety regulations originally written for fixed industrial robots, allowing mobile humanoid robots to work on factory floors. Twenty AI-powered bipedal humanoids from Korean developer Robros are set to be deployed, including at Nepes.",
-"Existing rules were designed for stationary robot arms operating behind barriers, which did not fit robots that walk among workers. The change is one of the first regulatory moves anywhere aimed specifically at enabling humanoids in production environments.",
-"The deployments span manufacturing settings across several industries, according to the Seoul Economic Daily."],
-sources=[("Seoul Economic Daily: Korea clears safety rules for humanoid robots","https://en.sedaily.com/finance/2026/10/14/korea-clears-safety-rules-to-put-20-humanoid-robots-on")]),
-dict(slug="nvidia-isaac-agile-one-sn-reference-humanoid",date="2026-10-20",cat="NVIDIA",
-title="NVIDIA expands Isaac platform with Agile ONE SN reference humanoid",
-summary="NVIDIA announced new Isaac frameworks, simulation pipelines and data, plus a humanoid reference platform from Agile Robots built on Isaac GR00T.",
-body=["<strong>Short answer:</strong> NVIDIA has expanded its Isaac robotics platform with new frameworks, simulation pipelines and training data, and Agile Robots announced Agile ONE SN, a humanoid reference platform built on NVIDIA Isaac GR00T.",
-"According to NVIDIA, Agile ONE SN runs on NVIDIA Jetson Thor with planned integration of the NVIDIA Halos safety stack, aiming to give developers and researchers a complete platform for humanoid research.",
-"Reference designs like this lower the barrier for labs and start-ups that want to work on humanoid software without building hardware from scratch."],
-sources=[("NVIDIA Newsroom: NVIDIA advances Isaac platform","https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data")]),
-dict(slug="minerva-humanoids-10m-pre-seed-general-catalyst",date="2026-10-06",cat="Funding",
-title="Minerva Humanoids raises $10M to build robots for dangerous jobs",
-summary="San Francisco start-up Minerva Humanoids emerged from stealth with about $10 million led by General Catalyst for its semi-autonomous humanoid, Roger.",
-body=["<strong>Short answer:</strong> Minerva Humanoids has raised approximately $10 million in pre-seed funding led by General Catalyst, with Long Journey Ventures and Credo Ventures co-leading, to build humanoid robots for hazardous work in oil and gas and public safety.",
-"Its robot, Roger, is semi-autonomous: trained specialists apply their expertise remotely while staying physically away from danger, for example when responding to a suspected explosive or doing hazardous work at an energy site.",
-"The company was founded by CEO Sandor Felber and CTO Maurice Rahme and says it is launching its first paid pilots this autumn. Other participants include Hugging Face and Codecademy, among others."],
-sources=[("Minerva Humanoids press release","https://www.minervahumanoids.com/press/minerva-humanoids-raises-10m-pre-seed-led-by-general-catalyst")]),
-]
-A.sort(key=lambda a:a["date"],reverse=True)
-PUB={"@type":"Organization","name":LLC,"url":SITE_URL+"/","logo":{"@type":"ImageObject","url":SITE_URL+"/favicon.svg"}}
-CSS="""*{box-sizing:border-box}body{margin:0;font:17px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1a1d24;background:#f7f8fa}a{color:#0b57d0}a:focus,button:focus{outline:3px solid #f59e0b;outline-offset:2px}.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px}header{background:#0f172a;color:#fff}header .w{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}header a{color:#fff;text-decoration:none}.logo{font-weight:800;font-size:1.3rem}.logo span{color:#38bdf8}nav a{margin-left:16px}.w{max-width:860px;margin:0 auto;padding:16px 20px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:18px 22px;margin:16px 0}.card h2{margin:.2em 0;font-size:1.25rem}.meta{color:#475569;font-size:.9rem}.tag{background:#e0f2fe;color:#075985;border-radius:4px;padding:1px 8px;font-size:.8rem;font-weight:600}footer{background:#0f172a;color:#cbd5e1;font-size:.9rem;margin-top:40px}footer a{color:#7dd3fc}h1{line-height:1.25}"""
-def esc(s):return html.escape(s,quote=True)
-def page(path,title,desc,content,depth,ld=None,typ="website"):
-    r="../"*depth; url=SITE_URL+"/"+path.replace("index.html","")
-    lds=[{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE_URL+"/","publisher":PUB}]+([ld] if ld else [])
-    h=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+"""Static site generator for Humanoid News (humanoidbeat.com).
+
+Run:  python3 build.py        (needs Pillow; cairosvg only for generated art)
+Content: content/articles.json   Source images: src-img/   Output: docs/ (GitHub Pages)
+See README.md for the daily routine (adding articles, images, 'why it's trending' posts).
+"""
+import json, os, html, datetime, shutil, re
+
+# ---------------------------------------------------------------- config
+SITE_URL = "https://humanoidbeat.com"  # <-- ONLY place to change the domain
+NAME = "Humanoid News"; LLC = "Joshua Israel Ventures LLC"; EMAIL = "hello@example.com"
+CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "")  # Cloudflare Web Analytics token; "" = disabled
+INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
+DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
+OUT = "docs"; ASSET_VER = "3"
+# ----------------------------------------------------------------
+
+A = json.load(open("content/articles.json", encoding="utf-8"))
+A.sort(key=lambda a: a["date"], reverse=True)
+PUB = {"@type": "Organization", "name": LLC, "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
+
+def esc(s): return html.escape(s, quote=True)
+def fd(d): return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
+
+MARK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0a0e14"/><rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#22d3ee" stroke-opacity=".35"/><path d="M20 22a6 6 0 0 1 6-6h12a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6z" fill="none" stroke="#22d3ee" stroke-width="3"/><rect x="24" y="25" width="16" height="6" rx="3" fill="#a3e635"/><path d="M32 16v-5M26 42v6h12v-6M14 30h6M44 30h6" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="10" r="2.5" fill="#22d3ee"/></svg>'
+
+HERO_SVG = '''<svg class="hero-art" viewBox="0 0 420 340" role="img" aria-label="Illustration of a humanoid robot with glowing circuit lines"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
+<g fill="none" stroke="#22d3ee" stroke-opacity=".5" stroke-width="2" class="flow"><path d="M0 70h90l30 30h60"/><path d="M420 90h-80l-30 30h-40"/><path d="M0 260h100l30-30h50"/><path d="M420 250h-90l-30-30h-50"/><path d="M210 0v40"/></g>
+<g fill="#22d3ee"><circle class="pulse" cx="90" cy="70" r="4"/><circle class="pulse" cx="340" cy="90" r="4" style="animation-delay:.6s"/><circle class="pulse" cx="100" cy="260" r="4" style="animation-delay:1.2s"/><circle class="pulse" cx="330" cy="250" r="4" style="animation-delay:1.8s"/></g>
+<g class="float"><g fill="#0e1722" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"><rect x="160" y="42" width="100" height="84" rx="26"/><rect x="195" y="126" width="30" height="16"/><path d="M130 160a30 30 0 0 1 30-18h100a30 30 0 0 1 30 18l8 78H122z"/><rect x="92" y="150" width="32" height="96" rx="16"/><rect x="296" y="150" width="32" height="96" rx="16"/><rect x="170" y="238" width="32" height="70" rx="12"/><rect x="218" y="238" width="32" height="70" rx="12"/></g>
+<rect x="176" y="72" width="68" height="24" rx="12" fill="#06101a" stroke="#22d3ee" stroke-opacity=".6"/><rect class="eye" x="196" y="79" width="28" height="10" rx="5" fill="#a3e635"/><path d="M210 42V26" stroke="#22d3ee" stroke-width="3"/><circle class="pulse" cx="210" cy="22" r="5" fill="#22d3ee"/>
+<g fill="none" stroke="#22d3ee" stroke-opacity=".7" stroke-width="2"><path d="M170 190h80M170 210h50"/><circle cx="238" cy="206" r="9"/></g></g></svg>'''
+
+def art_svg(kind, accent="#22d3ee"):
+    """Original generated 1200x630 illustration (graphite + circuit lines + motif)."""
+    a = accent; g = ""
+    for i in range(0, 1200, 60): g += f'<path d="M{i} 0V630" />'
+    for j in range(0, 630, 60): g += f'<path d="M0 {j}H1200" />'
+    traces = f'<g fill="none" stroke="{a}" stroke-opacity=".55" stroke-width="3"><path d="M0 120h260l60 60h140"/><path d="M1200 140h-300l-60 60h-120"/><path d="M0 520h220l70-70h130"/><path d="M1200 500h-260l-70-70h-110"/><path d="M600 0v90M600 540v90"/></g><g fill="{a}"><circle cx="260" cy="120" r="7"/><circle cx="900" cy="140" r="7"/><circle cx="220" cy="520" r="7"/><circle cx="940" cy="500" r="7"/></g>'
+    fig = f'<g fill="#0e1722" stroke="{a}" stroke-width="5" stroke-linejoin="round" transform="translate(420 70) scale(1.25)"><rect x="110" y="30" width="100" height="84" rx="26"/><path d="M80 148a30 30 0 0 1 30-18h100a30 30 0 0 1 30 18l8 90H72z"/><rect x="44" y="142" width="32" height="100" rx="16"/><rect x="244" y="142" width="32" height="100" rx="16"/><rect x="120" y="238" width="32" height="130" rx="12"/><rect x="168" y="238" width="32" height="130" rx="12"/></g><rect x="530" y="140" width="85" height="30" rx="15" fill="#a3e635"/>'
+    if kind == "chip":
+        m = f'<g transform="translate(150 190)" fill="#0e1722" stroke="{a}" stroke-width="5"><rect width="190" height="190" rx="18"/><rect x="45" y="45" width="100" height="100" rx="8" fill="{a}" fill-opacity=".18"/>' + "".join(f'<path d="M{x} -26V0M{x} 190v26M-26 {x}H0M190 {x}h26" stroke-linecap="round"/>' for x in (40, 95, 150)) + '</g>'
+    elif kind == "factory":
+        import math
+        pts = []
+        for i in range(24):
+            r = 100 if i % 2 == 0 else 78; t = i * math.pi / 12
+            pts.append(f"{r*math.cos(t):.1f},{r*math.sin(t):.1f}")
+        m = f'<g transform="translate(920 360)"><polygon points="{" ".join(pts)}" fill="#0e1722" stroke="{a}" stroke-width="5"/><circle r="34" fill="none" stroke="{a}" stroke-width="5"/></g><path d="M0 590h1200" stroke="{a}" stroke-opacity=".5" stroke-width="3" stroke-dasharray="14 12"/>'
+    else:  # hazard / safety
+        m = f'<g transform="translate(910 340)"><path d="M0-110L105 80H-105Z" fill="#0e1722" stroke="#fbbf24" stroke-width="6" stroke-linejoin="round"/><path d="M0-50V26" stroke="#fbbf24" stroke-width="12" stroke-linecap="round"/><circle cy="54" r="8" fill="#fbbf24"/></g>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><radialGradient id="r" cx=".7" cy=".3" r=".8"><stop offset="0" stop-color="#0f3347"/><stop offset="1" stop-color="#0a0e14"/></radialGradient></defs><rect width="1200" height="630" fill="url(#r)"/><g stroke="#22d3ee" stroke-opacity=".08" stroke-width="1">{g}</g>{traces}{m}{fig}</svg>'
+
+# ---------------------------------------------------------------- images
+IMG_DIRS_READY = False
+def make_images(name, spec):
+    """Create docs/img/<name>.jpg (1200x630, og), <name>-1200.webp, <name>-600.webp from a photo spec or generated art."""
+    from PIL import Image
+    os.makedirs(OUT + "/img", exist_ok=True)
+    if "art" in spec:
+        import cairosvg, io
+        png = cairosvg.svg2png(bytestring=art_svg(spec["art"], spec.get("accent", "#22d3ee")).encode(), output_width=1200, output_height=630)
+        im = Image.open(io.BytesIO(png)).convert("RGB")
+    else:
+        im = Image.open(spec["src"]).convert("RGB"); W, H = im.size
+        l, t, w = spec.get("crop", [0, 0, 1.0])
+        cw = int(W * w); ch = int(cw * 630 / 1200); x = int(W * l); y = int(H * t)
+        im = im.crop((x, y, x + cw, min(y + ch, H))).resize((1200, 630), Image.LANCZOS)
+    im.save(f"{OUT}/img/{name}.jpg", "JPEG", quality=82, optimize=True, progressive=True)
+    im.save(f"{OUT}/img/{name}-1200.webp", "WEBP", quality=76, method=6)
+    im.resize((600, 315), Image.LANCZOS).save(f"{OUT}/img/{name}-600.webp", "WEBP", quality=74, method=6)
+
+def img_tag(name, alt, eager=False, sizes="(max-width:760px) 100vw, 520px", r=""):
+    ld = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    return (f'<img src="{r}img/{name}-1200.webp" srcset="{r}img/{name}-600.webp 600w, {r}img/{name}-1200.webp 1200w" sizes="{sizes}" '
+            f'width="1200" height="630" alt="{esc(alt)}" {ld} decoding="async">')
+
+def credit_html(im):
+    if im.get("art") is not None: return "Illustration: original artwork by Humanoid News."
+    s = f'Photo: {esc(im["credit"])}'
+    if im.get("source_url"): s += f' · <a href="{esc(im["source_url"])}" rel="noopener">Source</a>'
+    s += f' · {esc(im["license"])}'
+    return s
+
+# ---------------------------------------------------------------- page shell
+def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None, base=None, extra_head=""):
+    r = base if base is not None else "../" * depth
+    url = SITE_URL + "/" + path.replace("index.html", "")
+    og = image or {"url": f"{SITE_URL}/img/og-default.jpg", "alt": NAME + ": humanoid robot news"}
+    lds = [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "publisher": PUB}] + ([ld] if ld else [])
+    beacon = f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{CF_BEACON_TOKEN}"}}\'></script>' if CF_BEACON_TOKEN else ""
+    robots = "noindex" if path == "404.html" else "index,follow,max-image-preview:large,max-snippet:-1"
+    h = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{url}">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-<meta property="og:type" content="{typ}"><meta property="og:site_name" content="{NAME}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{SITE_URL}/og.svg">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}">
-<link rel="icon" href="{r}favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="{NAME}" href="{r}feed.xml">
-<style>{CSS}</style>""" + "".join(f'<script type="application/ld+json">{json.dumps(x)}</script>' for x in lds) + f"""</head><body>
-<a class="skip" href="#main">Skip to content</a><header><div class="w"><a class="logo" href="{r}index.html">Humanoid<span>News</span></a><nav aria-label="Main"><a href="{r}index.html">News</a><a href="{r}about.html">About</a><a href="{r}about.html#contact">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
-<main id="main" class="w">{content}</main>
-<footer><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}feed.xml">RSS</a></p>
-<p>© 2026 Joshua Israel Ventures LLC. All rights reserved. Humanoid News is owned and operated by Joshua Israel Ventures LLC.</p></div></footer></body></html>"""
-    p=os.path.join(OUT,path);os.makedirs(os.path.dirname(p) or OUT,exist_ok=True);open(p,"w").write(h)
-def fd(d):return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
-os.makedirs(OUT+"/news",exist_ok=True)
-cards="".join(f'<article class="card"><span class="tag">{a["cat"]}</span><h2><a href="news/{a["slug"]}.html">{esc(a["title"])}</a></h2><p class="meta"><time datetime="{a["date"]}">{fd(a["date"])}</time></p><p>{esc(a["summary"])}</p></article>' for a in A)
-page("index.html",f"{NAME}: Humanoid Robot News & Analysis",DESC,f"<h1>Latest humanoid robot news</h1><p>{DESC}</p>{cards}",0)
+<meta name="robots" content="{robots}"><meta name="theme-color" content="#0a0e14">
+<meta property="og:type" content="{typ}"><meta property="og:site_name" content="{NAME}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}">
+<meta property="og:image" content="{og['url']}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(og['alt'])}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="{og['url']}"><meta name="twitter:image:alt" content="{esc(og['alt'])}">
+{extra_head}<link rel="icon" href="{r}favicon.svg" type="image/svg+xml"><link rel="icon" href="{r}favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="{r}apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="{NAME}" href="{r}feed.xml"><link rel="stylesheet" href="{r}assets/style.css?v={ASSET_VER}">
+""" + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds) + f"""</head><body>
+<a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
+<header class="site-h"><div class="w"><a class="logo" href="{r}index.html" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{r}index.html">News</a><a href="{r}about.html">About</a><a href="{r}about.html#contact">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
+<main id="main">{content}</main>
+<footer class="site-f"><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}feed.xml">RSS</a></p>
+<p>© 2026 Joshua Israel Ventures LLC. All rights reserved. Humanoid News is owned and operated by Joshua Israel Ventures LLC.</p></div></footer>
+<script defer src="{r}assets/app.js?v={ASSET_VER}"></script>{beacon}</body></html>"""
+    p = os.path.join(OUT, path); os.makedirs(os.path.dirname(p) or OUT, exist_ok=True); open(p, "w", encoding="utf-8").write(h)
+
+# ---------------------------------------------------------------- build
+shutil.rmtree(OUT + "/img", ignore_errors=True); os.makedirs(OUT + "/news", exist_ok=True); os.makedirs(OUT + "/assets", exist_ok=True)
+for f in ("style.css", "app.js"): shutil.copy("assets/" + f, f"{OUT}/assets/{f}")
+
+# site-level images
+open(OUT + "/favicon.svg", "w").write(MARK.replace(' aria-hidden="true"', ""))
+try:
+    import cairosvg
+    cairosvg.svg2png(bytestring=MARK.encode(), write_to=OUT + "/favicon-32.png", output_width=32, output_height=32)
+    cairosvg.svg2png(bytestring=MARK.encode(), write_to=OUT + "/apple-touch-icon.png", output_width=180, output_height=180)
+    cairosvg.svg2png(bytestring=MARK.encode(), write_to=OUT + "/logo.png", output_width=512, output_height=512)
+except ImportError:
+    print("WARN: cairosvg missing; kept existing icon PNGs")
+make_images("og-default", {"art": "chip"})
+if os.path.exists(OUT + "/og.svg"): os.remove(OUT + "/og.svg")
+
+def has_img(a): return bool(a.get("image"))
 for a in A:
-    u=f"{SITE_URL}/news/{a['slug']}.html"
-    ld={"@context":"https://schema.org","@type":"NewsArticle","headline":a["title"],"description":a["summary"],"datePublished":a["date"],"dateModified":a["date"],"mainEntityOfPage":u,"image":[SITE_URL+"/og.svg"],"author":{"@type":"Organization","name":NAME+" Staff"},"publisher":PUB,"isBasedOn":[s[1] for s in a["sources"]]}
-    src="".join(f'<li><a href="{s[1]}" rel="noopener">{esc(s[0])}</a></li>' for s in a["sources"])
-    body="".join(f"<p>{p}</p>" for p in a["body"])
-    page(f"news/{a['slug']}.html",f"{a['title']} | {NAME}",a["summary"],f'<article class="card"><span class="tag">{a["cat"]}</span><h1>{esc(a["title"])}</h1><p class="meta">By {NAME} Staff · <time datetime="{a["date"]}">{fd(a["date"])}</time></p>{body}<h2>Sources</h2><ul>{src}</ul></article><p><a href="../index.html">← All news</a></p>',1,ld,"article")
-L=f"<strong>{LLC}</strong>"
-legal={
-"about.html":("About",f"<h1>About {NAME}</h1><p>{NAME} is an independent publication covering humanoid robots: the companies, the technology, the deployments and the policy. Every story is written originally, leads with the answer, and links to its primary sources. We do not invent facts or quotes.</p><p>{NAME} is owned and operated by {L}, a Florida limited liability company.</p><h2 id=\"contact\">Contact</h2><p>Tips, corrections and enquiries: <a href=\"mailto:{EMAIL}\">{EMAIL}</a>. We correct errors promptly and transparently.</p>"),
-"terms.html":("Terms of Use",f"<h1>Terms of Use</h1><p>These Terms govern your use of {NAME}, owned and operated by {L} (\"we\"). By using the site you agree to them.</p><h2>Content</h2><p>All original content is © 2026 {LLC}. You may share links and brief quotations with attribution. Third-party trademarks belong to their owners and are used for identification only.</p><h2>No warranty</h2><p>The site is provided \"as is\" without warranties of any kind. To the fullest extent permitted by law, {LLC} is not liable for any damages arising from your use of the site.</p><h2>Governing law</h2><p>These Terms are governed by the laws of the State of Florida, USA, and any dispute shall be resolved in the state or federal courts located in Florida.</p><h2>Changes</h2><p>We may update these Terms; continued use means acceptance.</p>"),
-"privacy.html":("Privacy Policy",f"<h1>Privacy Policy</h1><p>This policy explains how {L}, operator of {NAME}, handles information.</p><h2>What we collect</h2><p>The site sets no cookies and runs no advertising trackers. Our hosting provider may log standard technical data (such as IP address and browser type) for security and operations. If you email us, we keep your message to respond.</p><h2>Sharing</h2><p>We do not sell personal information.</p><h2>Your rights</h2><p>You may request access to or deletion of information you sent us by emailing <a href=\"mailto:{EMAIL}\">{EMAIL}</a>.</p><h2>Governing law</h2><p>This policy is governed by the laws of the State of Florida, USA.</p>"),
-"disclaimer.html":("Disclaimer",f"<h1>Disclaimer</h1><p>Content on {NAME} is for general information only and is not investment, legal or professional advice. We work to verify facts against cited sources but cannot guarantee completeness or accuracy. {NAME} is not affiliated with any company it covers unless stated. {NAME} is owned and operated by {L}, and this disclaimer is governed by the laws of the State of Florida, USA.</p>"),
+    if has_img(a): make_images(a["slug"], a["image"])
+    a["_og"] = {"url": f"{SITE_URL}/img/{a['slug']}.jpg", "alt": a["image"]["alt"]} if has_img(a) else None
+
+def card(a, feat=False, eager=False):
+    im = ""
+    if has_img(a):
+        sizes = "(max-width:760px) 100vw, 620px" if feat else "(max-width:760px) 100vw, 520px"
+        im = f'<div class="im">{img_tag(a["slug"], a["image"]["alt"], eager, sizes)}</div>'
+    tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
+    return (f'<article class="card reveal{" feat" if feat else ""}">{im}<div class="tx">{tag}<span class="tag">{esc(a["cat"])}</span>'
+            f'<h3><a href="news/{a["slug"]}.html">{esc(a["title"])}</a></h3><p class="meta"><time datetime="{a["date"]}">{fd(a["date"])}</time></p><p>{esc(a["summary"])}</p></div></article>')
+
+trend = [a for a in A if a.get("kind") == "trending"][:4]
+rest = [a for a in A if a not in trend]
+sections = ""
+if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it\'s trending</h2><div class="grid">' + "".join(card(a) for a in trend) + '</div></div></section>'
+sections += '<section class="sec" id="latest"><div class="w"><h2 class="sh">Latest news</h2><div class="grid">' + "".join(card(a, feat=(i == 0), eager=(i == 0)) for i, a in enumerate(rest)) + '</div></div></section>'
+cos = ["Tesla Optimus", "Figure", "Agility Digit", "Boston Dynamics Atlas", "Unitree", "1X NEO", "Apptronik", "UBTECH", "XPeng IRON", "NVIDIA GR00T"]
+sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join(f"<li>{c}</li>" for c in cos) + "</ul></div></section>"
+hero = f'<section class="hero"><div class="w"><div><span class="kicker">Humanoid robotics · daily</span><h1>The humanoid robot race, <em>answered first.</em></h1><p>{esc(DESC)}</p><a class="btn" href="#latest">Read the latest</a><a class="btn ghost" href="feed.xml">RSS feed</a></div>{HERO_SVG}</div></section>'
+page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + sections, 0)
+
+for a in A:
+    u = f"{SITE_URL}/news/{a['slug']}.html"
+    ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": a["title"], "description": a["summary"], "datePublished": a["date"], "dateModified": a.get("updated", a["date"]),
+          "mainEntityOfPage": u, "isAccessibleForFree": True, "inLanguage": "en", "author": {"@type": "Organization", "name": NAME + " Staff"}, "publisher": PUB, "isBasedOn": [s["url"] for s in a["sources"]]}
+    ld["image"] = [{"@type": "ImageObject", "url": a["_og"]["url"], "width": 1200, "height": 630}] if a["_og"] else [SITE_URL + "/img/og-default.jpg"]
+    fig = ""
+    if has_img(a):
+        fig = f'<div class="a-hero"><figure>{img_tag(a["slug"], a["image"]["alt"], True, "(max-width:980px) 100vw, 980px", "../")}<figcaption>{credit_html(a["image"])}</figcaption></figure></div>'
+    body = "".join(f'<p{" class=lede" if i == 0 else ""}>{p}</p>' for i, p in enumerate(a["body"]))
+    why = ""
+    if a.get("kind") == "trending" and a.get("why"):
+        why = '<aside class="why"><h2>Why it\'s trending</h2><ul>' + "".join(f"<li>{w}</li>" for w in a["why"]) + "</ul></aside>"
+    src = "".join(f'<li><a href="{esc(s["url"])}" rel="noopener">{esc(s["title"])}</a></li>' for s in a["sources"])
+    tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
+    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · <time datetime="{a["date"]}">{fd(a["date"])}</time></p>{body}{why}<div class="src"><h2>Sources</h2><ul>{src}</ul></div><p><a href="../index.html">← All news</a></p></article>'
+    page(f"news/{a['slug']}.html", f"{a['title']} | {NAME}", a["summary"], c, 1, ld, "article", a["_og"])
+
+L = f"<strong>{LLC}</strong>"
+analytics = "We use Cloudflare Web Analytics, a privacy-focused service that measures page views without cookies or cross-site tracking. " if CF_BEACON_TOKEN else ""
+legal = {
+"about.html": ("About", f"<h1>About {NAME}</h1><p>{NAME} is an independent publication covering humanoid robots: the companies, the technology, the deployments and the policy. Every story is written originally, leads with the answer, and links to its primary sources. We do not invent facts or quotes.</p><p>{NAME} is owned and operated by {L}, a Florida limited liability company.</p><h2>Images</h2><p>Images are original illustrations, public-domain or openly licensed photographs credited under each image, or small press images used as illustration with credit and a source link. Credits are listed in the site repository.</p><h2 id=\"contact\">Contact</h2><p>Tips, corrections and enquiries: <a href=\"mailto:{EMAIL}\">{EMAIL}</a>. We correct errors promptly and transparently.</p>"),
+"terms.html": ("Terms of Use", f"<h1>Terms of Use</h1><p>These Terms govern your use of {NAME}, owned and operated by {L} (\"we\"). By using the site you agree to them.</p><h2>Content</h2><p>All original content is © 2026 {LLC}. You may share links and brief quotations with attribution. Third-party trademarks belong to their owners and are used for identification only.</p><h2>No warranty</h2><p>The site is provided \"as is\" without warranties of any kind. To the fullest extent permitted by law, {LLC} is not liable for any damages arising from your use of the site.</p><h2>Governing law</h2><p>These Terms are governed by the laws of the State of Florida, USA, and any dispute shall be resolved in the state or federal courts located in Florida.</p><h2>Changes</h2><p>We may update these Terms; continued use means acceptance.</p>"),
+"privacy.html": ("Privacy Policy", f"<h1>Privacy Policy</h1><p>This policy explains how {L}, operator of {NAME}, handles information.</p><h2>What we collect</h2><p>The site sets no cookies and runs no advertising trackers. {analytics}Our hosting provider may log standard technical data (such as IP address and browser type) for security and operations. If you email us, we keep your message to respond.</p><h2>Sharing</h2><p>We do not sell personal information.</p><h2>Your rights</h2><p>You may request access to or deletion of information you sent us by emailing <a href=\"mailto:{EMAIL}\">{EMAIL}</a>.</p><h2>Governing law</h2><p>This policy is governed by the laws of the State of Florida, USA.</p>"),
+"disclaimer.html": ("Disclaimer", f"<h1>Disclaimer</h1><p>Content on {NAME} is for general information only and is not investment, legal or professional advice. We work to verify facts against cited sources but cannot guarantee completeness or accuracy. {NAME} is not affiliated with any company it covers unless stated. Company names, product names and logos are trademarks of their owners. {NAME} is owned and operated by {L}, and this disclaimer is governed by the laws of the State of Florida, USA.</p>"),
 }
-for f,(t,c) in legal.items(): page(f,f"{t} | {NAME}",f"{t} for {NAME}, operated by {LLC}.",c,0)
-page("404.html",f"Page not found | {NAME}","Page not found.",'<h1>Page not found</h1><p>That page does not exist. <a href="index.html">Go to the latest news</a>.</p>',0)
-# 404 is served at arbitrary depth: make links absolute to site root for it
-s=open(OUT+"/404.html").read().replace('href="index.html"',f'href="{SITE_URL}/index.html"').replace('href="about.html',f'href="{SITE_URL}/about.html').replace('href="terms.html',f'href="{SITE_URL}/terms.html').replace('href="privacy.html',f'href="{SITE_URL}/privacy.html').replace('href="disclaimer.html',f'href="{SITE_URL}/disclaimer.html').replace('href="feed.xml',f'href="{SITE_URL}/feed.xml').replace('href="favicon.svg',f'href="{SITE_URL}/favicon.svg').replace('<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">','<meta name="robots" content="noindex">')
-open(OUT+"/404.html","w").write(s)
-urls=[("",A[0]["date"])]+[(f"news/{a['slug']}.html",a["date"]) for a in A]+[(f,"2026-10-22") for f in legal]
-open(OUT+"/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
-bots=["Googlebot","Bingbot","GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","Claude-Web","anthropic-ai","PerplexityBot","CCBot","Google-Extended","Applebot","Applebot-Extended","Bytespider","Amazonbot","Meta-ExternalAgent"]
-open(OUT+"/robots.txt","w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)+f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
-open(OUT+f"/{INDEXNOW_KEY}.txt","w").write(INDEXNOW_KEY)
-open(OUT+"/llms.txt","w").write(f"# {NAME}\n\n> {DESC} Owned and operated by {LLC}.\n\n## Articles\n"+"".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A)+f"\n## About\n- [About]({SITE_URL}/about.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
-def rfc(d):return datetime.datetime.fromisoformat(d+"T12:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
-open(OUT+"/feed.xml","w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>{NAME}</title><link>{SITE_URL}/</link><description>{esc(DESC)}</description><language>en</language><atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>'+"".join(f"<item><title>{esc(a['title'])}</title><link>{SITE_URL}/news/{a['slug']}.html</link><guid>{SITE_URL}/news/{a['slug']}.html</guid><pubDate>{rfc(a['date'])}</pubDate><description>{esc(a['summary'])}</description></item>" for a in A)+"</channel></rss>\n")
-open(OUT+"/favicon.svg","w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0f172a"/><rect x="18" y="14" width="28" height="22" rx="6" fill="#38bdf8"/><circle cx="27" cy="25" r="3.5" fill="#0f172a"/><circle cx="37" cy="25" r="3.5" fill="#0f172a"/><rect x="22" y="40" width="20" height="12" rx="3" fill="#38bdf8"/></svg>')
-open(OUT+"/og.svg","w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#0f172a"/><text x="80" y="330" font-family="sans-serif" font-size="110" font-weight="800" fill="#fff">Humanoid<tspan fill="#38bdf8">News</tspan></text><text x="80" y="420" font-family="sans-serif" font-size="40" fill="#cbd5e1">Independent humanoid robot news</text></svg>')
-open(OUT+"/.nojekyll","w").write("")
-print("built",len(A),"articles")
+for f, (t, c) in legal.items(): page(f, f"{t} | {NAME}", f"{t} for {NAME}, operated by {LLC}.", f'<div class="prose page">{c}</div>', 0)
+page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/index.html">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
+
+# sitemap (with image extension), robots, llms, feed, indexnow key
+urls = [("", A[0]["date"], None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f, "2026-10-22", None) for f in legal]
+def sm(u, d, im):
+    x = f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod>"
+    if im: x += f"<image:image><image:loc>{im['url']}</image:loc></image:image>"
+    return x + "</url>"
+open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + "".join(sm(*x) for x in urls) + "</urlset>\n")
+bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "anthropic-ai", "PerplexityBot", "CCBot", "Google-Extended", "Applebot", "Applebot-Extended", "Bytespider", "Amazonbot", "Meta-ExternalAgent"]
+open(OUT + "/robots.txt", "w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
+open(OUT + f"/{INDEXNOW_KEY}.txt", "w").write(INDEXNOW_KEY)
+open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC} Owned and operated by {LLC}.\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
+def rfc(d): return datetime.datetime.fromisoformat(d + "T12:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
+open(OUT + "/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>{NAME}</title><link>{SITE_URL}/</link><description>{esc(DESC)}</description><language>en</language><atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>' + "".join(f"<item><title>{esc(a['title'])}</title><link>{SITE_URL}/news/{a['slug']}.html</link><guid>{SITE_URL}/news/{a['slug']}.html</guid><pubDate>{rfc(a['date'])}</pubDate><description>{esc(a['summary'])}</description>" + (f'<media:content url="{a["_og"]["url"]}" type="image/jpeg" medium="image" width="1200" height="630"/>' if a["_og"] else "") + "</item>" for a in A) + "</channel></rss>\n")
+open(OUT + "/.nojekyll", "w").write("")
+if os.path.exists("docs/CNAME") is False and SITE_URL.startswith("https://") and "github.io" not in SITE_URL:
+    open("docs/CNAME", "w").write(SITE_URL.split("//")[1] + "\n")
+
+# images.md: source + licence per image
+L2 = ["# Image credits and licences", "", "Generated by `build.py` from `content/articles.json`. Do not edit by hand; add a `note` in the article's `image` object instead.", "",
+      "| Image | Used in | Type | Credit | Licence | Source | Note |", "|---|---|---|---|---|---|---|",
+      "| og-default.jpg, favicon, logo | Site-wide | Generated | Humanoid News original artwork | Owned by Joshua Israel Ventures LLC | n/a | |"]
+for a in A:
+    if not has_img(a): continue
+    im = a["image"]
+    if "art" in im: L2.append(f"| {a['slug']}.jpg | {a['slug']} | Generated | Humanoid News original artwork | Owned by Joshua Israel Ventures LLC | n/a | {im.get('note','')} |")
+    else: L2.append(f"| {a['slug']}.jpg | {a['slug']} | {im.get('kind','photo')} | {im['credit']} | {im['license']} | {im.get('source_url','')} | {im.get('note','')} |")
+open("images.md", "w").write("\n".join(L2) + "\n")
+print("built", len(A), "articles")
