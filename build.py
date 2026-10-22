@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Static site generator for Humanoid News (humanoidbeat.com).
 
-Run:  python3 build.py        (needs Pillow; cairosvg only for generated art)
+Run:  python3 build.py        (needs Pillow; cairosvg only for the site icons)
 Content: content/articles.json   Source images: src-img/   Output: docs/ (GitHub Pages)
 See README.md for the daily routine (adding articles, images, 'why it's trending' posts).
 """
@@ -16,10 +16,7 @@ DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure
 OUT = "docs"; ASSET_VER = "4"
 # ----------------------------------------------------------------
 
-TODO_IMAGES = [
-    "Optional: replace the CC0 Optimus photo (tesla-optimus-deliveries-late-2027) with an AI-generated hyper-realistic photo per the house rule; Tesla branding/bystander reflections are visible in the current one.",
-    "Optional: replace generated illustrations (korea-safety..., nvidia-isaac..., minerva-humanoids...) with AI-generated hyper-realistic photos when supplied.",
-]
+TODO_IMAGES = []
 A = json.load(open("content/articles.json", encoding="utf-8"))
 A.sort(key=lambda a: a["date"], reverse=True)
 PUB = {"@type": "Organization", "name": LLC, "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
@@ -33,37 +30,13 @@ HERO_SVG = '''<svg class="hero-fx" viewBox="0 0 1200 520" preserveAspectRatio="x
 <g fill="none" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2" class="flow"><path d="M560 60h180l40 40h160"/><path d="M1200 140h-160l-40 40h-90"/><path d="M620 470h160l50-50h140"/><path d="M1200 400h-120l-40-40h-80"/></g>
 <g fill="#22d3ee"><circle class="pulse" cx="740" cy="60" r="5"/><circle class="pulse" cx="1000" cy="180" r="5" style="animation-delay:.6s"/><circle class="pulse" cx="780" cy="470" r="5" style="animation-delay:1.2s"/><circle class="pulse" cx="1040" cy="360" r="5" style="animation-delay:1.8s"/></g></svg>'''
 
-def art_svg(kind, accent="#22d3ee"):
-    """Original generated 1200x630 illustration (graphite + circuit lines + motif)."""
-    a = accent; g = ""
-    for i in range(0, 1200, 60): g += f'<path d="M{i} 0V630" />'
-    for j in range(0, 630, 60): g += f'<path d="M0 {j}H1200" />'
-    traces = f'<g fill="none" stroke="{a}" stroke-opacity=".55" stroke-width="3"><path d="M0 120h260l60 60h140"/><path d="M1200 140h-300l-60 60h-120"/><path d="M0 520h220l70-70h130"/><path d="M1200 500h-260l-70-70h-110"/><path d="M600 0v90M600 540v90"/></g><g fill="{a}"><circle cx="260" cy="120" r="7"/><circle cx="900" cy="140" r="7"/><circle cx="220" cy="520" r="7"/><circle cx="940" cy="500" r="7"/></g>'
-    fig = f'<g fill="#0e1722" stroke="{a}" stroke-width="5" stroke-linejoin="round" transform="translate(420 70) scale(1.25)"><rect x="110" y="30" width="100" height="84" rx="26"/><path d="M80 148a30 30 0 0 1 30-18h100a30 30 0 0 1 30 18l8 90H72z"/><rect x="44" y="142" width="32" height="100" rx="16"/><rect x="244" y="142" width="32" height="100" rx="16"/><rect x="120" y="238" width="32" height="130" rx="12"/><rect x="168" y="238" width="32" height="130" rx="12"/></g><rect x="530" y="140" width="85" height="30" rx="15" fill="#a3e635"/>'
-    if kind == "chip":
-        m = f'<g transform="translate(150 190)" fill="#0e1722" stroke="{a}" stroke-width="5"><rect width="190" height="190" rx="18"/><rect x="45" y="45" width="100" height="100" rx="8" fill="{a}" fill-opacity=".18"/>' + "".join(f'<path d="M{x} -26V0M{x} 190v26M-26 {x}H0M190 {x}h26" stroke-linecap="round"/>' for x in (40, 95, 150)) + '</g>'
-    elif kind == "factory":
-        import math
-        pts = []
-        for i in range(24):
-            r = 100 if i % 2 == 0 else 78; t = i * math.pi / 12
-            pts.append(f"{r*math.cos(t):.1f},{r*math.sin(t):.1f}")
-        m = f'<g transform="translate(920 360)"><polygon points="{" ".join(pts)}" fill="#0e1722" stroke="{a}" stroke-width="5"/><circle r="34" fill="none" stroke="{a}" stroke-width="5"/></g><path d="M0 590h1200" stroke="{a}" stroke-opacity=".5" stroke-width="3" stroke-dasharray="14 12"/>'
-    else:  # hazard / safety
-        m = f'<g transform="translate(910 340)"><path d="M0-110L105 80H-105Z" fill="#0e1722" stroke="#fbbf24" stroke-width="6" stroke-linejoin="round"/><path d="M0-50V26" stroke="#fbbf24" stroke-width="12" stroke-linecap="round"/><circle cy="54" r="8" fill="#fbbf24"/></g>'
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630"><defs><radialGradient id="r" cx=".7" cy=".3" r=".8"><stop offset="0" stop-color="#0f3347"/><stop offset="1" stop-color="#0a0e14"/></radialGradient></defs><rect width="1200" height="630" fill="url(#r)"/><g stroke="#22d3ee" stroke-opacity=".08" stroke-width="1">{g}</g>{traces}{m}{fig}</svg>'
-
 # ---------------------------------------------------------------- images
 IMG_DIRS_READY = False
 def make_images(name, spec):
     """Create docs/img/<name>.jpg (1200x630, og), <name>-1200.webp, <name>-600.webp from a photo spec or generated art."""
     from PIL import Image
     os.makedirs(OUT + "/img", exist_ok=True)
-    if "art" in spec:
-        import cairosvg, io
-        png = cairosvg.svg2png(bytestring=art_svg(spec["art"], spec.get("accent", "#22d3ee")).encode(), output_width=1200, output_height=630)
-        im = Image.open(io.BytesIO(png)).convert("RGB")
-    else:
+    if True:
         im = Image.open(spec["src"]).convert("RGB"); W, H = im.size
         l, t, w = spec.get("crop", [0, 0, 1.0])
         cw = int(W * w); ch = int(cw * 630 / 1200); x = int(W * l); y = int(H * t)
@@ -106,7 +79,7 @@ def inline_fig(m, spec):
             f'sizes="(max-width:760px) 100vw, 720px" width="{m["w"]}" height="{m["h"]}" alt="{esc(spec["alt"])}" loading="lazy" decoding="async">'
             f'<figcaption>{cap}</figcaption></figure>')
 
-def is_ai(im): return bool(im.get("ai")) or "art" in im
+def is_ai(im): return bool(im.get("ai"))
 AI_LICENCE = "generated, owned by Joshua Israel Ventures LLC"
 def credit_html(im):
     if is_ai(im): return "AI-generated image"

@@ -45,19 +45,19 @@ It gets a "Trending" tag, a highlighted "Why it's trending" box on the page, and
 Every article gets one AI-generated, hyper-realistic 16:9 photo, supplied as a file via `/workspace` (e.g. `/workspace/humanoid-assets/<name>.jpg`, ideally 1920x1080 or at least 1280x720). Steps:
 1. Copy it into `src-img/` (e.g. `cp /workspace/humanoid-assets/x.jpg src-img/<slug>.jpg`).
 2. Add to the article in `content/articles.json`:
-   `"image":{"src":"src-img/<slug>.jpg","crop":[0,0.05,1.0],"ai":true,"alt":"Describe what is visible","note":"Generic illustration; not a photo of the actual product/event"}`
+   `"image":{"src":"src-img/<slug>.jpg","crop":[0,0.05,1.0],"ai":true,"alt":"Describe what is visible","note":"Generic AI-generated scene; not a photo of the actual product/event"}`
    `crop` = `[left, top, width]` as fractions of the source; height is derived (1200:630). Check the crop visually.
-3. The build outputs a 1200x630 JPEG (og:image/twitter), plus 600w/1200w WebP (lazy-loaded, width/height set) and shows the caption **"AI-generated image"** under the picture. Captions are automatic for `"ai":true` and for the built-in `"art"` illustrations; never remove them.
+3. The build outputs a 1200x630 JPEG (og:image/twitter), plus 600w/1200w WebP (lazy-loaded, width/height set) and shows the caption **"AI-generated image"** under the picture. Captions are automatic for `"ai":true`; never remove them.
 4. `images.md` is regenerated on every build with the licence note "generated, owned by Joshua Israel Ventures LLC". Open items go in `TODO_IMAGES` at the top of `build.py` (they print under "TODO" in `images.md`).
-- AI images must be clearly generic illustrations: don't depict real people, real logos or a specific real product/event as if it were a photograph of it. Say so in `note` when the article is about a specific robot.
-- Fallbacks if no photo has been supplied yet: `"image":{"art":"chip|factory|hazard","accent":"#22d3ee","alt":"..."}` (generated illustration, also captioned). Third-party photos (CC0, press) are no longer the default; if one is ever used, give `kind`, `credit`, `license`, `source_url` and no `ai` flag, and never use stock-agency images.
+- AI photos must depict generic scenes: don't depict real people, real logos or a specific real product/event as if it were a photograph of it. Say so in `note` when the article is about a specific robot.
+- **All images must be photoreal** (no cartoons, vector art or illustrations). The old generated-illustration (`art`) option has been removed from `build.py`; if no photo has been supplied yet, publish the article without an image rather than using an illustration. Third-party photos (CC0, press) are no longer the default; if one is ever used, give `kind`, `credit`, `license`, `source_url` and no `ai` flag, and never use stock-agency images.
 - Homepage hero: `src-img/humanoid-hero-photo.jpg` (1200/1920 WebP + JPEG, preloaded for LCP) and also the default og:image. To change it, replace that file and rebuild.
 
 ### 3b. Inline images (AI-generated, throughout each article)
 House rule for every news article: a hero plus an AI-generated inline image roughly every 2-3 paragraphs (short articles: at least one, after paragraph 2).
 1. Grok Bot generates the picture and saves it as `/workspace/humanoid-assets/<article-slug>-N.jpg` (N = 1, 2, ...; 16:9, at least 1280 px wide). Never generate or use images of real people, real logos on products, or fabricated events; keep scenes generic and say so in `note`.
 2. In the article in `content/articles.json` add (one object per image):
-   `"inline_images":[{"file":"<slug>-1.jpg","alt":"Descriptive alt text of what is visible","caption":"Illustration of ... (optional)","insert_after_paragraph":2,"brief":"prompt/scene description for the generator","note":"Generic illustration; not a photo of ..."}]`
+   `"inline_images":[{"file":"<slug>-1.jpg","alt":"Descriptive alt text of what is visible","caption":"Scene: ... (optional)","insert_after_paragraph":2,"brief":"prompt/scene description for the generator","note":"Generic illustration; not a photo of ..."}]`
    - `file`: name inside `/workspace/humanoid-assets/` (or an absolute path).
    - `insert_after_paragraph`: 1-based; `2` puts the figure after the second paragraph of `body`. Several images may use different numbers.
    - `alt`: required, descriptive, plain text. `caption`: optional description; the build always appends **"AI-generated image"**.

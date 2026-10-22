@@ -18,24 +18,21 @@
       }
     ],
     "image": {
-      "src": "src-img/optimus.jpg",
+      "src": "src-img/tesla-optimus-deliveries-late-2027-hero.jpg",
       "crop": [
         0,
-        0.32,
+        0.05,
         1.0
       ],
-      "kind": "photo (CC0)",
-      "alt": "A Tesla Optimus humanoid robot standing inside a glass display case in a shopping mall",
-      "credit": "X120412",
-      "license": "CC0 1.0",
-      "source_url": "https://commons.wikimedia.org/wiki/File:Optimus_HK.jpg",
-      "note": "Wikimedia Commons file 'Optimus HK.jpg'. Tesla branding visible on the display; incidental bystander reflections."
+      "ai": true,
+      "alt": "A white humanoid robot holding a stamped black metal vehicle panel on a car assembly line",
+      "note": "Generic illustration; not a photo of Tesla's Optimus or any Tesla facility."
     },
     "inline_images": [
       {
         "file": "tesla-optimus-deliveries-late-2027-1.jpg",
         "alt": "A humanoid robot standing on a factory assembly line while technicians in safety glasses check its torso",
-        "caption": "Illustration of humanoid robot production",
+        "caption": "Scene: humanoid robot production",
         "insert_after_paragraph": 2,
         "brief": "A generic humanoid robot being assembled on a clean, high-volume factory line, with technicians in safety glasses and no visible brand logos.",
         "note": "Generic illustration of humanoid robot production; not a photo of Tesla's Fremont line or any real person."
@@ -75,7 +72,7 @@
       {
         "file": "fotex-unitree-hive-grocery-restocking-pilot-1.jpg",
         "alt": "A white humanoid robot scanning shelves of packaged goods in an empty supermarket aisle at night",
-        "caption": "Illustration of overnight shelf restocking",
+        "caption": "Scene: overnight shelf restocking",
         "insert_after_paragraph": 2,
         "brief": "A white humanoid robot working in an empty supermarket aisle at night, scanning shelves of packaged goods under dim store lighting.",
         "note": "Generic overnight store-restocking scene; not a photo of the actual Føtex store, Unitree or HIVE robot."
@@ -100,15 +97,21 @@
       }
     ],
     "image": {
-      "art": "factory",
-      "accent": "#22d3ee",
-      "alt": "Illustration of a humanoid robot beside a gear on a factory floor"
+      "src": "src-img/korea-safety-rules-robros-humanoids-factories-hero.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "A white humanoid robot working at a machine in a clean factory next to a worker in a blue cleanroom suit, with yellow floor safety markings",
+      "note": "Generic illustration of humanoids in a factory; not a photo of any Korean plant or company."
     },
     "inline_images": [
       {
         "file": "korea-safety-rules-robros-humanoids-factories-1.jpg",
         "alt": "A humanoid robot walking along a marked safety lane next to a worker in a hard hat on a factory floor",
-        "caption": "Illustration of a humanoid sharing a factory floor with workers",
+        "caption": "Scene: a humanoid sharing a factory floor with workers",
         "insert_after_paragraph": 2,
         "brief": "A humanoid robot walking along a marked safety lane on a factory floor beside a human worker in a hard hat and high-visibility vest, with floor markings and a safety light visible.",
         "note": "Generic illustration of humanoids and workers sharing a factory floor; not a photo of any Korean plant, regulator or company."
@@ -133,15 +136,21 @@
       }
     ],
     "image": {
-      "art": "chip",
-      "accent": "#a3e635",
-      "alt": "Illustration of a humanoid robot next to a computing chip"
+      "src": "src-img/nvidia-isaac-agile-one-sn-reference-humanoid-hero.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "A humanoid robot in profile beside racks of servers with blue indicator lights in a data centre",
+      "note": "Generic illustration; not a photo of NVIDIA's Agile ONE SN."
     },
     "inline_images": [
       {
         "file": "nvidia-isaac-agile-one-sn-reference-humanoid-1.jpg",
         "alt": "A humanoid robot in a robotics lab beside an engineer at a workstation showing a robot simulation",
-        "caption": "Illustration of reference-humanoid development",
+        "caption": "Scene: reference-humanoid development",
         "insert_after_paragraph": 2,
         "brief": "A humanoid robot in a robotics development lab, with an engineer at a workstation showing a simulation view of a robot, no readable brand logos.",
         "note": "Generic robotics-lab scene; not a photo of NVIDIA's Agile ONE SN or any real person."
@@ -166,15 +175,21 @@
       }
     ],
     "image": {
-      "art": "hazard",
-      "accent": "#22d3ee",
-      "alt": "Illustration of a humanoid robot beside a hazard warning triangle"
+      "src": "src-img/minerva-humanoids-10m-pre-seed-general-catalyst-hero.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "A white humanoid robot walking through a steamy industrial plant with large pipework",
+      "note": "Generic illustration; not a photo of Minerva's robot Roger."
     },
     "inline_images": [
       {
         "file": "minerva-humanoids-10m-pre-seed-general-catalyst-1.jpg",
         "alt": "A humanoid robot inspecting pipes and valves in an industrial plant while a specialist works at a remote control station",
-        "caption": "Illustration of remote operation in dangerous work",
+        "caption": "Scene: remote operation in dangerous work",
         "insert_after_paragraph": 2,
         "brief": "A humanoid robot inspecting industrial equipment in a hazardous plant environment while a specialist operates it remotely from a control room.",
         "note": "Generic illustration of remote operation in dangerous work; not a photo of Minerva's robot Roger or its staff."
