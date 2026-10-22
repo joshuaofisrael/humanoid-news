@@ -1,0 +1,14 @@
+# Humanoid News
+
+> Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more. Owned and operated by Joshua Israel Ventures LLC.
+
+## Articles
+- [Tesla pushes external Optimus deliveries to late 2027](https://joshuaofisrael.github.io/humanoid-news/news/tesla-optimus-deliveries-late-2027.html): Tesla now targets the end of 2027 for delivering Optimus humanoids to outside customers, citing unsolved problems with the hands, durability and AI.
+- [Danish grocer Føtex pilots Unitree humanoids for overnight restocking](https://joshuaofisrael.github.io/humanoid-news/news/fotex-unitree-hive-grocery-restocking-pilot.html): Salling Group's Føtex chain is trialling humanoid robots built on Unitree hardware and HIVE Robots software to restock shelves after closing.
+- [NVIDIA expands Isaac platform with Agile ONE SN reference humanoid](https://joshuaofisrael.github.io/humanoid-news/news/nvidia-isaac-agile-one-sn-reference-humanoid.html): NVIDIA announced new Isaac frameworks, simulation pipelines and data, plus a humanoid reference platform from Agile Robots built on Isaac GR00T.
+- [South Korea eases safety rules to put 20 humanoids on factory floors](https://joshuaofisrael.github.io/humanoid-news/news/korea-safety-rules-robros-humanoids-factories.html): Korean regulators relaxed rules written for stationary industrial robots, clearing the way for 20 Robros humanoids to work in factories.
+- [Minerva Humanoids raises $10M to build robots for dangerous jobs](https://joshuaofisrael.github.io/humanoid-news/news/minerva-humanoids-10m-pre-seed-general-catalyst.html): San Francisco start-up Minerva Humanoids emerged from stealth with about $10 million led by General Catalyst for its semi-autonomous humanoid, Roger.
+
+## About
+- [About](https://joshuaofisrael.github.io/humanoid-news/about.html)
+- [RSS](https://joshuaofisrael.github.io/humanoid-news/feed.xml)
