@@ -16,7 +16,7 @@ Setup once: `python3 -m venv v && v/bin/pip install pillow cairosvg && v/bin/pyt
 
 ## Config (top of build.py)
 - `SITE_URL` – the one place for the domain (currently `https://humanoidbeat.com`, no trailing slash). `docs/CNAME` must match.
-- `EMAIL` – public contact address (still a placeholder: `hello@example.com`).
+- `EMAIL` – public contact address. **Empty on purpose** until Joshua supplies one: while empty, the Contact/Corrections pages show only the GitHub issues link (`ISSUES`). Never publish a placeholder address.
 - `CF_BEACON_TOKEN` – Cloudflare Web Analytics token. Set the constant or the env var `CF_BEACON_TOKEN=xxxx python3 build.py`. When set, every page gets the beacon script before `</body>` and the Privacy page mentions it. Empty = no analytics.
 - `INDEXNOW_KEY` – matches the key file in `docs/`.
 
@@ -25,13 +25,24 @@ Setup once: `python3 -m venv v && v/bin/pip install pillow cairosvg && v/bin/pyt
 ### 1. Add a news article
 Append an object to `content/articles.json` (newest order is handled automatically):
 ```json
-{"slug":"short-kebab-slug","date":"2026-10-23","cat":"Figure",
- "title":"...","summary":"One-sentence answer, ≤160 chars.",
+{"slug":"short-kebab-slug","date":"2026-10-23","updated":"2026-10-23","cat":"Figure",
+ "title":"...","summary":"One-sentence answer, <=160 chars, attributed ('according to X').",
  "body":["<strong>Short answer:</strong> ...","Paragraph 2 ...","..."],
+ "analysis":["Optional. Clearly labelled opinion/analysis paragraph(s)."],
+ "disclaimer":"Required for funding/stock/earnings/regulatory items; optional otherwise.",
  "sources":[{"title":"Publisher: headline","url":"https://..."}],
  "image":{ ... see below ... }}
 ```
-Rules: answer-first, original wording, every fact traceable to a listed source, no invented quotes. Body strings may contain `<strong>`, `<a>`, `<em>`.
+**Editorial rules (mandatory; also shown on /standards.html):**
+1. **Fetch the real sources first** (open every URL; don't rely on search snippets). Every fact, number, date and quote must appear in a cited source. Use the source's publication date (not an estimate) and the event date as stated.
+2. Prefer primary sources (company/regulator release, filing) plus one reputable outlet. Say who said it: "according to X", "X said", "the company says". Mark company claims as the company's own.
+3. Original wording; never copy or closely paraphrase a source. At most one brief quote (about 15 words or fewer), attributed.
+4. No stated or implied wrongdoing, fault or incompetence about any named person or company unless an authoritative source says it, and then attribute it. No speculation about individuals.
+5. Opinion/analysis/speculation goes only in `analysis` (rendered under an "Analysis" label). Never mix it into `body`. If it isn't in a source and isn't labelled analysis, leave it out. When in doubt, leave it out.
+6. Funding, earnings, stock or regulatory items need a `disclaimer` (company's own claims, not independently verified; not investment/legal advice). No health/legal/financial advice stated as fact.
+7. Every article must have `sources` (rendered as the Sources section) and `updated` (rendered as "Last updated"; set it to the date of every later change, and describe significant fixes on the Corrections page).
+8. Images: AI-generated photoreal, generic, no real identifiable people or real news events, captioned "AI-generated image" (see below). No third-party images.
+9. Before pushing, re-read the article against its sources one last time. Remove anything you cannot trace.
 
 ### 2. Add a "why it's trending" post
 Same as an article plus two fields:
@@ -50,7 +61,7 @@ Every article gets one AI-generated, hyper-realistic 16:9 photo, supplied as a f
 3. The build outputs a 1200x630 JPEG (og:image/twitter), plus 600w/1200w WebP (lazy-loaded, width/height set) and shows the caption **"AI-generated image"** under the picture. Captions are automatic for `"ai":true`; never remove them.
 4. `images.md` is regenerated on every build with the licence note "generated, owned by Joshua Israel Ventures LLC". Open items go in `TODO_IMAGES` at the top of `build.py` (they print under "TODO" in `images.md`).
 - AI photos must depict generic scenes: don't depict real people, real logos or a specific real product/event as if it were a photograph of it. Say so in `note` when the article is about a specific robot.
-- **All images must be photoreal** (no cartoons, vector art or illustrations). The old generated-illustration (`art`) option has been removed from `build.py`; if no photo has been supplied yet, publish the article without an image rather than using an illustration. Third-party photos (CC0, press) are no longer the default; if one is ever used, give `kind`, `credit`, `license`, `source_url` and no `ai` flag, and never use stock-agency images.
+- **All images must be photoreal** (no cartoons, vector art or illustrations). The old generated-illustration (`art`) option has been removed from `build.py`; if no photo has been supplied yet, publish the article without an image rather than using an illustration. Third-party images are not used (no stock-agency, press or CC images).
 - Homepage hero: `src-img/humanoid-hero-photo.jpg` (1200/1920 WebP + JPEG, preloaded for LCP) and also the default og:image. To change it, replace that file and rebuild.
 
 ### 3b. Inline images (AI-generated, throughout each article)

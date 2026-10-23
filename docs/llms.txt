@@ -3,12 +3,15 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more. Owned and operated by Joshua Israel Ventures LLC.
 
 ## Articles
-- [Tesla pushes external Optimus deliveries to late 2027](https://humanoidbeat.com/news/tesla-optimus-deliveries-late-2027.html): Tesla now targets the end of 2027 for delivering Optimus humanoids to outside customers, citing unsolved problems with the hands, durability and AI.
-- [Danish grocer Føtex pilots Unitree humanoids for overnight restocking](https://humanoidbeat.com/news/fotex-unitree-hive-grocery-restocking-pilot.html): Salling Group's Føtex chain is trialling humanoid robots built on Unitree hardware and HIVE Robots software to restock shelves after closing.
-- [NVIDIA expands Isaac platform with Agile ONE SN reference humanoid](https://humanoidbeat.com/news/nvidia-isaac-agile-one-sn-reference-humanoid.html): NVIDIA announced new Isaac frameworks, simulation pipelines and data, plus a humanoid reference platform from Agile Robots built on Isaac GR00T.
-- [South Korea eases safety rules to put 20 humanoids on factory floors](https://humanoidbeat.com/news/korea-safety-rules-robros-humanoids-factories.html): Korean regulators relaxed rules written for stationary industrial robots, clearing the way for 20 Robros humanoids to work in factories.
-- [Minerva Humanoids raises $10M to build robots for dangerous jobs](https://humanoidbeat.com/news/minerva-humanoids-10m-pre-seed-general-catalyst.html): San Francisco start-up Minerva Humanoids emerged from stealth with about $10 million led by General Catalyst for its semi-autonomous humanoid, Roger.
+- [Tesla targets end of 2027 for external Optimus deliveries, Musk says](https://humanoidbeat.com/news/tesla-optimus-deliveries-late-2027.html): Elon Musk said on Tesla's Q3 2026 earnings call that Tesla expects to start delivering Optimus robots to outside customers around the end of 2027, according to Electrek.
+- [Danish grocer Føtex pilots Unitree humanoids for overnight restocking](https://humanoidbeat.com/news/fotex-unitree-hive-grocery-restocking-pilot.html): Føtex, part of Salling Group, has started a multi-year pilot with HIVE Robots to train humanoid robots to restock shelves after closing time, ESM Magazine reports.
+- [NVIDIA expands Isaac robotics platform as Agile Robots unveils Agile ONE SN humanoid](https://humanoidbeat.com/news/nvidia-isaac-agile-one-sn-reference-humanoid.html): At GTC Berlin on 21 October 2026, NVIDIA announced additions to its Isaac robotics platform and Agile Robots announced the Agile ONE SN reference humanoid, according to NVIDIA.
+- [South Korea grants safety-rule exemption for 20 Robros humanoids in factory pilot](https://humanoidbeat.com/news/korea-safety-rules-robros-humanoids-factories.html): A Korean regulatory-sandbox committee granted Robros an exemption so 20 of its humanoid robots can work near people at four companies' sites, Seoul Economic Daily reports.
+- [Minerva Humanoids says it raised about $10M pre-seed led by General Catalyst](https://humanoidbeat.com/news/minerva-humanoids-10m-pre-seed-general-catalyst.html): San Francisco start-up Minerva Humanoids said on 6 October 2026 it has raised about $10 million in pre-seed funding led by General Catalyst, according to its press release.
 
 ## About
 - [About](https://humanoidbeat.com/about.html)
+- [Editorial standards](https://humanoidbeat.com/standards.html)
+- [Corrections](https://humanoidbeat.com/corrections.html)
+- [Contact](https://humanoidbeat.com/contact.html)
 - [RSS](https://humanoidbeat.com/feed.xml)
