@@ -10,7 +10,7 @@ import json, os, html, datetime, shutil, re
 # ---------------------------------------------------------------- config
 SITE_URL = "https://humanoidbeat.com"  # <-- ONLY place to change the domain
 NAME = "Humanoid News"; LLC = "Joshua Israel Ventures LLC"; EMAIL = ""  # set a real address here when available; while empty the site shows the GitHub issues link instead
-FORM_TO = "joshuaofisrael@gmail.com"  # contact form recipient; used ONLY on contact.html. Swap for the FormSubmit random alias once activated.
+FORM_TO = "4497ee41a1200e746e967998473d21da"  # FormSubmit random alias (activated 23 Oct 2026); used ONLY on contact.html
 ISSUES = "https://github.com/joshuaofisrael/humanoid-news/issues"; BUILD_DATE = "2026-10-23"
 CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
