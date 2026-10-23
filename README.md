@@ -17,6 +17,7 @@ Setup once: `python3 -m venv v && v/bin/pip install pillow cairosvg && v/bin/pyt
 ## Config (top of build.py)
 - `SITE_URL` – the one place for the domain (currently `https://humanoidbeat.com`, no trailing slash). `docs/CNAME` must match.
 - `EMAIL` – public contact address. **Empty on purpose** until Joshua supplies one: while empty, the Contact/Corrections pages show only the GitHub issues link (`ISSUES`). Never publish a placeholder address.
+- `FORM_TO` – recipient of the contact form (FormSubmit.co). Used only on `contact.html` (form `action` + `data-ajax`). The plain address is in page source until FormSubmit's random alias is available after activation; then replace the value of `FORM_TO` with the alias (alias works at both `https://formsubmit.co/<alias>` and `/ajax/<alias>`). Do not put this address anywhere else on the site.
 - `CF_BEACON_TOKEN` – Cloudflare Web Analytics token. Set the constant or the env var `CF_BEACON_TOKEN=xxxx python3 build.py`. When set, every page gets the beacon script before `</body>` and the Privacy page mentions it. Empty = no analytics.
 - `INDEXNOW_KEY` – matches the key file in `docs/`.
 
@@ -42,7 +43,8 @@ Append an object to `content/articles.json` (newest order is handled automatical
 6. Funding, earnings, stock or regulatory items need a `disclaimer` (company's own claims, not independently verified; not investment/legal advice). No health/legal/financial advice stated as fact.
 7. Every article must have `sources` (rendered as the Sources section) and `updated` (rendered as "Last updated"; set it to the date of every later change, and describe significant fixes on the Corrections page).
 8. Images: AI-generated photoreal, generic, no real identifiable people or real news events, captioned "AI-generated image" (see below). No third-party images.
-9. Before pushing, re-read the article against its sources one last time. Remove anything you cannot trace.
+9. Contact: `contact.html` has a working contact form (name, email, message; honeypot `_honeypot`; `_captcha=false`; subject "HumanoidBeat contact"; AJAX submit with on-page thank-you, plain POST + `_next` fallback), plus the GitHub-issues link. Never remove the form, the honeypot, or the privacy line; don't add the form address to other pages.
+10. Before pushing, re-read the article against its sources one last time. Remove anything you cannot trace.
 
 ### 2. Add a "why it's trending" post
 Same as an article plus two fields:
