@@ -47,7 +47,13 @@
     "brief": "Photoreal close-up of a generic humanoid robot hand with dark textile-covered forearm fitting a small metal fastener on a workbench, shallow depth of field, 16:9. No people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/neura-4ne1-gen-4-tum-robogym-munich-hero.jpg",
+   "ai": true,
+   "alt": "A slim grey-and-white humanoid robot standing in an open work cell in a bright university robotics training hall (AI-generated image)",
+   "note": "Generic illustration; not a photo of the actual event, product or company robot."
+  }
  },
  {
   "slug": "generative-bionics-amd-physical-ai-data-factory-italy",
@@ -93,7 +99,13 @@
     "brief": "Photoreal view down an aisle of rack-scale server cabinets with small blue status lights in a clean data centre, 16:9. No people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/generative-bionics-amd-physical-ai-data-factory-italy-hero.jpg",
+   "ai": true,
+   "alt": "Rows of identical white humanoid robots practising tasks at assembly stations while overhead cameras record them (AI-generated image)",
+   "note": "Generic illustration; not a photo of the actual event, product or company robot."
+  }
  },
  {
   "slug": "aimoga-mobo-family-companion-humanoid-preorders",
@@ -127,7 +139,13 @@
     "brief": "Photoreal image of a small, friendly-looking generic white humanoid robot about knee-to-waist height standing on a rug in a bright, empty modern family living room, 16:9. No people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/aimoga-mobo-family-companion-humanoid-preorders-hero.jpg",
+   "ai": true,
+   "alt": "A small white companion robot standing on a rug in a sunny, empty family living room (AI-generated image)",
+   "note": "Generic illustration; not a photo of the actual event, product or company robot."
+  }
  },
  {
   "slug": "chinese-humanoid-makers-seek-trials-in-south-korea",
@@ -173,7 +191,13 @@
     "brief": "Photoreal image of a generic white humanoid robot clearing cups from a table in an empty, softly lit modern cafe, 16:9. No people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/chinese-humanoid-makers-seek-trials-in-south-korea-hero.jpg",
+   "ai": true,
+   "alt": "A grey humanoid robot handling metal engine parts on a conveyor in a modern factory (AI-generated image)",
+   "note": "Generic illustration; not a photo of the actual event, product or company robot."
+  }
  },
  {
   "slug": "why-ucla-phonebot-smartphone-humanoid-is-trending",
@@ -226,7 +250,13 @@
     "brief": "Photoreal macro shot of small dark hobby servo motors and aluminium brackets forming a miniature robot leg on a workbench, shallow depth of field, 16:9. No people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "image": {
+   "src": "src-img/why-ucla-phonebot-smartphone-humanoid-is-trending-hero.jpg",
+   "ai": true,
+   "alt": "A small two-legged robot made of black servo motors with a smartphone mounted as its torso, on a lab bench (AI-generated image)",
+   "note": "Generic illustration; not a photo of the actual event, product or company robot."
+  }
  },
  {
   "slug": "unitree-rehearsal-self-evolving-robot-ai",
