@@ -1,6 +1,6 @@
 # Humanoid News
 
-> Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more. Owned and operated by Joshua Israel Ventures LLC.
+> Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
 - [Unitree says it is building "Rehearsal", a self-improving loop for robot software](https://humanoidbeat.com/news/unitree-rehearsal-self-evolving-robot-ai.html): Unitree's Wang Xingxing said on 22 Oct 2026 the firm is developing "Rehearsal", a loop for robots to write code, test it in simulation and improve (SCMP).

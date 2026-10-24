@@ -61,7 +61,7 @@ Every article gets one AI-generated, hyper-realistic 16:9 photo, supplied as a f
    `"image":{"src":"src-img/<slug>.jpg","crop":[0,0.05,1.0],"ai":true,"alt":"Describe what is visible","note":"Generic AI-generated scene; not a photo of the actual product/event"}`
    `crop` = `[left, top, width]` as fractions of the source; height is derived (1200:630). Check the crop visually.
 3. The build outputs a 1200x630 JPEG (og:image/twitter), plus 600w/1200w WebP (lazy-loaded, width/height set) and shows the caption **"AI-generated image"** under the picture. Captions are automatic for `"ai":true`; never remove them.
-4. `images.md` is regenerated on every build with the licence note "generated, owned by Joshua Israel Ventures LLC". Open items go in `TODO_IMAGES` at the top of `build.py` (they print under "TODO" in `images.md`).
+4. `images.md` is regenerated on every build with the licence note "generated; rights held by the site owner (see terms.html)". Open items go in `TODO_IMAGES` at the top of `build.py` (they print under "TODO" in `images.md`).
 - AI photos must depict generic scenes: don't depict real people, real logos or a specific real product/event as if it were a photograph of it. Say so in `note` when the article is about a specific robot.
 - **All images must be photoreal** (no cartoons, vector art or illustrations). The old generated-illustration (`art`) option has been removed from `build.py`; if no photo has been supplied yet, publish the article without an image rather than using an illustration. Third-party images are not used (no stock-agency, press or CC images).
 - Homepage hero: `src-img/humanoid-hero-photo.jpg` (1200/1920 WebP + JPEG, preloaded for LCP) and also the default og:image. To change it, replace that file and rebuild.
@@ -76,7 +76,7 @@ House rule for every news article: a hero plus an AI-generated inline image roug
    - `alt`: required, descriptive, plain text. `caption`: optional description; the build always appends **"AI-generated image"**.
    - `brief`: optional, only used for the TODO list in `images.md`.
 3. Run the build. It copies the source to `src-img/inline/`, writes `docs/img/<slug>-N-600.webp` and `-1200.webp` (width 1200, height from the source aspect), emits `<figure class="inl">` with srcset, `width`/`height`, `loading="lazy"`, the caption, and adds the image to the article's JSON-LD.
-4. `images.md` lists every built inline image with licence "generated, owned by Joshua Israel Ventures LLC". Entries whose file is not there yet are skipped (the site still builds) and listed under "TODO (images)" in `images.md`; the build prints `[inline pending]`.
+4. `images.md` lists every built inline image with licence "generated; rights held by the site owner (see terms.html)". Entries whose file is not there yet are skipped (the site still builds) and listed under "TODO (images)" in `images.md`; the build prints `[inline pending]`.
 5. Check the figure visually, then commit including `src-img/inline/`.
 
 ### 4. Build, commit, deploy, ping
