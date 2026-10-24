@@ -1,5 +1,234 @@
 [
  {
+  "slug": "neura-4ne1-gen-4-tum-robogym-munich",
+  "date": "2026-10-24",
+  "updated": "2026-10-24",
+  "cat": "NEURA",
+  "title": "NEURA unveils a lighter 4NE1 Gen 4 humanoid as the TUM RoboGym opens near Munich",
+  "summary": "NEURA says its 4NE1 Gen 4 humanoid is 20% lighter and being readied for series production; it launched at the new TUM RoboGym near Munich Airport.",
+  "body": [
+   "<strong>Short answer:</strong> NEURA Robotics unveiled 4NE1 Gen 4 on 22 October 2026, a new generation of its humanoid robot that the company says is 20 percent lighter than the previous version and is being prepared for series production. The launch coincided with the opening of the TUM RoboGym, a robot training and research centre near Munich Airport run with the Technical University of Munich (TUM), according to both organisations.",
+   "According to NEURA, Gen 4 has a slimmer body covered in a black textile outer skin, upgraded hands for finer gripping, and what the company calls Smart Limbs, with reflexes built into each limb. It runs Neuron AI, which NEURA describes as a Perception-Language-Action model that combines vision, touch, force, sound and the robot's own state; the company's example is sensing whether a fastener has clicked into place. Interesting Engineering reported the same details on 23 October.",
+   "NEURA says the RoboGym covers more than 2,300 square metres at the LabCampus site. TUM says around 100 humanoid and service robots will initially learn skills there in 48 training cells, with an early focus on industrial applications and intralogistics, and that the data will flow into a curated cloud data lake for research. According to NEURA, partners from more than ten industries, including automotive, pharmaceuticals, logistics, agriculture and care, have been training workflows at the site since September, on tasks such as handling boxes, filling bottles and loading wooden parts.",
+   "The partners describe an initial three-year initiative with a combined investment of about €17 million, of which NEURA says it is contributing about €11 million. NEURA says Munich is the first of a planned network of NEURA Gyms, with more being set up in Europe, the United States and China and another in Germany with RWTH Aachen. The company says the robot was also shown at NVIDIA's GTC event in Berlin, where <a href=\"nvidia-isaac-agile-one-sn-reference-humanoid.html\">Agile Robots presented its Agile ONE SN humanoid</a>. The announcements do not give a price or delivery date for 4NE1 Gen 4."
+  ],
+  "analysis": [
+   "Opinion: Launching a robot together with a training facility reflects a wider industry view that real-world physical data, not only hardware, is what holds humanoids back. Whether Gen 4's claimed improvements lead to dependable factory work will depend on results from sites like the RoboGym, and none have been published yet."
+  ],
+  "disclaimer": "Specifications, plans and investment figures are NEURA's and TUM's own statements and have not been independently verified. This is not investment advice.",
+  "sources": [
+   {
+    "title": "NEURA Robotics: TUM RoboGym opens in Munich as NEURA launches 4NE1 Gen 4 (22 Oct 2026)",
+    "url": "https://neura-robotics.com/tum-robogym-munich-4ne1-gen4-launch/"
+   },
+   {
+    "title": "Technical University of Munich: Making robots smarter (22 Oct 2026)",
+    "url": "https://www.tum.de/en/news-and-events/all-news/press-releases/details/making-robots-smarter"
+   },
+   {
+    "title": "Interesting Engineering: NEURA's lighter humanoid unveiled (23 Oct 2026)",
+    "url": "https://interestingengineering.com/ai-robotics/neuras-lighter-humanoid-unveiled"
+   }
+  ],
+  "inline_images": [
+   {
+    "file": "neura-4ne1-gen-4-tum-robogym-munich-1.jpg",
+    "alt": "Rows of robot training cells in a large, bright industrial hall",
+    "caption": "Scene: robot training cells in an industrial hall",
+    "insert_after_paragraph": 2,
+    "brief": "Photoreal wide shot of a large bright industrial training hall with rows of open robot work cells and generic slim humanoid robots handling cardboard boxes, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   },
+   {
+    "file": "neura-4ne1-gen-4-tum-robogym-munich-2.jpg",
+    "alt": "Close view of a humanoid robot hand gripping a small metal fastener",
+    "caption": "Scene: a humanoid hand handling a fastener",
+    "insert_after_paragraph": 3,
+    "brief": "Photoreal close-up of a generic humanoid robot hand with dark textile-covered forearm fitting a small metal fastener on a workbench, shallow depth of field, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   }
+  ]
+ },
+ {
+  "slug": "generative-bionics-amd-physical-ai-data-factory-italy",
+  "date": "2026-10-24",
+  "updated": "2026-10-24",
+  "cat": "Generative Bionics",
+  "title": "Generative Bionics plans a 5,000 m² humanoid training \"data factory\" in Italy with AMD",
+  "summary": "Generative Bionics says it will build a three-site Physical AI Data Factory network, starting with a 5,000 m² Italian hub due by Q4 2027, using AMD compute.",
+  "body": [
+   "<strong>Short answer:</strong> Italian humanoid developer Generative Bionics announced on 21 October 2026 that it plans a network of three \"Physical AI Data Factory\" sites to train humanoid robots, starting with a 5,000-square-metre hub in Italy that it expects to be operational by the fourth quarter of 2027, with AMD as its AI infrastructure partner, according to the company's press release.",
+   "The company says fleets of its GENE.01 humanoid will carry out industrial tasks continuously in reproduced real-world work environments chosen with industrial partners, generating data to train what it calls World Action Models. Each environment will also be rebuilt as a digital twin so tasks can be repeated across thousands of variations in layout, objects, materials, conditions and failure modes, and models trained in simulation will return to the physical robots for validation, a loop Generative Bionics calls real-to-sim-to-real.",
+   "According to the release, AMD Helios rack-scale systems will provide the compute for processing physical and synthetic data, training models and running simulations. A second site is planned elsewhere in Europe and a third to serve global markets. Generative Bionics says the first hub will be Europe's largest physical AI training facility for humanoid robots; that is the company's own description. Robotics & Automation News reported the plan on 23 October.",
+   "Generative Bionics presents the project as supporting European control over humanoid data, models and know-how. The company says AMD Ventures took part in its €70 million seed round led by CDP Venture Capital, and that AMD compute already runs on board GENE.01. Other developers are also combining real and simulated training, including <a href=\"neura-4ne1-gen-4-tum-robogym-munich.html\">NEURA with its new TUM RoboGym</a> and <a href=\"unitree-rehearsal-self-evolving-robot-ai.html\">Unitree with its Rehearsal project</a>."
+  ],
+  "analysis": [
+   "Opinion: Dedicated robot data-collection sites are becoming a common bet among European humanoid developers. The timeline is long, with the first hub not due until late 2027, and the announcement gives no cost figure for the network."
+  ],
+  "disclaimer": "Plans, timelines and the \"largest\" description are Generative Bionics' own statements and have not been independently verified. Funding details are as stated by the company. This is not investment advice.",
+  "sources": [
+   {
+    "title": "PR Newswire (Generative Bionics): Generative Bionics to build Europe's largest Physical AI Data Factory with AMD AI infrastructure (21 Oct 2026)",
+    "url": "https://www.prnewswire.com/news-releases/generative-bionics-to-build-europes-largest-physical-ai-data-factory-and-advance-european-humanoid-sovereignty-with-amd-ai-infrastructure-302914884.html"
+   },
+   {
+    "title": "Robotics & Automation News: Generative Bionics to build European physical AI data factory for humanoid robots (23 Oct 2026)",
+    "url": "https://roboticsandautomationnews.com/2026/10/23/generative-bionics-to-build-european-physical-ai-data-factory-for-humanoid-robots/106245/"
+   }
+  ],
+  "inline_images": [
+   {
+    "file": "generative-bionics-amd-physical-ai-data-factory-italy-1.jpg",
+    "alt": "Several humanoid robots working at stations in a recreated factory environment",
+    "caption": "Scene: humanoids working in a recreated factory setting",
+    "insert_after_paragraph": 2,
+    "brief": "Photoreal wide shot of several identical generic white humanoid robots working at assembly stations inside a large hall built to mimic a factory floor, soft industrial lighting, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   },
+   {
+    "file": "generative-bionics-amd-physical-ai-data-factory-italy-2.jpg",
+    "alt": "Rows of server racks with blue status lights in a data centre",
+    "caption": "Scene: server racks in a data centre",
+    "insert_after_paragraph": 3,
+    "brief": "Photoreal view down an aisle of rack-scale server cabinets with small blue status lights in a clean data centre, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   }
+  ]
+ },
+ {
+  "slug": "aimoga-mobo-family-companion-humanoid-preorders",
+  "date": "2026-10-24",
+  "updated": "2026-10-24",
+  "cat": "AiMOGA",
+  "title": "AiMOGA opens worldwide pre-orders for Mobo, a 0.9 m family companion humanoid",
+  "summary": "AiMOGA Robotics says it has opened global pre-orders for Mobo, a 0.9-metre home companion humanoid with 22 degrees of freedom; no price was announced.",
+  "body": [
+   "<strong>Short answer:</strong> AiMOGA Robotics, based in Wuhu, China, said on 22 October 2026 that it has unveiled Mobo, its first consumer family companion humanoid, and opened pre-orders worldwide, according to a company press release. The announcement does not state a price or delivery date.",
+   "According to AiMOGA, Mobo is 0.9 metres tall, has 22 degrees of freedom and supports more than 20 languages. The company is aiming it at households: object recognition, questions and answers, storytelling and English practice for children, and conversation and reminders for older family members. AiMOGA says the robot recognises family members using face ID and keeps memories linked to each person.",
+   "Mobo runs on MoAgent, which AiMOGA describes as its embodied-intelligence agent, with a \"dual-brain\" design for planning and fast responses and a world model to check whether tasks have been completed. The company says the robot can handle up to 16 tasks in parallel with an interruption response time under 0.2 seconds, and that eligible data is de-identified on the device before it is used for cloud learning. These figures have not been independently tested.",
+   "AiMOGA says more than 10,000 prospective users have shown interest since Mobo's debut at the World Robot Conference in August 2026. More broadly, the company says it has sold more than 3,000 robots across over 60 countries and regions, and plans 300 experience centres worldwide and a robot-leasing brand starting in Wuhu, drawing on the manufacturing and sales resources of carmaker Chery."
+  ],
+  "analysis": [
+   "Opinion: Home companion humanoids are still an early, untested category compared with the factory robots that dominate most humanoid news. Until a price, shipping date and independent reviews are available, it is hard to judge how Mobo will perform in real homes."
+  ],
+  "disclaimer": "All specifications, sales and interest figures are AiMOGA's own claims from a press release and have not been independently verified.",
+  "sources": [
+   {
+    "title": "GlobeNewswire (AiMOGA Robotics): Mobo makes global debut and opens pre-orders as AiMOGA unveils its new path to industrialization (22 Oct 2026)",
+    "url": "https://www.globenewswire.com/news-release/2026/10/23/3387030/0/en/mobo-makes-global-debut-and-opens-pre-orders-as-aimoga-unveils-its-new-path-to-industrialization.html"
+   }
+  ],
+  "inline_images": [
+   {
+    "file": "aimoga-mobo-family-companion-humanoid-preorders-1.jpg",
+    "alt": "A small white companion robot standing on a rug in a bright family living room",
+    "caption": "Scene: a small companion robot in a living room",
+    "insert_after_paragraph": 2,
+    "brief": "Photoreal image of a small, friendly-looking generic white humanoid robot about knee-to-waist height standing on a rug in a bright, empty modern family living room, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   }
+  ]
+ },
+ {
+  "slug": "chinese-humanoid-makers-seek-trials-in-south-korea",
+  "date": "2026-10-24",
+  "updated": "2026-10-24",
+  "cat": "Industry",
+  "title": "Chinese humanoid makers seek factory and cafe trials in South Korea",
+  "summary": "UBTech, Anyverse Dynamics and other Chinese firms are pursuing trials in South Korea as Seoul proposes 3.1 trillion won for physical AI, Korea Times reports.",
+  "body": [
+   "<strong>Short answer:</strong> Chinese humanoid robot makers including UBTech, Anyverse Dynamics, AgiBot and Unitree are trying to win work in South Korea through factory trials and commercial projects as Seoul raises spending on physical AI, The Korea Times reported on 23 October 2026, in an article also published by the South China Morning Post.",
+   "According to the report, UBTech announced in July that it would trial humanoids on a Korean automotive parts line with local partner Duksan JM Robotics and parts maker AJIN Industrial, and a UBTech executive said several models are undergoing on-site tests in the country, without giving details. The same executive said Seoul's Galaxy Robot Park, a robot-themed entertainment venue, bought UBTech's U1 model for around 170,000 yuan (about $25,000). Beijing start-up Anyverse Dynamics told the paper it plans trials in Korean cafes and other service settings in the fourth quarter before moving into manufacturing, and is working on product certification.",
+   "Chinese customs data cited in the report show South Korea was China's third-largest export market by value for \"intelligent bionic robots\" in the first nine months of 2026, at $19.99 million, behind the United States and Japan; the category, introduced this year, covers humanoid robots and robot dogs. The report says Korea's KC certification rules led UBTech to adapt its communication modules and radio settings for the local market.",
+   "On policy, the report says the government has proposed 3.1 trillion won (about $2.34 billion) for physical AI in 2027, more than triple this year's figure, and that the industry ministry's M.AX programme targets 500 AI factories by 2030. Korean companies are also active: the paper cites LG Electronics' robot data factory in Seoul, Samsung Electronics' new Robotics eXperience division and Hyundai Motor Group's training of Boston Dynamics' Atlas humanoids in Georgia ahead of a planned 2028 manufacturing deployment. A Counterpoint Research analyst told the paper the lack of locally built humanoids at scale has created an opening for Chinese suppliers, but that they need local customers willing to run proof-of-concept trials. We previously covered Korea's <a href=\"korea-safety-rules-robros-humanoids-factories.html\">safety-rule exemption for a Robros factory pilot</a> and <a href=\"china-100000-humanoids-2026-first-national-standards.html\">China's humanoid output and standards push</a>."
+  ],
+  "analysis": [
+   "Opinion: South Korea pairs dense manufacturing with an aggressive policy push but few local humanoid suppliers at scale, which makes it a logical test market for Chinese makers. The report points to certification and finding local trial partners as the practical hurdles."
+  ],
+  "disclaimer": "Figures are as reported by The Korea Times and the South China Morning Post, citing company executives, Chinese customs data and government plans; budget figures are proposals. This is not investment advice.",
+  "sources": [
+   {
+    "title": "The Korea Times: China's humanoids go job hunting amid Korea's bets on physical AI (23 Oct 2026)",
+    "url": "https://www.koreatimes.co.kr/business/tech-science/20261023/chinas-humanoids-go-job-hunting-amid-koreas-bets-on-physical-ai"
+   },
+   {
+    "title": "South China Morning Post: China's humanoid robots hunt for work in South Korea as Seoul bets on physical AI (23 Oct 2026)",
+    "url": "https://www.scmp.com/tech/tech-trends/article/3371888/chinas-humanoid-robots-hunt-work-south-korea-seoul-bets-physical-ai"
+   }
+  ],
+  "inline_images": [
+   {
+    "file": "chinese-humanoid-makers-seek-trials-in-south-korea-1.jpg",
+    "alt": "A humanoid robot working beside an automotive parts conveyor in a factory",
+    "caption": "Scene: a humanoid at an auto-parts line",
+    "insert_after_paragraph": 2,
+    "brief": "Photoreal image of a generic grey humanoid robot picking metal automotive parts from a conveyor in a clean modern factory, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   },
+   {
+    "file": "chinese-humanoid-makers-seek-trials-in-south-korea-2.jpg",
+    "alt": "A humanoid robot clearing a table in an empty modern cafe",
+    "caption": "Scene: a humanoid clearing a cafe table",
+    "insert_after_paragraph": 3,
+    "brief": "Photoreal image of a generic white humanoid robot clearing cups from a table in an empty, softly lit modern cafe, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   }
+  ]
+ },
+ {
+  "slug": "why-ucla-phonebot-smartphone-humanoid-is-trending",
+  "date": "2026-10-24",
+  "updated": "2026-10-24",
+  "cat": "Research",
+  "kind": "trending",
+  "title": "Why UCLA's PhoneBot, a small humanoid run by a smartphone, is getting attention",
+  "summary": "UCLA's open-source PhoneBot uses an Android phone for sensing and computing in a 48 cm biped that its researchers say costs about $400 without the phone.",
+  "why": [
+   "What happened: UCLA's RoMeLa lab described PhoneBot in an October 2026 arXiv preprint, New Atlas covered it on 12 October, and it appeared among X's trending robotics stories on 23 October.",
+   "Why it is being discussed: the low estimated parts cost of about $400 excluding the phone, and fully open hardware and software, compared with small research humanoids the paper lists at roughly $3,500 to $13,800 (arXiv, New Atlas).",
+   "What to watch: whether others build and extend the open design, and the limits the authors list, including no arms and walking trained only on flat ground."
+  ],
+  "body": [
+   "<strong>Short answer:</strong> PhoneBot is a small open-source humanoid from UCLA's Robotics and Mechanisms Laboratory (RoMeLa) that uses an ordinary Android smartphone as its camera, balance sensor, screen and main computer. The researchers estimate its parts cost at about $400 excluding the phone, according to their arXiv preprint and New Atlas, and the project was among X's trending robotics stories on 23 October 2026.",
+   "According to the paper, the robot is 48.3 cm tall, weighs 1.8 kg including the phone, and uses 13 low-cost servo motors: six in each leg plus one that turns the torso. The phone is not wired to the body; it sends joint commands over Wi-Fi to a small onboard computer that drives the motors, which the authors say makes it easier to swap in different phones.",
+   "The walking controller was trained in simulation with reinforcement learning, and the team reports demonstrations of walking, following a person using the phone's camera, and standing up from a face-down position. The researchers say they tested the app on four Android phones, including a 2017 Honor 9 and three prepaid models costing about $50 to $80, and that camera-based mapping did not run on the Honor 9. Speech recognition and the language model currently run on a nearby laptop rather than on the robot, the paper says.",
+   "The authors also list limitations: PhoneBot has no arms, its walking was trained only for flat ground, and its small motors limit what it can carry. The design files and code are open source and aimed at education and research, according to the project. For another example of low-cost humanoid research, see our report on <a href=\"supermimic-berkeley-humanoid-control-one-gpu.html\">Berkeley's SuperMimic controller trained on one GPU</a>."
+  ],
+  "disclaimer": "Cost and performance figures are the researchers' own, from a preprint and the project materials; they have not been independently verified. Cost comparisons with other platforms are approximate and not like-for-like.",
+  "sources": [
+   {
+    "title": "arXiv: PhoneBot: A Low-Cost Open Humanoid Robot Platform Reusing Smartphones (Oct 2026)",
+    "url": "https://arxiv.org/abs/2610.08737"
+   },
+   {
+    "title": "New Atlas: UCLA scientists turn an Android phone into a walking robot companion (12 Oct 2026)",
+    "url": "https://newatlas.com/robotics/ucla-scientists-android-phone-walking-robot-companion/"
+   },
+   {
+    "title": "X trending story: UCLA's PhoneBot Turns Smartphones into Walking Robots (23 Oct 2026)",
+    "url": "https://x.com/i/trending/2113761953625891247"
+   }
+  ],
+  "inline_images": [
+   {
+    "file": "why-ucla-phonebot-smartphone-humanoid-is-trending-1.jpg",
+    "alt": "A small walking robot with a smartphone mounted as its torso on a lab bench",
+    "caption": "Scene: a small biped robot carrying a smartphone",
+    "insert_after_paragraph": 2,
+    "brief": "Photoreal image of a small knee-high bipedal robot built from dark servo motors and plastic brackets with a blank-screened smartphone mounted as its torso, standing on a lab table, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   },
+   {
+    "file": "why-ucla-phonebot-smartphone-humanoid-is-trending-2.jpg",
+    "alt": "Close view of small servo motors and brackets forming a robot leg",
+    "caption": "Scene: servo motors forming a small robot leg",
+    "insert_after_paragraph": 3,
+    "brief": "Photoreal macro shot of small dark hobby servo motors and aluminium brackets forming a miniature robot leg on a workbench, shallow depth of field, 16:9. No people, no text or logos.",
+    "note": "Generic scene; not a photo of the actual event, product or company robot."
+   }
+  ]
+ },
+ {
   "slug": "unitree-rehearsal-self-evolving-robot-ai",
   "date": "2026-10-22",
   "updated": "2026-10-23",
