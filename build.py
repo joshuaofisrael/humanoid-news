@@ -21,7 +21,7 @@ OUT = "docs"; ASSET_VER = "4"
 TODO_IMAGES = []
 A = json.load(open("content/articles.json", encoding="utf-8"))
 A.sort(key=lambda a: a["date"], reverse=True)
-PUB = {"@type": "Organization", "name": "HumanoidBeat", "parentOrganization": {"@type": "Organization", "name": "Joshua Israel Ventures LLC"}, "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
+PUB = {"@type": "Organization", "name": "HumanoidBeat", "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
 
 def esc(s): return html.escape(s, quote=True)
 def fd(d): return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
