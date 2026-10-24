@@ -21,7 +21,7 @@ OUT = "docs"; ASSET_VER = "4"
 TODO_IMAGES = []
 A = json.load(open("content/articles.json", encoding="utf-8"))
 A.sort(key=lambda a: a["date"], reverse=True)
-PUB = {"@type": "Organization", "name": "HumanoidBeat", "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
+PUB = {"@type": "Organization", "name": "HumanoidBeat", "parentOrganization": {"@type": "Organization", "name": "Joshua Israel Ventures LLC"}, "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
 
 def esc(s): return html.escape(s, quote=True)
 def fd(d): return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
@@ -111,7 +111,7 @@ def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None
 <header class="site-h"><div class="w"><a class="logo" href="{r}index.html" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{r}index.html">News</a><a href="{r}about.html">About</a><a href="{r}contact.html">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
 <main id="main">{content}</main>
 <footer class="site-f"><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}standards.html">Editorial standards</a> · <a href="{r}corrections.html">Corrections</a> · <a href="{r}contact.html">Contact</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}feed.xml">RSS</a></p>
-<p>© 2026 HumanoidBeat. All rights reserved.</p></div></footer>
+</div></footer>
 <script defer src="{r}assets/app.js?v={ASSET_VER}"></script>{beacon}</body></html>"""
     p = os.path.join(OUT, path); os.makedirs(os.path.dirname(p) or OUT, exist_ok=True); open(p, "w", encoding="utf-8").write(h)
 
@@ -212,6 +212,8 @@ legal = {
 "privacy.html": ("Privacy Policy", f"<h1>Privacy Policy</h1><p>This policy explains how {L}, operator of {NAME}, handles information.</p><h2>What we collect</h2><p>{analytics}Our hosting provider may log standard technical data (such as IP address and browser type) for security and operations. If you contact us through the contact form, your name, email address and message are sent by email to the site owner via the FormSubmit.co form service, and we keep them only to respond.</p><h2>Advertising</h2><p>This site uses Google AdSense. Google and its advertising partners use cookies and similar technologies to serve and measure ads, including ads based on your previous visits to this or other websites. You can learn how Google uses data from sites that use its services, and manage ad personalisation, at <a href=\"https://policies.google.com/technologies/ads\" rel=\"noopener\">policies.google.com/technologies/ads</a>. Visitors in the EU and UK are shown a consent choice delivered by Google. We do not run a separate consent banner.</p><h2>Sharing</h2><p>We do not sell personal information.</p><h2>Your rights</h2><p>You may request access to or deletion of information you sent us through our <a href=\"contact.html\">contact page</a>.</p><h2>Governing law</h2><p>This policy is governed by the laws of the State of Florida, USA.</p>"),
 "disclaimer.html": ("Disclaimer", f"<h1>Disclaimer</h1><p>Content on {NAME} is for general information only and is not investment, legal or professional advice. We work to verify facts against cited sources but cannot guarantee completeness or accuracy. Reports of funding, earnings or company plans are summaries of announcements, not recommendations to buy, sell or hold any security. Images are AI-generated illustrations and not photographs of real events. {NAME} is not affiliated with any company it covers unless stated. Company names, product names and logos are trademarks of their owners. {NAME} is owned and operated by {L}, and this disclaimer is governed by the laws of the State of Florida, USA.</p>"),
 }
+CR = "<p>© 2026 Joshua Israel Ventures LLC. All rights reserved. HumanoidBeat is a trade name of Joshua Israel Ventures LLC, a Florida limited liability company.</p>"
+for f in ("terms.html", "privacy.html", "disclaimer.html"): legal[f] = (legal[f][0], legal[f][1] + CR)
 for f, (t, c) in legal.items(): page(f, f"{t} | {NAME}", (f"{t} for {NAME}, operated by {LLC}." if f in ("terms.html","privacy.html","disclaimer.html") else f"{t} for {NAME}."), f'<div class="prose page">{c}</div>', 0)
 page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/index.html">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
 
