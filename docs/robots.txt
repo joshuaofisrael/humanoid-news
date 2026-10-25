@@ -50,3 +50,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://humanoidbeat.com/sitemap.xml
+Sitemap: https://humanoidbeat.com/news-sitemap.xml

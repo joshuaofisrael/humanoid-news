@@ -26,6 +26,13 @@
 - [South Korea grants safety-rule exemption for 20 Robros humanoids in factory pilot](https://humanoidbeat.com/news/korea-safety-rules-robros-humanoids-factories.html): A Korean regulatory-sandbox committee granted Robros an exemption so 20 of its humanoid robots can work near people at four companies' sites, Seoul Economic Daily reports.
 - [Minerva Humanoids says it raised about $10M pre-seed led by General Catalyst](https://humanoidbeat.com/news/minerva-humanoids-10m-pre-seed-general-catalyst.html): San Francisco start-up Minerva Humanoids said on 6 October 2026 it has raised about $10 million in pre-seed funding led by General Catalyst, according to its press release.
 
+## Topics
+- [Unitree humanoid robot news](https://humanoidbeat.com/topics/unitree.html)
+- [Humanoid robots in China](https://humanoidbeat.com/topics/china.html)
+- [Humanoid robot research and AI models](https://humanoidbeat.com/topics/research.html)
+- [Humanoid robots at work: pilots and deployments](https://humanoidbeat.com/topics/deployments.html)
+- [Humanoid robot funding, regulation and standards](https://humanoidbeat.com/topics/funding-policy.html)
+
 ## About
 - [About](https://humanoidbeat.com/about.html)
 - [Editorial standards](https://humanoidbeat.com/standards.html)

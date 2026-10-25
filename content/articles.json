@@ -53,7 +53,8 @@
    "ai": true,
    "alt": "A slim grey-and-white humanoid robot standing in an open work cell in a bright university robotics training hall (AI-generated image)",
    "note": "Generic illustration; not a photo of the actual event, product or company robot."
-  }
+  },
+  "seo_title": "NEURA unveils lighter 4NE1 Gen 4 humanoid; TUM RoboGym opens"
  },
  {
   "slug": "generative-bionics-amd-physical-ai-data-factory-italy",
@@ -105,7 +106,8 @@
    "ai": true,
    "alt": "Rows of identical white humanoid robots practising tasks at assembly stations while overhead cameras record them (AI-generated image)",
    "note": "Generic illustration; not a photo of the actual event, product or company robot."
-  }
+  },
+  "seo_title": "Generative Bionics and AMD plan humanoid data factory in Italy"
  },
  {
   "slug": "aimoga-mobo-family-companion-humanoid-preorders",
@@ -145,7 +147,8 @@
    "ai": true,
    "alt": "A small white companion robot standing on a rug in a sunny, empty family living room (AI-generated image)",
    "note": "Generic illustration; not a photo of the actual event, product or company robot."
-  }
+  },
+  "seo_title": "AiMOGA opens pre-orders for Mobo family companion humanoid"
  },
  {
   "slug": "chinese-humanoid-makers-seek-trials-in-south-korea",
@@ -197,7 +200,8 @@
    "ai": true,
    "alt": "A grey humanoid robot handling metal engine parts on a conveyor in a modern factory (AI-generated image)",
    "note": "Generic illustration; not a photo of the actual event, product or company robot."
-  }
+  },
+  "seo_title": "Chinese humanoid makers seek trials in South Korea"
  },
  {
   "slug": "why-ucla-phonebot-smartphone-humanoid-is-trending",
@@ -256,7 +260,8 @@
    "ai": true,
    "alt": "A small two-legged robot made of black servo motors with a smartphone mounted as its torso, on a lab bench (AI-generated image)",
    "note": "Generic illustration; not a photo of the actual event, product or company robot."
-  }
+  },
+  "seo_title": "Why UCLA's PhoneBot smartphone humanoid is trending"
  },
  {
   "slug": "unitree-rehearsal-self-evolving-robot-ai",
@@ -310,7 +315,8 @@
     "brief": "Photoreal close shot of two monitors on a desk showing abstract wireframe humanoid skeleton simulations, no readable text, no people, no logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "seo_title": "Unitree is building Rehearsal, a self-improving robot AI loop"
  },
  {
   "slug": "why-unitree-h2-x-guardian-video-is-trending",
@@ -434,7 +440,8 @@
     "brief": "Photoreal wide shot of a quiet robotics test facility with a single generic humanoid walking on a treadmill at the centre, empty workbenches around it, no people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "seo_title": "Why Figure 03's nine-day treadmill test is trending"
  },
  {
   "slug": "tesla-optimus-deliveries-late-2027",
@@ -476,7 +483,8 @@
    }
   ],
   "disclaimer": "The dates, volumes and plans above are statements by Tesla management on an earnings call and are targets, not guarantees. We have not independently verified them. This article is a report of announcements and is not investment advice.",
-  "updated": "2026-10-23"
+  "updated": "2026-10-23",
+  "seo_title": "Tesla targets late 2027 for external Optimus deliveries"
  },
  {
   "slug": "fotex-unitree-hive-grocery-restocking-pilot",
@@ -518,7 +526,8 @@
    }
   ],
   "disclaimer": "Plans and timelines are those reported by ESM Magazine from the companies' statements and may change. The image is an AI-generated illustration, not a photo of the Føtex trial.",
-  "updated": "2026-10-23"
+  "updated": "2026-10-23",
+  "seo_title": "Føtex pilots Unitree humanoids for overnight restocking"
  },
  {
   "slug": "supermimic-berkeley-humanoid-control-one-gpu",
@@ -575,7 +584,8 @@
     "brief": "Photoreal scene of a generic humanoid robot in a deep crouch on a padded lab floor, preparing to jump, soft lab lighting, no people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "seo_title": "SuperMimic trains humanoid control in 3 hours, authors say"
  },
  {
   "slug": "nvidia-isaac-agile-one-sn-reference-humanoid",
@@ -616,7 +626,8 @@
    }
   ],
   "disclaimer": "This article summarises a company press release. Performance, safety-integration and availability statements are NVIDIA's and Agile Robots' own forward-looking claims and have not been independently verified. NVIDIA is a listed company; this is not investment advice.",
-  "updated": "2026-10-23"
+  "updated": "2026-10-23",
+  "seo_title": "NVIDIA expands Isaac; Agile Robots unveils Agile ONE SN"
  },
  {
   "slug": "schaeffler-taicang-humanoids-build-humanoid-actuators",
@@ -670,7 +681,8 @@
     "brief": "Photoreal scene of a generic humanoid robot practising lifting plastic storage containers from a shelf in a tidy robot training area, floor markings, no people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "seo_title": "Schaeffler Taicang plant uses humanoids to build humanoid parts"
  },
  {
   "slug": "eka-robotics-150m-series-a-vision-force-action",
@@ -728,7 +740,8 @@
     "brief": "Photoreal scene of a generic robot arm placing small packages onto a moving conveyor belt in a bright, tidy warehouse, no people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "seo_title": "Eka Robotics announces $150M Series A for robot manipulation"
  },
  {
   "slug": "china-100000-humanoids-2026-first-national-standards",
@@ -786,7 +799,8 @@
     "brief": "Photoreal scene of a generic humanoid robot standing on a testing platform in a laboratory with sensors and cameras on stands, calm lighting, no people, no text or logos.",
     "note": "Generic scene; not a photo of the actual event, product or company robot."
    }
-  ]
+  ],
+  "seo_title": "China expects over 100,000 humanoids built in 2026"
  },
  {
   "slug": "korea-safety-rules-robros-humanoids-factories",
@@ -828,7 +842,8 @@
    }
   ],
   "disclaimer": "This is a demonstration exemption for one project, as reported by Seoul Economic Daily, not a general change to Korean safety law. Details come from that single report.",
-  "updated": "2026-10-23"
+  "updated": "2026-10-23",
+  "seo_title": "South Korea grants Robros humanoid factory pilot an exemption"
  },
  {
   "slug": "minerva-humanoids-10m-pre-seed-general-catalyst",
@@ -869,7 +884,8 @@
    }
   ],
   "disclaimer": "All details come from the company's own press release and have not been independently verified; the funding amount is described by the company as approximate. This article reports an announcement and is not investment advice.",
-  "updated": "2026-10-23"
+  "updated": "2026-10-23",
+  "seo_title": "Minerva Humanoids says it raised about $10M pre-seed"
  },
  {
   "slug": "agility-digit-5-nvidia-igx-thor-pittsburgh-hub",
@@ -907,7 +923,8 @@
    "ai": true,
    "alt": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
    "note": "Generic illustration; not a photo of Agility's Digit robot or facilities."
-  }
+  },
+  "seo_title": "Agility moves Digit 5 to NVIDIA IGX Thor, expands in Pittsburgh"
  },
  {
   "slug": "agco-agility-digit-pilot-hesston-kansas",
@@ -937,7 +954,8 @@
    "ai": true,
    "alt": "A humanoid robot stacking metal machine parts beside a large green tractor on a factory floor (AI-generated image)",
    "note": "Generic illustration; not a photo of AGCO's facility or Agility's Digit robot."
-  }
+  },
+  "seo_title": "AGCO plans Agility Digit humanoid pilot in Kansas from 2027"
  },
  {
   "slug": "figure-04-design-lock-index-data-helix-3",
@@ -971,7 +989,8 @@
    "ai": true,
    "alt": "A partly assembled white humanoid robot on a test stand in a clean engineering lab with battery packs on a bench (AI-generated image)",
    "note": "Generic illustration; not a photo of Figure 04 or Figure's facilities."
-  }
+  },
+  "seo_title": "Figure 04 in design lock, Helix 3.0 teased at all-hands"
  },
  {
   "slug": "alibaba-amap-lambda0-humanoid-model-human-video",
@@ -1008,7 +1027,8 @@
    "ai": true,
    "alt": "A small grey humanoid robot placing a plastic bottle into a pedal bin in a bright research lab (AI-generated image)",
    "note": "Generic illustration; not a photo of the research team's robot or lab."
-  }
+  },
+  "seo_title": "Alibaba Amap's λ0 humanoid model learns from human video"
  },
  {
   "slug": "xpeng-iron-vla-2-gesture-demo",
@@ -1041,6 +1061,7 @@
    "ai": true,
    "alt": "A sleek humanoid robot raising an open hand for a high five in a bright, empty robotics lab (AI-generated image)",
    "note": "Generic illustration; not a photo of XPENG's IRON robot. No people shown."
-  }
+  },
+  "seo_title": "XPENG IRON humanoid shows handshakes, fist bumps, high fives"
  }
 ]

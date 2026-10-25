@@ -15,13 +15,14 @@ ISSUES = "https://github.com/joshuaofisrael/humanoid-news/issues"; BUILD_DATE = 
 CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
-OUT = "docs"; ASSET_VER = "4"
+OUT = "docs"; ASSET_VER = "5"
 # ----------------------------------------------------------------
 
 TODO_IMAGES = []
+SAME_AS = ["https://x.com/TheCharismaCat1"]  # verified real profiles only (Tech Beat Daily on X, the news account that posts HumanoidBeat stories)
 A = json.load(open("content/articles.json", encoding="utf-8"))
 A.sort(key=lambda a: a["date"], reverse=True)
-PUB = {"@type": "Organization", "name": "HumanoidBeat", "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}}
+PUB = {"@type": "Organization", "name": "HumanoidBeat", "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}, "sameAs": SAME_AS}
 
 def esc(s): return html.escape(s, quote=True)
 def fd(d): return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
@@ -151,6 +152,40 @@ def card(a, feat=False, eager=False):
     return (f'<article class="card reveal{" feat" if feat else ""}">{im}<div class="tx">{tag}<span class="tag">{esc(a["cat"])}</span>'
             f'<h3><a href="news/{a["slug"]}.html">{esc(a["title"])}</a></h3><p class="meta"><time datetime="{a["date"]}">{fd(a["date"])}</time></p><p>{esc(a["summary"])}</p></div></article>')
 
+# ---------------------------------------------------------------- topic hubs, related links, SEO titles
+HUB_DEFS = [  # (slug, name, h1, intro, regex on title+summary+cat). A hub is published only with >= 3 articles (no thin pages).
+    ("unitree", "Unitree", "Unitree humanoid robot news", "Every HumanoidBeat story about Unitree, the Chinese maker of the H1, H2 and G1 humanoids: products, software, pilots and the attention its videos draw. Newest first; each story links to its sources.", r"Unitree"),
+    ("figure", "Figure", "Figure AI humanoid robot news", "Every HumanoidBeat story about Figure and its Figure 03 and Figure 04 humanoids and Helix models. Newest first; each story links to its sources.", r"\bFigure( 0\d|'s| says| AI)|^Figure$"),
+    ("agility-robotics", "Agility Robotics", "Agility Robotics and Digit news", "Every HumanoidBeat story about Agility Robotics and its Digit humanoid: hardware, compute partners and factory pilots. Newest first; each story links to its sources.", r"Agility|\bDigit\b"),
+    ("nvidia", "NVIDIA", "NVIDIA and humanoid robots", "HumanoidBeat coverage of NVIDIA's role in humanoid robotics, including its Isaac platform and IGX Thor compute, and the robot makers building on them. Newest first; each story links to its sources.", r"NVIDIA"),
+    ("china", "China", "Humanoid robots in China", "HumanoidBeat coverage of China's humanoid robot industry: output forecasts, national standards, and companies such as Unitree, XPENG, AiMOGA and Alibaba's Amap team. Newest first; each story links to its sources.", r"China|Chinese|Unitree|XPENG|Alibaba|AiMOGA|Taicang|UBTECH"),
+    ("research", "Research", "Humanoid robot research and AI models", "HumanoidBeat coverage of humanoid robot research: control methods, robot foundation models and new training approaches, as described by their authors. Newest first; each story links to its sources.", r"^Research$|SuperMimic|λ0|PhoneBot|Rehearsal|Helix|VLA"),
+    ("deployments", "Pilots and deployments", "Humanoid robots at work: pilots and deployments", "HumanoidBeat coverage of humanoid robots being trialled or used in factories, shops and warehouses, and of companies' delivery targets. Newest first; each story links to its sources.", r"pilot|Pilot|factor|restock|deliveries|trials|Deployments"),
+    ("funding-policy", "Funding and policy", "Humanoid robot funding, regulation and standards", "HumanoidBeat coverage of money and rules in humanoid robotics: funding rounds as announced by the companies, and government standards and safety decisions. Newest first; each story links to its sources. Nothing here is investment or legal advice.", r"^Funding$|^Policy$|Series A|pre-seed|standards|safety-rule"),
+]
+HUB_EXCLUDE = {"deployments": ("generative-bionics-amd-physical-ai-data-factory-italy",)}  # regex false positives
+def _hay(a): return f'{a["title"]} {a["summary"]}\n{a["cat"]}'
+HUBS = []
+for hs, hn, h1, intro, rx in HUB_DEFS:
+    items = [a for a in A if re.search(rx, _hay(a), re.M) and a["slug"] not in HUB_EXCLUDE.get(hs, ())]
+    if len(items) >= 3: HUBS.append({"slug": hs, "name": hn, "h1": h1, "intro": intro, "items": items})
+for a in A: a["_hubs"] = [h for h in HUBS if a in h["items"]]
+def related(a, n=4):
+    sc = []
+    for b in A:
+        if b is a: continue
+        k = sum(1 for h in a["_hubs"] if b in h["items"]) * 2 + (b["cat"] == a["cat"]) * 3
+        if k: sc.append((k, b["date"], b))
+    sc.sort(key=lambda x: (x[0], x[1]), reverse=True)
+    out = [x[2] for x in sc[:n]]
+    for b in A:
+        if len(out) >= n: break
+        if b is not a and b not in out: out.append(b)
+    return out
+def seo_title(a):
+    t = a.get("seo_title") or a["title"]
+    return t + " | HumanoidBeat" if len(t) + 15 <= 65 else t
+
 trend = [a for a in A if a.get("kind") == "trending"][:4]
 rest = [a for a in A if a not in trend]
 sections = ""
@@ -158,10 +193,23 @@ if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it
 sections += '<section class="sec" id="latest"><div class="w"><h2 class="sh">Latest news</h2><div class="grid">' + "".join(card(a, feat=(i == 0), eager=(i == 0)) for i, a in enumerate(rest)) + '</div></div></section>'
 cos = ["Tesla Optimus", "Figure", "Agility Digit", "Boston Dynamics Atlas", "Unitree", "1X NEO", "Apptronik", "UBTECH", "XPeng IRON", "NVIDIA GR00T"]
 sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join(f"<li>{c}</li>" for c in cos) + "</ul></div></section>"
+if HUBS: sections += '<section class="sec"><div class="w"><h2 class="sh">Browse by topic</h2><ul class="chips hubs">' + "".join(f'<li><a href="topics/{h["slug"]}.html">{esc(h["name"])} ({len(h["items"])})</a></li>' for h in HUBS) + "</ul></div></section>"
+FAQ = [
+    ("What does HumanoidBeat cover?", f"HumanoidBeat covers news about humanoid robots from any company or lab, including Tesla Optimus, Figure, Agility Robotics, Boston Dynamics, Unitree, 1X, XPENG and NVIDIA's robotics platforms. Stories cover new robots, AI models, factory and retail pilots, funding announcements, and government standards and safety rules."),
+    ("Where do your facts come from?", "Every article lists its sources at the bottom with links, such as company announcements, regulator releases, research papers and reputable news outlets. We attribute company claims to the company, write in our own words, and leave out anything we cannot trace to a cited source."),
+    ("How often do you publish?", "We publish new humanoid robotics stories on most days, usually several a day when there is real news. The newest stories are at the top of this page and in our RSS feed."),
+    ("Are the images real photos?", "No. Images on HumanoidBeat are AI-generated, photorealistic illustrations, and each one is captioned \"AI-generated image\". They do not show real people or the actual events described."),
+    ("What happens if you get something wrong?", "We correct it in the article, update its \"Last updated\" date, and log significant corrections on our corrections page. You can report an error through the contact page."),
+    ("How can I contact HumanoidBeat?", "Use the contact form on our contact page for tips, corrections or other questions. Corrections can also be reported on our public issue tracker, which is linked from the contact page."),
+    ("Is anything on HumanoidBeat investment advice?", "No. Articles about funding rounds or listed companies report what was announced. They are not recommendations to buy, sell or hold any security."),
+]
+FAQ_LINKS = {"What happens if you get something wrong?": ' See the <a href="corrections.html">corrections policy</a>.', "How can I contact HumanoidBeat?": ' Go to the <a href="contact.html">contact page</a>.', "Where do your facts come from?": ' Read our <a href="standards.html">editorial standards</a>.'}
+sections += '<section class="sec faq" id="faq"><div class="w prose"><h2 class="sh">Frequently asked questions</h2>' + "".join(f'<details><summary><h3>{esc(q)}</h3></summary><p>{esc(ans)}{FAQ_LINKS.get(q, "")}</p></details>' for q, ans in FAQ) + "</div></section>"
+FAQ_LD = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in FAQ]}
 hero = (f'<section class="hero hero-photo"><picture><source type="image/webp" srcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" sizes="100vw">'
         f'<img class="hero-bg" src="img/hero.jpg" width="1920" height="1080" alt="Dark metallic humanoid robot with glowing cyan eyes in a factory (AI-generated image)" fetchpriority="high" decoding="async"></picture>'
         f'<div class="hero-shade"></div>{HERO_SVG}<div class="w"><div class="hero-tx"><span class="kicker">Humanoid robotics · daily</span><h1>The humanoid robot race, <em>answered first.</em></h1><p>{esc(DESC)}</p><a class="btn" href="#latest">Read the latest</a><a class="btn ghost" href="feed.xml">RSS feed</a><p class="cap">AI-generated image</p></div></div></section>')
-page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + sections, 0, extra_head='<link rel="preload" as="image" type="image/webp" href="img/hero-1200.webp" imagesrcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">')
+page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + sections, 0, ld=FAQ_LD, extra_head='<link rel="preload" as="image" type="image/webp" href="img/hero-1200.webp" imagesrcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">')
 
 for a in A:
     u = f"{SITE_URL}/news/{a['slug']}.html"
@@ -188,8 +236,11 @@ for a in A:
         why = '<aside class="why"><h2>Why it\'s trending</h2><ul>' + "".join(f"<li>{w}</li>" for w in a["why"]) + "</ul></aside>"
     src = "".join(f'<li><a href="{esc(s["url"])}" rel="noopener">{esc(s["title"])}</a></li>' for s in a["sources"])
     tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
-    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published <time datetime="{a["date"]}">{fd(a["date"])}</time> · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div><p><a href="../index.html">← All news</a></p></article>'
-    page(f"news/{a['slug']}.html", f"{a['title']} | {NAME}", a["summary"], c, 1, ld, "article", a["_og"])
+    rel = '<aside class="related"><h2>Related coverage</h2><ul>' + "".join(f'<li><a href="{b["slug"]}.html">{esc(b["title"])}</a> <span class="meta">· {fd(b["date"])}</span></li>' for b in related(a)) + "</ul>"
+    if a["_hubs"]: rel += '<p class="meta">More on: ' + " · ".join(f'<a href="../topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in a["_hubs"]) + "</p>"
+    rel += "</aside>"
+    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published <time datetime="{a["date"]}">{fd(a["date"])}</time> · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="../index.html">← All news</a></p></article>'
+    page(f"news/{a['slug']}.html", seo_title(a), a["summary"], c, 1, ld, "article", a["_og"])
 
 L = f"<strong>{LLC}</strong>"
 CORRECTIONS = [  # (date, article slug, text) - newest first; add an entry for every significant correction
@@ -215,20 +266,32 @@ legal = {
 CR = "<p>© 2026 Joshua Israel Ventures LLC. All rights reserved. HumanoidBeat is a trade name of Joshua Israel Ventures LLC, a Florida limited liability company.</p>"
 for f in ("terms.html", "privacy.html", "disclaimer.html"): legal[f] = (legal[f][0], legal[f][1] + CR)
 for f, (t, c) in legal.items(): page(f, f"{t} | {NAME}", (f"{t} for {NAME}, operated by {LLC}." if f in ("terms.html","privacy.html","disclaimer.html") else f"{t} for {NAME}."), f'<div class="prose page">{c}</div>', 0)
+os.makedirs(OUT + "/topics", exist_ok=True)
+for h in HUBS:
+    hu = f"{SITE_URL}/topics/{h['slug']}.html"
+    others = " · ".join(f'<a href="{o["slug"]}.html">{esc(o["name"])}</a>' for o in HUBS if o is not h)
+    lst = "".join(f'<li><a href="../news/{a["slug"]}.html"><strong>{esc(a["title"])}</strong></a><br><span class="meta"><time datetime="{a["date"]}">{fd(a["date"])}</time></span> {esc(a["summary"])}</li>' for a in h["items"])
+    hld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": h["h1"], "url": hu, "description": h["intro"], "publisher": PUB,
+           "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE_URL}/news/{a['slug']}.html", "name": a["title"]} for i, a in enumerate(h["items"])]}}
+    ht = f"{h['h1']} | HumanoidBeat"
+    page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], (h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"],
+         f'<div class="prose page hub"><p class="meta"><a href="../index.html">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p><ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
 page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/index.html">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
 
 # sitemap (with image extension), robots, llms, feed, indexnow key
-urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f, BUILD_DATE, None) for f in legal]
+urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + [(f, BUILD_DATE, None) for f in legal]
 def sm(u, d, im):
     x = f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod>"
     if im: x += f"<image:image><image:loc>{im['url']}</image:loc></image:image>"
     return x + "</url>"
 open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + "".join(sm(*x) for x in urls) + "</urlset>\n")
+_newest = max(a["date"] for a in A); _cut = (datetime.date.fromisoformat(_newest) - datetime.timedelta(days=2)).isoformat()
+open(OUT + "/news-sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' + "".join(f'<url><loc>{SITE_URL}/news/{a["slug"]}.html</loc><news:news><news:publication><news:name>HumanoidBeat</news:name><news:language>en</news:language></news:publication><news:publication_date>{a["date"]}</news:publication_date><news:title>{esc(a["title"])}</news:title></news:news></url>' for a in A if a["date"] >= _cut) + "</urlset>\n")
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "anthropic-ai", "PerplexityBot", "CCBot", "Google-Extended", "Applebot", "Applebot-Extended", "Bytespider", "Amazonbot", "Meta-ExternalAgent"]
 open(OUT + "/ads.txt", "w").write("google.com, pub-5681559774142917, DIRECT, f08c47fec0942fa0\n")
-open(OUT + "/robots.txt", "w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
+open(OUT + "/robots.txt", "w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/news-sitemap.xml\n")
 open(OUT + f"/{INDEXNOW_KEY}.txt", "w").write(INDEXNOW_KEY)
-open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
+open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + "\n## Topics\n" + "".join(f"- [{h['h1']}]({SITE_URL}/topics/{h['slug']}.html)\n" for h in HUBS) + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
 def rfc(d): return datetime.datetime.fromisoformat(d + "T12:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
 open(OUT + "/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>{NAME}</title><link>{SITE_URL}/</link><description>{esc(DESC)}</description><language>en</language><atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>' + "".join(f"<item><title>{esc(a['title'])}</title><link>{SITE_URL}/news/{a['slug']}.html</link><guid>{SITE_URL}/news/{a['slug']}.html</guid><pubDate>{rfc(a['date'])}</pubDate><description>{esc(a['summary'])}</description>" + (f'<media:content url="{a["_og"]["url"]}" type="image/jpeg" medium="image" width="1200" height="630"/>' if a["_og"] else "") + "</item>" for a in A) + "</channel></rss>\n")
 open(OUT + "/.nojekyll", "w").write("")
