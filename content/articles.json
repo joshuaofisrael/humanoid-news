@@ -870,5 +870,177 @@
   ],
   "disclaimer": "All details come from the company's own press release and have not been independently verified; the funding amount is described by the company as approximate. This article reports an announcement and is not investment advice.",
   "updated": "2026-10-23"
+ },
+ {
+  "slug": "agility-digit-5-nvidia-igx-thor-pittsburgh-hub",
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "cat": "Agility Robotics",
+  "title": "Agility moves Digit 5 onto NVIDIA IGX Thor and expands in Pittsburgh",
+  "summary": "Agility Robotics says Digit 5 will run on NVIDIA IGX Thor compute, and that it is opening a 50,000 sq ft Pittsburgh hub and holds over $300M in multi-year Digit 5 orders.",
+  "body": [
+   "<strong>Short answer:</strong> Agility Robotics said on 22 October 2026 that the general-availability version of its Digit 5 humanoid will standardise its onboard computing on NVIDIA IGX Thor modules, making NVIDIA the exclusive onboard compute supplier. A day earlier, on 21 October, the company announced a new 50,000-square-foot facility in Pittsburgh and said it has secured more than $300 million in multi-year Digit 5 orders, subject to contractual milestones, according to its press releases.",
+   "According to Agility, the change unifies Digit 5's onboard computing on NVIDIA IGX Thor modules and builds on its earlier decision to incorporate elements of NVIDIA's Halos safety platform into its own safety system, including the way Digit detects people around it. The company says it will also take part in NVIDIA's Halos AI Systems Inspection Lab, which will evaluate Digit's safety-related software, AI components and cybersecurity protections ahead of final third-party certification. Agility says early access to Digit 5 should begin in the first half of 2027, with availability widening over the following six to nine months for manufacturing, warehouse and distribution operators.",
+   "The Pittsburgh site, Agility says, will add about 35,000 square feet to its existing footprint in the city and serve as its centre of excellence for software and AI, and increase its capacity to deploy, monitor and service Digit robots for customers. The company says Digit already operates with GXO, Schaeffler and Toyota Motor Manufacturing Canada, and that it has added four customers in automotive, consumer goods and agriculture, including a <a href=\"agco-agility-digit-pilot-hesston-kansas.html\">pilot with farm-machinery maker AGCO</a>.",
+   "The $300 million figure needs context: Agility says the orders are subject to the satisfaction of certain contractual milestones, and it did not name the customers behind them. The Next Web reported that the announcements come as Agility prepares to list on Nasdaq through a merger with a blank-check company, Churchill Capital Corp XI, which the companies expect to close in the fourth quarter."
+  ],
+  "analysis": [
+   "Opinion: Standardising on one compute platform and pairing it with an outside safety inspection is the kind of unglamorous step that matters more for factory deployment than a new demo video. The order figure is large, but it depends on milestones and robot deployments that are still more than a year away, so the 2027 early-access programme is the thing to watch."
+  ],
+  "disclaimer": "Order values, deployment plans and timelines are Agility Robotics' own statements and have not been independently verified; the company describes the order figure as potential multi-year value, not current revenue. Agility is pursuing a public listing via a SPAC merger. This article is not investment advice.",
+  "sources": [
+   {
+    "title": "Agility Robotics: Agility Robotics Expands NVIDIA Collaboration as It Prepares Digit 5 for Commercial Scale (22 Oct 2026)",
+    "url": "https://www.agilityrobotics.com/content/agility-robotics-expands-nvidia-collaboration-as-it-prepares-digit-5-for-commercial-scale"
+   },
+   {
+    "title": "Agility Robotics: Agility Robotics Expands Pittsburgh Presence to Support Growing Customer Deployments (21 Oct 2026)",
+    "url": "https://www.agilityrobotics.com/content/agility-robotics-expands-pittsburgh-presence-to-support-growing-customer-deployments"
+   },
+   {
+    "title": "The Next Web: Agility's Digit 5 humanoid robot will run on Nvidia as it heads for Nasdaq (Oct 2026)",
+    "url": "https://thenextweb.com/news/agility-robotics-digit-5-nvidia-igx-thor"
+   }
+  ],
+  "image": {
+   "src": "src-img/agility-digit-5-nvidia-igx-thor-pittsburgh-hub-hero.jpg",
+   "ai": true,
+   "alt": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
+   "note": "Generic illustration; not a photo of Agility's Digit robot or facilities."
+  }
+ },
+ {
+  "slug": "agco-agility-digit-pilot-hesston-kansas",
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "cat": "Deployments",
+  "title": "AGCO plans a Digit humanoid pilot at its Hesston, Kansas, factory from 2027",
+  "summary": "Farm-machinery maker AGCO and Agility Robotics say they have signed a commercial agreement to pilot the Digit humanoid at AGCO's Hesston, Kansas, plant, starting in 2027.",
+  "body": [
+   "<strong>Short answer:</strong> AGCO, the agricultural machinery company behind brands such as Fendt and Massey Ferguson, and Agility Robotics announced on 20 October 2026 that they have signed a commercial agreement for a humanoid robot pilot at AGCO's production facility in Hesston, Kansas. The pilot is expected to begin in 2027, according to the companies' joint press release.",
+   "According to the release, Agility's Digit robot will initially support assembly and production work, including sorting and stacking parts and placing totes for storage. AGCO says the aim is to automate repetitive and physically demanding tasks, improve ergonomic safety and efficiency, and free employees for more skilled work.",
+   "\"This strategic relationship views humanoid robotics and AI as essential 'teammates' in building flexible, intelligent factories,\" said Thomas Enghof, AGCO's director of manufacturing technology, in the release. The companies say Digit will be paired with Agility Arc, Agility's cloud platform for deploying and managing robot fleets.",
+   "The announcement does not give the number of robots involved or the value of the agreement. Agility said the following day that AGCO is among four new customers as it <a href=\"agility-digit-5-nvidia-igx-thor-pittsburgh-hub.html\">prepares Digit 5 and expands in Pittsburgh</a>."
+  ],
+  "analysis": [
+   "Opinion: Farm-equipment plants build large, varied products in smaller volumes than car factories, which makes them a useful test of whether a general-purpose humanoid can handle less uniform work. Because the pilot does not start until 2027, there are no results yet to judge."
+  ],
+  "disclaimer": "Details come from the companies' own announcement and have not been independently verified. AGCO is a publicly listed company and Agility Robotics is pursuing a public listing; this article is not investment advice.",
+  "sources": [
+   {
+    "title": "AGCO: AGCO and Agility Robotics Advance Smart Manufacturing with Humanoid Robot Pilot in Hesston, Kansas, Facility (20 Oct 2026)",
+    "url": "https://news.agcocorp.com/2026-10-20-AGCO-and-Agility-Robotics-Advance-Smart-Manufacturing-with-Humanoid-Robot-Pilot-in-Hesston,-Kansas,-Facility"
+   }
+  ],
+  "image": {
+   "src": "src-img/agco-agility-digit-pilot-hesston-kansas-hero.jpg",
+   "ai": true,
+   "alt": "A humanoid robot stacking metal machine parts beside a large green tractor on a factory floor (AI-generated image)",
+   "note": "Generic illustration; not a photo of AGCO's facility or Agility's Digit robot."
+  }
+ },
+ {
+  "slug": "figure-04-design-lock-index-data-helix-3",
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "cat": "Figure",
+  "title": "Figure says Figure 04 is in design lock and teases Helix 3.0 in a public all-hands",
+  "summary": "In a published all-hands recording, Figure CEO Brett Adcock said Figure 04 has reached design lock, its Index app has 37.5 million human videos, and previewed Helix 3.0.",
+  "body": [
+   "<strong>Short answer:</strong> Figure AI CEO Brett Adcock published a recording of an internal all-hands meeting on 22 October 2026 in which he said the company's fourth-generation humanoid, Figure 04, has reached design lock, gave new figures for its human-video data programme, and teased its next AI model, Helix 3.0, according to reports by Humanoids Daily and TechRadar.",
+   "According to Humanoids Daily, Adcock said Figure 04's actuators were running in the test lab, ten full battery packs had been brought up the previous week, and the hand was on its fourth iteration, with months of work on millimetre-level fingertip tracking. He said Figure built its 1,000th Figure 03 over the summer, the outlet reported. TechRadar, writing on 24 October, said the Figure 03 production run is now in four figures.",
+   "On data, Adcock said Figure's Index app had received 37.5 million video uploads across 112 countries, with 1.26 million downloads and 210,000 people uploading at least one video in the previous week, and an estimated $8.1 million spent on data that week, according to Humanoids Daily. The outlet notes these are company-reported numbers and that uploads are not the same as cleaned training footage. Adcock also reported more than $2 billion in cash and referred to Figure's compute agreement with Nscale, and said Figure robots are operating in three US states.",
+   "The presentation closed with a Helix 3.0 teaser. Adcock described an internal result as \"baby AGI\" but did not share evaluation details or a release date, Humanoids Daily reported. Figure has not yet shown Figure 04 publicly. Earlier this month Figure also drew attention for a <a href=\"why-figure-03-treadmill-test-is-trending.html\">long-running Figure 03 treadmill test</a>."
+  ],
+  "analysis": [
+   "Opinion: Figure's bet is that huge volumes of human video plus large compute will produce general-purpose robot skills. The numbers are striking, but they describe inputs, not outcomes; until Figure publishes how Helix 3.0 performs on real tasks, the 'baby AGI' label is a claim rather than a result."
+  ],
+  "disclaimer": "All figures, including cash balance, data spending and production counts, are company statements made in an internal presentation and reported by third parties; they have not been independently verified. Figure is a private company. This article is not investment advice.",
+  "sources": [
+   {
+    "title": "Humanoids Daily: Figure 04 Reaches Design Lock as Adcock Details a Multibillion-Dollar AI Push (23 Oct 2026)",
+    "url": "https://www.humanoidsdaily.com/news/figure-all-hands-figure-04-index-data-helix-3"
+   },
+   {
+    "title": "TechRadar: Unitree says its 'self-evolving robots' are the next big leap for humanoids (24 Oct 2026)",
+    "url": "https://www.techradar.com/ai-platforms-assistants/unitree-says-its-self-evolving-robots-are-the-next-big-leap-for-humanoids-as-tesla-optimus-production-ramps-up-to-hit-20-000-robots-a-week"
+   }
+  ],
+  "image": {
+   "src": "src-img/figure-04-design-lock-index-data-helix-3-hero.jpg",
+   "ai": true,
+   "alt": "A partly assembled white humanoid robot on a test stand in a clean engineering lab with battery packs on a bench (AI-generated image)",
+   "note": "Generic illustration; not a photo of Figure 04 or Figure's facilities."
+  }
+ },
+ {
+  "slug": "alibaba-amap-lambda0-humanoid-model-human-video",
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "cat": "Research",
+  "title": "Alibaba's Amap team releases λ0, a humanoid model trained largely on human video",
+  "summary": "Researchers at Alibaba's Amap and Token Hub released λ0, a whole-body humanoid model trained on a 500-hour human video dataset; they report 62.5% success on four real-world tasks with a Unitree G1.",
+  "body": [
+   "<strong>Short answer:</strong> A team from Alibaba Group's Amap mapping business and its Token Hub unit has released λ0 (lambda zero), a model for controlling a humanoid robot's whole body that learns much of what it knows from first-person video of people. In a preprint on arXiv, the team reports that λ0 succeeded in 62.5% of real-world trials across four tasks on a Unitree G1 robot, compared with 40% for π0.5, the strongest rival it tested. The results have not been peer reviewed or reproduced by outside groups.",
+   "According to the paper, the key ingredient is HumanVerse, a 500-hour dataset of people doing everyday tasks while wearing a GoPro camera at a height matching the robot's own camera, with wearable trackers recording their body movement and hand motion reconstructed from the video. The team trains λ0 in stages, using HumanVerse in a middle stage before final tuning on robot demonstrations. The authors estimate human capture is roughly 3.4 times faster than collecting robot data, TSN reported.",
+   "The real-world tests covered four tasks with ten trials each, run by the authors on a Unitree G1 fitted with dexterous hands. The authors report that skipping the HumanVerse stage cut real-world success to 22.5%, which they present as the main evidence that the human data matters. They also report 90% success on the SIMPLE simulation benchmark, but note that this figure picks the best configuration per task and should not be read as a fixed-configuration comparison.",
+   "The code is available on GitHub under the Apache 2.0 licence, and TSN reported on 24 October that a mid-training checkpoint has been published on Hugging Face, while the HumanVerse dataset and the full final training and deployment workflows have not yet been released. The work comes as other companies, including <a href=\"figure-04-design-lock-index-data-helix-3.html\">Figure with its Index video programme</a>, also bet on human video to train robots."
+  ],
+  "analysis": [
+   "Opinion: The most persuasive number here is the team comparing its own model with and without human data, not the league table against rivals, which rests on ten trials per task run by the authors themselves. Independent groups will only be able to test the central claim once the dataset is released."
+  ],
+  "sources": [
+   {
+    "title": "arXiv 2610.18950: λ0: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation (Lambda-humanoid Team, Alibaba)",
+    "url": "https://arxiv.org/abs/2610.18950"
+   },
+   {
+    "title": "GitHub: LambdaHumanoid/openlambda",
+    "url": "https://github.com/LambdaHumanoid/openlambda"
+   },
+   {
+    "title": "TSN: Alibaba's Amap Releases λ0 Humanoid Model Trained on Human Video (24 Oct 2026)",
+    "url": "https://tsnmedia.org/amap-alibaba-lambda0-humanoid/"
+   }
+  ],
+  "image": {
+   "src": "src-img/alibaba-amap-lambda0-humanoid-model-human-video-hero.jpg",
+   "ai": true,
+   "alt": "A small grey humanoid robot placing a plastic bottle into a pedal bin in a bright research lab (AI-generated image)",
+   "note": "Generic illustration; not a photo of the research team's robot or lab."
+  }
+ },
+ {
+  "slug": "xpeng-iron-vla-2-gesture-demo",
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "cat": "XPENG",
+  "title": "XPENG shows IRON switching between handshakes, fist bumps and high fives",
+  "summary": "A new XPENG video shows its IRON humanoid adapting as a tester changes gestures mid-movement; XPENG credits its VLA 2.0 model, which it says re-evaluates the scene every 0.2 seconds.",
+  "body": [
+   "<strong>Short answer:</strong> XPENG has published a research-and-development demonstration in which its IRON humanoid robot keeps up as a person switches between a handshake, a fist bump and a high five without any spoken commands, according to Humanoids Daily and Humanoid Guide. XPENG attributes the behaviour to its VLA 2.0 system, which it says reassesses what the robot sees every 0.2 seconds.",
+   "In the video, as described by both outlets, a tester offers a handshake, closes it into a fist and then moves to an open palm, and IRON adjusts its response each time. When the tester moves a high five out of reach of the arm IRON is using, the robot answers with its other hand. XPENG says the upgraded model has stronger temporal understanding and behaviour prediction and runs on the robot itself, Humanoid Guide reported.",
+   "Both outlets note the limits of what was shown. According to Humanoids Daily, the footage is labelled as an R&D test version, and XPENG did not disclose success rates, how many attempts were filmed, or end-to-end response times; the 0.2-second figure describes how often the model updates, not how long a full response takes. XPENG CEO He Xiaopeng described the demo as a step toward everyday use, the outlet reported.",
+   "Humanoids Daily reports that XPENG is targeting mass production and first deliveries of IRON in the fourth quarter of 2026. Other recent humanoid demos have also drawn close scrutiny, such as <a href=\"why-unitree-h2-x-guardian-video-is-trending.html\">Unitree's H2-X guardian video</a>."
+  ],
+  "analysis": [
+   "Opinion: Reacting to a gesture that changes halfway through is a small but genuinely useful skill for robots meant to work around people. Without success rates or unedited trials, though, the clip shows what the system can do on a good take, not how reliably it does it."
+  ],
+  "sources": [
+   {
+    "title": "Humanoids Daily: XPENG Shows IRON Switching Between Handshakes, Fist Bumps and High-Fives (23 Oct 2026)",
+    "url": "https://www.humanoidsdaily.com/news/xpeng-iron-vla-2-gesture-interaction-demo"
+   },
+   {
+    "title": "Humanoid Guide: XPENG IRON demonstrates adaptive gestures in humanoid test (24 Oct 2026)",
+    "url": "https://humanoid.guide/xpeng-iron-demonstrates-adaptive-gestures-in-humanoid-test/"
+   }
+  ],
+  "image": {
+   "src": "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg",
+   "ai": true,
+   "alt": "A sleek humanoid robot raising an open hand for a high five in a bright, empty robotics lab (AI-generated image)",
+   "note": "Generic illustration; not a photo of XPENG's IRON robot. No people shown."
+  }
  }
 ]
