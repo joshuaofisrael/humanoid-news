@@ -1063,5 +1063,170 @@
    "note": "Generic illustration; not a photo of XPENG's IRON robot. No people shown."
   },
   "seo_title": "XPENG IRON humanoid shows handshakes, fist bumps, high fives"
+ },
+ {
+  "slug": "eth-zurich-acp-humanoid-climbing-contact-planning",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Research",
+  "title": "ETH Zürich's ACP policy lets a Unitree G1 climb ladders, vault and get back up after falls",
+  "seo_title": "ETH Zürich ACP: humanoid climbs, vaults and recovers",
+  "summary": "Researchers at ETH Zürich's Robotic Systems Lab report a single learned policy, Attention-based Contact Planning, that plans where a humanoid's hands, knees, feet and pelvis should touch the terrain, letting a Unitree G1 climb, vault and recover from falls.",
+  "body": [
+   "<strong>Short answer:</strong> A team led by ETH Zürich's Robotic Systems Lab has shown a Unitree G1 humanoid climbing ladders, vaulting obstacles and getting back up after falls using one learned control policy, according to Humanoids Daily. The method, called Attention-based Contact Planning (ACP), decides where parts of the robot's body should touch the environment and lets a second network work out the movement in between.",
+   "According to the outlet, the planner uses a height map built from a head-mounted LiDAR, the robot's own sensed state and a target position to predict contact points up to 1.5 seconds ahead for nine body parts: the hands, elbows, knees, feet and pelvis. A second network turns those targets into commands for 23 joints, and both run on the robot at 50 Hz without replaying a pre-recorded motion. The team trained the system with 13.2 minutes of human motion data plus reinforcement learning, Humanoids Daily reported.",
+   "The researchers report 92.5% average success across eight simulated obstacle courses, compared with 58.8% for a motion-generation-and-tracking baseline. Humanoids Daily stresses that this is a simulation figure, measured with sensor noise and physics randomisation switched off, and not a real-world success rate. The project also publishes failure and recovery clips, including a fall caused by mapping errors.",
+   "The paper, titled <em>Humanoid Mobility via Attention-based Contacts</em>, was submitted to arXiv on 22 October and is listed as under review, according to the outlet, which says the project credits ETH Zürich, Apple, the ETH AI Center and NVIDIA. The authors list limits including overhead contacts, hanging and manipulation. It is one of several recent G1 research projects, alongside <a href=\"amazon-whole-body-dexterity-humanoid-torso-carrying.html\">Amazon's whole-body dexterity work</a> and <a href=\"alibaba-amap-lambda0-humanoid-model-human-video.html\">Alibaba's λ0 model</a>."
+  ],
+  "analysis": [
+   "Opinion: Planning contacts rather than full poses is an appealing middle layer, because it gives a robot a reason to use its knees or pelvis the way people do on rough ground. Until real-world success rates are published, the clips show capability rather than reliability."
+  ],
+  "sources": [
+   {
+    "title": "Humanoids Daily: ETH Zürich Teaches a Humanoid to Climb, Vault and Recover by Planning Body Contacts (25 Oct 2026)",
+    "url": "https://www.humanoidsdaily.com/news/eth-zurich-acp-humanoid-contact-planning"
+   }
+  ],
+  "image": {
+   "src": "src-img/eth-zurich-acp-humanoid-climbing-contact-planning-hero.jpg",
+   "ai": true,
+   "alt": "A compact grey humanoid robot climbing a short metal ladder onto a concrete platform in an empty research lab (AI-generated image)",
+   "note": "Generic illustration; not a photo of the ETH Zürich robot or lab. No people shown."
+  }
+ },
+ {
+  "slug": "agibot-110-a3-humanoids-guinness-dance-record",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "AgiBot",
+  "title": "110 AgiBot A3 humanoids set a Guinness record for the most robots dancing at once",
+  "seo_title": "110 AgiBot A3 humanoids set Guinness dance record",
+  "summary": "AgiBot ran 110 Expedition A3 humanoids through a synchronised routine in Jinan on 24 October, and a Guinness World Records adjudicator confirmed it as a new record for the most humanoid robots dancing simultaneously.",
+  "body": [
+   "<strong>Short answer:</strong> On 24 October, 110 Expedition A3 humanoid robots made by Chinese company AgiBot danced together at the Jinan Yellow River International Convention and Exhibition Center in Shandong province, setting a Guinness World Records title for the most humanoid robots dancing simultaneously, according to the Global Times and Dazhong Daily. A Guinness adjudicator, Hou Ying, announced the count of 110 and presented the certificate on site, Dazhong Daily reported.",
+   "According to the Global Times, the robots performed synchronised routines and formation changes, including repositioning, jumps and flips, coordinated by AgiBot's LinkBots cluster-control platform and ultra-wideband positioning that the company says is accurate to the centimetre. Robrief reported that the routine lasted 5 minutes 43 seconds. AgiBot said the robots will next be used in cultural and tourism performances, public services, research and education, the Global Times reported.",
+   "The newspaper framed the record as part of China's push from single-robot demos toward large-scale deployment, citing a Ministry of Industry and Information Technology official who said Chinese companies produced more than 40,000 humanoid units in the first half of 2026. It also quoted Wang Peng of the Beijing Academy of Social Sciences, who said many applications remain at the pilot or early commercial stage. For background, see our report on <a href=\"china-100000-humanoids-2026-first-national-standards.html\">China's 100,000-unit outlook for 2026</a>."
+  ],
+  "analysis": [
+   "Opinion: A choreographed routine is a controlled setting, so the record says more about fleet coordination and positioning than about how well robots handle messy real-world tasks. That coordination still matters for any operator hoping to run dozens of robots in one space."
+  ],
+  "sources": [
+   {
+    "title": "Global Times: 110 humanoid robots set Guinness world record for synchronized dancing in China (25 Oct 2026)",
+    "url": "https://www.globaltimes.cn/page/202610/1372888.shtml"
+   },
+   {
+    "title": "Dazhong Daily via Tencent News: 110台国产人形机器人齐舞，创下吉尼斯世界纪录 (24 Oct 2026)",
+    "url": "https://news.qq.com/rain/a/20261024A086IF00"
+   },
+   {
+    "title": "Robrief: AgiBot's 110 A3 humanoids dance 5 minutes 43 seconds for a Guinness record (Oct 2026)",
+    "url": "https://robrief.com/en/articles/agibot-a3-110-humanoids-guinness-dance-record"
+   }
+  ],
+  "image": {
+   "src": "src-img/agibot-110-a3-humanoids-guinness-dance-record-hero.jpg",
+   "ai": true,
+   "alt": "Rows of identical white humanoid robots standing in formation on a large stage under coloured lights (AI-generated image)",
+   "note": "Generic illustration; not a photo of AgiBot's A3 robots or the Jinan event. No people shown."
+  }
+ },
+ {
+  "slug": "amazon-whole-body-dexterity-humanoid-torso-carrying",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Research",
+  "title": "Amazon-led team teaches a humanoid to hold boxes against its torso and under its arm",
+  "seo_title": "Amazon Whole-Body Dexterity: humanoid uses torso to carry",
+  "summary": "A preprint from Amazon, UC San Diego and the University of Michigan describes Whole-Body Dexterity, a controller that lets a teleoperated Unitree G1 brace objects against its arms and torso, completing 45 of 50 real-world trials.",
+  "body": [
+   "<strong>Short answer:</strong> Researchers from Amazon, the University of California, San Diego and the University of Michigan have published Whole-Body Dexterity (WBD), a method that lets a humanoid robot use its arms and torso, not just its hands, to hold and move objects. In real-world tests on a Unitree G1, the authors report that their controller completed 45 of 50 trials (90%), compared with 18% for direct motion retargeting and 4% for a general-purpose whole-body controller.",
+   "According to the arXiv preprint, the team first generated about 2.5 million simulated grasps that use the arms and torso, trained reinforcement-learning \"experts\" to move objects between those grasps, then distilled them into a single controller that needs only the robot's own joint readings and the object's rough dimensions. On the real robot, the tasks were moving a basketball or a 15 cm cardboard box to the shoulder or under one arm and back, plus a longer sequence of picking a box from a shelf, tucking it under an arm, walking it to a table and setting it down.",
+   "The robot was not acting on its own. The paper says every real-world trial was run by a single skilled human teleoperator wearing a motion-capture suit, with the WBD controller adjusting the arm commands to keep the object supported. In the shelf task, the controller finished all five stages in 7 of 10 trials and occasionally dropped the box, the authors report. The work is a preprint on arXiv.",
+   "Latest Robot News covered the paper on 25 October. The authors list the project site as wholebodydex.com. Other recent G1 research includes <a href=\"eth-zurich-acp-humanoid-climbing-contact-planning.html\">ETH Zürich's contact-planning policy</a>."
+  ],
+  "analysis": [
+   "Opinion: Carrying things against the body is how people handle bulky items, so this is a practical direction for warehouse-style work. The heavy reliance on a trained teleoperator means it is a better assistive controller today than an autonomous skill."
+  ],
+  "sources": [
+   {
+    "title": "arXiv: Whole-Body Dexterity, Mc Gartoll, Dang, Thangeda et al., arXiv 2610.22184 (Oct 2026)",
+    "url": "https://arxiv.org/abs/2610.22184"
+   },
+   {
+    "title": "Latest Robot News: Whole-Body Dexterity: From 4% to 90% by Using the Torso (25 Oct 2026)",
+    "url": "https://latestrobotnews.com/whole-body-dexterity-humanoid-whole-body-manipulation/"
+   }
+  ],
+  "image": {
+   "src": "src-img/amazon-whole-body-dexterity-humanoid-torso-carrying-hero.jpg",
+   "ai": true,
+   "alt": "A slim grey humanoid robot holding a plain cardboard box tucked under one arm beside warehouse shelving (AI-generated image)",
+   "note": "Generic illustration; not a photo of the Unitree G1 used in the research. No people shown."
+  }
+ },
+ {
+  "slug": "rokae-10000th-humanoid-force-controlled-arm",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Deployments",
+  "title": "ROKAE says it has delivered its 10,000th humanoid force-controlled arm",
+  "seo_title": "ROKAE delivers its 10,000th humanoid robot arm",
+  "summary": "Hong Kong-listed ROKAE Robotics says it has delivered 10,000 humanoid force-controlled arms, and that five of its Helios wheeled humanoids work on Schaeffler's humanoid-parts line in Taicang.",
+  "body": [
+   "<strong>Short answer:</strong> ROKAE Robotics, a robot maker listed in Hong Kong, said on 26 October that it has delivered its 10,000th humanoid force-controlled arm, according to a company press release. The company says the milestone unit came off the production line at its Shandong base in September, and that the count covers only its humanoid arm line.",
+   "According to the release, five ROKAE Helios wheeled humanoid robots fitted with its AR Series arms are working at Schaeffler's lighthouse factory in Taicang, China, and more than 80 industrial partners use its arms. ROKAE says it was founded in 2014 and has more than 1,000 customers in over 40 countries. Those figures are the company's own and have not been independently verified.",
+   "The release also describes ROKAE's compact MAC controller, which the company says measures 213 by 145.5 by 45 mm and can run 7 joints, 14 joints or more than 20. Founder and CEO Tuo Hua is quoted as saying, \"There are no shortcuts in force control.\" Schaeffler's Taicang site is covered in <a href=\"schaeffler-taicang-humanoids-build-humanoid-actuators.html\">our earlier report</a>."
+  ],
+  "analysis": [
+   "Opinion: Component suppliers reaching five-figure volumes is a quieter but useful signal of where humanoid demand actually sits, though a delivery count says nothing about how those arms perform once installed."
+  ],
+  "disclaimer": "Delivery numbers, partner counts and deployment details are ROKAE's own statements and have not been independently verified. ROKAE is a listed company; this article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "ROKAE Robotics via PR Newswire: ROKAE delivers its 10,000th humanoid force-controlled arm (26 Oct 2026)",
+    "url": "https://www.prnewswire.com/news-releases/rokae-delivers-its-10-000th-humanoid-force-controlled-arm-302918216.html"
+   }
+  ],
+  "image": {
+   "src": "src-img/rokae-10000th-humanoid-force-controlled-arm-hero.jpg",
+   "ai": true,
+   "alt": "A wheeled humanoid robot with two slim white robotic arms assembling small metal actuator parts on a clean factory workbench (AI-generated image)",
+   "note": "Generic illustration; not a photo of ROKAE's Helios robot or Schaeffler's factory. No people shown."
+  }
+ },
+ {
+  "slug": "yaskawa-humanoid-launch-within-two-years-tokyo-robotics",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Yaskawa",
+  "title": "Yaskawa aims to bring a humanoid to market within one to two years, reports say",
+  "seo_title": "Yaskawa plans humanoid robot within 1 to 2 years",
+  "summary": "Japanese industrial robot maker Yaskawa Electric plans to put a humanoid on the market within one to two years, building on its Tokyo Robotics acquisition, according to Nikkei reporting relayed by Robot Newspaper and Vuntum.",
+  "body": [
+   "<strong>Short answer:</strong> Yaskawa Electric, the Japanese maker of MOTOMAN industrial robots, wants to put a humanoid robot of \"a certain standard\" on the market within one to two years and launch products in earnest around 2030, according to Vuntum, which cites Korea's Robot Newspaper and Nikkei reporting. Chairman and CEO Hiroshi Ogasawara discussed the plan when the company presented results on 9 October, the reports say.",
+   "The work builds on Tokyo Robotics, a startup Yaskawa fully acquired on 1 July 2025, according to HuRoC. Vuntum describes it as a Waseda University spin-out founded in 2015 and known for force and impedance control. HuRoC reports that Yaskawa's 9 October supplementary results materials list \"accelerating data accumulation through field trials and body design\" toward commercialising humanoids as a second-half priority, alongside a photo of a humanoid actuator in development. Vuntum adds that Yaskawa invested in Japanese AI company Noetra in July.",
+   "HuRoC adds that in earlier investor Q&A Yaskawa said it is not focused on two-legged walking and is considering an upper-body robot mounted on a mobile base, the layout used by Tokyo Robotics' Torobo, which the startup's site lists as in development at 1,615 mm tall with arms that can each carry up to 7 kg. HuRoC also notes that, as of 10 October, the company had not published the Q&A summary for this briefing, and that no launch date, price or specifications appear in its official materials."
+  ],
+  "analysis": [
+   "Opinion: A wheeled, upper-body design would put Yaskawa closer to practical factory use than to the walking demos that dominate headlines. With no published timeline or specs, the one-to-two-year window is an ambition rather than a product announcement."
+  ],
+  "disclaimer": "Plans and timelines are as reported by the cited outlets from Yaskawa's results briefing and have not been confirmed in published company documents. Yaskawa is a listed company; this article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "Vuntum: Japanese industrial robot specialist Yaskawa plans to sell a humanoid within one to two years (25 Oct 2026)",
+    "url": "https://vuntum.com/en/news/yaskawa-maker-of-industrial-robots-plans-to-sell-a-humanoid-within-one-to-two-years"
+   },
+   {
+    "title": "HuRoC: 歩くより「作業力」を。安川電機、東京ロボティクスの知見でヒューマノイドの現場実証と機体設計を加速 (Oct 2026)",
+    "url": "https://media.huroc.org/articles/yaskawa-humanoid-tokyo-robotics-plan/"
+   }
+  ],
+  "image": {
+   "src": "src-img/yaskawa-humanoid-launch-within-two-years-tokyo-robotics-hero.jpg",
+   "ai": true,
+   "alt": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
+   "note": "Generic illustration; not a photo of Yaskawa's or Tokyo Robotics' robots. No people shown."
+  }
  }
 ]
