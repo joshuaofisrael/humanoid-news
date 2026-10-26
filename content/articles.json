@@ -1228,5 +1228,126 @@
    "alt": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
    "note": "Generic illustration; not a photo of Yaskawa's or Tokyo Robotics' robots. No people shown."
   }
+ },
+ {
+  "slug": "realbotix-echo-companion-humanoid-line-2027",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Companion robots",
+  "title": "Realbotix opens reservations for Echo companion humanoids, with deliveries planned for late 2027",
+  "seo_title": "Realbotix Echo companion humanoids: prices and 2027 dates",
+  "summary": "Realbotix has launched Echo, a line of companion humanoids priced at $11,950 for a tabletop model and $59,950 for a full-body model, with a first run of 250 units planned for the second half of 2027, the company says.",
+  "body": [
+   "<strong>Short answer:</strong> Realbotix, a US maker of lifelike social robots, announced on 26 October a new robot line called Echo, aimed at companionship, education and wellness. According to the company's Business Wire release, customers can reserve a unit with a $199 deposit on Realbotix.com, and the first production run is limited to 225 Tabletop units and 25 Full Body units for delivery in the second half of 2027.",
+   "The company lists two models. Echo Tabletop is a desktop companion with 17 degrees of freedom, priced at $11,950 and weighing about 25 lb. Echo Full Body has 39 degrees of freedom and \"fluid upper-body movement\", is priced at $59,950 and weighs about 88 lb, the release says. Both use the company's silicone-based synthetic skin on the face, and the full-body model also on the forearms and hands. Buyers choose between four characters, including the existing Aria persona.",
+   "Realbotix says Echo can connect to ChatGPT, Claude and Gemini and speaks more than 100 languages. Running the robot requires a subscription to its configuration app, starting at $19.99 a month. An optional on-device vision system called Vinci adds facial recognition, emotional-cue recognition and gaze tracking, and the company says conversation histories and face templates are stored locally rather than sent to Realbotix. Chief executive Andrew Kiguel called the robots \"companions that support, educate and care for people\".",
+   "For other recent launches aimed at homes rather than factories, see our report on <a href=\"aimoga-mobo-family-companion-humanoid-preorders.html\">AiMOGA's Mobo family companion</a>. Factory-focused coverage is collected on our <a href=\"../topics/deployments.html\">pilots and deployments</a> page."
+  ],
+  "analysis": [
+   "Opinion: The numbers are small and the dates are far off: 250 units, delivered from the second half of 2027. Echo is closer to a high-end social robot than a general-purpose humanoid. The privacy commitments are more specific than most consumer robot launches offer, but they are the company's own description and have not been independently audited."
+  ],
+  "disclaimer": "Prices, production volumes, delivery timing and privacy practices are as stated by Realbotix and have not been independently verified. The company's release contains forward-looking statements. Realbotix is a listed company; this article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "Business Wire: Realbotix Launches Echo Humanoid Robot Line (26 Oct 2026)",
+    "url": "https://www.businesswire.com/news/home/20261026986313/en/Realbotix-Launches-Echo-Humanoid-Robot-Line"
+   },
+   {
+    "title": "Realbotix: Echo product site",
+    "url": "https://realbotix.com"
+   }
+  ],
+  "image": {
+   "src": "src-img/realbotix-echo-companion-humanoid-line-2027-hero.jpg",
+   "ai": true,
+   "alt": "A white companion robot with a lifelike face seated at a wooden desk in a softly lit living room (AI-generated image)",
+   "note": "Generic illustration; not a photo of a Realbotix Echo robot. No people shown."
+  }
+ },
+ {
+  "slug": "toyota-honda-humanoid-factory-trials-japan",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Deployments",
+  "title": "Toyota and Honda test humanoid robots on Japanese factory lines, from wire harnesses to final inspection",
+  "seo_title": "Toyota and Honda test humanoids in Japanese factories",
+  "summary": "Toyota and Honda are trialling humanoid robots in Japanese plants on tasks including wire-harness installation and final vehicle inspection, according to Automotive News reporting picked up widely on 26 October.",
+  "body": [
+   "<strong>Short answer:</strong> Japan's two largest carmakers are testing humanoid robots on real production tasks. Toyota and Honda are trialling the machines on work ranging from installing wire harnesses to carrying out final inspections, according to Automotive News, whose reporting was relayed on 26 October by Seeking Alpha and TokenPost. Both companies showed their latest machines at the 2026 Japan Mobility Show in Tokyo.",
+   "Honda's exhibit centred on its Avatar Robot, which Automotive News describes as using artificial intelligence to carry out delicate, complicated tasks with robotic human-like hands. The Robot Daily, summarising the same reporting, says Honda is beginning to rethink vehicle design around robot workers. Toyota is testing how humanoids handle assembly work; the Robot Daily reports the company has said it aims to roll out large numbers of factory robots from 2028, including its wheeled ELEY humanoid, which learns tasks from line workers.",
+   "Wire harnesses are a long-standing automation problem because the cables are flexible and must be routed by hand through the car body. Neither company has published trial volumes, success rates or a deployment date for humanoids on these tasks in the reports we cite.",
+   "The trials join a wider push by carmakers: see our coverage of <a href=\"faw-volkswagen-ubtech-humanoid-logistics-trials.html\">FAW-Volkswagen's logistics tests with UBTECH</a> and of <a href=\"yaskawa-humanoid-launch-within-two-years-tokyo-robotics.html\">Yaskawa's humanoid plans</a>. More is on our <a href=\"../topics/deployments.html\">pilots and deployments</a> page."
+  ],
+  "analysis": [
+   "Opinion: The notable detail is Honda reportedly designing cars with robot workers in mind. That suggests carmakers expect humanoids to stay on the line, but until either company publishes results from these trials, they remain experiments rather than deployments."
+  ],
+  "disclaimer": "Details are as reported by the cited outlets; Toyota and Honda have not published trial results. Toyota and Honda are listed companies; this article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "Automotive News: Why Honda is redesigning cars for humanoid robot workers and how Toyota is already using them (19 Oct 2026)",
+    "url": "https://www.autonews.com/toyota/an-toyota-honda-humanoid-robots-ai-eley-avatar-1019/"
+   },
+   {
+    "title": "Seeking Alpha: Toyota and Honda test humanoid robots in Japanese factories (26 Oct 2026)",
+    "url": "https://seekingalpha.com/news/4657066-toyota-and-honda-test-humanoid-robots-in-japanese-factories"
+   },
+   {
+    "title": "The Robot Daily: Toyota and Honda put humanoid robots to work on the line (19 Oct 2026)",
+    "url": "https://therobotdaily.com/toyota-honda-humanoids-japan-mobility-show"
+   },
+   {
+    "title": "TokenPost: Toyota, Honda Bring Humanoid Robots Into Japanese Factory Trials (26 Oct 2026)",
+    "url": "https://www.tokenpost.com/news/technology/40977"
+   }
+  ],
+  "image": {
+   "src": "src-img/toyota-honda-humanoid-factory-trials-japan-hero.jpg",
+   "ai": true,
+   "alt": "A white humanoid robot routing a bundle of wire-harness cables inside an unfinished car body on an assembly line (AI-generated image)",
+   "note": "Generic illustration; not a photo of Toyota's or Honda's robots or plants. No people shown."
+  }
+ },
+ {
+  "slug": "faw-volkswagen-ubtech-humanoid-logistics-trials",
+  "date": "2026-10-26",
+  "updated": "2026-10-26",
+  "cat": "Deployments",
+  "title": "FAW-Volkswagen widens UBTECH humanoid trials from inspection to factory logistics",
+  "seo_title": "FAW-Volkswagen expands UBTECH humanoid trials to logistics",
+  "summary": "FAW-Volkswagen and UBTECH have agreed to develop and test humanoid robots for factory logistics, building on Walker S Lite inspection trials at the carmaker's Qingdao plant. No robot numbers, sites or timetable have been given.",
+  "body": [
+   "<strong>Short answer:</strong> Chinese carmaker FAW-Volkswagen, a joint venture of FAW Group and Volkswagen Group, is expanding its trials of UBTECH humanoid robots from vehicle inspection into logistics, ASSEMBLY magazine reported on 26 October. The two companies signed a strategic cooperation agreement on 8 October to jointly develop, test and demonstrate humanoid applications for factory logistics and smart manufacturing, according to Interesting Engineering and TechRepublic.",
+   "The deal builds on earlier work at FAW-Volkswagen's Qingdao factory. Interesting Engineering reports that the partners began working together in July 2024, when UBTECH's Walker S was tested on bolt tightening, component installation and parts handling, and that the Walker S Lite was later used for vehicle quality-inspection training connected to the plant's automation control system.",
+   "What the agreement leaves out is significant. ASSEMBLY, Humanoids Daily and TechRepublic all note that it does not say which robot model will be used, how many robots are involved, which of FAW-Volkswagen's plants will host the logistics demonstrations, or when routine use could begin. ASSEMBLY points out one argument for humanoids in logistics: they could use flow racks and workstations built for people without the factory being redesigned.",
+   "Related: <a href=\"toyota-honda-humanoid-factory-trials-japan.html\">Toyota and Honda's humanoid factory trials</a> and <a href=\"agco-agility-digit-pilot-hesston-kansas.html\">AGCO's Digit pilot in Kansas</a>. See also our <a href=\"../topics/china.html\">China</a> and <a href=\"../topics/deployments.html\">deployments</a> pages."
+  ],
+  "analysis": [
+   "Opinion: Moving parts around a plant is a more demanding test than inspection, because the robot has to navigate, carry loads and fit around people and other machines. This is still a testing agreement, not an order, and the lack of numbers makes it hard to judge how far it will go."
+  ],
+  "disclaimer": "Scope and history are as reported by the cited outlets from the companies' announcement. UBTECH and Volkswagen are listed companies; this article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "ASSEMBLY: FAW-Volkswagen Expands Testing of Humanoid Robots (26 Oct 2026)",
+    "url": "https://www.assemblymag.com/articles/100527-faw-volkswagen-expands-testing-of-humanoid-robots"
+   },
+   {
+    "title": "Interesting Engineering: UBTECH and Volkswagen team up to test humanoid robots in car factories",
+    "url": "https://interestingengineering.com/ai-robotics/ubtech-volkswagen-test-humanoid-robots"
+   },
+   {
+    "title": "TechRepublic: Volkswagen's China Partner Taps UBTECH to Test Humanoid Factory Robots",
+    "url": "https://www.techrepublic.com/article/news-ubtech-faw-volkswagen-humanoid-robots-factory-logistics/"
+   },
+   {
+    "title": "Humanoids Daily: UBTECH and FAW-Volkswagen Expand Humanoid Robot Partnership Into Factory Logistics",
+    "url": "https://www.humanoidsdaily.com/news/ubtech-faw-volkswagen-humanoid-robots-logistics"
+   }
+  ],
+  "image": {
+   "src": "src-img/faw-volkswagen-ubtech-humanoid-logistics-trials-hero.jpg",
+   "ai": true,
+   "alt": "A grey bipedal humanoid robot carrying a parts tote past shelving in a car factory logistics area (AI-generated image)",
+   "note": "Generic illustration; not a photo of UBTECH's robots or FAW-Volkswagen's plants. No people shown."
+  }
  }
 ]
