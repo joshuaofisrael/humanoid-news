@@ -15,7 +15,7 @@ ISSUES = "https://github.com/joshuaofisrael/humanoid-news/issues"; BUILD_DATE = 
 CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
-OUT = "docs"; ASSET_VER = "5"
+OUT = "docs"; ASSET_VER = "6"
 # ----------------------------------------------------------------
 
 TODO_IMAGES = []
@@ -170,6 +170,7 @@ for hs, hn, h1, intro, rx in HUB_DEFS:
     items = [a for a in A if re.search(rx, _hay(a), re.M) and a["slug"] not in HUB_EXCLUDE.get(hs, ())]
     if len(items) >= 3: HUBS.append({"slug": hs, "name": hn, "h1": h1, "intro": intro, "items": items})
 for a in A: a["_hubs"] = [h for h in HUBS if a in h["items"]]
+_TRK_EARLY = {t["story"] for t in json.load(open("content/tracker.json"))} if os.path.exists("content/tracker.json") else set()
 def related(a, n=4):
     sc = []
     for b in A:
@@ -193,7 +194,7 @@ if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it
 sections += '<section class="sec" id="latest"><div class="w"><h2 class="sh">Latest news</h2><div class="grid">' + "".join(card(a, feat=(i == 0), eager=(i == 0)) for i, a in enumerate(rest)) + '</div></div></section>'
 cos = ["Tesla Optimus", "Figure", "Agility Digit", "Boston Dynamics Atlas", "Unitree", "1X NEO", "Apptronik", "UBTECH", "XPeng IRON", "NVIDIA GR00T"]
 sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join(f"<li>{c}</li>" for c in cos) + "</ul></div></section>"
-if HUBS: sections += '<section class="sec"><div class="w"><h2 class="sh">Browse by topic</h2><ul class="chips hubs">' + "".join(f'<li><a href="topics/{h["slug"]}.html">{esc(h["name"])} ({len(h["items"])})</a></li>' for h in HUBS) + "</ul></div></section>"
+if HUBS: sections += '<section class="sec"><div class="w"><h2 class="sh">Browse by topic</h2><ul class="chips hubs">' + "".join(f'<li><a href="topics/{h["slug"]}.html">{esc(h["name"])} ({len(h["items"])})</a></li>' for h in HUBS) + (f'<li><a href="humanoid-robot-deployment-tracker.html">Deployment tracker ({len(_TRK_EARLY)} stories)</a></li>' if len(_TRK_EARLY) >= 5 else "") + "</ul></div></section>"
 FAQ = [
     ("What does HumanoidBeat cover?", f"HumanoidBeat covers news about humanoid robots from any company or lab, including Tesla Optimus, Figure, Agility Robotics, Boston Dynamics, Unitree, 1X, XPENG and NVIDIA's robotics platforms. Stories cover new robots, AI models, factory and retail pilots, funding announcements, and government standards and safety rules."),
     ("Where do your facts come from?", "Every article lists its sources at the bottom with links, such as company announcements, regulator releases, research papers and reputable news outlets. We attribute company claims to the company, write in our own words, and leave out anything we cannot trace to a cited source."),
@@ -237,6 +238,7 @@ for a in A:
     src = "".join(f'<li><a href="{esc(s["url"])}" rel="noopener">{esc(s["title"])}</a></li>' for s in a["sources"])
     tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
     rel = '<aside class="related"><h2>Related coverage</h2><ul>' + "".join(f'<li><a href="{b["slug"]}.html">{esc(b["title"])}</a> <span class="meta">· {fd(b["date"])}</span></li>' for b in related(a)) + "</ul>"
+    if a["slug"] in _TRK_EARLY: rel += '<p class="meta">This story is part of our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>'
     if a["_hubs"]: rel += '<p class="meta">More on: ' + " · ".join(f'<a href="../topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in a["_hubs"]) + "</p>"
     rel += "</aside>"
     c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published <time datetime="{a["date"]}">{fd(a["date"])}</time> · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
@@ -275,11 +277,40 @@ for h in HUBS:
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE_URL}/news/{a['slug']}.html", "name": a["title"]} for i, a in enumerate(h["items"])]}}
     ht = f"{h['h1']} | HumanoidBeat"
     page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], (h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"],
-         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p><ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+# ---------------------------------------------------------------- deployment tracker (evergreen, linkable; every row links to a sourced story)
+TRK = json.load(open("content/tracker.json")) if os.path.exists("content/tracker.json") else []
+_bys = {a["slug"]: a for a in A}
+TRK = [t for t in TRK if t["story"] in _bys]
+TRK_SLUGS = {t["story"] for t in TRK}
+TRK_PATH = "humanoid-robot-deployment-tracker.html"
+if len(TRK) >= 5:
+    _tu = f"{SITE_URL}/{TRK_PATH}"
+    _upd = max(_bys[t["story"]].get("updated", _bys[t["story"]]["date"]) for t in TRK)
+    _rows = "".join(f'<tr><td><strong>{esc(t["robot"])}</strong></td><td>{esc(t["where"])}</td><td>{esc(t["tasks"])}</td><td>{esc(t["status"])}</td><td><a href="news/{t["story"]}.html">Our report</a><br><span class="meta"><time datetime="{_bys[t["story"]]["date"]}">{fd(_bys[t["story"]]["date"])}</time></span></td></tr>' for t in TRK)
+    _intro = "Which humanoid robots are actually working, or being trialled, in factories, warehouses and shops? This tracker lists every pilot, trial and deployment HumanoidBeat has reported, with the company, the site, the tasks and the status as stated in our sources."
+    _how = ("<h2>How this tracker works</h2><ul><li>Each row comes from a HumanoidBeat report, and each report links to its original sources at the bottom.</li>"
+            "<li>Status describes what the company or the cited outlet said. Company targets and plans are reported as targets, not outcomes, and robot counts are only listed where a source gives them.</li>"
+            "<li>We add a row when we report a new pilot or deployment, and update a row when the situation changes. Spot something missing or out of date? <a href=\"contact.html\">Tell us</a>.</li></ul>")
+    _tfaq = [("Where are humanoid robots being used today?", "In the reports we track, humanoid robots are being trialled or used mainly in car and parts factories (for example in China, Japan, South Korea and the US), in logistics, and in one Danish supermarket restocking pilot. Most are pilots or trials rather than large-scale deployments."),
+             ("Are these robots replacing workers?", "The companies in these reports describe the robots as taking on repetitive or physically demanding tasks. None of the sources we cite report specific job losses, and most projects are still at the pilot stage."),
+             ("How often is the tracker updated?", "We update it when we publish a new report on a humanoid pilot or deployment. The date at the top shows the newest report included.")]
+    _faqh = "<h2>Common questions</h2>" + "".join(f"<h3>{esc(q)}</h3><p>{esc(x)}</p>" for q, x in _tfaq)
+    _tld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Humanoid robot deployment tracker", "url": _tu, "description": _intro, "dateModified": _upd, "publisher": PUB,
+             "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f'{t["robot"]}: {t["where"]}', "url": f"{SITE_URL}/news/{t['story']}.html"} for i, t in enumerate(TRK)]}},
+            {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": x}} for q, x in _tfaq]}]
+    _hubl = " · ".join(f'<a href="topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in HUBS)
+    page(TRK_PATH, "Humanoid Robot Deployment Tracker | HumanoidBeat",
+         "Where humanoid robots are working or being trialled: company, site, tasks and status for every pilot HumanoidBeat has reported, each linked to sources.",
+         f'<div class="prose page hub tracker"><p class="meta"><a href="{SITE_URL}/">News</a> › Tracker</p><h1>Humanoid robot deployment tracker</h1><p>{esc(_intro)}</p><p class="meta">{len(TRK)} entries · last updated <time datetime="{_upd}">{fd(_upd)}</time></p>'
+         f'<div class="tbl"><table><thead><tr><th scope="col">Robot</th><th scope="col">Where</th><th scope="col">Tasks</th><th scope="col">Status (as reported)</th><th scope="col">Source</th></tr></thead><tbody>{_rows}</tbody></table></div>'
+         f'{_how}{_faqh}<h2>Browse by topic</h2><p>{_hubl}</p></div>', 0, _tld[0], extra_head=f'<script type="application/ld+json">{json.dumps(_tld[1], ensure_ascii=False)}</script>')
+else:
+    TRK_PATH = None
 page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
 
 # sitemap (with image extension), robots, llms, feed, indexnow key
-urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + [(f, BUILD_DATE, None) for f in legal]
+urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + ([(TRK_PATH, _upd, None)] if TRK_PATH else []) + [(f, BUILD_DATE, None) for f in legal]
 def sm(u, d, im):
     x = f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod>"
     if im: x += f"<image:image><image:loc>{im['url']}</image:loc></image:image>"
@@ -291,7 +322,7 @@ bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "Clau
 open(OUT + "/ads.txt", "w").write("google.com, pub-5681559774142917, DIRECT, f08c47fec0942fa0\n")
 open(OUT + "/robots.txt", "w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/news-sitemap.xml\n")
 open(OUT + f"/{INDEXNOW_KEY}.txt", "w").write(INDEXNOW_KEY)
-open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + "\n## Topics\n" + "".join(f"- [{h['h1']}]({SITE_URL}/topics/{h['slug']}.html)\n" for h in HUBS) + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
+open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + "\n## Topics\n" + "".join(f"- [{h['h1']}]({SITE_URL}/topics/{h['slug']}.html)\n" for h in HUBS) + (f"\n## Resources\n- [Humanoid robot deployment tracker]({SITE_URL}/{TRK_PATH}): every humanoid pilot and deployment we have reported, with sources\n" if TRK_PATH else "") + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
 def rfc(d): return datetime.datetime.fromisoformat(d + "T12:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
 open(OUT + "/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>{NAME}</title><link>{SITE_URL}/</link><description>{esc(DESC)}</description><language>en</language><atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>' + "".join(f"<item><title>{esc(a['title'])}</title><link>{SITE_URL}/news/{a['slug']}.html</link><guid>{SITE_URL}/news/{a['slug']}.html</guid><pubDate>{rfc(a['date'])}</pubDate><description>{esc(a['summary'])}</description>" + (f'<media:content url="{a["_og"]["url"]}" type="image/jpeg" medium="image" width="1200" height="630"/>' if a["_og"] else "") + "</item>" for a in A) + "</channel></rss>\n")
 open(OUT + "/.nojekyll", "w").write("")

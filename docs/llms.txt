@@ -41,6 +41,9 @@
 - [Humanoid robots at work: pilots and deployments](https://humanoidbeat.com/topics/deployments.html)
 - [Humanoid robot funding, regulation and standards](https://humanoidbeat.com/topics/funding-policy.html)
 
+## Resources
+- [Humanoid robot deployment tracker](https://humanoidbeat.com/humanoid-robot-deployment-tracker.html): every humanoid pilot and deployment we have reported, with sources
+
 ## About
 - [About](https://humanoidbeat.com/about.html)
 - [Editorial standards](https://humanoidbeat.com/standards.html)
