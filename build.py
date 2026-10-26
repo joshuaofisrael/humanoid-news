@@ -93,7 +93,7 @@ def credit_html(im):
 # ---------------------------------------------------------------- page shell
 def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None, base=None, extra_head=""):
     r = base if base is not None else "../" * depth
-    url = SITE_URL + "/" + path.replace("index.html", "")
+    url = SITE_URL + "/" + (path[:-10] if path.endswith("index.html") else path)
     og = image or {"url": f"{SITE_URL}/img/og-default.jpg", "alt": NAME + ": humanoid robot news"}
     lds = [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "publisher": PUB}] + ([ld] if ld else [])
     beacon = f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{CF_BEACON_TOKEN}"}}\'></script>' if CF_BEACON_TOKEN else ""
@@ -109,7 +109,7 @@ def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None
 <link rel="alternate" type="application/rss+xml" title="{NAME}" href="{r}feed.xml"><link rel="stylesheet" href="{r}assets/style.css?v={ASSET_VER}">
 """ + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds) + f"""</head><body>
 <a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
-<header class="site-h"><div class="w"><a class="logo" href="{r}index.html" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{r}index.html">News</a><a href="{r}about.html">About</a><a href="{r}contact.html">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
+<header class="site-h"><div class="w"><a class="logo" href="{SITE_URL}/" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{SITE_URL}/">News</a><a href="{r}about.html">About</a><a href="{r}contact.html">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
 <main id="main">{content}</main>
 <footer class="site-f"><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}standards.html">Editorial standards</a> · <a href="{r}corrections.html">Corrections</a> · <a href="{r}contact.html">Contact</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}feed.xml">RSS</a></p>
 </div></footer>
@@ -239,7 +239,7 @@ for a in A:
     rel = '<aside class="related"><h2>Related coverage</h2><ul>' + "".join(f'<li><a href="{b["slug"]}.html">{esc(b["title"])}</a> <span class="meta">· {fd(b["date"])}</span></li>' for b in related(a)) + "</ul>"
     if a["_hubs"]: rel += '<p class="meta">More on: ' + " · ".join(f'<a href="../topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in a["_hubs"]) + "</p>"
     rel += "</aside>"
-    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published <time datetime="{a["date"]}">{fd(a["date"])}</time> · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="../index.html">← All news</a></p></article>'
+    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published <time datetime="{a["date"]}">{fd(a["date"])}</time> · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
     page(f"news/{a['slug']}.html", seo_title(a), a["summary"], c, 1, ld, "article", a["_og"])
 
 L = f"<strong>{LLC}</strong>"
@@ -275,8 +275,8 @@ for h in HUBS:
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE_URL}/news/{a['slug']}.html", "name": a["title"]} for i, a in enumerate(h["items"])]}}
     ht = f"{h['h1']} | HumanoidBeat"
     page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], (h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"],
-         f'<div class="prose page hub"><p class="meta"><a href="../index.html">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p><ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
-page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/index.html">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
+         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p><ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
 
 # sitemap (with image extension), robots, llms, feed, indexnow key
 urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + [(f, BUILD_DATE, None) for f in legal]
@@ -317,3 +317,10 @@ pending = [f"Generate `{sp['file']}` in /workspace/humanoid-assets/ for `{a['slu
 L2 += ["", "## TODO (images)", ""] + [f"- [ ] {t}" for t in pending + TODO_IMAGES]
 open("images.md", "w").write("\n".join(L2) + "\n")
 print("built", len(A), "articles")
+
+# Guard: no internal link may point at an index.html / www / http variant (GSC "alternate"/"redirect" issues)
+import re as _re, glob as _g
+for _f in _g.glob(OUT + "/**/*.html", recursive=True) + [OUT + "/feed.xml", OUT + "/sitemap.xml", OUT + "/news-sitemap.xml"]:
+    _t = open(_f).read()
+    _bad = _re.findall(r'(?:href|src|<loc>|<link>)="?(?:[^"<]*index\.html|https?://www\.humanoidbeat\.com[^"<]*|http://humanoidbeat\.com[^"<]*)', _t)
+    assert not _bad, (_f, _bad[:3])
