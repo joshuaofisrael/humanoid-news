@@ -1349,5 +1349,172 @@
    "alt": "A grey bipedal humanoid robot carrying a parts tote past shelving in a car factory logistics area (AI-generated image)",
    "note": "Generic illustration; not a photo of UBTECH's robots or FAW-Volkswagen's plants. No people shown."
   }
+ },
+ {
+  "slug": "gxo-agility-digit-two-more-sites-three-manufacturing-customers",
+  "date": "2026-10-27",
+  "updated": "2026-10-27",
+  "cat": "Agility",
+  "title": "GXO adds Agility's Digit at two more US warehouses as Agility names three new paid manufacturing programs",
+  "seo_title": "GXO expands Agility Digit to two more US sites",
+  "summary": "GXO plans to deploy Agility Robotics' Digit humanoid at sites in Statesville, North Carolina, and Lebanon, Tennessee, from early 2027, and Agility says three unnamed manufacturers have joined paid programs.",
+  "body": [
+   "<strong>Short answer:</strong> Contract logistics company GXO will deploy Agility Robotics' Digit humanoid at two more US e-commerce fulfilment sites, in Statesville, North Carolina, and Lebanon, Tennessee, according to an Agility press release published on 26 October. Deployments are expected to begin in early 2027 with the current Digit 4 and move to Digit 5 once it is commercially available, the company said.",
+   "The expansion builds on GXO's site in Flowery Branch, Georgia, where Agility says Digit has moved more than 100,000 totes under a multi-year agreement that began in June 2024. Humanoids Daily noted that the companies have not disclosed how many robots will go to the new sites, the contract value or a date for the switch to Digit 5, and that the 100,000-tote figure repeats an earlier milestone rather than giving an updated total. Agility CEO Peggy Johnson described the expansion by its first commercial customer as evidence of practical value, the outlet reported.",
+   "In the same release, Agility said three more manufacturers are taking part in paid programs: a major global automaker, one of the world's largest developers of automotive technology and components, and a global consumer products maker. None has agreed to be named. Agility also said it is in discussions with more than 30 prospective customers, including two early-stage potential subcontractor engagements supporting a branch of the US Armed Services, and stressed that no agreements have been signed for those.",
+   "Agility repeated that it has more than $300 million in committed multi-year orders for Digit 5, a figure it describes as potential multi-year value rather than current revenue. The company is going public through a merger with Churchill Capital Corp XI under the proposed ticker AGLT, according to Humanoids Daily. Earlier this month AGCO signed a <a href=\"agco-agility-digit-pilot-hesston-kansas.html\">Digit pilot in Kansas</a>, and the new GXO sites are now listed in our <a href=\"../humanoid-robot-deployment-tracker.html\">humanoid deployment tracker</a> and <a href=\"../topics/deployments.html\">deployments hub</a>."
+  ],
+  "analysis": [
+   "Opinion: A paying customer adding sites is a stronger signal than a new pilot, but without robot counts or throughput targets it is hard to judge scale. The unnamed manufacturing programs are worth watching for whether they turn into named, multi-site rollouts."
+  ],
+  "disclaimer": "Customer, pipeline and order figures are Agility Robotics' own statements and have not been independently verified. Agility is in the process of going public through a SPAC merger; this article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "Agility Robotics: Agility Robotics Highlights Commercial Momentum and Growing Enterprise Demand for Digit Humanoid Robot (26 Oct 2026)",
+    "url": "https://www.agilityrobotics.com/content/agility-robotics-highlights-commercial-momentum-and-growing-enterprise-demand-for-digit-humanoid-robot"
+   },
+   {
+    "title": "Humanoids Daily: GXO Expands Agility Partnership to Two More U.S. Sites, Starting With Digit 4 (26 Oct 2026)",
+    "url": "https://www.humanoidsdaily.com/news/gxo-agility-digit-two-sites-2027-expansion"
+   }
+  ],
+  "image": {
+   "src": "src-img/gxo-agility-digit-two-more-sites-three-manufacturing-customers-hero.jpg",
+   "ai": true,
+   "alt": "A bipedal humanoid robot placing a plastic tote onto a conveyor in a large, brightly lit fulfilment warehouse (AI-generated image)",
+   "note": "Generic illustration; not a photo of Agility's Digit or a GXO facility. No people shown."
+  }
+ },
+ {
+  "slug": "casbot-a-plus-plus-round-shoemaking-mining-robots",
+  "date": "2026-10-27",
+  "updated": "2026-10-27",
+  "cat": "Funding",
+  "title": "CASBOT raises several hundred million yuan as it reports over RMB 400 million in shoemaking-robot orders",
+  "seo_title": "CASBOT raises A++ round, cites RMB 400M shoe orders",
+  "summary": "Beijing embodied-AI company CASBOT has closed an A++ round worth several hundred million yuan and says it holds more than RMB 400 million in 2026 orders for shoemaking robots.",
+  "body": [
+   "<strong>Short answer:</strong> Beijing-based CASBOT (中科慧灵), which builds humanoid and wheeled-arm robots, has completed an A++ funding round worth several hundred million yuan, according to China Securities Journal and Science and Technology Daily, both reporting on 26 October. Investors include Zhilai Investment, Yonghua Investment, Maotian Investment, Yuanhe Chenkun, Guoke Kezhi and Luning Investment. The exact amount was not disclosed.",
+   "The company told China Securities Journal that it holds more than RMB 400 million in 2026 orders for embodied-AI shoemaking robots, with production scheduled in the thousands of units. At a footwear factory in Putian, its lightweight CASBOT PA perception-to-action model, which it says can be trained on a single consumer GPU, runs robot arms that stamp an outsole every 7 seconds and press a pair of soles in 18 seconds, according to Science and Technology Daily. CASBOT's own estimate of a 50% to 70% annual return on investment for customers has not been independently verified.",
+   "Founded in 2023 and described by Science and Technology Daily as incubated by the Chinese Academy of Sciences' Institute of Automation, CASBOT sells the full-size CASBOT 02 humanoid, the wheeled-arm CASBOT W2 and the half-size CASBOT Mini. AI Market Watch reported that the company also has a mining joint venture with Shandong Zhaojin Group and Shandong Zhongkuang Group that is field-testing underground explosive-charging robots, and that its previous A round of nearly RMB 100 million in June 2025 was led by Lens Technology. Founder and chairman Zhang Zhengtao said the value of embodied intelligence \"must ultimately be tested in the real world\", per Science and Technology Daily.",
+   "The new money will go to mass-production delivery, model development and market expansion, the company said. For more on China's humanoid sector, see our <a href=\"../topics/china.html\">China hub</a> and <a href=\"../topics/funding-policy.html\">funding and policy coverage</a>."
+  ],
+  "analysis": [
+   "Opinion: CASBOT is betting on narrow, repeatable factory stations rather than general-purpose humanoids, which is a sensible way to show measurable returns early. Its order book will mean more once deliveries and acceptance on real lines are reported."
+  ],
+  "disclaimer": "Funding, order and return-on-investment figures are company statements reported by the outlets cited and have not been independently verified. This article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "China Securities Journal (中证网): 中科慧灵宣布完成数亿元A++轮融资 (26 Oct 2026)",
+    "url": "https://www.cs.com.cn/ssgs/01/2026/10/26/detail_2026102610047252.html"
+   },
+   {
+    "title": "Science and Technology Daily (科技日报): 中科慧灵完成数亿元A++轮融资，推动具身智能从概念走向产业 (26 Oct 2026)",
+    "url": "https://www.stdaily.com/web/gdxw/2026-10/26/content_602796.html"
+   },
+   {
+    "title": "AI Market Watch: CASBOT closes an A++ round worth several hundred million yuan to scale its shoemaking and mining robots (26 Oct 2026)",
+    "url": "https://www.ai-market-watch.com/news/secures-a-multi-billion-yuan-a-round-as-it-scales-embodied-ai-robots-hv6eui"
+   }
+  ],
+  "image": {
+   "src": "src-img/casbot-a-plus-plus-round-shoemaking-mining-robots-hero.jpg",
+   "ai": true,
+   "alt": "A white robotic arm pressing a rubber shoe sole onto an upper at a tidy footwear factory workstation (AI-generated image)",
+   "note": "Generic illustration; not a photo of CASBOT's robots or the Putian factory. No people shown."
+  }
+ },
+ {
+  "slug": "mosense-rmb100m-angel-plus-robot-electronic-skin",
+  "date": "2026-10-27",
+  "updated": "2026-10-27",
+  "cat": "Funding",
+  "title": "Robot e-skin startup MoSense raises about RMB 100 million five months after founding",
+  "seo_title": "MoSense raises ~RMB 100M for robot electronic skin",
+  "summary": "Shanghai-based MoSense, which develops whole-body tactile sensing for robots, has raised an angel-plus round of around RMB 100 million led by CDH Investments and Oasis Capital, with LimX Dynamics among the backers.",
+  "body": [
+   "<strong>Short answer:</strong> MoSense (模感科技), a Shanghai startup building electronic skin that lets robots sense touch across their bodies, has raised an angel-plus round of around RMB 100 million led by CDH Investments and Oasis Capital, according to STAR Market Daily and TechNode. Other investors include humanoid maker LimX Dynamics, Loongson Venture Capital, CAS Star, Hua Capital and Pudong Venture Capital Group, and STAR Market Daily says an unnamed leading domestic embodied-AI company also took part.",
+   "The company was founded in May 2026 by a team from the Hong Kong University of Science and Technology, STAR Market Daily reported. Its MoSkin hardware builds sensing into structural parts using what the company calls electromagnetic metamaterial mechanics and magneto-optical 3D printing, while its MoTact algorithms process tactile signals at kilohertz sampling rates. Its next project, MoWorld, is a model meant to use high-frequency touch feedback to correct a robot's movements.",
+   "According to STAR Market Daily, MoSense is working with several leading robot makers on whole-body tactile systems and with robot ODM and OEM companies on deploying its system and models together. The company has not named those partners. Touch sensing is a growing area of investment as humanoids take on more contact-heavy work, as seen in research such as <a href=\"amazon-whole-body-dexterity-humanoid-torso-carrying.html\">Amazon's whole-body carrying study</a>."
+  ],
+  "analysis": [
+   "Opinion: Whole-body touch is one of the less visible gaps in today's humanoids, so investor interest makes sense. A five-month-old company still has to show its skin can survive daily wear on real robots."
+  ],
+  "disclaimer": "Funding and partnership details are as reported by the outlets cited and have not been independently verified. This article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "TechNode: Robot electronic-skin startup MoSense raises around RMB 100 million in angel-plus funding (27 Oct 2026)",
+    "url": "https://technode.com/2026/10/27/robot-electronic-skin-startup-mosense-raises-around-rmb-100-million-in-angel-plus-funding/"
+   },
+   {
+    "title": "STAR Market Daily (科创板日报): 模感科技完成亿元级天使+轮融资 鼎晖投资、绿洲资本领投 (26 Oct 2026)",
+    "url": "https://api3.cls.cn/share/article/2515702?app=stib&os=android&sv=247"
+   }
+  ],
+  "image": {
+   "src": "src-img/mosense-rmb100m-angel-plus-robot-electronic-skin-hero.jpg",
+   "ai": true,
+   "alt": "Close-up of a grey robotic hand and forearm covered in a thin, flexible sensor skin with a fine grid pattern, on a lab bench (AI-generated image)",
+   "note": "Generic illustration; not a photo of MoSense products. No people shown."
+  }
+ },
+ {
+  "slug": "noetix-robotics-hong-kong-ipo-filing-report",
+  "date": "2026-10-27",
+  "updated": "2026-10-27",
+  "cat": "Funding",
+  "title": "Low-cost humanoid maker Noetix has confidentially filed for a Hong Kong IPO, Bloomberg reports",
+  "seo_title": "Noetix Robotics files for Hong Kong IPO, report says",
+  "summary": "Beijing-based Noetix Robotics, maker of the RMB 9,998 Bumi humanoid, has confidentially filed for a Hong Kong listing that could raise several hundred million dollars, according to a Bloomberg report relayed by TechNode.",
+  "body": [
+   "<strong>Short answer:</strong> Noetix Robotics, a Beijing humanoid maker known for low-cost robots, has confidentially filed for an initial public offering in Hong Kong that could raise several hundred million dollars, Bloomberg reported, according to TechNode on 26 October. The listing could happen as early as 2027, but the amount and timing have not been finalised, the report said. Noetix has not publicly confirmed the filing in the sources we reviewed.",
+   "Founded in September 2023, Noetix makes the consumer-oriented Bumi humanoid, introduced with a starting price of RMB 9,998, alongside its N-series and E-series robots, TechNode reported. The company raised about RMB 1 billion in March in a round led by Chendao Capital, an investment platform affiliated with battery maker CATL, according to the outlet.",
+   "A listing would give Noetix another source of capital as it develops robots for consumer, education and commercial use, TechNode said. Our <a href=\"../topics/china.html\">China hub</a> and <a href=\"../topics/funding-policy.html\">funding and policy coverage</a> track the wider sector."
+  ],
+  "analysis": [
+   "Opinion: A sub-RMB 10,000 humanoid is a very different business from a factory robot, so any prospectus would be a rare look at whether consumer and education demand can sustain a hardware company."
+  ],
+  "disclaimer": "The IPO filing is reported by Bloomberg via TechNode and has not been confirmed by Noetix in the sources cited. Plans may change. This article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "TechNode: Affordable humanoid robot maker Noetix reportedly files for Hong Kong IPO (26 Oct 2026)",
+    "url": "https://technode.com/2026/10/26/affordable-humanoid-robot-maker-noetix-reportedly-files-for-hong-kong-ipo/"
+   }
+  ],
+  "image": {
+   "src": "src-img/noetix-robotics-hong-kong-ipo-filing-report-hero.jpg",
+   "ai": true,
+   "alt": "A small, child-height white humanoid robot standing on a classroom table next to a laptop (AI-generated image)",
+   "note": "Generic illustration; not a photo of Noetix's Bumi robot. No people shown."
+  }
+ },
+ {
+  "slug": "unitree-h2-x-loses-leg-side-flip-hangzhou",
+  "date": "2026-10-27",
+  "updated": "2026-10-27",
+  "cat": "Unitree",
+  "title": "Unitree's new H2-X humanoid loses a lower leg after a side flip at a Hangzhou conference",
+  "seo_title": "Unitree H2-X loses a leg in side-flip demo",
+  "summary": "A Unitree H2-X humanoid fell while landing a side flip at the World Physical AI Conference in Hangzhou and one lower leg detached at the joint, TechNode reported; Unitree had not publicly commented.",
+  "body": [
+   "<strong>Short answer:</strong> A Unitree H2-X humanoid lost its balance while landing a side flip during a public demonstration in Hangzhou last week, and its right lower leg came off at the joint, TechNode reported on 26 October. The incident happened at the 2026 World Physical AI Conference and Unitree Robotics Partner Ecosystem Conference, a day after the robot was unveiled, according to the outlet. Attendees filmed it and the footage spread across social media.",
+   "According to TechNode, the robot was performing martial-arts-style moves on a cushioned mat when it failed to stabilise on landing and fell sideways. As of TechNode's report, Unitree had not issued a public response or explained the cause, and had not disclosed any investigation findings. We did not find a company statement either.",
+   "Unitree launched the H2-X on 21 October with the slogan \"Kung Fu Legend: Guardian\" and positions it for security patrols, emergency rescue and other protective work, TechNode said. Unitree claims a battery life of around eight hours, compared with about three hours for the standard H2. The robot's promotional video, which showed it denting car doors and lifting the front of a vehicle, was covered in <a href=\"why-unitree-h2-x-guardian-video-is-trending.html\">our earlier trending report</a>. More Unitree coverage is in the <a href=\"../topics/unitree.html\">Unitree hub</a>."
+  ],
+  "analysis": [
+   "Opinion: One fall during an extreme stunt does not say much about how the robot performs in ordinary use, but it is a reminder that durability and safe failure matter more for patrol and rescue work than for a highlight reel. A clear explanation from Unitree would help buyers judge that."
+  ],
+  "sources": [
+   {
+    "title": "TechNode: Unitree's newly launched H2-X Robot loses a leg in public demonstration (26 Oct 2026)",
+    "url": "https://technode.com/2026/10/26/unitrees-newly-launched-h2-x-robot-loses-a-leg-in-public-demonstration/"
+   }
+  ],
+  "image": {
+   "src": "src-img/unitree-h2-x-loses-leg-side-flip-hangzhou-hero.jpg",
+   "ai": true,
+   "alt": "A tall dark-grey humanoid robot lying on its side on a black exhibition mat with a detached lower leg beside it, empty stage behind (AI-generated image)",
+   "note": "Generic illustration; not a photo of Unitree's H2-X or the Hangzhou event. No people shown."
+  }
  }
 ]

@@ -3,6 +3,11 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [GXO adds Agility's Digit at two more US warehouses as Agility names three new paid manufacturing programs](https://humanoidbeat.com/news/gxo-agility-digit-two-more-sites-three-manufacturing-customers.html): GXO plans to deploy Agility Robotics' Digit humanoid at sites in Statesville, North Carolina, and Lebanon, Tennessee, from early 2027, and Agility says three unnamed manufacturers have joined paid programs.
+- [CASBOT raises several hundred million yuan as it reports over RMB 400 million in shoemaking-robot orders](https://humanoidbeat.com/news/casbot-a-plus-plus-round-shoemaking-mining-robots.html): Beijing embodied-AI company CASBOT has closed an A++ round worth several hundred million yuan and says it holds more than RMB 400 million in 2026 orders for shoemaking robots.
+- [Robot e-skin startup MoSense raises about RMB 100 million five months after founding](https://humanoidbeat.com/news/mosense-rmb100m-angel-plus-robot-electronic-skin.html): Shanghai-based MoSense, which develops whole-body tactile sensing for robots, has raised an angel-plus round of around RMB 100 million led by CDH Investments and Oasis Capital, with LimX Dynamics among the backers.
+- [Low-cost humanoid maker Noetix has confidentially filed for a Hong Kong IPO, Bloomberg reports](https://humanoidbeat.com/news/noetix-robotics-hong-kong-ipo-filing-report.html): Beijing-based Noetix Robotics, maker of the RMB 9,998 Bumi humanoid, has confidentially filed for a Hong Kong listing that could raise several hundred million dollars, according to a Bloomberg report relayed by TechNode.
+- [Unitree's new H2-X humanoid loses a lower leg after a side flip at a Hangzhou conference](https://humanoidbeat.com/news/unitree-h2-x-loses-leg-side-flip-hangzhou.html): A Unitree H2-X humanoid fell while landing a side flip at the World Physical AI Conference in Hangzhou and one lower leg detached at the joint, TechNode reported; Unitree had not publicly commented.
 - [ETH Zürich's ACP policy lets a Unitree G1 climb ladders, vault and get back up after falls](https://humanoidbeat.com/news/eth-zurich-acp-humanoid-climbing-contact-planning.html): Researchers at ETH Zürich's Robotic Systems Lab report a single learned policy, Attention-based Contact Planning, that plans where a humanoid's hands, knees, feet and pelvis should touch the terrain, letting a Unitree G1 climb, vault and recover from falls.
 - [110 AgiBot A3 humanoids set a Guinness record for the most robots dancing at once](https://humanoidbeat.com/news/agibot-110-a3-humanoids-guinness-dance-record.html): AgiBot ran 110 Expedition A3 humanoids through a synchronised routine in Jinan on 24 October, and a Guinness World Records adjudicator confirmed it as a new record for the most humanoid robots dancing simultaneously.
 - [Amazon-led team teaches a humanoid to hold boxes against its torso and under its arm](https://humanoidbeat.com/news/amazon-whole-body-dexterity-humanoid-torso-carrying.html): A preprint from Amazon, UC San Diego and the University of Michigan describes Whole-Body Dexterity, a controller that lets a teleoperated Unitree G1 brace objects against its arms and torso, completing 45 of 50 real-world trials.
@@ -36,6 +41,7 @@
 
 ## Topics
 - [Unitree humanoid robot news](https://humanoidbeat.com/topics/unitree.html)
+- [Agility Robotics and Digit news](https://humanoidbeat.com/topics/agility-robotics.html)
 - [Humanoid robots in China](https://humanoidbeat.com/topics/china.html)
 - [Humanoid robot research and AI models](https://humanoidbeat.com/topics/research.html)
 - [Humanoid robots at work: pilots and deployments](https://humanoidbeat.com/topics/deployments.html)

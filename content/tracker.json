@@ -1,13 +1,86 @@
 [
- {"robot": "Agility Robotics Digit", "where": "AGCO production plant, Hesston, Kansas, USA", "tasks": "Sorting and stacking parts, placing totes for storage", "status": "Pilot agreement signed; pilot expected to begin in 2027, per the companies", "story": "agco-agility-digit-pilot-hesston-kansas"},
- {"robot": "Agility Robotics Digit", "where": "GXO, Schaeffler and Toyota Motor Manufacturing Canada", "tasks": "Not specified in the announcement", "status": "Operating with these customers, according to Agility; Digit 5 early access planned for the first half of 2027", "story": "agility-digit-5-nvidia-igx-thor-pittsburgh-hub"},
- {"robot": "Robros bipedal humanoids (20 robots)", "where": "Nepes, Sungwoo Hitech, HD Hyundai Samho and Delivery Lab sites, South Korea", "tasks": "Removing contaminants from components, placing auto body parts, stacking scaffolding, moving refrigerated packaging", "status": "Regulatory-sandbox exemption granted, conditional on risk assessments, per Seoul Economic Daily", "story": "korea-safety-rules-robros-humanoids-factories"},
- {"robot": "Unitree hardware with HIVE Robots software", "where": "Føtex supermarket, Lyngby, Denmark", "tasks": "Restocking shelves after closing time", "status": "Multi-year pilot under way, per ESM Magazine", "story": "fotex-unitree-hive-grocery-restocking-pilot"},
- {"robot": "Six humanoid robots", "where": "Schaeffler factory, Taicang, China", "tasks": "Staging, joining, inspecting, labelling and packaging joint modules for other humanoids", "status": "Working on the assembly line, according to Schaeffler", "story": "schaeffler-taicang-humanoids-build-humanoid-actuators"},
- {"robot": "ROKAE Helios wheeled humanoids (5 robots)", "where": "Schaeffler factory, Taicang, China", "tasks": "Work on the humanoid-parts line", "status": "Working at the site, according to ROKAE", "story": "rokae-10000th-humanoid-force-controlled-arm"},
- {"robot": "UBTECH Walker S and Walker S Lite", "where": "FAW-Volkswagen plant, Qingdao, China", "tasks": "Earlier: bolt tightening, parts handling, quality-inspection training. Next: factory logistics", "status": "Logistics agreement signed 8 October 2026; no robot numbers, sites or timetable given", "story": "faw-volkswagen-ubtech-humanoid-logistics-trials"},
- {"robot": "UBTECH humanoids", "where": "Automotive parts line with Duksan JM Robotics and AJIN Industrial, South Korea", "tasks": "Automotive parts production", "status": "Trial announced in July; on-site tests under way per a UBTech executive, as reported by The Korea Times", "story": "chinese-humanoid-makers-seek-trials-in-south-korea"},
- {"robot": "Anyverse Dynamics humanoids", "where": "Cafes and other service settings, South Korea", "tasks": "Service work, later manufacturing", "status": "Trials planned for the fourth quarter, per the company as reported by The Korea Times", "story": "chinese-humanoid-makers-seek-trials-in-south-korea"},
- {"robot": "Toyota and Honda humanoids", "where": "Japanese car plants", "tasks": "Wire-harness installation, final vehicle inspection, assembly work", "status": "Trials, per Automotive News; no volumes or deployment date published", "story": "toyota-honda-humanoid-factory-trials-japan"},
- {"robot": "Tesla Optimus", "where": "Tesla, Fremont, California, USA (early production)", "tasks": "Deliveries to outside customers", "status": "Company target: deliveries to outside customers around the end of 2027, per Elon Musk as reported by Electrek", "story": "tesla-optimus-deliveries-late-2027"}
+ {
+  "robot": "Agility Robotics Digit",
+  "where": "GXO e-commerce fulfilment sites, Statesville, North Carolina, and Lebanon, Tennessee, USA",
+  "tasks": "Repetitive material handling for e-commerce fulfilment",
+  "status": "Agreement announced; deployments expected to begin in early 2027 with Digit 4, per Agility",
+  "story": "gxo-agility-digit-two-more-sites-three-manufacturing-customers"
+ },
+ {
+  "robot": "Agility Robotics Digit",
+  "where": "AGCO production plant, Hesston, Kansas, USA",
+  "tasks": "Sorting and stacking parts, placing totes for storage",
+  "status": "Pilot agreement signed; pilot expected to begin in 2027, per the companies",
+  "story": "agco-agility-digit-pilot-hesston-kansas"
+ },
+ {
+  "robot": "Agility Robotics Digit",
+  "where": "GXO, Schaeffler and Toyota Motor Manufacturing Canada",
+  "tasks": "Not specified in the announcement",
+  "status": "Operating with these customers, according to Agility; Digit 5 early access planned for the first half of 2027",
+  "story": "agility-digit-5-nvidia-igx-thor-pittsburgh-hub"
+ },
+ {
+  "robot": "Robros bipedal humanoids (20 robots)",
+  "where": "Nepes, Sungwoo Hitech, HD Hyundai Samho and Delivery Lab sites, South Korea",
+  "tasks": "Removing contaminants from components, placing auto body parts, stacking scaffolding, moving refrigerated packaging",
+  "status": "Regulatory-sandbox exemption granted, conditional on risk assessments, per Seoul Economic Daily",
+  "story": "korea-safety-rules-robros-humanoids-factories"
+ },
+ {
+  "robot": "Unitree hardware with HIVE Robots software",
+  "where": "Føtex supermarket, Lyngby, Denmark",
+  "tasks": "Restocking shelves after closing time",
+  "status": "Multi-year pilot under way, per ESM Magazine",
+  "story": "fotex-unitree-hive-grocery-restocking-pilot"
+ },
+ {
+  "robot": "Six humanoid robots",
+  "where": "Schaeffler factory, Taicang, China",
+  "tasks": "Staging, joining, inspecting, labelling and packaging joint modules for other humanoids",
+  "status": "Working on the assembly line, according to Schaeffler",
+  "story": "schaeffler-taicang-humanoids-build-humanoid-actuators"
+ },
+ {
+  "robot": "ROKAE Helios wheeled humanoids (5 robots)",
+  "where": "Schaeffler factory, Taicang, China",
+  "tasks": "Work on the humanoid-parts line",
+  "status": "Working at the site, according to ROKAE",
+  "story": "rokae-10000th-humanoid-force-controlled-arm"
+ },
+ {
+  "robot": "UBTECH Walker S and Walker S Lite",
+  "where": "FAW-Volkswagen plant, Qingdao, China",
+  "tasks": "Earlier: bolt tightening, parts handling, quality-inspection training. Next: factory logistics",
+  "status": "Logistics agreement signed 8 October 2026; no robot numbers, sites or timetable given",
+  "story": "faw-volkswagen-ubtech-humanoid-logistics-trials"
+ },
+ {
+  "robot": "UBTECH humanoids",
+  "where": "Automotive parts line with Duksan JM Robotics and AJIN Industrial, South Korea",
+  "tasks": "Automotive parts production",
+  "status": "Trial announced in July; on-site tests under way per a UBTech executive, as reported by The Korea Times",
+  "story": "chinese-humanoid-makers-seek-trials-in-south-korea"
+ },
+ {
+  "robot": "Anyverse Dynamics humanoids",
+  "where": "Cafes and other service settings, South Korea",
+  "tasks": "Service work, later manufacturing",
+  "status": "Trials planned for the fourth quarter, per the company as reported by The Korea Times",
+  "story": "chinese-humanoid-makers-seek-trials-in-south-korea"
+ },
+ {
+  "robot": "Toyota and Honda humanoids",
+  "where": "Japanese car plants",
+  "tasks": "Wire-harness installation, final vehicle inspection, assembly work",
+  "status": "Trials, per Automotive News; no volumes or deployment date published",
+  "story": "toyota-honda-humanoid-factory-trials-japan"
+ },
+ {
+  "robot": "Tesla Optimus",
+  "where": "Tesla, Fremont, California, USA (early production)",
+  "tasks": "Deliveries to outside customers",
+  "status": "Company target: deliveries to outside customers around the end of 2027, per Elon Musk as reported by Electrek",
+  "story": "tesla-optimus-deliveries-late-2027"
+ }
 ]
