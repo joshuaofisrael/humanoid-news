@@ -1,0 +1,14 @@
+# To activate: copy to .github/workflows/legal-gate.yml (the bot token lacks GitHub "workflow" scope, so it could not add it).
+name: legal-hold gate
+on: [push, pull_request]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      # Fails if gate data is missing or any HOLD_REVIEW item (not approved by Joshua for its exact sha256,
+      # not a pre-gate live page) appears in docs/news, sitemap.xml, feed.xml or the homepage.
+      - run: python3 legal_gate.py ci
+        env: {CONTENT_REVIEW_DIR: /nonexistent}

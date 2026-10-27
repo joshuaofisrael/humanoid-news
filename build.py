@@ -22,6 +22,12 @@ TODO_IMAGES = []
 SAME_AS = ["https://x.com/TheCharismaCat1"]  # verified real profiles only (Tech Beat Daily on X, the news account that posts HumanoidBeat stories)
 A = json.load(open("content/articles.json", encoding="utf-8"))
 A.sort(key=lambda a: a["date"], reverse=True)
+# ---- LEGAL-HOLD GATE (Joshua's global rule, 27 Oct 2026; see legal_gate.py + README). Fails closed: if the gate
+# cannot run, the build stops and nothing deploys. HOLD_REVIEW items are removed here and never rendered.
+import legal_gate
+legal_gate.mirror_approvals()
+A, LEGAL_REPORT = legal_gate.apply(A)
+HELD = {s for s, _, _ in LEGAL_REPORT["held"]}
 PUB = {"@type": "Organization", "name": "HumanoidBeat", "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}, "sameAs": SAME_AS}
 
 def esc(s): return html.escape(s, quote=True)
@@ -92,6 +98,8 @@ def credit_html(im):
 
 # ---------------------------------------------------------------- page shell
 def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None, base=None, extra_head=""):
+    if path.startswith("news/") and path[5:-5] in HELD:
+        raise SystemExit(f"LEGAL GATE: refusing to render held item {path}")
     r = base if base is not None else "../" * depth
     url = SITE_URL + "/" + (path[:-10] if path.endswith("index.html") else path)
     og = image or {"url": f"{SITE_URL}/img/og-default.jpg", "alt": NAME + ": humanoid robot news"}

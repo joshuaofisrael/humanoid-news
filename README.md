@@ -91,3 +91,15 @@ Edit `SITE_URL`, run `python3 build.py`, update `docs/CNAME`, push, set the doma
 
 ## Accessibility / performance notes
 Dark theme tuned for WCAG AA contrast, visible focus rings, skip link, `prefers-reduced-motion` disables all animation, no external fonts or libraries, ~3 KB JS, external cached CSS.
+
+## Legal-hold gate (mandatory, since 27 Oct 2026)
+
+`build.py` runs `legal_gate.py` before rendering anything, and `ci/legal-gate.yml` is a ready GitHub Actions check (move it to `.github/workflows/` to activate; the bot token lacks the workflow scope). Full rule: `/workspace/content-review/RULE.md`.
+
+- Every article needs at least one real http(s) source URL, or it is held (rule 4).
+- Every image needs a record in `content/image-provenance.json` whose sha256 matches the file. For a new own AI image, record it with its generation prompt straight after generating it:
+  `python3 legal_gate.py record-image src-img/<slug>-hero.jpg "<the exact prompt used>"`. (Inline images: run it on `src-img/inline/<file>` after the first build copies it.) An image with no record, a changed file, or a third-party image without documented permission is held (rule 3). Hero images must keep `"ai": true` so the "AI-generated image" caption renders.
+- Pattern flags for allegations (1), personal/sensitive info (2), high-impact advice (5), election info (6), misleading headlines (7) and legal complaints or restrictions (8).
+- A flagged item gets status HOLD_REVIEW: it is not rendered, a draft goes to `/workspace/content-review/drafts/humanoidbeat/`, and one line is appended to `/workspace/content-review/queue.jsonl`. It publishes only once Joshua approves that exact version (sha256 record in `approvals.jsonl`), or, for moderate-only holds (rules 3, 4, 5, 7), after a proper fix plus a SAFE independent ChatGPT review logged in `moderate-clearances.jsonl`. Bots never write approvals. Do not soften an allegation to get past the gate.
+- `content/legal-baseline.json` lists the articles that were live when the gate went in; unchanged ones keep rendering even if a pattern changes (flags are logged, nothing is unpublished automatically). Editing one re-checks it.
+- `python3 legal_gate.py scan` lists flags for every article without building.
