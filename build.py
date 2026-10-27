@@ -157,13 +157,32 @@ def card(a, feat=False, eager=False):
 HUB_DEFS = [  # (slug, name, h1, intro, regex on title+summary+cat). A hub is published only with >= 3 articles (no thin pages).
     ("unitree", "Unitree", "Unitree humanoid robot news", "Every HumanoidBeat story about Unitree, the Chinese maker of the H1, H2 and G1 humanoids: products, software, pilots and the attention its videos draw. Newest first; each story links to its sources.", r"Unitree"),
     ("figure", "Figure", "Figure AI humanoid robot news", "Every HumanoidBeat story about Figure and its Figure 03 and Figure 04 humanoids and Helix models. Newest first; each story links to its sources.", r"\bFigure( 0\d|'s| says| AI)|^Figure$"),
-    ("agility-robotics", "Agility Robotics", "Agility Robotics and Digit news", "Every HumanoidBeat story about Agility Robotics and its Digit humanoid: hardware, compute partners and factory pilots. Newest first; each story links to its sources.", r"Agility|\bDigit\b"),
+    ("agility-robotics", "Agility Robotics", "Agility Robotics Digit: news, customers and Digit 5", "Agility Robotics' Digit humanoid: who uses it, GXO and AGCO deployments, Digit 5 timing and orders, and every story, each linked to its sources.", r"Agility|\bDigit\b"),
     ("nvidia", "NVIDIA", "NVIDIA and humanoid robots", "HumanoidBeat coverage of NVIDIA's role in humanoid robotics, including its Isaac platform and IGX Thor compute, and the robot makers building on them. Newest first; each story links to its sources.", r"NVIDIA"),
     ("china", "China", "Humanoid robots in China", "HumanoidBeat coverage of China's humanoid robot industry: output forecasts, national standards, and companies such as Unitree, XPENG, AiMOGA and Alibaba's Amap team. Newest first; each story links to its sources.", r"China|Chinese|Unitree|XPENG|Alibaba|AiMOGA|Taicang|UBTECH"),
     ("research", "Research", "Humanoid robot research and AI models", "HumanoidBeat coverage of humanoid robot research: control methods, robot foundation models and new training approaches, as described by their authors. Newest first; each story links to its sources.", r"^Research$|SuperMimic|λ0|PhoneBot|Rehearsal|Helix|VLA"),
     ("deployments", "Pilots and deployments", "Humanoid robots at work: pilots and deployments", "HumanoidBeat coverage of humanoid robots being trialled or used in factories, shops and warehouses, and of companies' delivery targets. Newest first; each story links to its sources.", r"pilot|Pilot|factor|restock|deliveries|trials|Deployments"),
     ("funding-policy", "Funding and policy", "Humanoid robot funding, regulation and standards", "HumanoidBeat coverage of money and rules in humanoid robotics: funding rounds as announced by the companies, and government standards and safety decisions. Newest first; each story links to its sources. Nothing here is investment or legal advice.", r"^Funding$|^Policy$|Series A|pre-seed|standards|safety-rule"),
 ]
+HUB_GUIDE = {  # optional evergreen overview per hub: every fact comes from a linked HumanoidBeat story (which cites its sources)
+    "agility-robotics": {
+        "asof": "27 October 2026",
+        "facts": [
+            'Agility says Digit already works with GXO, Schaeffler and Toyota Motor Manufacturing Canada, and that it has added four customers in automotive, consumer goods and agriculture (<a href="../news/agility-digit-5-nvidia-igx-thor-pittsburgh-hub.html">Digit 5 and Pittsburgh report</a>).',
+            'GXO, Agility\'s first commercial customer, has used Digit at Flowery Branch, Georgia, under a multi-year agreement that began in June 2024, and Agility says Digit has moved more than 100,000 totes there. GXO plans two more US sites, Statesville, North Carolina, and Lebanon, Tennessee, from early 2027 (<a href="../news/gxo-agility-digit-two-more-sites-three-manufacturing-customers.html">GXO expansion report</a>).',
+            'AGCO plans a Digit pilot at its Hesston, Kansas, factory from 2027, starting with sorting and stacking parts and placing totes for storage (<a href="../news/agco-agility-digit-pilot-hesston-kansas.html">AGCO pilot report</a>).',
+            'Digit 5, the next version, will run on NVIDIA IGX Thor onboard computing. Agility expects early access in the first half of 2027, with availability widening over the following six to nine months.',
+            'Agility says it holds more than $300 million in multi-year Digit 5 orders, subject to contractual milestones and without naming the customers. It describes the figure as potential multi-year value, not current revenue.',
+            'Three more manufacturers, none named, are in paid programs, and Agility says it is talking to more than 30 prospective customers without signed agreements for those talks.',
+        ],
+        "faq": [
+            ("What does the Digit humanoid robot do?", "In the deployments Agility has announced, Digit handles repetitive material handling: moving totes in GXO's e-commerce fulfilment sites, and, in AGCO's planned pilot, sorting and stacking parts and placing totes for storage."),
+            ("When will Digit 5 be available?", "Agility says early access to Digit 5 should begin in the first half of 2027, with availability widening over the following six to nine months for manufacturing, warehouse and distribution operators. These are the company's targets."),
+            ("Is Agility Robotics a public company?", "Not as of our latest report. Agility is going public through a merger with the blank-check company Churchill Capital Corp XI, with the proposed ticker AGLT, according to reporting we cite. This is not investment advice."),
+            ("How many Digit robots are deployed?", "Agility has not published a robot count in the announcements we have covered, and GXO's expansion did not say how many robots will go to the new sites."),
+        ],
+    },
+}
 HUB_EXCLUDE = {"deployments": ("generative-bionics-amd-physical-ai-data-factory-italy",)}  # regex false positives
 def _hay(a): return f'{a["title"]} {a["summary"]}\n{a["cat"]}'
 HUBS = []
@@ -193,8 +212,9 @@ rest = [a for a in A if a not in trend]
 sections = ""
 if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it\'s trending</h2><div class="grid">' + "".join(card(a) for a in trend) + '</div></div></section>'
 sections += '<section class="sec" id="latest"><div class="w"><h2 class="sh">Latest news</h2><div class="grid">' + "".join(card(a, feat=(i == 0), eager=(i == 0)) for i, a in enumerate(rest)) + '</div></div></section>'
+_cohub = {"Figure": "figure", "Agility Digit": "agility-robotics", "Unitree": "unitree", "NVIDIA GR00T": "nvidia"}
 cos = ["Tesla Optimus", "Figure", "Agility Digit", "Boston Dynamics Atlas", "Unitree", "1X NEO", "Apptronik", "UBTECH", "XPeng IRON", "NVIDIA GR00T"]
-sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join(f"<li>{c}</li>" for c in cos) + "</ul></div></section>"
+sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join((f'<li><a href="topics/{_cohub[c]}.html">{c}</a></li>' if _cohub.get(c) in {h["slug"] for h in HUBS} else f"<li>{c}</li>") for c in cos) + "</ul></div></section>"
 if HUBS: sections += '<section class="sec"><div class="w"><h2 class="sh">Browse by topic</h2><ul class="chips hubs">' + "".join(f'<li><a href="topics/{h["slug"]}.html">{esc(h["name"])} ({len(h["items"])})</a></li>' for h in HUBS) + (f'<li><a href="humanoid-robot-deployment-tracker.html">Deployment tracker ({len(_TRK_EARLY)} stories)</a></li>' if len(_TRK_EARLY) >= 5 else "") + "</ul></div></section>"
 FAQ = [
     ("What does HumanoidBeat cover?", f"HumanoidBeat covers news about humanoid robots from any company or lab, including Tesla Optimus, Figure, Agility Robotics, Boston Dynamics, Unitree, 1X, XPENG and NVIDIA's robotics platforms. Stories cover new robots, AI models, factory and retail pilots, funding announcements, and government standards and safety rules."),
@@ -276,9 +296,13 @@ for h in HUBS:
     lst = "".join(f'<li><a href="../news/{a["slug"]}.html"><strong>{esc(a["title"])}</strong></a><br><span class="meta"><time datetime="{a["date"]}">{fd(a["date"])}</time></span> {esc(a["summary"])}</li>' for a in h["items"])
     hld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": h["h1"], "url": hu, "description": h["intro"], "publisher": PUB,
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE_URL}/news/{a['slug']}.html", "name": a["title"]} for i, a in enumerate(h["items"])]}}
+    g = HUB_GUIDE.get(h["slug"]); gh = ""
+    if g:
+        gh = f'<h2>What we know so far</h2><p class="meta">As of {g["asof"]}, based on the stories below and their cited sources.</p><ul>' + "".join(f"<li>{x}</li>" for x in g["facts"]) + "</ul><h2>Questions readers ask</h2>" + "".join(f"<h3>{esc(q)}</h3><p>{esc(ans)}</p>" for q, ans in g["faq"]) + "<h2>All stories</h2>"
+        hld = {"@context": "https://schema.org", "@graph": [{k: v for k, v in hld.items() if k != "@context"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in g["faq"]]}]}
     ht = f"{h['h1']} | HumanoidBeat"
     page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], (h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"],
-         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{gh}{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
 # ---------------------------------------------------------------- deployment tracker (evergreen, linkable; every row links to a sourced story)
 TRK = json.load(open("content/tracker.json")) if os.path.exists("content/tracker.json") else []
 _bys = {a["slug"]: a for a in A}

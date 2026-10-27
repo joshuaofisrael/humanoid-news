@@ -41,7 +41,7 @@
 
 ## Topics
 - [Unitree humanoid robot news](https://humanoidbeat.com/topics/unitree.html)
-- [Agility Robotics and Digit news](https://humanoidbeat.com/topics/agility-robotics.html)
+- [Agility Robotics Digit: news, customers and Digit 5](https://humanoidbeat.com/topics/agility-robotics.html)
 - [Humanoid robots in China](https://humanoidbeat.com/topics/china.html)
 - [Humanoid robot research and AI models](https://humanoidbeat.com/topics/research.html)
 - [Humanoid robots at work: pilots and deployments](https://humanoidbeat.com/topics/deployments.html)
