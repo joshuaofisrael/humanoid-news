@@ -1516,5 +1516,126 @@
    "alt": "A tall dark-grey humanoid robot lying on its side on a black exhibition mat with a detached lower leg beside it, empty stage behind (AI-generated image)",
    "note": "Generic illustration; not a photo of Unitree's H2-X or the Hangzhou event. No people shown."
   }
+ },
+ {
+  "slug": "google-gemini-robotics-er-2-public-preview-google-cloud",
+  "date": "2026-10-28",
+  "updated": "2026-10-28",
+  "cat": "Research",
+  "title": "Google opens Gemini Robotics ER 2, a high-level 'robot brain' model, to cloud customers in public preview",
+  "seo_title": "Gemini Robotics ER 2 enters public preview on Google Cloud",
+  "summary": "Google says its Gemini Robotics Embodied Reasoning 2 model, which plans and checks tasks for robots from arms to humanoids, is now in public preview on its Gemini platform for enterprise developers.",
+  "body": [
+   "<strong>Short answer:</strong> Google has made Gemini Robotics Embodied Reasoning 2 (ER 2) available in public preview on its Gemini platform, according to a Google Cloud blog post published on 27 October 2026 by Carolina Parada, head of Google DeepMind's robotics team, and Adrian Jones. Google describes ER 2 as a robot's high-level reasoning model that plans multi-step tasks and directs lower-level control systems, and says it works across robot types from stationary arms to full humanoids.",
+   "In Google's description, ER 2 does not move motors directly. Developers declare low-level interfaces, such as vision-language-action (VLA) models, navigation APIs or custom functions, as tools that the model can call, and stream video, audio or text into it. Google says the model can then plan long tasks involving hundreds of decisions, check from video whether a step actually succeeded, retry failed steps without restarting a whole workflow, and coordinate teams of different robots that share an understanding of the workspace.",
+   "The post gives some company-reported figures: Google says ER 2 pinpoints the video frame at which a key event happens, such as when to stop pouring a liquid, with 91.3% accuracy and a mean error of 0.96 seconds, and that it can read values from more than ten kinds of instruments, including dials, sight glasses, digital displays and thermometers. Google also points to tooling for testing behaviours in simulators such as MuJoCo-Warp and NVIDIA Isaac Sim, labelling demonstration videos, and training custom VLA models on its cloud.",
+   "The announcement includes supportive comments from Boston Dynamics about its Spot quadruped inspection product, from data-collection start-up DeepReach, from Arm, and from A*STAR's materials research institute, which said it wants to use the model to help lab robots work with existing equipment. Google did not publish pricing in the post itself; it links to separate documentation and a DeepMind technical report. For other recent work on humanoid foundation models, see our report on <a href=\"alibaba-amap-lambda0-humanoid-model-human-video.html\">Alibaba Amap's Lambda-0</a> and our <a href=\"../topics/research.html\">research hub</a>."
+  ],
+  "analysis": [
+   "Opinion: Splitting a robot's software into a general 'planner' model and separate low-level skill models is becoming a common pattern, and putting the planner behind a cloud API lowers the barrier for humanoid makers that do not train their own large models. The figures are Google's own benchmarks, so independent tests on real humanoid deployments will matter more than the launch numbers."
+  ],
+  "disclaimer": "Performance figures and customer comments come from Google's own announcement and have not been independently verified. This article is news, not a product or investment recommendation.",
+  "sources": [
+   {
+    "title": "Google Cloud Blog: Gemini Robotics Embodied Reasoning 2 is now available on Google Cloud (27 Oct 2026)",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud"
+   }
+  ]
+ },
+ {
+  "slug": "samsung-five-finger-humanoid-hands-rx-division",
+  "date": "2026-10-28",
+  "updated": "2026-10-28",
+  "cat": "Industry",
+  "title": "Samsung is developing five-finger, tendon-style robot hands for its humanoid, Korean paper reports",
+  "seo_title": "Samsung develops five-finger humanoid robot hands",
+  "summary": "The Hankyoreh reports that Samsung Electronics' new robotics division is building a humanoid with cable-driven, five-fingered hands, as Korean groups prepare humanoid showings ahead of CES 2027.",
+  "body": [
+   "<strong>Short answer:</strong> Samsung Electronics is developing a humanoid robot with five fingers on each hand, using cables that pull the fingers in a way similar to human tendons, the Korean newspaper The Hankyoreh reported on 27 October 2026, citing industry officials. The work sits in Samsung's Robotics eXperience (RX) division, which the paper says was set up in July by combining the company's robot research and commercialisation teams and reports directly to the CEO.",
+   "According to the report, Samsung's chairman was expected to visit the RX division at the company's research campus in Seocho, Seoul, to see a demonstration of the robot's hands picking up and handling objects. The paper also said Samsung has been focusing on hand manipulation and has recruited people who previously led robotics strategy at Boston Dynamics, the Hyundai Motor Group company. Samsung has not published technical details of the hands.",
+   "The Hankyoreh contrasts different design choices among Korean groups. Boston Dynamics' new Atlas uses four fingers per hand, which the paper says simplifies the drive mechanism and reduces load on the actuators, and Hyundai plans to deploy Atlas at its car plant in Georgia, US, from 2028. LG Electronics' CLOiD home robot and Tesla's Optimus have five-fingered hands, and LG Group has said it will work with NVIDIA on a bipedal humanoid due to be unveiled in the first quarter of 2027, the report said.",
+   "Experts quoted by the paper noted that finger count alone does not decide dexterity: degrees of freedom, joint range and touch sensors matter too. KAIST professor Park Hae-won told the paper that five-finger hands make it easier to reuse training data recorded from human hand motion. The paper expects CES 2027 in January to show how commercially ready the Korean groups' humanoids are. For more on Korea's humanoid market, see our report on <a href=\"chinese-humanoid-makers-seek-trials-in-south-korea.html\">Chinese humanoid makers seeking trials in South Korea</a>."
+  ],
+  "analysis": [
+   "Opinion: Hands are where many humanoid demos still look weakest, so a large electronics maker putting its effort there is notable. Tendon-driven hands can be compact and human-like but are harder to keep calibrated over long use; durability data, not a first demo, will show whether the approach is practical in factories."
+  ],
+  "sources": [
+   {
+    "title": "The Hankyoreh: Samsung bets on humanlike hands in humanoid robot race (27 Oct 2026)",
+    "url": "https://www.hani.co.kr/arti/english_edition/e_business/1284407.html"
+   }
+  ]
+ },
+ {
+  "slug": "machenta-40m-seed-robots-learn-from-one-demonstration",
+  "date": "2026-10-28",
+  "updated": "2026-10-28",
+  "cat": "Funding",
+  "title": "Imperial spinout Machenta raises $40 million seed round for robots that learn a task from one demonstration",
+  "seo_title": "Machenta raises $40M seed for one-demo robot learning",
+  "summary": "London-based Machenta, spun out of Imperial College London, says its simulation-trained model lets robots, including humanoids, learn new tasks after seeing them done once.",
+  "body": [
+   "<strong>Short answer:</strong> Machenta, a robotics AI start-up spun out of Imperial College London, has raised a $40 million seed round co-led by Creandum and Union Square Ventures, Imperial announced on 27 October 2026. Imperial describes it as the largest seed round raised by a UK robotics start-up. Machenta is building a robot foundation model that it says can learn a new physical task from a single demonstration.",
+   "The company was founded by Edward Johns, Professor of Robot Learning at Imperial, who is chief executive, and his PhD student Vitalis Vosylius, together with colleagues from Imperial's Robot Learning Lab, where the underlying research began about six years ago. According to Imperial, the team has shown a single model learning varied tasks such as packing and tidying across different robots, including humanoid robots. Tech.eu reported that Johns likens the approach to \"physical vibe coding\".",
+   "A key difference from many current robot models, according to the company, is that Machenta's model is pre-trained entirely on simulated data rather than large collections of real-world human demonstrations. Imperial says this could help developers avoid the practical and privacy limits of gathering large amounts of human data. Tech.eu reported that the team numbers around a dozen people.",
+   "Machenta plans to use the money to scale its model and grow its team at a new office and lab in King's Cross, London, Imperial said. The valuation was not disclosed in the announcements we reviewed. For other recent humanoid funding news, see our <a href=\"../topics/funding-policy.html\">funding and policy hub</a> and our report on <a href=\"eka-robotics-150m-series-a-vision-force-action.html\">Eka Robotics' Series A</a>."
+  ],
+  "analysis": [
+   "Opinion: Data collection is one of the biggest costs in robot learning, so a credible way to pre-train only in simulation would matter to every humanoid maker. One-demonstration learning has looked impressive in labs before; the test is how reliably it holds up on unfamiliar objects and robots outside curated demos."
+  ],
+  "disclaimer": "Funding and capability details are as announced by Imperial College London, Machenta and its investors and reported by Tech.eu; capability claims have not been independently verified. This article is news, not investment advice.",
+  "sources": [
+   {
+    "title": "Imperial College London: Imperial AI spinout Machenta raises $40 million to make robots instant learners (27 Oct 2026)",
+    "url": "https://www.imperial.ac.uk/news/articles/2026/imperial-ai-spinout-machenta-raises-40-million-to-make-robots-instant-learners/"
+   },
+   {
+    "title": "Tech.eu: London robotics startup Machenta raises $40M seed investment (27 Oct 2026)",
+    "url": "https://tech.eu/2026/10/27/london-robotics-startup-machenta-raises-40m-seed-investment/"
+   },
+   {
+    "title": "Creandum: Backing Machenta (Oct 2026)",
+    "url": "https://creandum.com/stories/backing-machenta/"
+   }
+  ]
+ },
+ {
+  "slug": "why-reward-ai-om-1-humanoid-delivery-demo-is-trending",
+  "date": "2026-10-28",
+  "updated": "2026-10-28",
+  "cat": "Research",
+  "kind": "trending",
+  "title": "Why Reward AI's OM-1 humanoid parcel-delivery and stairs demo is getting attention",
+  "seo_title": "Why Reward AI's OM-1 humanoid delivery demo is trending",
+  "summary": "Reward AI posted video of humanoids running its OM-1 model to carry parcels from a vehicle and handle objects on stairs; the post passed 300,000 views on X within a day.",
+  "why": [
+   "What happened: on 27 October 2026 Reward AI posted videos on X of humanoid robots running its OM-1 model on parcel delivery from a vehicle and on picking up objects while standing on stairs.",
+   "Why it is being discussed: the main post had more than 320,000 views within about a day, and the company says OM-1 is trained from human demonstrations captured with a sensor glove rather than robot data (X, Reward AI, RoboActu).",
+   "What to watch: success rates, number of trials and tests in less prepared settings, which RoboActu notes were not provided with the video."
+  ],
+  "body": [
+   "<strong>Short answer:</strong> Robotics company Reward AI posted video on X on 27 October 2026 showing humanoid robots, controlled by its OM-1 model, taking parcels out of a vehicle for last-mile delivery and grasping objects while standing on stairs. The company says the clips are autonomous. By the morning of 28 October the main post had passed 320,000 views on X.",
+   "In follow-up posts, Reward AI said it had stress-tested the model on parcels placed in different positions and orientations, and that the robots adjust their approach, climb and descend stairs while holding the package. French site RoboActu, which covered the demo on 28 October, described how the robot adapts to a parcel's position before picking it up and moving off with the load.",
+   "OM-1 was introduced in September as the core of Reward AI's Omnibody system. According to the company, the model learns from people wearing a capture device, including a seven-degree-of-freedom glove called Omnibody Hand that records hand movement, contact and force, rather than from teleoperated robots, and the company says it does not use robot-collected data to train the general policy. Reward AI also says a new task can be learned from under 30 minutes of human demonstrations.",
+   "RoboActu noted that the videos are the company's own communication and that Reward AI did not publish success rates, numbers of attempts, comparisons with other models or customer-site results alongside them. For other recent work on humanoids carrying loads, see our report on <a href=\"amazon-whole-body-dexterity-humanoid-torso-carrying.html\">Amazon researchers' whole-body carrying study</a> and our <a href=\"../topics/research.html\">research hub</a>."
+  ],
+  "analysis": [
+   "Opinion: Stairs and doorsteps are where wheeled delivery robots struggle, which is why legged demos like this draw attention. Short, company-edited clips show capability, not reliability; repeatable results across many homes and weather conditions would be the real signal."
+  ],
+  "disclaimer": "Capabilities and training-data claims are Reward AI's own and have not been independently verified. View counts were taken from X on 28 October 2026 and will change.",
+  "sources": [
+   {
+    "title": "Reward AI on X: OM-1 humanoid tasks indoors and outdoors (27 Oct 2026)",
+    "url": "https://x.com/RewardAI_/status/2115134330578272418"
+   },
+   {
+    "title": "Reward AI: OM-1 (company blog, Sep 2026)",
+    "url": "https://www.rewardai.com/blog/OM-1/"
+   },
+   {
+    "title": "RoboActu: Reward AI teste son modèle OM-1 sur la livraison et la manipulation dans les escaliers (28 Oct 2026)",
+    "url": "https://www.roboactu.fr/reward-ai-om1-humanoides-livraison-escaliers/"
+   }
+  ]
  }
 ]
