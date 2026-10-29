@@ -208,12 +208,54 @@
   "recorded": "2026-10-27",
   "prompt": "A humanoid robot inspecting industrial equipment in a hazardous plant environment while a specialist operates it remotely from a control room."
  },
+ "src-img/inline/neura-aims-five-robot-gyms-by-end-2026-nyt-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photograph, 16:9, of a generic white humanoid robot placing a plain dark automotive metal bracket into a grey plastic bin on a factory table. Clean industrial lighting, shallow depth of field. No people, no text, no logos, no brand marks.",
+  "sha256": "09451ccbfae3ec8069e44218c39979f7869863cd68352d55a9f2bb3bc2d674f8",
+  "recorded": "2026-10-29"
+ },
+ "src-img/inline/neura-aims-five-robot-gyms-by-end-2026-nyt-2.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photograph, 16:9, of an empty training room with a row of plain black motion-capture suits hanging on stands, and one generic humanoid robot standing nearby. Soft overhead light, realistic fabric and metal. No people, no faces, no text, no logos.",
+  "sha256": "9f7e474714136fa20a783bf92721c221ccbd479668477263dc069322645d7e51",
+  "recorded": "2026-10-29"
+ },
  "src-img/inline/nvidia-isaac-agile-one-sn-reference-humanoid-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
   "sha256": "eaaa9a6abcc26aa387d4a4fd26922047dbf3eb43c1527ddfccf683a6e25f756b",
   "recorded": "2026-10-27",
   "prompt": "A humanoid robot in a robotics development lab, with an engineer at a workstation showing a simulation view of a robot, no readable brand logos."
+ },
+ "src-img/inline/published-humanoid-runtimes-and-recharge-times-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic close photograph, 16:9, of a plain rectangular battery pack seated in the open back panel of a generic humanoid robot torso on a workshop stand. Visible screws and cooling fins, no labels or writing. Soft workshop lighting. No people, no text, no logos.",
+  "sha256": "5ab3038e6d39d32845ab0d33dd3a2b2482ab12ac02a36f6d504a7a2124e36268",
+  "recorded": "2026-10-29"
+ },
+ "src-img/inline/published-humanoid-runtimes-and-recharge-times-2.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photograph, 16:9, of three identical generic humanoid robots standing in a row at simple plain charging docks along a clean warehouse wall at dawn. Cool blue light, realistic concrete floor, no people, no readable text, no logos, no brand marks.",
+  "sha256": "b28ec2de4f91984b0449a3891f2c25c27726a6241768c4414cbc243553f2e62f",
+  "recorded": "2026-10-29"
+ },
+ "src-img/inline/samsung-chairman-visits-rx-robotics-office-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic close-up photograph, 16:9, of a generic five-finger robotic hand with thin tendon-like cables along the fingers, holding a plain unmarked metal bracket above a grey workbench. Shallow depth of field, realistic machining marks, soft lab light. No people, no text, no logos, no brand marks.",
+  "sha256": "c54a0c3b31973a720145d9b2ffa6137bf67937f5a0a299ad95eac24e6fa7f742",
+  "recorded": "2026-10-29"
+ },
+ "src-img/inline/samsung-chairman-visits-rx-robotics-office-2.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photograph, 16:9, looking along an empty glass-walled research corridor in a modern office building. Through one window a generic humanoid robot stands beside a workbench in a bright lab. No people, no faces, no readable text, no logos, realistic daylight.",
+  "sha256": "e450cd0c6a8b9cc20e423110643878f07ae29effab8609aa852fdea098fd1cbe",
+  "recorded": "2026-10-29"
  },
  "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-1.jpg": {
   "origin": "ai-generated",
@@ -335,6 +377,13 @@
   "scene": "A slim grey-and-white humanoid robot standing in an open work cell in a bright university robotics training hall (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/neura-aims-five-robot-gyms-by-end-2026-nyt-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic wide photograph, 16:9, of a large bright industrial training hall. Several identical generic white humanoid robots practise at separate open workstations, stacking plain cardboard boxes. Overhead industrial lights, polished concrete floor. No people, no readable text, no logos, no brand marks.",
+  "sha256": "e5e9ce7dde82dd9e90b7cabd0eaaded5fef8264de4d035978e1b9cfd9d97dee1",
+  "recorded": "2026-10-29"
+ },
  "src-img/noetix-robotics-hong-kong-ipo-filing-report-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -353,6 +402,13 @@
   "scene": "A humanoid robot in profile beside racks of servers with blue indicator lights in a data centre",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/published-humanoid-runtimes-and-recharge-times-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photograph, 16:9, of a generic grey humanoid robot standing at a plain wall-mounted charging dock in a quiet warehouse aisle. A small amber lamp glows on the dock. Evening light from high windows, realistic metal and concrete. No people, no readable text, no logos, no brand marks.",
+  "sha256": "12cbfc9b4825ac28bfe3e37b2204f85a35171a31e2a8706b071c0c016f225573",
+  "recorded": "2026-10-29"
+ },
  "src-img/realbotix-echo-companion-humanoid-line-2027-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -370,6 +426,13 @@
   "legacy": true,
   "scene": "A wheeled humanoid robot with two slim white robotic arms assembling small metal actuator parts on a clean factory workbench (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/samsung-chairman-visits-rx-robotics-office-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photograph, wide 16:9, of a bright modern robotics laboratory with floor-to-ceiling windows and a softly blurred city skyline. One generic white-and-grey humanoid robot stands at a clean metal workbench, both hands near small unmarked metal brackets. No people, no faces, no readable text, no logos, no brand marks. Natural daylight, sharp focus, realistic metal and plastic surfaces.",
+  "sha256": "55741debaab7601628320fceabdc6b49cd48389fbfa0ec9fa87c167da6a6c3d0",
+  "recorded": "2026-10-29"
  },
  "src-img/samsung-five-finger-humanoid-hands-rx-division-hero.jpg": {
   "origin": "ai-generated",

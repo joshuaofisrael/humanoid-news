@@ -32,8 +32,10 @@ Append an object to `content/articles.json` (newest order is handled automatical
  "analysis":["Optional. Clearly labelled opinion/analysis paragraph(s)."],
  "disclaimer":"Required for funding/stock/earnings/regulatory items; optional otherwise.",
  "sources":[{"title":"Publisher: headline","url":"https://..."}],
+ "publish_at":"2026-10-29T11:00:00+00:00",
  "image":{ ... see below ... }}
 ```
+`publish_at` is optional. When it is set (ISO-8601, UTC), `build.py` keeps the article out of the site until that instant. The GitHub Actions workflow `.github/workflows/publish-scheduled.yml` runs at 11:05, 15:05 and 19:05 UTC, rebuilds, and commits `docs/` only if a due article is not on the site yet. On 29 October 2026 London is UTC+0, so those runs are five minutes after 11:00, 15:00 and 19:00 UK time, late enough that the post is due and not early. Preview a later clock locally with `PUBLISH_AS_OF=2026-10-29T19:30:00+00:00 python3 build.py` (do not commit that preview output).
 **Editorial rules (mandatory; also shown on /standards.html):**
 1. **Fetch the real sources first** (open every URL; don't rely on search snippets). Every fact, number, date and quote must appear in a cited source. Use the source's publication date (not an estimate) and the event date as stated.
 2. Prefer primary sources (company/regulator release, filing) plus one reputable outlet. Say who said it: "according to X", "X said", "the company says". Mark company claims as the company's own.

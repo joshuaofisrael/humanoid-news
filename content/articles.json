@@ -1,4 +1,193 @@
 [
+{
+    "slug": "samsung-chairman-visits-rx-robotics-office",
+    "date": "2026-10-29",
+    "updated": "2026-10-29",
+    "publish_at": "2026-10-29T11:00:00+00:00",
+    "cat": "Industry",
+    "title": "Samsung's chairman visited the RX robotics office on his fourth anniversary in the role",
+    "seo_title": "Samsung chairman visits the RX robotics office",
+    "summary": "Lee Jae-yong visited Samsung's RX robotics office in Seoul on 27 October, his fourth anniversary as chairman, Korean papers report.",
+    "body": [
+      "<strong>Short answer:</strong> Samsung Electronics chairman Lee Jae-yong visited the company's Robotics eXperience (RX) Business Promotion Office on the afternoon of 27 October 2026, Korean papers report. The date was the fourth anniversary of his becoming chairman, on 27 October 2022. The office is at Samsung's Seoul R&amp;D campus in Umyeon-dong, Seocho-gu, and Maeil Business Newspaper, Businesskorea and SBS each say this was his first visit since the office was created in July.",
+      "SBS reported that during the visit he checked development work, including precision manipulation with a humanoid's arms and hands, and that Roh Tae-moon, president and head of the Device eXperience division, was with him. Maeil Business Newspaper reported that he reviewed humanoid technologies that could be shown at CES 2027 in Las Vegas in January. Businesskorea reported that Samsung is reviewing plans to show related technology there. None of the three papers quotes Samsung announcing a CES exhibit. The Hankyoreh had already reported that a visit was expected and that the group is developing tendon-style, five-finger hands; that account is in our <a href=\"samsung-five-finger-humanoid-hands-rx-division.html\">earlier report</a>.",
+      "Businesskorea and Maeil Business Newspaper describe the RX office as a unit set up in July under Roh Tae-moon to bring together robotics work that had been spread across the company, from strategy to core technology and commercialisation. Maeil Business Newspaper dates it to 21 July. Both papers say Samsung is building a robot data factory at its Gumi plant to collect learning data. Businesskorea and SBS say the company has a goal of turning its plants in Korea and abroad into AI-based autonomous factories by 2030. Those are plans as the papers describe them, not results.",
+      "Businesskorea reported that at the Samsung AI Forum last month, Chris Hauser, a lab director in the RX office, said general-purpose robots would need a task success rate of 99.99 percent before they could work in homes or factories. He told the forum, \"There is still a long way to go.\" For the wider market these robots would be walking into, see our report on <a href=\"chinese-humanoid-makers-seek-trials-in-south-korea.html\">Chinese humanoid makers seeking trials in South Korea</a>."
+    ],
+    "analysis": [
+      "Opinion: Spending an anniversary inside the robotics office shows where the chairman's attention was that day. A site visit is not a product launch. The practical test is whether a hand demonstration becomes a robot that can hold a high success rate on a real line, which Samsung's own lab director has described as still ahead."
+    ],
+    "disclaimer": "The visit, the July date and the factory plans are as reported by Maeil Business Newspaper, Businesskorea and SBS. SBS notes that its English article was machine-translated and may contain errors. Samsung has not published its own account of the visit in the sources reviewed here. This is not investment advice.",
+    "sources": [
+      {
+        "title": "Maeil Business Newspaper (MK): Chairman Lee Jae-yong marks fourth anniversary in office, first stop the robotics hub (27 Oct 2026)",
+        "url": "https://www.mk.co.kr/en/business/12187287"
+      },
+      {
+        "title": "Businesskorea: Lee Jae-yong visits Samsung robotics office (27 Oct 2026)",
+        "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279793"
+      },
+      {
+        "title": "SBS: Lee Jae-yong marks fourth anniversary as Samsung chairman by inspecting robotics operations (27 Oct 2026)",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008817562"
+      }
+    ],
+    "inline_images": [
+      {
+        "file": "samsung-chairman-visits-rx-robotics-office-1.jpg",
+        "alt": "Close view of a metallic robotic hand with tendon cables holding a plain metal bracket",
+        "caption": "Scene: a robotic hand holding a metal bracket",
+        "insert_after_paragraph": 2,
+        "brief": "Photoreal close-up of a generic robotic hand with tendon cables holding a plain metal bracket. No people, no text, no logos.",
+        "note": "Generic scene; not a photo of Samsung's robots, campus or products. No people shown."
+      },
+      {
+        "file": "samsung-chairman-visits-rx-robotics-office-2.jpg",
+        "alt": "A generic humanoid robot standing inside a glass-walled lab beside an empty office corridor",
+        "caption": "Scene: a humanoid in a glass-walled lab",
+        "insert_after_paragraph": 4,
+        "brief": "Photoreal view down an empty research corridor with a generic humanoid visible in a lab. No people, no text, no logos.",
+        "note": "Generic scene; not a photo of Samsung's robots, campus or products. No people shown."
+      }
+    ],
+    "image": {
+      "src": "src-img/samsung-chairman-visits-rx-robotics-office-hero.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "A generic white humanoid robot standing at a metal workbench in a bright laboratory with city windows (AI-generated image)",
+      "note": "Generic illustration; not a photo of Samsung's robots, campus or the visit. No people shown."
+    }
+  },
+  {
+    "slug": "neura-aims-five-robot-gyms-by-end-2026-nyt",
+    "date": "2026-10-29",
+    "updated": "2026-10-29",
+    "publish_at": "2026-10-29T15:00:00+00:00",
+    "cat": "NEURA",
+    "title": "NEURA aims to run five robot gyms by the end of 2026, the New York Times reports",
+    "seo_title": "NEURA aims for five robot gyms by the end of 2026",
+    "summary": "The New York Times reports NEURA aims to run five robot gyms by year-end, including one open in Hangzhou, China.",
+    "body": [
+      "<strong>Short answer:</strong> NEURA Robotics aims to have five robot-training gyms running by the end of 2026, including one already opened in Hangzhou, China, with ten more expected after that, the New York Times reported on 27 October 2026. The Indian Express carried the same report the next day. NEURA's chief told the Times that more than 2,600 applicants have asked for space at one of the sites.",
+      "The Times said a reporter was shown the gym NEURA developed with the Technical University of Munich, beside Munich Airport, where as many as 100 humanoid and other robots were training around the clock. In that account the robots picked up car parts, stacked boxes and tightened a grip on a glass as water was added, copying trainers who guided them from a distance. NEURA has signed dozens of automotive, logistics, pharmaceutical and other companies to train there and has not named them, the paper wrote. A skill learned by one robot is meant to reach the others through a shared cloud system. The opening of that gym, and the 4NE1 Gen 4 launch on 22 October, are in our <a href=\"neura-4ne1-gen-4-tum-robogym-munich.html\">earlier report</a>.",
+      "The Times also reported that NEURA is working with Bosch and other companies to put sensor suits on more than 1,000 workers, recording how they move during ordinary shifts. Interact Analysis, a consulting firm, told the paper that more than 90 humanoid data-collection centres are running in China, at least 50 more are under development, and Europe has fewer than 10. \"We are not efficient anymore,\" NEURA founder David Reger told the Times.",
+      "The same article says robots are expected to move into production at a BMW site by the first quarter of next year. The paragraph before it describes a pilot by Swiss firm Hexagon Robotics with BMW at a plant in Leipzig, and the production sentence does not name the supplier. The Times also wrote that Agile Robots, in Munich, is working with companies including Google DeepMind, and that the British firm Humanoid aims to place robots in Schaeffler's operations by the end of 2026. Zornitsa Todorova, a researcher at Barclays, told the Times the number of humanoids in use worldwide could rise from 15,000 last year to one million in 2030 if costs fall and rules do not block the way. That is her forecast, not a headcount. The Times reported that NEURA raised as much as $1.4 billion in June, that Tether led the round, and that Nvidia and Amazon were among the backers. NEURA told the paper that part of the sum was tied to milestones it was on track to meet. Related reading: <a href=\"schaeffler-taicang-humanoids-build-humanoid-actuators.html\">Schaeffler's Taicang line</a> and <a href=\"china-100000-humanoids-2026-first-national-standards.html\">China's output and standards plans</a>."
+    ],
+    "analysis": [
+      "Opinion: A long list of applicants, and a gym already open in Hangzhou, shows interest in training time. It does not show that the robots can hold a factory job. The BMW timing in the Times is easy to over-read, because the paper does not say which company's robots are due on that line."
+    ],
+    "disclaimer": "Gym plans, the applicant figure, the funding amount and the sensor-suit project are NEURA's statements as reported by the New York Times. The China and Europe site counts are Interact Analysis figures cited by the Times. The 2030 number is a forecast from a Barclays researcher. This is not investment advice.",
+    "sources": [
+      {
+        "title": "The Indian Express (New York Times): In the AI robogym, machines train to be more like humans (28 Oct 2026; Times report dated 27 Oct 2026)",
+        "url": "https://indianexpress.com/article/technology/tech-news-technology/in-the-ai-robogym-machines-train-to-be-more-like-humans-10939919/"
+      },
+      {
+        "title": "DNYUZ, carrying the New York Times report: In the A.I. robogym, machines train to be more like humans (27 Oct 2026)",
+        "url": "https://dnyuz.com/2026/10/27/in-the-a-i-robogym-machines-train-to-be-more-like-humans/"
+      },
+      {
+        "title": "The New York Times: In the A.I. robogym, machines train to be more like humans (27 Oct 2026)",
+        "url": "https://www.nytimes.com/2026/10/27/business/neura-robotics-germany-china-ai.html"
+      }
+    ],
+    "inline_images": [
+      {
+        "file": "neura-aims-five-robot-gyms-by-end-2026-nyt-1.jpg",
+        "alt": "A generic white humanoid robot placing a dark metal part into a grey bin",
+        "caption": "Scene: a humanoid placing a metal part in a bin",
+        "insert_after_paragraph": 2,
+        "brief": "Photoreal image of a generic humanoid placing a plain metal part into a bin. No people, no text, no logos.",
+        "note": "Generic scene; not a photo of NEURA's robots, the Munich gym or the Hangzhou site. No people shown."
+      },
+      {
+        "file": "neura-aims-five-robot-gyms-by-end-2026-nyt-2.jpg",
+        "alt": "Plain black motion-capture suits on stands beside a generic humanoid robot in an empty room",
+        "caption": "Scene: motion-capture suits on stands",
+        "insert_after_paragraph": 3,
+        "brief": "Photoreal image of empty motion-capture suits on stands beside a generic humanoid. No people, no text, no logos.",
+        "note": "Generic scene; not a photo of NEURA, Bosch or any worker. No people shown."
+      }
+    ],
+    "image": {
+      "src": "src-img/neura-aims-five-robot-gyms-by-end-2026-nyt-hero.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "Several identical generic humanoid robots stacking boxes at separate tables in a large training hall (AI-generated image)",
+      "note": "Generic illustration; not a photo of NEURA's robots or gyms. No people shown."
+    }
+  },
+  {
+    "slug": "published-humanoid-runtimes-and-recharge-times",
+    "date": "2026-10-29",
+    "updated": "2026-10-29",
+    "publish_at": "2026-10-29T19:00:00+00:00",
+    "cat": "Explainers",
+    "title": "What humanoid makers have published about runtime and recharge",
+    "seo_title": "Published humanoid runtimes and recharge times",
+    "summary": "Agility says Digit 5 will run 90 minutes and recharge in 9; 1X lists 4 hours for NEO; Unitree lists about 3 hours for the H2.",
+    "body": [
+      "<strong>Short answer:</strong> Three published humanoid runtimes sit between about 90 minutes and 4 hours on a single charge. Agility Robotics says the Digit 5 battery will run for 90 minutes and recharge in 9 minutes. 1X lists 4 hours for NEO. Unitree lists about 3 hours for the H2. Each figure is the company's own, and none is an independent test of a working shift.",
+      "Agility's release of 15 October 2026 says Nyobolt is supplying the Digit 5 pack. The company says 90 minutes of runtime and a 9-minute charge are a 10-to-1 run-to-charge ratio, up from a 2-to-1 ratio on Digit 4, and that the robot could then do more than 20 hours of work in a 24-hour day. The 20-hour figure is time on shift across repeated charges, not one battery cycle. Agility says early access to Digit 5 with this pack is expected in the first half of 2027, with wider availability over the following six to nine months. Digit 5's onboard computer and Pittsburgh plans are in our <a href=\"agility-digit-5-nvidia-igx-thor-pittsburgh-hub.html\">earlier report</a>.",
+      "On its order page, 1X lists a NEO battery of 842 watt-hours, a runtime of 4 hours and a quick charge of 6 minutes for each hour of runtime. The page says that when NEO needs a charge, it plugs itself in. 1X also lists a purchase price of $20,000 or a subscription of $499 a month, and says US deliveries start in 2026. Those are statements on the product page, not a record of robots already delivered.",
+      "Unitree's H2 product page lists battery life of about 3 hours, a 15 amp-hour pack rated at 0.972 kilowatt-hours, and a maximum voltage of 75.6 volts, plus a quick-release battery and a charger. A footnote says the parameters can change with the scenario and the configuration. The same page lists the H2 at $29,900 before tax and shipping. A runtime on a spec sheet does not say whether the robot was walking, carrying a load or standing still. The H2 is the full-size Unitree humanoid in our <a href=\"why-unitree-h2-x-guardian-video-is-trending.html\">H2-X coverage</a>."
+    ],
+    "analysis": [
+      "Opinion: For a warehouse shift, a short runtime with a fast recharge can cover more of the day than a longer runtime that then sits on a charger. The useful comparison is hours of work in a day, and only Agility has published that kind of number, as a target. Spec-sheet hours will not match a real job until someone logs them there."
+    ],
+    "disclaimer": "Runtimes, charge times, prices and delivery timing are the companies' published figures and targets, not independent measurements. Agility's release describes the Digit 5 numbers as expected performance. This is not a recommendation to buy a robot or any security.",
+    "sources": [
+      {
+        "title": "Agility Robotics: Agility Robotics selects Nyobolt as its ultra-fast charging battery technology provider for Digit 5 (15 Oct 2026)",
+        "url": "https://www.agilityrobotics.com/content/agility-robotics-selects-nyobolt-as-its-ultra-fast-charging-battery-technology-partner-for-digit-5"
+      },
+      {
+        "title": "1X: NEO order page, battery and price specifications (accessed 29 Oct 2026)",
+        "url": "https://www.1x.tech/order"
+      },
+      {
+        "title": "Unitree Robotics: H2 specifications, including battery life (accessed 29 Oct 2026)",
+        "url": "https://www.unitree.com/H2/"
+      }
+    ],
+    "inline_images": [
+      {
+        "file": "published-humanoid-runtimes-and-recharge-times-1.jpg",
+        "alt": "A plain rectangular battery pack inside the open back of a generic humanoid torso",
+        "caption": "Scene: a battery pack in a humanoid torso",
+        "insert_after_paragraph": 2,
+        "brief": "Photoreal close view of a plain battery pack in a generic humanoid torso. No people, no text, no logos.",
+        "note": "Generic scene; not a photo of Digit, NEO or the H2. No people shown."
+      },
+      {
+        "file": "published-humanoid-runtimes-and-recharge-times-2.jpg",
+        "alt": "Three identical generic humanoid robots standing on round charging pads in an empty hall",
+        "caption": "Scene: humanoids standing at charging pads",
+        "insert_after_paragraph": 4,
+        "brief": "Photoreal image of three generic humanoids at charging pads. No people, no text, no logos.",
+        "note": "Generic scene; not a photo of any company's robot or charger. No people shown."
+      }
+    ],
+    "image": {
+      "src": "src-img/published-humanoid-runtimes-and-recharge-times-hero.jpg",
+      "crop": [
+        0,
+        0.05,
+        1.0
+      ],
+      "ai": true,
+      "alt": "A generic grey humanoid robot standing beside a plain wall-mounted charging box in a warehouse aisle (AI-generated image)",
+      "note": "Generic illustration; not a photo of Digit, NEO, the H2 or any company charger. No people shown."
+    }
+  },
   {
     "slug": "neura-4ne1-gen-4-tum-robogym-munich",
     "date": "2026-10-24",

@@ -1,0 +1,58 @@
+# Publishes articles whose publish_at time has arrived. GitHub's scheduler only
+# runs workflow files on the default branch. London is UTC+0 on 29 October 2026.
+name: Publish scheduled articles
+on:
+  schedule:
+    # Five minutes after 11:00, 15:00 and 19:00 UTC so a post timed for the hour
+    # is already due, and is not published early if the job starts quickly.
+    - cron: "5 11,15,19 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: pip install pillow
+      - name: See if a scheduled article is due and not on the site yet
+        id: due
+        run: |
+          python3 - << 'PY'
+          import datetime, json, os
+          now = datetime.datetime.now(datetime.timezone.utc)
+          arts = json.load(open("content/articles.json", encoding="utf-8"))
+          due = []
+          for a in arts:
+              raw = (a.get("publish_at") or "").strip()
+              if not raw:
+                  continue
+              when = datetime.datetime.fromisoformat(raw)
+              if when.tzinfo is None:
+                  when = when.replace(tzinfo=datetime.timezone.utc)
+              html = os.path.join("docs", "news", a["slug"] + ".html")
+              if when <= now and not os.path.exists(html):
+                  due.append(a["slug"])
+          print("due:", ", ".join(due) if due else "none")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write("needed=" + ("true" if due else "false") + "\n")
+          PY
+      - name: Build
+        if: steps.due.outputs.needed == 'true'
+        run: python3 build.py
+      - name: Commit the pages that just became due
+        if: steps.due.outputs.needed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs images.md
+          if git diff --cached --quiet; then
+            echo "Build produced no changes."
+            exit 0
+          fi
+          git commit -m "Publish articles that reached their scheduled time"
+          git push

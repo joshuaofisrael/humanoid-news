@@ -28,6 +28,42 @@ import legal_gate
 legal_gate.mirror_approvals()
 A, LEGAL_REPORT = legal_gate.apply(A)
 HELD = {s for s, _, _ in LEGAL_REPORT["held"]}
+
+def _parse_utc(s):
+    when = datetime.datetime.fromisoformat(s)
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=datetime.timezone.utc)
+    return when.astimezone(datetime.timezone.utc)
+
+def publish_clock():
+    """Real UTC now, or PUBLISH_AS_OF (ISO-8601) when previewing a later build."""
+    override = os.environ.get("PUBLISH_AS_OF", "").strip()
+    return _parse_utc(override) if override else datetime.datetime.now(datetime.timezone.utc)
+
+PUBLISH_NOW = publish_clock()
+
+def article_due(a):
+    raw = (a.get("publish_at") or "").strip()
+    return True if not raw else _parse_utc(raw) <= PUBLISH_NOW
+
+_scheduled = [a for a in A if not article_due(a)]
+A = [a for a in A if article_due(a)]
+for a in _scheduled:
+    print(f"  [scheduled] {a['slug']} waits until {a['publish_at']} (clock {PUBLISH_NOW.isoformat(timespec='minutes')})")
+
+def published_html(a):
+    """Visible published time. Articles with publish_at show the UTC clock; others stay date-only."""
+    raw = (a.get("publish_at") or "").strip()
+    if not raw:
+        return f'<time datetime="{a["date"]}">{fd(a["date"])}</time>'
+    when = _parse_utc(raw)
+    stamp = when.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+    label = f"{fd(when.date().isoformat())}, {when.strftime('%H:%M')} UTC"
+    return f'<time datetime="{stamp}">{label}</time>'
+
+def published_iso(a):
+    raw = (a.get("publish_at") or "").strip()
+    return _parse_utc(raw).strftime("%Y-%m-%dT%H:%M:%S+00:00") if raw else a["date"]
 PUB = {"@type": "Organization", "name": "HumanoidBeat", "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512}, "sameAs": SAME_AS}
 
 def esc(s): return html.escape(s, quote=True)
@@ -159,7 +195,7 @@ def card(a, feat=False, eager=False):
         im = f'<div class="im">{img_tag(a["slug"], a["image"]["alt"], eager, sizes)}</div>'
     tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
     return (f'<article class="card reveal{" feat" if feat else ""}">{im}<div class="tx">{tag}<span class="tag">{esc(a["cat"])}</span>'
-            f'<h3><a href="news/{a["slug"]}.html">{esc(a["title"])}</a></h3><p class="meta"><time datetime="{a["date"]}">{fd(a["date"])}</time></p><p>{esc(a["summary"])}</p></div></article>')
+            f'<h3><a href="news/{a["slug"]}.html">{esc(a["title"])}</a></h3><p class="meta">{published_html(a)}</p><p>{esc(a["summary"])}</p></div></article>')
 
 # ---------------------------------------------------------------- topic hubs, related links, SEO titles
 HUB_DEFS = [  # (slug, name, h1, intro, regex on title+summary+cat). A hub is published only with >= 3 articles (no thin pages).
@@ -243,7 +279,7 @@ page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + secti
 
 for a in A:
     u = f"{SITE_URL}/news/{a['slug']}.html"
-    ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": a["title"], "description": a["summary"], "datePublished": a["date"], "dateModified": a.get("updated", a["date"]),
+    ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": a["title"], "description": a["summary"], "datePublished": published_iso(a), "dateModified": a.get("updated", a["date"]),
           "mainEntityOfPage": u, "isAccessibleForFree": True, "inLanguage": "en", "author": {"@type": "Organization", "name": NAME + " Staff"}, "publisher": PUB, "isBasedOn": [s["url"] for s in a["sources"]]}
     ld["image"] = [{"@type": "ImageObject", "url": a["_og"]["url"], "width": 1200, "height": 630}] if a["_og"] else [SITE_URL + "/img/og-default.jpg"]
     fig = ""
@@ -270,7 +306,7 @@ for a in A:
     if a["slug"] in _TRK_EARLY: rel += '<p class="meta">This story is part of our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>'
     if a["_hubs"]: rel += '<p class="meta">More on: ' + " · ".join(f'<a href="../topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in a["_hubs"]) + "</p>"
     rel += "</aside>"
-    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published <time datetime="{a["date"]}">{fd(a["date"])}</time> · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
+    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published {published_html(a)} · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
     page(f"news/{a['slug']}.html", seo_title(a), a["summary"], c, 1, ld, "article", a["_og"])
 
 L = f"<strong>{LLC}</strong>"
@@ -350,14 +386,19 @@ def sm(u, d, im):
     return x + "</url>"
 open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + "".join(sm(*x) for x in urls) + "</urlset>\n")
 _newest = max(a["date"] for a in A); _cut = (datetime.date.fromisoformat(_newest) - datetime.timedelta(days=2)).isoformat()
-open(OUT + "/news-sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' + "".join(f'<url><loc>{SITE_URL}/news/{a["slug"]}.html</loc><news:news><news:publication><news:name>HumanoidBeat</news:name><news:language>en</news:language></news:publication><news:publication_date>{a["date"]}</news:publication_date><news:title>{esc(a["title"])}</news:title></news:news></url>' for a in A if a["date"] >= _cut) + "</urlset>\n")
+open(OUT + "/news-sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' + "".join(f'<url><loc>{SITE_URL}/news/{a["slug"]}.html</loc><news:news><news:publication><news:name>HumanoidBeat</news:name><news:language>en</news:language></news:publication><news:publication_date>{published_iso(a)}</news:publication_date><news:title>{esc(a["title"])}</news:title></news:news></url>' for a in A if a["date"] >= _cut) + "</urlset>\n")
 bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "anthropic-ai", "PerplexityBot", "CCBot", "Google-Extended", "Applebot", "Applebot-Extended", "Bytespider", "Amazonbot", "Meta-ExternalAgent"]
 open(OUT + "/ads.txt", "w").write("google.com, pub-5681559774142917, DIRECT, f08c47fec0942fa0\n")
 open(OUT + "/robots.txt", "w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/news-sitemap.xml\n")
 open(OUT + f"/{INDEXNOW_KEY}.txt", "w").write(INDEXNOW_KEY)
 open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + "\n## Topics\n" + "".join(f"- [{h['h1']}]({SITE_URL}/topics/{h['slug']}.html)\n" for h in HUBS) + (f"\n## Resources\n- [Humanoid robot deployment tracker]({SITE_URL}/{TRK_PATH}): every humanoid pilot and deployment we have reported, with sources\n" if TRK_PATH else "") + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [RSS]({SITE_URL}/feed.xml)\n")
 def rfc(d): return datetime.datetime.fromisoformat(d + "T12:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
-open(OUT + "/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>{NAME}</title><link>{SITE_URL}/</link><description>{esc(DESC)}</description><language>en</language><atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>' + "".join(f"<item><title>{esc(a['title'])}</title><link>{SITE_URL}/news/{a['slug']}.html</link><guid>{SITE_URL}/news/{a['slug']}.html</guid><pubDate>{rfc(a['date'])}</pubDate><description>{esc(a['summary'])}</description>" + (f'<media:content url="{a["_og"]["url"]}" type="image/jpeg" medium="image" width="1200" height="630"/>' if a["_og"] else "") + "</item>" for a in A) + "</channel></rss>\n")
+def rfc_article(a):
+    raw = (a.get("publish_at") or "").strip()
+    if not raw:
+        return rfc(a["date"])
+    return _parse_utc(raw).strftime("%a, %d %b %Y %H:%M:%S +0000")
+open(OUT + "/feed.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>{NAME}</title><link>{SITE_URL}/</link><description>{esc(DESC)}</description><language>en</language><atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>' + "".join(f"<item><title>{esc(a['title'])}</title><link>{SITE_URL}/news/{a['slug']}.html</link><guid>{SITE_URL}/news/{a['slug']}.html</guid><pubDate>{rfc_article(a)}</pubDate><description>{esc(a['summary'])}</description>" + (f'<media:content url="{a["_og"]["url"]}" type="image/jpeg" medium="image" width="1200" height="630"/>' if a["_og"] else "") + "</item>" for a in A) + "</channel></rss>\n")
 open(OUT + "/.nojekyll", "w").write("")
 if os.path.exists("docs/CNAME") is False and SITE_URL.startswith("https://") and "github.io" not in SITE_URL:
     open("docs/CNAME", "w").write(SITE_URL.split("//")[1] + "\n")
