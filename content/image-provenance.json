@@ -17,6 +17,13 @@
   "scene": "Rows of identical white humanoid robots standing in formation on a large stage under coloured lights (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/agibot-worken-robot-work-metric-aha3-go-3-g2-max-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white industrial humanoid robot with plain unbranded panels and simple gripper hands lifting a plain grey plastic tote from a low metal shelf in a clean, brightly lit modern factory hall. Soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "bb397a2ba044fc358561f9dda52ee3f07fd006397878da8d36ad24ea3cca5bce",
+  "recorded": "2026-10-30"
+ },
  "src-img/agility-digit-5-nvidia-igx-thor-pittsburgh-hub-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -52,6 +59,13 @@
   "legacy": true,
   "scene": "A slim grey humanoid robot holding a plain cardboard box tucked under one arm beside warehouse shelving (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled-base humanoid robot with plain unbranded panels taking a generic car door trim part from a grey plastic container and placing it into a numbered-slot metal sequencing rack, beside a clean modern car assembly line with an unpainted generic car body in the background. Bright factory lighting, no people, no logos, no brand badges, no readable text, not a cartoon.",
+  "sha256": "df9b4194710dbaf594234159094a9e4800c0354b5842f396d1df624eb8f2fe6f",
+  "recorded": "2026-10-30"
  },
  "src-img/casbot-a-plus-plus-round-shoemaking-mining-robots-hero.jpg": {
   "origin": "ai-generated",
@@ -158,6 +172,20 @@
   "legacy": true,
   "scene": "Dark metallic humanoid robot with glowing cyan eyes in a factory",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/inline/agibot-worken-robot-work-metric-aha3-go-3-g2-max-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic macro photograph of a generic white and grey multi-fingered robotic hand with small dark tactile sensor pads on the fingertips gently holding a plain unmarked machined aluminium part above a workbench. Studio-quality lighting, shallow depth of field, no people, no logos, no text, not a cartoon.",
+  "sha256": "da44be5440f14700b7529c8da2d29b2c0b40eb2d3a0648f4fdbc23499b81f619",
+  "recorded": "2026-10-30"
+ },
+ "src-img/inline/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a wide monitor on a desk in a dim engineering office showing a detailed 3D digital-twin rendering of a factory logistics area with shelving, containers and a generic humanoid robot model. No people, no logos, no readable text or software brand names, not a cartoon.",
+  "sha256": "01267834c5e1e94be9bce2e457a279ec3b66a2cb55661032bd9c50b832eaaa63",
+  "recorded": "2026-10-30"
  },
  "src-img/inline/china-100000-humanoids-2026-first-national-standards-1.jpg": {
   "origin": "ai-generated",
@@ -306,6 +334,13 @@
   "recorded": "2026-10-27",
   "prompt": "Photoreal close shot of two monitors on a desk showing abstract wireframe humanoid skeleton simulations, no readable text, no people, no logos."
  },
+ "src-img/inline/us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic close-up photograph of generic unbranded robot components on a clean steel workbench: compact electric actuators, precision gear sets, encoders and small sensor boards, neatly arranged. Soft studio lighting, shallow depth of field, no people, no logos, no text, not a cartoon.",
+  "sha256": "9d7b5d1ee8315b9d619bd93983bda510caadcba37c800297f929903292d47f84",
+  "recorded": "2026-10-30"
+ },
  "src-img/inline/why-figure-03-treadmill-test-is-trending-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -320,6 +355,13 @@
   "recorded": "2026-10-27",
   "prompt": "Photoreal wide shot of a quiet robotics test facility with a single generic humanoid walking on a treadmill at the centre, empty workbenches around it, no people, no text or logos."
  },
+ "src-img/inline/why-tau-robotics-humanoid-home-cleaning-subscription-is-trending-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a calm generic light-grey humanoid robot with plain unbranded panels pushing a plain unbranded upright vacuum cleaner across a light oak floor in a bright modern living room with a sofa and rug. Natural window light, no people, no logos, no text, not a cartoon.",
+  "sha256": "7187592dffae17824dcd47ba5240b9bbf0b0823c2a1ae89c06c8f54316fd66fa",
+  "recorded": "2026-10-30"
+ },
  "src-img/inline/why-unitree-h2-x-guardian-video-is-trending-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -333,6 +375,13 @@
   "sha256": "64cb9a056861cf6678371b4330ba5c847ab58e66514ef39f1db2cd9cf7208639",
   "recorded": "2026-10-27",
   "prompt": "Photoreal scene of a generic humanoid robot standing still inside yellow floor safety markings in a test hall, safety cones and tape, no people, no text or logos."
+ },
+ "src-img/inline/x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a computer monitor in a dim robotics lab displaying a colourful 3D point cloud and a false-colour depth map of a tabletop scene with blocks and a robot gripper. No people, no logos, no readable text, not a cartoon.",
+  "sha256": "8e0dce0fdca9e8d2bc302c4e41c21f4780e9712837bfb14702769259b26ff552",
+  "recorded": "2026-10-30"
  },
  "src-img/korea-safety-rules-robros-humanoids-factories-hero.jpg": {
   "origin": "ai-generated",
@@ -495,6 +544,13 @@
   "scene": "A humanoid robot standing in a research lab next to workstation monitors showing abstract robot simulations (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a quiet port warehouse loading dock with open plain wooden shipping crates containing generic unbranded industrial robot arms, and one calm generic grey humanoid robot standing upright inside a padded crate. Overcast daylight through the dock door, realistic textures, no people, no flags, no logos, no text or labels, not a cartoon.",
+  "sha256": "4f79b54d52600dafcc7ec9c0d18d4982664c0835c85323bf81fef0afe202216f",
+  "recorded": "2026-10-30"
+ },
  "src-img/why-figure-03-treadmill-test-is-trending-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -510,6 +566,13 @@
   "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot carrying a plain unbranded cardboard parcel up the outdoor front steps of a suburban house, daylight. No people, no text, no logos.",
   "sha256": "6bb0d9fa6c7da61cc8b0735830372b41833bc8cd7bb03fcc633b6ca80eb620b9",
   "recorded": "2026-10-28"
+ },
+ "src-img/why-tau-robotics-humanoid-home-cleaning-subscription-is-trending-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey humanoid robot with plain unbranded panels wiping a white kitchen counter with a blue microfibre cloth in a bright, tidy modern San Francisco-style apartment with large windows. Natural daylight, realistic textures, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "23d0d63690c4f2404623e31fbf15f698cb65a49f0a91c0dcec3ca07581c0e9d2",
+  "recorded": "2026-10-30"
  },
  "src-img/why-ucla-phonebot-smartphone-humanoid-is-trending-hero.jpg": {
   "origin": "ai-generated",
@@ -528,6 +591,13 @@
   "legacy": true,
   "scene": "A dark graphite humanoid robot standing calmly in a scrapyard of old cars at dusk (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic dual-arm humanoid robot torso with plain unbranded white panels and a head camera, seated at a lab table and placing a plain computer mouse onto a mouse pad, with a small wire basket, a phone charger with cable and a small bin on the table. Clean university robotics lab, soft overhead lighting, no people, no logos, no text, not a cartoon.",
+  "sha256": "824aef0b4c2a9d0fa79fdb44f20cd71fdb408139d008c7a5c4311a97ec9d390c",
+  "recorded": "2026-10-30"
  },
  "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg": {
   "origin": "ai-generated",
