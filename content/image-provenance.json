@@ -35,12 +35,10 @@
  },
  "src-img/aimoga-mobo-family-companion-humanoid-preorders-hero.jpg": {
   "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "1d4bc599fbc7e780ab161ee4da25199272818975689dcfd61d9581acabf5bba0",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A small white companion robot standing on a rug in a sunny, empty family living room (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a small 0.9-metre white home companion humanoid robot with a matte white body and a dark glossy visor head (no cartoon face), standing on a beige rug in a sunny, empty family living room. Natural window light. No people, no text, no logos.",
+  "sha256": "9c334326a5cf21f29c95944c49336eb0ac3317ba4c00380a146b912975a6c16b",
+  "recorded": "2026-10-30"
  },
  "src-img/alibaba-amap-lambda0-humanoid-model-human-video-hero.jpg": {
   "origin": "ai-generated",
@@ -176,8 +174,8 @@
  "src-img/inline/agibot-worken-robot-work-metric-aha3-go-3-g2-max-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic macro photograph of a generic white and grey multi-fingered robotic hand with small dark tactile sensor pads on the fingertips gently holding a plain unmarked machined aluminium part above a workbench. Studio-quality lighting, shallow depth of field, no people, no logos, no text, not a cartoon.",
-  "sha256": "da44be5440f14700b7529c8da2d29b2c0b40eb2d3a0648f4fdbc23499b81f619",
+  "prompt": "Hyper-realistic close-up photograph of a generic dexterous robot hand with five fingers, each fingertip fitted with a small black tactile sensor pad, gently pinching a plain machined aluminium block. Grey industrial background, shallow depth of field. No people, no text, no logos.",
+  "sha256": "e28ba81971af589e491fc66611ce96c7ee076f4a93b9199ed748a6fb5e464850",
   "recorded": "2026-10-30"
  },
  "src-img/inline/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-1.jpg": {
@@ -274,9 +272,9 @@
  "src-img/inline/samsung-chairman-visits-rx-robotics-office-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic close-up photograph, 16:9, of a generic five-finger robotic hand with thin tendon-like cables along the fingers, holding a plain unmarked metal bracket above a grey workbench. Shallow depth of field, realistic machining marks, soft lab light. No people, no text, no logos, no brand marks.",
-  "sha256": "c54a0c3b31973a720145d9b2ffa6137bf67937f5a0a299ad95eac24e6fa7f742",
-  "recorded": "2026-10-29"
+  "prompt": "Hyper-realistic close-up photograph of a generic five-finger metallic robotic hand with thin tendon-like cables along each finger, holding a small plain unmarked aluminium bracket above a grey workbench. Shallow depth of field, soft studio light. No people, no text, no logos.",
+  "sha256": "2af2b5c07f7a2ad4a6beb5909dd5074e1ed045cc5eee7bfa981eafbb71b30ec7",
+  "recorded": "2026-10-30"
  },
  "src-img/inline/samsung-chairman-visits-rx-robotics-office-2.jpg": {
   "origin": "ai-generated",
@@ -287,10 +285,10 @@
  },
  "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-1.jpg": {
   "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "d88d550d470131c134146c9d3e4d46b23ed9277dd797642f2890bf2b227c805d",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal close-up of a generic humanoid robot's hands placing a small metal actuator part into a fixture at an assembly bench, shallow depth of field, no text or logos."
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic close-up photograph of a white and grey humanoid robot's two hands at a factory assembly station, lowering a small cylindrical metal actuator part into a steel fixture on the bench. Shallow depth of field, industrial lighting. No people, no text, no logos.",
+  "sha256": "17f68e3b94cac4087982bc79bc87a701a44063263e9cb330ab2f1702bdd42e1d",
+  "recorded": "2026-10-30"
  },
  "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-2.jpg": {
   "origin": "ai-generated",
@@ -308,10 +306,10 @@
  },
  "src-img/inline/supermimic-berkeley-humanoid-control-one-gpu-2.jpg": {
   "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "bd4584593604cb299f6d818e3694f0df04bc80badff8ade17c4b70ef95951766",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic humanoid robot in a deep crouch on a padded lab floor, preparing to jump, soft lab lighting, no people, no text or logos."
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a generic white bipedal humanoid robot in a deep crouch on a padded grey laboratory floor, arms swung back as if about to jump, soft lab lighting. No people, no text, no logos.",
+  "sha256": "5e6c60323568f885d8d700a0865696b8238fe14766b8a1fff877d528a5a892ba",
+  "recorded": "2026-10-30"
  },
  "src-img/inline/tesla-optimus-deliveries-late-2027-1.jpg": {
   "origin": "ai-generated",
@@ -486,9 +484,9 @@
  "src-img/samsung-five-finger-humanoid-hands-rx-division-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic macro photo: close-up of a five-fingered grey robotic hand with visible tendon cables along the fingers gripping a small metal tool on a workbench, shallow depth of field. No people, no text, no logos.",
-  "sha256": "a6cc9f62806ed8b255c2633e8b7a51b83375c4b38b399d00aa0d5349fbb152e7",
-  "recorded": "2026-10-28"
+  "prompt": "Hyper-realistic macro photograph of a single grey five-fingered robotic hand with visible tendon cables along each finger, holding a small metal tool like a pen on a workbench. Shallow depth of field, soft lab light. No people, no text, no logos.",
+  "sha256": "68c091343cec2ca3d1938e9427de5a2ba4d00b967155a5b41d67644793cd1621",
+  "recorded": "2026-10-30"
  },
  "src-img/schaeffler-taicang-humanoids-build-humanoid-actuators-hero.jpg": {
   "origin": "ai-generated",
