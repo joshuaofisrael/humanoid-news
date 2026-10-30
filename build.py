@@ -204,11 +204,31 @@ HUB_DEFS = [  # (slug, name, h1, intro, regex on title+summary+cat). A hub is pu
     ("agility-robotics", "Agility Robotics", "Agility Robotics Digit: news, customers and Digit 5", "Agility Robotics' Digit humanoid: who uses it, GXO and AGCO deployments, Digit 5 timing and orders, and every story, each linked to its sources.", r"Agility|\bDigit\b"),
     ("nvidia", "NVIDIA", "NVIDIA and humanoid robots", "HumanoidBeat coverage of NVIDIA's role in humanoid robotics, including its Isaac platform and IGX Thor compute, and the robot makers building on them. Newest first; each story links to its sources.", r"NVIDIA"),
     ("china", "China", "Humanoid robots in China", "HumanoidBeat coverage of China's humanoid robot industry: output forecasts, national standards, and companies such as Unitree, XPENG, AiMOGA and Alibaba's Amap team. Newest first; each story links to its sources.", r"China|Chinese|Unitree|XPENG|Alibaba|AiMOGA|Taicang|UBTECH"),
+    ("south-korea", "South Korea", "Humanoid robots in South Korea", "HumanoidBeat coverage of humanoid robots in South Korea: Samsung's robotics push, safety-rule exemptions for factory pilots, and Chinese makers seeking Korean trials. Newest first; each story links to its sources.", r"Korea"),
+    ("europe", "Europe", "Humanoid robots in Europe", "HumanoidBeat coverage of humanoid robots in Europe: NEURA and Agile Robots in Germany, a Danish supermarket pilot, and research and start-ups in Switzerland, Italy and the UK. Newest first; each story links to its sources.", r"Europe|European|German|Munich|Berlin|Ingolstadt|Ital|Denmark|Danish|Føtex|NEURA|Imperial College|London|Zürich|Swiss|Switzerland|France|French|Spain|Netherlands|Dutch"),
     ("research", "Research", "Humanoid robot research and AI models", "HumanoidBeat coverage of humanoid robot research: control methods, robot foundation models and new training approaches, as described by their authors. Newest first; each story links to its sources.", r"^Research$|SuperMimic|λ0|PhoneBot|Rehearsal|Helix|VLA"),
     ("deployments", "Pilots and deployments", "Humanoid robots at work: pilots and deployments", "HumanoidBeat coverage of humanoid robots being trialled or used in factories, shops and warehouses, and of companies' delivery targets. Newest first; each story links to its sources.", r"pilot|Pilot|factor|restock|deliveries|trials|Deployments"),
     ("funding-policy", "Funding and policy", "Humanoid robot funding, regulation and standards", "HumanoidBeat coverage of money and rules in humanoid robotics: funding rounds as announced by the companies, and government standards and safety decisions. Newest first; each story links to its sources. Nothing here is investment or legal advice.", r"^Funding$|^Policy$|Series A|pre-seed|standards|safety-rule"),
 ]
 HUB_GUIDE = {  # optional evergreen overview per hub: every fact comes from a linked HumanoidBeat story (which cites its sources)
+    "unitree": {
+        "asof": "30 October 2026",
+        "facts": [
+            'Unitree launched the H2-X on 21 October 2026 with a "Kung Fu Legend: Guardian" teaser showing martial-arts moves and staged security and rescue scenes. Unitree gave a maximum endurance of about eight hours (the on-screen text calls it standing time), but no price or release date, and outlets noted it had not said whether the demos were autonomous, remote-controlled or pre-programmed (<a href="../news/why-unitree-h2-x-guardian-video-is-trending.html">H2-X video report</a>).',
+            'At the World Physical AI Conference in Hangzhou, an H2-X lost its balance landing a side flip and its right lower leg came off at the joint, TechNode reported on 26 October. As of that report, Unitree had not commented or explained the cause (<a href="../news/unitree-h2-x-loses-leg-side-flip-hangzhou.html">Hangzhou demo report</a>).',
+            'The H2-X is based on the full-size H2, which Unitree describes as about 1.8 metres tall and 70 kg. Unitree\'s H2 product page lists battery life of about 3 hours and a price of $29,900 before tax and shipping (<a href="../news/published-humanoid-runtimes-and-recharge-times.html">runtime comparison</a>).',
+            'Founder Wang Xingxing said on 22 October that Unitree is developing "Unitree Rehearsal", a loop in which AI would write robot code, test it in simulation and then try it on real robots. He called it the company\'s most important project of the year; no technical details, results or release date were given (<a href="../news/unitree-rehearsal-self-evolving-robot-ai.html">Rehearsal report</a>).',
+            'In Denmark, Føtex is piloting humanoids built on Unitree hardware, with HIVE Robots software, to restock shelves after closing time at a store in Lyngby. HIVE is targeting commercial deployment by early 2027, ESM Magazine reports (<a href="../news/fotex-unitree-hive-grocery-restocking-pilot.html">Føtex pilot report</a>).',
+            'The smaller Unitree G1 is a common research platform: ETH Zürich (<a href="../news/eth-zurich-acp-humanoid-climbing-contact-planning.html">ladder climbing</a>), an Amazon-led team (<a href="../news/amazon-whole-body-dexterity-humanoid-torso-carrying.html">whole-body carrying</a>) and Alibaba\'s Amap team (<a href="../news/alibaba-amap-lambda0-humanoid-model-human-video.html">λ0 model</a>) all tested new methods on it. Their results are the authors\' own, from preprints.',
+        ],
+        "faq": [
+            ("How much does a Unitree humanoid cost?", "Unitree's H2 product page lists the H2 at $29,900 before tax and shipping, as of our 29 October 2026 report. Unitree has not announced a price for the H2-X."),
+            ("Can you buy the Unitree H2-X?", "Not as far as our reports show. Unitree had announced no price or release date for the H2-X when it was unveiled on 21 October 2026."),
+            ("How long does a Unitree humanoid's battery last?", "Unitree lists about 3 hours of battery life for the H2 and says parameters vary with the scenario and configuration. For the H2-X it gave about eight hours, which the video's on-screen text describes as standing time."),
+            ("What happened to the Unitree H2-X in Hangzhou?", "During a demonstration at the World Physical AI Conference in Hangzhou, an H2-X fell while landing a side flip and its right lower leg detached at the joint, TechNode reported. Unitree had not explained the cause as of that report."),
+            ("Where are Unitree robots being used?", "Beyond research labs, the deployment we have reported is a multi-year pilot at a Føtex supermarket in Lyngby, Denmark, where Unitree hardware running HIVE Robots software is being trained to restock shelves after closing time."),
+        ],
+    },
     "agility-robotics": {
         "asof": "27 October 2026",
         "facts": [
@@ -227,7 +247,55 @@ HUB_GUIDE = {  # optional evergreen overview per hub: every fact comes from a li
         ],
     },
 }
-HUB_EXCLUDE = {"deployments": ("generative-bionics-amd-physical-ai-data-factory-italy",)}  # regex false positives
+META_DESC = {  # hand-written <=155-char meta/og descriptions where the on-page summary runs long (summary text itself is unchanged)
+    "tesla-optimus-deliveries-late-2027": "Elon Musk told Tesla's Q3 2026 earnings call that Optimus deliveries to outside customers should start around the end of 2027, Electrek reports.",
+    "fotex-unitree-hive-grocery-restocking-pilot": "Føtex and HIVE Robots are piloting Unitree humanoids that restock supermarket shelves after closing time in Lyngby, Denmark, ESM Magazine reports.",
+    "nvidia-isaac-agile-one-sn-reference-humanoid": "At GTC Berlin on 21 October 2026, NVIDIA added to its Isaac robotics platform and Agile Robots unveiled the Agile ONE SN reference humanoid.",
+    "korea-safety-rules-robros-humanoids-factories": "A Korean regulatory sandbox lets 20 Robros humanoids work near people at four companies' sites, under conditions, Seoul Economic Daily reports.",
+    "minerva-humanoids-10m-pre-seed-general-catalyst": "San Francisco start-up Minerva Humanoids says it raised about $10 million in pre-seed funding led by General Catalyst, per its 6 October release.",
+    "agility-digit-5-nvidia-igx-thor-pittsburgh-hub": "Agility says Digit 5 will run on NVIDIA IGX Thor, it is opening a 50,000 sq ft Pittsburgh hub, and it holds over $300M in multi-year Digit 5 orders.",
+    "agco-agility-digit-pilot-hesston-kansas": "AGCO and Agility Robotics have signed an agreement to pilot the Digit humanoid at AGCO's Hesston, Kansas, plant from 2027, the companies say.",
+    "figure-04-design-lock-index-data-helix-3": "Figure CEO Brett Adcock says Figure 04 has reached design lock and its Index app holds 37.5 million human videos, and he previewed Helix 3.0.",
+    "alibaba-amap-lambda0-humanoid-model-human-video": "Alibaba's Amap team released λ0, a whole-body humanoid model trained on 500 hours of human video, reporting 62.5% success on a Unitree G1.",
+    "xpeng-iron-vla-2-gesture-demo": "XPENG's IRON humanoid adapts as a tester changes gestures mid-move in a new video; XPENG credits its VLA 2.0 model, which re-checks the scene every 0.2s.",
+    "eth-zurich-acp-humanoid-climbing-contact-planning": "ETH Zürich's Attention-based Contact Planning policy lets a Unitree G1 humanoid climb ladders, vault obstacles and get back up after falls.",
+    "agibot-110-a3-humanoids-guinness-dance-record": "AgiBot ran 110 Expedition A3 humanoids through one routine in Jinan on 24 October, setting a Guinness record for most humanoid robots dancing at once.",
+    "amazon-whole-body-dexterity-humanoid-torso-carrying": "Amazon, UC San Diego and Michigan researchers built Whole-Body Dexterity, letting a teleoperated Unitree G1 carry objects against its arms and torso.",
+    "rokae-10000th-humanoid-force-controlled-arm": "ROKAE Robotics says it has delivered 10,000 humanoid force-controlled arms, and five of its Helios humanoids work on Schaeffler's Taicang line.",
+    "yaskawa-humanoid-launch-within-two-years-tokyo-robotics": "Yaskawa Electric plans to bring a humanoid robot to market within one to two years, building on its Tokyo Robotics acquisition, per Nikkei reporting.",
+    "realbotix-echo-companion-humanoid-line-2027": "Realbotix's Echo companion humanoids: $11,950 tabletop and $59,950 full-body models, with a first run of 250 units planned for the second half of 2027.",
+    "toyota-honda-humanoid-factory-trials-japan": "Toyota and Honda are trialling humanoid robots in Japanese car plants on wire-harness installation and final inspection, Automotive News reports.",
+    "faw-volkswagen-ubtech-humanoid-logistics-trials": "FAW-Volkswagen and UBTECH will develop and test humanoids for factory logistics after Walker S Lite inspection trials at the Qingdao plant.",
+    "gxo-agility-digit-two-more-sites-three-manufacturing-customers": "GXO plans to deploy Agility's Digit humanoid in Statesville, NC, and Lebanon, TN, from early 2027; three unnamed manufacturers join paid programs.",
+    "casbot-a-plus-plus-round-shoemaking-mining-robots": "Beijing's CASBOT closed an A++ round worth several hundred million yuan and says it holds over RMB 400 million in 2026 shoemaking-robot orders.",
+    "mosense-rmb100m-angel-plus-robot-electronic-skin": "Shanghai's MoSense, which makes whole-body tactile skin for robots, raised about RMB 100 million in an angel-plus round led by CDH and Oasis Capital.",
+    "noetix-robotics-hong-kong-ipo-filing-report": "Noetix Robotics, maker of the RMB 9,998 Bumi humanoid, has confidentially filed for a Hong Kong listing, Bloomberg reports via TechNode.",
+    "unitree-h2-x-loses-leg-side-flip-hangzhou": "A Unitree H2-X humanoid lost a lower leg after a side flip at a Hangzhou conference, TechNode reports; Unitree had not publicly commented.",
+    "google-gemini-robotics-er-2-public-preview-google-cloud": "Google's Gemini Robotics ER 2 model, which plans and checks tasks for robot arms and humanoids, is in public preview for enterprise developers.",
+    "samsung-five-finger-humanoid-hands-rx-division": "Samsung's new robotics division is building a humanoid with cable-driven five-fingered hands, The Hankyoreh reports, as Korean groups eye CES 2027.",
+    "machenta-40m-seed-robots-learn-from-one-demonstration": "Imperial College spinout Machenta says its simulation-trained model lets robots, including humanoids, learn a new task after seeing it done once.",
+    "why-reward-ai-om-1-humanoid-delivery-demo-is-trending": "Reward AI's video of humanoids running its OM-1 model, carrying parcels and handling objects on stairs, passed 300,000 views on X in a day.",
+    "agibot-worken-robot-work-metric-aha3-go-3-g2-max": "At Innovation Day 2026 AGIBOT proposed Worken, a robot productivity metric, and showed its AHA3 humanoid architecture, new AI models and the G2 Max.",
+    "why-tau-robotics-humanoid-home-cleaning-subscription-is-trending": "Tau Robotics' post announcing recurring bookings for supervised humanoid home cleaners in San Francisco passed 670,000 views on X in a day.",
+    "us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs": "A 28 October US proclamation names humanoid robots among advanced robots that support the military and orders robotics trade talks, not new tariffs.",
+    "audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt": "Audi, Agile Robots, Dassault Systèmes and NVIDIA are testing mobile humanoids that pick car parts and place them in assembly order for Ingolstadt.",
+    "x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid": "X-Era AI's open-source E0.5 builds robot control on a 3D foundation model that predicts scene geometry, tested on a Zerith H1 humanoid.",
+}
+HUB_EXCLUDE = {  # regex false positives (e.g. non-Chinese labs testing on a Unitree G1 are not China-industry stories)
+    "deployments": ("generative-bionics-amd-physical-ai-data-factory-italy", "amazon-whole-body-dexterity-humanoid-torso-carrying", "realbotix-echo-companion-humanoid-line-2027"),
+    "china": ("eth-zurich-acp-humanoid-climbing-contact-planning", "amazon-whole-body-dexterity-humanoid-torso-carrying", "fotex-unitree-hive-grocery-restocking-pilot", "published-humanoid-runtimes-and-recharge-times"),
+}
+HUB_META = {  # hand-written hub meta descriptions (<=155 chars) so search snippets are not cut mid-sentence
+    "unitree": "Unitree H2, H2-X and G1 humanoid news: prices, battery life, the Hangzhou side-flip fall, Rehearsal AI and pilots, each story linked to its sources.",
+    "agility-robotics": "Agility Robotics Digit news: GXO and AGCO deployments, Digit 5 timing on NVIDIA IGX Thor, orders and customers, each story linked to its sources.",
+    "nvidia": "NVIDIA's role in humanoid robots: Isaac platform updates, IGX Thor compute and the robot makers building on them, each story linked to its sources.",
+    "china": "China's humanoid robot industry: output forecasts, national standards, factory trials and makers such as Unitree, UBTECH, XPENG and AiMOGA, with sources.",
+    "south-korea": "Humanoid robots in South Korea: Samsung's robotics division, safety-rule exemptions for factory pilots and Chinese makers seeking Korean trials.",
+    "europe": "Humanoid robots in Europe: NEURA and Agile Robots in Germany, a Danish supermarket pilot, Swiss research and UK and Italian start-ups, with sources.",
+    "research": "Humanoid robot research: control methods, robot foundation models and training approaches, as reported by their authors, with links to papers.",
+    "deployments": "Where humanoid robots are being trialled or used in factories, warehouses and shops, and companies' delivery targets, each linked to its sources.",
+    "funding-policy": "Humanoid robot funding rounds, IPO filings, government standards and safety rules, as announced and reported. Not investment or legal advice.",
+}
 def _hay(a): return f'{a["title"]} {a["summary"]}\n{a["cat"]}'
 HUBS = []
 for hs, hn, h1, intro, rx in HUB_DEFS:
@@ -307,7 +375,7 @@ for a in A:
     if a["_hubs"]: rel += '<p class="meta">More on: ' + " · ".join(f'<a href="../topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in a["_hubs"]) + "</p>"
     rel += "</aside>"
     c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published {published_html(a)} · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
-    page(f"news/{a['slug']}.html", seo_title(a), a["summary"], c, 1, ld, "article", a["_og"])
+    page(f"news/{a['slug']}.html", seo_title(a), META_DESC.get(a["slug"], a["summary"]), c, 1, ld, "article", a["_og"])
 
 L = f"<strong>{LLC}</strong>"
 CORRECTIONS = [  # (date, article slug, text) - newest first; add an entry for every significant correction
@@ -345,7 +413,7 @@ for h in HUBS:
         gh = f'<h2>What we know so far</h2><p class="meta">As of {g["asof"]}, based on the stories below and their cited sources.</p><ul>' + "".join(f"<li>{x}</li>" for x in g["facts"]) + "</ul><h2>Questions readers ask</h2>" + "".join(f"<h3>{esc(q)}</h3><p>{esc(ans)}</p>" for q, ans in g["faq"]) + "<h2>All stories</h2>"
         hld = {"@context": "https://schema.org", "@graph": [{k: v for k, v in hld.items() if k != "@context"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in g["faq"]]}]}
     ht = f"{h['h1']} | HumanoidBeat"
-    page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], (h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"],
+    page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], HUB_META.get(h["slug"]) or ((h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"]),
          f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{gh}{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
 # ---------------------------------------------------------------- deployment tracker (evergreen, linkable; every row links to a sourced story)
 TRK = json.load(open("content/tracker.json")) if os.path.exists("content/tracker.json") else []
@@ -357,11 +425,11 @@ if len(TRK) >= 5:
     _tu = f"{SITE_URL}/{TRK_PATH}"
     _upd = max(_bys[t["story"]].get("updated", _bys[t["story"]]["date"]) for t in TRK)
     _rows = "".join(f'<tr><td><strong>{esc(t["robot"])}</strong></td><td>{esc(t["where"])}</td><td>{esc(t["tasks"])}</td><td>{esc(t["status"])}</td><td><a href="news/{t["story"]}.html">Our report</a><br><span class="meta"><time datetime="{_bys[t["story"]]["date"]}">{fd(_bys[t["story"]]["date"])}</time></span></td></tr>' for t in TRK)
-    _intro = "Which humanoid robots are actually working, or being trialled, in factories, warehouses and shops? This tracker lists every pilot, trial and deployment HumanoidBeat has reported, with the company, the site, the tasks and the status as stated in our sources."
+    _intro = "Which humanoid robots are actually working, or being trialled, in factories, warehouses, shops and homes? This tracker lists every pilot, trial and deployment HumanoidBeat has reported, with the company, the site, the tasks and the status as stated in our sources."
     _how = ("<h2>How this tracker works</h2><ul><li>Each row comes from a HumanoidBeat report, and each report links to its original sources at the bottom.</li>"
             "<li>Status describes what the company or the cited outlet said. Company targets and plans are reported as targets, not outcomes, and robot counts are only listed where a source gives them.</li>"
             "<li>We add a row when we report a new pilot or deployment, and update a row when the situation changes. Spot something missing or out of date? <a href=\"contact.html\">Tell us</a>.</li></ul>")
-    _tfaq = [("Where are humanoid robots being used today?", "In the reports we track, humanoid robots are being trialled or used mainly in car and parts factories (for example in China, Japan, South Korea and the US), in logistics, and in one Danish supermarket restocking pilot. Most are pilots or trials rather than large-scale deployments."),
+    _tfaq = [("Where are humanoid robots being used today?", "In the reports we track, humanoid robots are being trialled or used mainly in car and parts factories (for example in China, Japan, South Korea and the US), in logistics, in one Danish supermarket restocking pilot and in a supervised home-cleaning service in San Francisco. Most are pilots or trials rather than large-scale deployments."),
              ("Are these robots replacing workers?", "The companies in these reports describe the robots as taking on repetitive or physically demanding tasks. None of the sources we cite report specific job losses, and most projects are still at the pilot stage."),
              ("How often is the tracker updated?", "We update it when we publish a new report on a humanoid pilot or deployment. The date at the top shows the newest report included.")]
     _faqh = "<h2>Common questions</h2>" + "".join(f"<h3>{esc(q)}</h3><p>{esc(x)}</p>" for q, x in _tfaq)

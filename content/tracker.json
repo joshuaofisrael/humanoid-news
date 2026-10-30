@@ -82,5 +82,19 @@
   "tasks": "Deliveries to outside customers",
   "status": "Company target: deliveries to outside customers around the end of 2027, per Elon Musk as reported by Electrek",
   "story": "tesla-optimus-deliveries-late-2027"
+ },
+ {
+  "robot": "Agile Robots Agile ONE humanoids",
+  "where": "Audi Production Lab, Germany, with the Ingolstadt plant as the target",
+  "tasks": "Parts sequencing: picking parts from containers and placing them in assembly order",
+  "status": "Proof of concept, supported by Dassault Systèmes and NVIDIA; no results or rollout timeline given, per Audi and Interesting Engineering",
+  "story": "audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt"
+ },
+ {
+  "robot": "Tau Robotics humanoid cleaners",
+  "where": "Customers' homes, San Francisco, USA",
+  "tasks": "Dusting, wiping surfaces, cleaning toilets, vacuuming and mopping",
+  "status": "Recurring bookings open, invite-only with a waitlist; every clean supervised by a remote human operator, per the company",
+  "story": "why-tau-robotics-humanoid-home-cleaning-subscription-is-trending"
  }
 ]
