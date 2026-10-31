@@ -96,5 +96,12 @@
   "tasks": "Dusting, wiping surfaces, cleaning toilets, vacuuming and mopping",
   "status": "Recurring bookings open, invite-only with a waitlist; every clean supervised by a remote human operator, per the company",
   "story": "why-tau-robotics-humanoid-home-cleaning-subscription-is-trending"
+ },
+ {
+  "robot": "SynDexy C1 dexterous humanoids",
+  "where": "Undisclosed customer factories in consumer electronics and electronic components",
+  "tasks": "Precision assembly steps on production lines; the company says its technology is used for tasks such as flexible circuit assembly and cable insertion",
+  "status": "First small batch delivered, per the company; customers and unit count not disclosed, per Pandaily and Gasgoo",
+  "story": "syndexy-c1-humanoid-first-small-batch-precision-assembly"
  }
 ]

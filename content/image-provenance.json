@@ -33,6 +33,13 @@
   "scene": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey and white two-legged humanoid robot with plain unbranded panels carrying a plain grey plastic tote along an aisle of a bright, clean modern warehouse with tall metal shelving. Natural light from skylights, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "125bfcf21f1a256953dfe74de0679387d84093e702018fcdb04546a8933594fd",
+  "recorded": "2026-10-31"
+ },
  "src-img/aimoga-mobo-family-companion-humanoid-preorders-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -73,6 +80,13 @@
   "legacy": true,
   "scene": "A white robotic arm pressing a rubber shoe sole onto an upper at a tidy footwear factory workstation (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/catch-it-all-unitree-g1-dexterous-hand-catching-research-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic dark grey humanoid robot seated on a plain stool in a bright, tidy robotics lab, raising one multi-fingered robotic hand to catch a small soft plush toy in mid-air. Motion frozen, soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "e55e8658f42aafba34cbedf966862f446ce19d45e27525e9bb85ca91af2f4e0f",
+  "recorded": "2026-10-31"
  },
  "src-img/china-100000-humanoids-2026-first-national-standards-hero.jpg": {
   "origin": "ai-generated",
@@ -178,12 +192,26 @@
   "sha256": "e28ba81971af589e491fc66611ce96c7ee076f4a93b9199ed748a6fb5e464850",
   "recorded": "2026-10-30"
  },
+ "src-img/inline/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a row of four identical calm generic grey humanoid robots standing at plain wall-mounted charging stations along the side of a quiet, clean logistics hall, soft overhead lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "ad50bbd9d0d8329277b53b3d03bbc855992940ebef32aca2db79353448e2969a",
+  "recorded": "2026-10-31"
+ },
  "src-img/inline/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
   "prompt": "Hyper-realistic photograph of a wide monitor on a desk in a dim engineering office showing a detailed 3D digital-twin rendering of a factory logistics area with shelving, containers and a generic humanoid robot model. No people, no logos, no readable text or software brand names, not a cartoon.",
   "sha256": "01267834c5e1e94be9bce2e457a279ec3b66a2cb55661032bd9c50b832eaaa63",
   "recorded": "2026-10-30"
+ },
+ "src-img/inline/catch-it-all-unitree-g1-dexterous-hand-catching-research-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a small neat collection of everyday objects laid out on a white lab table, a soft plush turtle toy, a small canvas sandbag, a plain unbranded foil snack bag, a plastic green bowl and a rubber toy bear, soft even lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "e5398664f3d343a5747b2e65db68c711e14f906f299a58d269230581199803ee",
+  "recorded": "2026-10-31"
  },
  "src-img/inline/china-100000-humanoids-2026-first-national-standards-1.jpg": {
   "origin": "ai-generated",
@@ -226,6 +254,13 @@
   "sha256": "b9b8be27bf5e8267da7958c244cb16c06155123b52e89f21b3725cd0a7931289",
   "recorded": "2026-10-27",
   "prompt": "A humanoid robot walking along a marked safety lane on a factory floor beside a human worker in a hard hat and high-visibility vest, with floor markings and a safety light visible."
+ },
+ "src-img/inline/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a tidy electronics workbench with an open plain white robot head shell, a small unmarked circuit board and a small camera module laid out neatly on an anti-static mat, soft overhead lighting, shallow depth of field, no people, no hands, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "4420bd67b53d237eee8577c56e5ec77dbcd074781be575fa7f3197f83987dbe6",
+  "recorded": "2026-10-31"
  },
  "src-img/inline/minerva-humanoids-10m-pre-seed-general-catalyst-1.jpg": {
   "origin": "ai-generated",
@@ -311,6 +346,13 @@
   "sha256": "5e6c60323568f885d8d700a0865696b8238fe14766b8a1fff877d528a5a892ba",
   "recorded": "2026-10-30"
  },
+ "src-img/inline/syndexy-c1-humanoid-first-small-batch-precision-assembly-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic macro photograph of two generic white robotic fingertips with small dark tactile sensor pads carefully inserting a thin flat ribbon cable connector into an unmarked green circuit board, studio-quality lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "a441618f17279ac7afbc58d8e01c7d4304e0f3ec934c84c92e834c2253b5c01b",
+  "recorded": "2026-10-31"
+ },
  "src-img/inline/tesla-optimus-deliveries-late-2027-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -360,6 +402,13 @@
   "sha256": "7187592dffae17824dcd47ba5240b9bbf0b0823c2a1ae89c06c8f54316fd66fa",
   "recorded": "2026-10-30"
  },
+ "src-img/inline/why-tesla-optimus-december-reservations-report-is-trending-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph of a smartphone lying face down on a tidy wooden desk next to a small generic white humanoid robot model figure, warm desk lamp light, shallow depth of field, no screen visible, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "a68fdc0e87dc3559ec09f5e92d2733f275216ff65de82e672138afc8ebdf6a2c",
+  "recorded": "2026-10-31"
+ },
  "src-img/inline/why-unitree-h2-x-guardian-video-is-trending-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -389,6 +438,13 @@
   "legacy": true,
   "scene": "A white humanoid robot working at a machine in a clean factory next to a worker in a blue cleanroom suit, with yellow floor safety markings",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic friendly service humanoid robot about child height with plain yellow and white unbranded panels standing near a reception desk in a bright, empty modern hotel lobby. Soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no signage, no brand markings, not a cartoon.",
+  "sha256": "3cac473bbde1c7e084bb0164b2ffae00258c96f459b3c1f16db883fad23ce618",
+  "recorded": "2026-10-31"
  },
  "src-img/machenta-40m-seed-robots-learn-from-one-demonstration-hero.jpg": {
   "origin": "ai-generated",
@@ -506,6 +562,13 @@
   "scene": "A graphite humanoid robot balancing on one leg in a motion-capture laboratory (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/syndexy-c1-humanoid-first-small-batch-precision-assembly-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled humanoid robot with a torso, head and two slender arms with multi-fingered hands, working at a clean electronics assembly workstation and placing a small unmarked circuit board into a plain grey housing. Bright, even factory lighting, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+  "sha256": "bf387305afeefbb3e04ef3a5064c4881b7a77793aabdec727f48dbcdba65b465",
+  "recorded": "2026-10-31"
+ },
  "src-img/tesla-optimus-deliveries-late-2027-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -571,6 +634,13 @@
   "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey humanoid robot with plain unbranded panels wiping a white kitchen counter with a blue microfibre cloth in a bright, tidy modern San Francisco-style apartment with large windows. Natural daylight, realistic textures, no people, no logos, no text, no brand markings, not a cartoon.",
   "sha256": "23d0d63690c4f2404623e31fbf15f698cb65a49f0a91c0dcec3ca07581c0e9d2",
   "recorded": "2026-10-30"
+ },
+ "src-img/why-tesla-optimus-december-reservations-report-is-trending-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic sleek white and dark grey humanoid robot with plain unbranded panels standing still on a low round display platform in an empty, softly lit modern showroom with pale walls. Shallow depth of field, realistic materials, no people, no logos, no text, no signage, no brand markings, not a cartoon.",
+  "sha256": "2320973b405ff7441cdade7a9ab5e41f2cc3f8d24ee8190f0d341acd951c8ece",
+  "recorded": "2026-10-31"
  },
  "src-img/why-ucla-phonebot-smartphone-humanoid-is-trending-hero.jpg": {
   "origin": "ai-generated",
