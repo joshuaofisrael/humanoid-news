@@ -2476,5 +2476,46 @@
    "alt": "Humanoid robots working at assembly stations on a clean, bright factory line (AI-generated image)",
    "note": "Generic illustration; not a photo of any company robot."
   }
+ },
+ {
+  "slug": "foxconn-humanoid-robots-texas-deployment-gr00t",
+  "date": "2026-11-01",
+  "updated": "2026-11-01",
+  "publish_at": null,
+  "cat": "Deployments",
+  "title": "Foxconn says more than 10 humanoid robots are already working at its Texas sites",
+  "seo_title": "Foxconn humanoid robots deployed in Texas",
+  "summary": "Foxconn Industrial Internet says more than 10 humanoid robots are in internal use at its Texas facilities, with two wheeled models and AI built on Nvidia's GR00T.",
+  "body": [
+   "<strong>Short answer:</strong> Foxconn has put more than 10 humanoid robots to work inside its Texas facilities for its own use, and plans to roll them out beyond the state, Brand Cheng, chairman of the Foxconn Industrial Internet (FII) unit, told Reuters on 30 October 2026, as reported by <a href=\"https://www.channelnewsasia.com/business/foxconn-working-new-tie-up-openai-says-there-no-ai-bubble-6506396\">CNA</a> and <a href=\"https://money.usnews.com/investing/news/articles/2026-10-30/foxconn-working-on-a-new-tie-up-with-openai-says-there-is-no-ai-bubble\">US News</a>.",
+   "The robots are not legged walkers. According to presentation materials seen by Reuters, FII introduced two wheeled models in October: one built to lift items vertically, and one that can bend at the waist for assembly work as well as loading and unloading, <a href=\"https://www.straitstimes.com/business/foxconn-working-on-a-new-tie-up-with-openai-says-there-is-no-ai-bubble\">The Straits Times</a> reported. Foxconn has not published unit costs, the exact tasks each robot performs, or a timetable for the wider rollout.",
+   "On the software side, FII is developing AI models for its humanoids based on Nvidia's GR00T foundation model, the same reports said. Foxconn is Nvidia's largest AI server maker and runs six factory buildings in Houston, where it builds AI servers for Nvidia, according to CNA. The deployment figures are the company's own and have not been independently verified.",
+   "The update came at Foxconn's annual Hon Hai Tech Day in Taipei, where chairman Young Liu also said a new collaboration with OpenAI was in the works, without giving details. For more on Nvidia's role in humanoid software, see our <a href=\"../topics/nvidia.html\">Nvidia hub</a> and the <a href=\"nvidia-isaac-agile-one-sn-reference-humanoid.html\">Isaac reference humanoid story</a>, and follow factory rollouts on our <a href=\"../topics/deployments.html\">deployments hub</a>."
+  ],
+  "sources": [
+   {
+    "title": "Foxconn working on a new tie-up with OpenAI, says there is no AI bubble (CNA / Reuters, 30 Oct 2026)",
+    "url": "https://www.channelnewsasia.com/business/foxconn-working-new-tie-up-openai-says-there-no-ai-bubble-6506396"
+   },
+   {
+    "title": "Foxconn Working on a New Tie-Up With OpenAI, Says There Is No AI Bubble (US News / Reuters, 30 Oct 2026)",
+    "url": "https://money.usnews.com/investing/news/articles/2026-10-30/foxconn-working-on-a-new-tie-up-with-openai-says-there-is-no-ai-bubble"
+   },
+   {
+    "title": "Foxconn in talks on OpenAI AI hardware tie-up (The Straits Times / Reuters, 30 Oct 2026)",
+    "url": "https://www.straitstimes.com/business/foxconn-working-on-a-new-tie-up-with-openai-says-there-is-no-ai-bubble"
+   }
+  ],
+  "image": {
+   "src": "src-img/toyota-honda-humanoid-factory-trials-japan-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Generic humanoid robots at work in a bright factory setting (AI-generated image)",
+   "note": "Generic illustration; not a photo of Foxconn's robots or plants. No people shown."
+  }
  }
 ]
