@@ -19,7 +19,7 @@ Setup once: `python3 -m venv v && v/bin/pip install pillow cairosvg && v/bin/pyt
 - `EMAIL` – public contact address. **Empty on purpose** until Joshua supplies one: while empty, the Contact/Corrections pages show only the GitHub issues link (`ISSUES`). Never publish a placeholder address.
 - `FORM_TO` – recipient of the contact form (FormSubmit.co). Used only on `contact.html` (form `action` + `data-ajax`). The plain address is in page source until FormSubmit's random alias is available after activation; then replace the value of `FORM_TO` with the alias (alias works at both `https://formsubmit.co/<alias>` and `/ajax/<alias>`). Do not put this address anywhere else on the site.
 - `CF_BEACON_TOKEN` – Cloudflare Web Analytics token. Set the constant or the env var `CF_BEACON_TOKEN=xxxx python3 build.py`. When set, every page gets the beacon script before `</body>` and the Privacy page mentions it. Empty = no analytics.
-- `INDEXNOW_KEY` – matches the key file in `docs/`.
+- `INDEXNOW_KEY` – matches the key file in `docs/`; `ci/indexnow_ping.py` reads it (and `SITE_URL`) straight from this file, no separate config.
 
 ## Daily routine
 
@@ -86,7 +86,7 @@ House rule for every news article: a hero plus an AI-generated inline image roug
 python3 build.py
 git add -A && git commit -m "Add: <title>" && git push
 ```
-Pages redeploys in about a minute. Then ping IndexNow with the sitemap URLs (POST `https://api.indexnow.org/indexnow` with `host`, `key`, `keyLocation=https://humanoidbeat.com/<key>.txt`, `urlList`).
+Pages redeploys in about a minute. Pushing to `main` with changes under `docs/` fires `.github/workflows/indexnow-on-push.yml`, which runs `ci/indexnow_ping.py` to POST the changed URLs plus both sitemaps to IndexNow (`api.indexnow.org/indexnow`, using the key file above). `publish-scheduled.yml` pings the same way after its own commits (bot-token pushes don't trigger `on: push`, so it can't rely on that workflow). To ping by hand: `python3 ci/indexnow_ping.py` (auto-detects changed `docs/*.html` vs `HEAD`), or add `--dry-run` to see the payload without sending it.
 
 ## Changing the domain
 Edit `SITE_URL`, run `python3 build.py`, update `docs/CNAME`, push, set the domain in repo Settings → Pages, enforce HTTPS, resubmit sitemap/IndexNow.

@@ -44,7 +44,12 @@ jobs:
       - name: Build
         if: steps.due.outputs.needed == 'true'
         run: python3 build.py
+      - name: Capture changed docs pages (before commit, for the IndexNow ping)
+        if: steps.due.outputs.needed == 'true'
+        run: |
+          { git diff --name-only HEAD -- docs; git ls-files --others --exclude-standard -- docs; } | sort -u > /tmp/changed_docs.txt
       - name: Commit the pages that just became due
+        id: commit
         if: steps.due.outputs.needed == 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -52,7 +57,13 @@ jobs:
           git add docs images.md
           if git diff --cached --quiet; then
             echo "Build produced no changes."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "Publish articles that reached their scheduled time"
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      - name: Ping IndexNow with the changed URLs
+        # Bot-token pushes above don't fire indexnow-on-push.yml's `on: push`, so ping here instead.
+        if: steps.commit.outputs.pushed == 'true'
+        run: python3 ci/indexnow_ping.py --changed-file /tmp/changed_docs.txt
