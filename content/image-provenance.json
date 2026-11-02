@@ -185,6 +185,13 @@
   "scene": "Dark metallic humanoid robot with glowing cyan eyes in a factory",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/humanoid-robot-prices-compared-2026-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic wide shot of five different generic humanoid robots of varying heights, builds and plain grey or white finishes, standing in a row like a product showroom display under soft studio lighting, clean minimalist white backdrop, no text, no logos, no brand markings, no human people, realistic metal and plastic surfaces, professional product photography style",
+  "sha256": "368ea4d8ed73b08f23fa2b4a0c81760b11b57f7e2f95196d42e348ca73dafa5d",
+  "recorded": "2026-11-02"
+ },
  "src-img/inline/agibot-worken-robot-work-metric-aha3-go-3-g2-max-1.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -247,6 +254,13 @@
   "sha256": "9f797cb8b69e84fb089c4b2b39eda588821fef12d49d9ddf71dc78f4db4a0b74",
   "recorded": "2026-10-27",
   "prompt": "A white humanoid robot working in an empty supermarket aisle at night, scanning shelves of packaged goods under dim store lighting."
+ },
+ "src-img/inline/humanoid-robot-prices-compared-2026-1.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photoreal image of a generic grey humanoid robot standing inside an open cardboard shipping crate on a warehouse loading dock, with a forklift blurred in the background, soft daylight through a loading bay door. No people, no text, no logos, no human people visible, realistic industrial photography style.",
+  "sha256": "ef8ca0e152b2d48c70e66ffc4973357b3a898e1251e9283dd3c6e2a4c7877709",
+  "recorded": "2026-11-02"
  },
  "src-img/inline/korea-safety-rules-robros-humanoids-factories-1.jpg": {
   "origin": "ai-generated",
