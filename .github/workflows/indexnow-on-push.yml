@@ -1,0 +1,21 @@
+# Pings IndexNow after a direct push to main changes docs/ (e.g. the manual
+# "build, commit, deploy, ping" routine in README.md). publish-scheduled.yml's
+# bot-token pushes don't fire `on: push` (GitHub doesn't re-trigger workflows
+# for pushes made with the default token), so that workflow pings for itself
+# instead; this one covers everyone else's pushes.
+name: IndexNow ping on push
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+permissions:
+  contents: read
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - run: python3 ci/indexnow_ping.py --base HEAD~1
