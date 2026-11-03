@@ -712,5 +712,26 @@
   "legacy": true,
   "scene": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/xiaomi-humanoid-eight-hour-auto-parts-sorting-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: Two white humanoid robots sorting metal car parts into grey bins at a factory workstation, no faces, logos or text",
+  "sha256": "d28db556cab0440aa41e9e093f7e827bc7c0d2dcd40e2c4fc2c895dff6455939",
+  "recorded": "2026-11-03"
+ },
+ "src-img/figure-03-botq-campus-video-production-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A line of grey humanoid robots walking out of a factory building onto a campus walkway, no faces, logos or text",
+  "sha256": "faf6a2463be08e18ac6b1e692b14d7b289e7fe05c933b83e0372b1d930ef8fab",
+  "recorded": "2026-11-03"
+ },
+ "src-img/agibot-six-g2-robots-convenience-store-livestream-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A wheeled humanoid robot restocking drink shelves in a convenience store with a camera on a tripod, no faces, logos or text",
+  "sha256": "43c4ba463871c981e5dcbc7ddd075a2b903edef89f64080266c79b02a8bb7d21",
+  "recorded": "2026-11-03"
  }
 }
