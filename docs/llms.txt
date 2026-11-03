@@ -5,6 +5,8 @@
 ## Articles
 - [Electric vs hydraulic actuators: why humanoid robots moved to electric joints](https://humanoidbeat.com/news/electric-vs-hydraulic-actuators-humanoid-robots.html): Hydraulic joints gave early humanoids huge power in a small package. Electric actuators won out because they are quieter, cleaner, easier to control and simpler to build at scale.
 - [Robots take on Mount Tai's 3,100 stone steps: what the CMG challenge tested](https://humanoidbeat.com/news/mount-tai-robot-challenge-3100-steps.html): Nearly 90 teams sent humanoid, quadruped and exoskeleton robots up a Mount Tai stone path on 2 November, according to Euronews and AFP.
+- [Figure 03 Robots Leave BotQ on Foot, but Production Scale Remains Unclear](https://humanoidbeat.com/news/figure-03-botq-campus-video-production.html): A new video from Figure CEO Brett Adcock shows completed humanoids walking out of BotQ, without disclosing current output or customer deliveries.
+- [AGIBOT Tests Six G2 Robots in a 24-Hour Convenience Store Broadcast](https://humanoidbeat.com/news/agibot-six-g2-robots-convenience-store-livestream.html): AGIBOT’s November 2–3 livestream puts six G2 humanoids into a store setting to demonstrate varied service tasks, though uninterrupted autonomy has not been established.
 - [How much does a humanoid robot cost in 2026? Prices compared](https://humanoidbeat.com/news/humanoid-robot-prices-compared-2026.html): Unitree lists G1 from $13,500, H2 at $29,900; 1X prices NEO at $20,000 or $499/month. Figure, Tesla and Apptronik have published no price.
 - [Foxconn says more than 10 humanoid robots are already working at its Texas sites](https://humanoidbeat.com/news/foxconn-humanoid-robots-texas-deployment-gr00t.html): Foxconn Industrial Internet says more than 10 humanoid robots are in internal use at its Texas facilities, with two wheeled models and AI built on Nvidia's GR00T.
 - [Agility Robotics expects about $465 million from its Churchill XI deal and plans to trade on Nasdaq as AGLT](https://humanoidbeat.com/news/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt.html): Agility Robotics and Churchill Capital Corp XI expect about $465 million in gross capital, a 4 November close and AGLT trading on Nasdaq from 5 November.
@@ -62,6 +64,7 @@
 
 ## Topics
 - [Unitree humanoid robot news](https://humanoidbeat.com/topics/unitree.html)
+- [Figure AI humanoid robot news](https://humanoidbeat.com/topics/figure.html)
 - [Agility Robotics news: Digit, Digit 5 and AGLT listing](https://humanoidbeat.com/topics/agility-robotics.html)
 - [NVIDIA and humanoid robots](https://humanoidbeat.com/topics/nvidia.html)
 - [Humanoid robots in China](https://humanoidbeat.com/topics/china.html)
