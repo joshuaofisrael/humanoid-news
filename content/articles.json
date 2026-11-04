@@ -2756,5 +2756,44 @@
    "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware."
   },
   "publish_at": "2026-11-03T20:00:00Z"
+ },
+ {
+  "slug": "south-korea-kimm-ai-humanoid-data-factory",
+  "date": "2026-11-04",
+  "updated": "2026-11-04",
+  "cat": "Research",
+  "title": "South Korea Opens First AI Humanoid Data Factory at KIMM to Train Robots for Real-World Tasks",
+  "summary": "South Korea has opened its first dedicated facility for producing training data for bipedal humanoid robots, placing hands-on robot learning at the center...",
+  "body": [
+   "South Korea has opened its first dedicated facility for producing training data for bipedal humanoid robots, placing hands-on robot learning at the center of its push to develop domestic artificial intelligence technology. The AI Humanoid Data Factory, unveiled on November 3 at the Korea Institute of Machinery and Materials (KIMM), is intended to help robots learn tasks they may eventually perform without human operators, according to <a href=\"https://www.ajupress.com/view/20261103143728182\">Aju Press</a>.",
+   "Built in collaboration with the Electronics and Telecommunications Research Institute (ETRI), the facility occupies approximately 1,000 square meters across two floors of a KIMM building. It currently operates 12 humanoid robots, with plans to increase that number to 25. Its focus is not mass-producing finished robots, but systematically gathering the physical task data needed to train their AI systems.",
+   "<strong>From Remote Operation to Robot Learning.</strong> At the opening ceremony, researchers remotely guided humanoids through a range of practical activities. The robots retrieved items from a refrigerator, handled laundry, straightened a sofa and operated buttons and levers inside a vehicle. These demonstrations illustrated the variety of movements and interactions that the facility is designed to capture, <a href=\"https://www.ajupress.com/view/20261103143728182\">Aju Press reported</a>.",
+   "The process begins with human-directed movement. As an operator controls a robot, the system records what the robot does while completing a task. Those records are then used to train vision-language-action models, which connect visual information and instructions with physical actions.",
+   "Importantly, the process does not end once a model has been trained. KIMM puts the trained AI back into robots to evaluate its performance, then uses information from those tests in subsequent training. This feedback loop is designed to improve how robots translate learned behavior into movement in the physical world.",
+   "The opening demonstrations therefore should not be confused with proof that the robots can already complete every displayed task autonomously. Remote operation is part of how the factory creates the examples that future autonomous systems can learn from.",
+   "<strong>KAIROS and a Domestic Humanoid Platform.</strong> KIMM also demonstrated KAIROS, its homegrown humanoid development project. At the November 3 event, KAIROS showed precise object manipulation and the ability to imitate full-body human movements. The institute began developing the robot a little more than a year ago, and the first version is scheduled for April 2027, according to <a href=\"https://www.ajupress.com/view/20261103143728182\">Aju Press</a>.",
+   "The new factory is expected to serve a broader purpose than improving a single machine. KIMM plans to open access in stages to outside companies, universities and research institutions beginning in late 2027. That timetable would allow other organizations to participate in the data infrastructure being assembled at the institute.",
+   "KIMM also expects domestic data collection to reduce reliance on foreign training datasets and AI models. This makes the facility part of a wider effort to build technological capacity within South Korea rather than depend entirely on tools developed elsewhere.",
+   "<strong>Part of a Larger National Investment.</strong> The project receives support from South Korea's Ministry of Science and ICT through K-Moonshot, a national initiative applying AI to 12 missions, including humanoid robotics. The ministry is targeting a world-class national humanoid platform within three years, while its Next-X Humanoid Challenge is scheduled to begin making final selections from 2027.",
+   "The factory's opening follows a larger funding commitment. On August 27, the Ministry of Planning and Budget earmarked 2.3 trillion won, approximately $1.7 billion, for the humanoid industry through 2030. The plan includes purchases of 1,080 domestically produced humanoids and a goal of increasing the domestic share of essential components from roughly 45% to 80%, <a href=\"https://www.ajupress.com/view/20261103143728182\">Aju Press reported</a>.",
+   "Together, those measures connect data collection, robot development and domestic manufacturing. The immediate milestone is a working facility with 12 robots collecting examples of physical tasks. The longer-term test will be whether that expanding body of training data helps South Korean humanoids perform useful work with less direct human control."
+  ],
+  "sources": [
+   {
+    "title": "Aju Press: South Korea Opens First AI Humanoid Data Factory at KIMM to Train Robots for Real-World Tasks",
+    "url": "https://www.ajupress.com/view/20261103143728182"
+   }
+  ],
+  "image": {
+   "src": "src-img/south-korea-kimm-ai-humanoid-data-factory-hero.jpg",
+   "crop": [
+    0,
+    0,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Two white humanoid robots in a lab kitchen, one opening a fridge and one folding laundry, filmed by cameras on tripods",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware."
+  }
  }
 ]
