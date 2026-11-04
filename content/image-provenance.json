@@ -494,10 +494,11 @@
  },
  "src-img/mount-tai-robot-challenge-3100-steps-hero.jpg": {
   "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: a generic grey bipedal humanoid robot with no logos or text climbing ancient weathered stone steps on a steep misty Chinese mountain path, pine trees, stone railings, morning light, engineers' feet and blurred backs in the background with no faces visible, 16:9 documentary style",
-  "sha256": "81f9d47f8d7e217782d3b76107e9bd059c4d5597539a81320d08334ffe599a42",
-  "recorded": "2026-11-03"
+  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+  "sha256": "16b58de0ef8ce4904d1eecc0d3d8910a770e14f56cd6afa37232fbccb39ee832",
+  "recorded": "2026-11-04",
+  "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot climbing ancient weathered stone steps on a misty Chinese mountain path, pine trees, morning fog, no people, no logos, no text",
+  "approved_by": "Joshua 2026-11-04 10:24 EST: 'Of course replace the images with our own images'"
  },
  "src-img/neura-4ne1-gen-4-tum-robogym-munich-hero.jpg": {
   "origin": "ai-generated",

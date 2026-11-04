@@ -2633,19 +2633,9 @@
     1.0
    ],
    "ai": true,
-   "alt": "A generic grey humanoid robot climbing weathered stone steps on a misty mountain path between pine trees, with two people's legs and boots in the foreground",
+   "alt": "A generic grey humanoid robot climbing weathered stone steps on a misty mountain path between pine trees",
    "note": "Generic AI-generated scene; not a photo of the actual Mount Tai event or any named team's robot."
-  },
-  "inline_images": [
-   {
-    "file": "mount-tai-robot-challenge-3100-steps-1.jpg",
-    "alt": "A generic four-legged robot carrying a watermelon on its back and a wooden crate of eggs, walking up uneven granite steps",
-    "caption": "Scene: a quadruped robot carrying fragile goods up stone steps",
-    "insert_after_paragraph": 3,
-    "brief": "Photoreal generic robot dog carrying eggs and a watermelon up mountain stairs, no logos or text",
-    "note": "Generic illustration; not a photo of any robot that took part in the challenge."
-   }
-  ]
+  }
  },
  {
   "slug": "xiaomi-humanoid-eight-hour-auto-parts-sorting",
