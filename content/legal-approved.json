@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "queue_line": 42,
+  "site": "humanoidbeat.com",
+  "title": "Robots take on Mount Tai's 3,100 stone steps: what the CMG challenge tested",
+  "queue_sha256": "19393d997ecaa6c94743b03149b924a5f1b9643875443fab01e9e606e6497d80",
+  "approved_version_sha256": "16b58de0ef8ce4904d1eecc0d3d8910a770e14f56cd6afa37232fbccb39ee832",
+  "approved_version_note": "sha256 of replacement AI image; merged commit 2f6b90cada19dbca3d1a09e39cf1af669380dbbe (humanoid-news#7); text unchanged",
+  "approved_by": "Joshua",
+  "words": "Of course replace the images with our own images",
+  "time": "2026-11-04T10:24:00-05:00"
+ },
+ {
+  "queue_line": 50,
+  "site": "humanoidbeat.com",
+  "title": "South Korea Opens First AI Humanoid Data Factory at KIMM to Train Robots for Real-World Tasks",
+  "queue_sha256": "949a454191f25aa78c0653b6d8468e5b545638d215b750dbedc0ea67d83f5a36",
+  "approved_version_sha256": "949a454191f25aa78c0653b6d8468e5b545638d215b750dbedc0ea67d83f5a36",
+  "approved_version_note": "Aju Press link markup fixed to https://www.ajupress.com/view/20261103143728182 (already fixed in repo commit 5676c0e, live)",
+  "approved_by": "Joshua",
+  "words": "Go for both",
+  "time": "2026-11-04T10:25:00-05:00"
+ }
+]

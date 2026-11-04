@@ -748,5 +748,12 @@
   "prompt": "Photorealistic photo: A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove, no faces, logos or text",
   "sha256": "346bc41c5b57b5d5bcfab8f2068ac3b2323d27b14417485130bca03df899add3",
   "recorded": "2026-11-04"
+ },
+ "src-img/robocolosseum-unitree-g1-humanoid-zero-task-completions-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
+  "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
+  "recorded": "2026-11-04"
  }
 }
