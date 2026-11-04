@@ -2758,6 +2758,52 @@
   "publish_at": "2026-11-03T20:00:00Z"
  },
  {
+  "slug": "liberai-liber-0-world-action-model-zero-shot",
+  "date": "2026-11-04",
+  "updated": "2026-11-04",
+  "cat": "Research",
+  "title": "LiberAI's Liber-0 Completes 36% of Unseen Robot Tasks Zero-Shot",
+  "summary": "LiberAI says its Liber-0 world action model, pretrained on 2.2 million hours of human experience, succeeded in 36% of trials on 60 tasks it was not trained for.",
+  "body": [
+   "Robotics start-up LiberAI has introduced Liber-0, a \"world action model\" that it says can carry out manipulation tasks a robot was never shown how to do. The company <a href=\"https://x.com/liberai_robot/status/2117803284039905456\">announced it on X</a>: \"Introducing Liber-0, our World Action Model for zero-shot robot manipulation—including dexterous, multi-step tasks.\"",
+   "According to <a href=\"https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/liberai-introduces-liber-0-for-zero-shot-robot-manipulation-1245768\">LiberAI's announcement on ACCESS Newswire</a>, Liber-0 achieved a 36.0% overall success rate across 600 trials covering 60 tasks proposed by GPT-6, without training on robot demonstrations collected for those tasks. The model did see robot data during pretraining, which is why LiberAI calls this \"task-level\" zero-shot generalisation.",
+   "<strong>How the tests broke down.</strong> The 60 tasks were split into three groups of 20, each tried 10 times. Liber-0 succeeded 63.5% of the time on pick-and-place tasks, 34.0% on the second group of short manipulation tasks and 10.5% on the hardest group of long, multi-step tasks, the company said.",
+   "For comparison, <a href=\"https://www.liberai.com/blog/liber0/\">LiberAI's technical blog</a> reports testing GPT-6 Astra on its own as a robot controller on the same tasks, over 180 trials. It scored 8.3% on pick-and-place and 5.0% on short non-pick-and-place tasks, and LiberAI says it struggled with contact-rich work that needs precise hand control. These are LiberAI's own results and have not been independently reproduced.",
+   "<strong>Learning from people, not robots.</strong> Liber-0 is pretrained on more than 2.2 million hours of human experience. To turn human video into actions a robot can copy, LiberAI records hand motion with its LiberSense Glove, which the blog says is 0.3 mm thick and weighs 131 g. Its LEO robot platform uses dexterous hands, articulated wrists and a waist, with cameras placed to match how the human data was filmed. A shared \"embodiment representation\" tells the model about the body it is controlling.",
+   "LiberAI says glove recordings scaled better than far larger amounts of web video in its tests, and that mixing them with limited robot data beat robot-only training while using 75% fewer robot demonstrations. For multi-step jobs, Liber-0 can optionally pair with a reasoning model such as GPT-6 Astra to plan intermediate goals.",
+   "<a href=\"https://roboticsandautomationnews.com/2026/11/04/from-human-experience-to-robot-action-liberai-launches-liber-0-world-action-model/106378/\">Robotics &amp; Automation News</a> also covered the launch. A 36% success rate is far from deployment-ready, but it suggests human recordings could cut the cost of teaching robots each new task one demonstration at a time."
+  ],
+  "sources": [
+   {
+    "title": "LiberAI on X: Introducing Liber-0, our World Action Model",
+    "url": "https://x.com/liberai_robot/status/2117803284039905456"
+   },
+   {
+    "title": "LiberAI: Liber-0 technical blog",
+    "url": "https://www.liberai.com/blog/liber0/"
+   },
+   {
+    "title": "ACCESS Newswire: LiberAI Introduces Liber-0 for Zero-Shot Robot Manipulation",
+    "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/liberai-introduces-liber-0-for-zero-shot-robot-manipulation-1245768"
+   },
+   {
+    "title": "Robotics & Automation News: From human experience to robot action, LiberAI launches Liber-0 world action model",
+    "url": "https://roboticsandautomationnews.com/2026/11/04/from-human-experience-to-robot-action-liberai-launches-liber-0-world-action-model/106378/"
+   }
+  ],
+  "image": {
+   "src": "src-img/liberai-liber-0-world-action-model-zero-shot-hero.jpg",
+   "crop": [
+    0,
+    0,
+    1.0
+   ],
+   "ai": true,
+   "alt": "A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware."
+  }
+ },
+ {
   "slug": "south-korea-kimm-ai-humanoid-data-factory",
   "date": "2026-11-04",
   "updated": "2026-11-04",

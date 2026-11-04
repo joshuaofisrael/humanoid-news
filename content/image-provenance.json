@@ -740,5 +740,12 @@
   "prompt": "Photorealistic photo: Two white humanoid robots in a lab kitchen, one opening a fridge and one folding laundry, filmed by cameras on tripods, no faces, logos or text",
   "sha256": "317ced0f2056dfab945641eda70bae39e400b90fc38e6d4c2b3d51e8681f5811",
   "recorded": "2026-11-04"
+ },
+ "src-img/liberai-liber-0-world-action-model-zero-shot-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove, no faces, logos or text",
+  "sha256": "346bc41c5b57b5d5bcfab8f2068ac3b2323d27b14417485130bca03df899add3",
+  "recorded": "2026-11-04"
  }
 }
