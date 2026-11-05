@@ -21,7 +21,6 @@ OUT = "docs"; ASSET_VER = "6"
 TODO_IMAGES = []
 SAME_AS = ["https://x.com/TheCharismaCat1"]  # verified real profiles only (Tech Beat Daily on X, the news account that posts HumanoidBeat stories)
 A = json.load(open("content/articles.json", encoding="utf-8"))
-A.sort(key=lambda a: a["date"], reverse=True)
 # ---- LEGAL-HOLD GATE (Joshua's global rule, 27 Oct 2026; see legal_gate.py + README). Fails closed: if the gate
 # cannot run, the build stops and nothing deploys. HOLD_REVIEW items are removed here and never rendered.
 import legal_gate
@@ -48,6 +47,15 @@ def article_due(a):
 
 _scheduled = [a for a in A if not article_due(a)]
 A = [a for a in A if article_due(a)]
+def article_sort_key(a):
+    raw = (a.get("publish_at") or "").strip() or a.get("date") or ""
+    if "T" not in str(raw):
+        raw = f"{raw}T00:00:00+00:00"
+    try:
+        return _parse_utc(str(raw))
+    except Exception:
+        return datetime.datetime.min.replace(tzinfo=datetime.timezone.utc)
+A.sort(key=article_sort_key, reverse=True)
 for a in _scheduled:
     print(f"  [scheduled] {a['slug']} waits until {a['publish_at']} (clock {PUBLISH_NOW.isoformat(timespec='minutes')})")
 
@@ -326,8 +334,8 @@ def seo_title(a):
 trend = [a for a in A if a.get("kind") == "trending"][:4]
 rest = [a for a in A if a not in trend]
 sections = ""
-if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it\'s trending</h2><div class="grid">' + "".join(card(a) for a in trend) + '</div></div></section>'
 sections += '<section class="sec" id="latest"><div class="w"><h2 class="sh">Latest news</h2><div class="grid">' + "".join(card(a, feat=(i == 0), eager=(i == 0)) for i, a in enumerate(rest)) + '</div></div></section>'
+if trend: sections += '<section class="sec"><div class="w"><h2 class="sh">Why it\'s trending</h2><div class="grid">' + "".join(card(a) for a in trend) + '</div></div></section>'
 _cohub = {"Figure": "figure", "Agility Digit": "agility-robotics", "Unitree": "unitree", "NVIDIA GR00T": "nvidia"}
 cos = ["Tesla Optimus", "Figure", "Agility Digit", "Boston Dynamics Atlas", "Unitree", "1X NEO", "Apptronik", "UBTECH", "XPeng IRON", "NVIDIA GR00T"]
 sections += '<section class="sec"><div class="w"><h2 class="sh">Companies we cover</h2><ul class="chips">' + "".join((f'<li><a href="topics/{_cohub[c]}.html">{c}</a></li>' if _cohub.get(c) in {h["slug"] for h in HUBS} else f"<li>{c}</li>") for c in cos) + "</ul></div></section>"
