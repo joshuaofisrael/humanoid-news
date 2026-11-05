@@ -3,6 +3,7 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [Agility begins Nasdaq trading as AGLT, first U.S. pure-play listed humanoid company](https://humanoidbeat.com/news/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid.html): Agility Robotics began trading on Nasdaq as AGLT on 5 Nov 2026 after closing its Churchill Capital Corp XI deal, calling itself the first U.S. publicly listed pure-play humanoid robotics company.
 - [RoboColosseum's Opening Results: No AI Policy Completed a Unitree G1 Humanoid Task](https://humanoidbeat.com/news/robocolosseum-unitree-g1-humanoid-zero-task-completions.html): In RoboColosseum's real-world tests, no evaluated AI policy completed any of five Unitree G1 humanoid tasks, with average progress of 13.3% to 23.2%, its paper says.
 - [LiberAI's Liber-0 Completes 36% of Unseen Robot Tasks Zero-Shot](https://humanoidbeat.com/news/liberai-liber-0-world-action-model-zero-shot.html): LiberAI says its Liber-0 world action model, pretrained on 2.2 million hours of human experience, succeeded in 36% of trials on 60 tasks it was not trained for.
 - [South Korea Opens First AI Humanoid Data Factory at KIMM to Train Robots for Real-World Tasks](https://humanoidbeat.com/news/south-korea-kimm-ai-humanoid-data-factory.html): South Korea has opened its first dedicated facility for producing training data for bipedal humanoid robots, placing hands-on robot learning at the center...
