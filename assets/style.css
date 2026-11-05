@@ -81,3 +81,10 @@ figcaption{font-size:.82rem;color:var(--mute);margin-top:8px}
 .related{margin:28px 0;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--bg2)}.related h2{font-size:1.1rem;margin:0 0 8px}.related ul{margin:0;padding-left:18px}.related li{margin:4px 0}
 .hub-list{padding-left:18px}.hub-list li{margin:0 0 14px}
 .tbl{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:12px}.tbl table{border-collapse:collapse;width:100%;min-width:720px;font-size:.93rem}.tbl th,.tbl td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}.tbl th{background:var(--bg2);font-weight:600}.tbl tr:last-child td{border-bottom:0}
+
+/* style-pass 2026-11-05: article media ratio, footer wrap, mobile nav */
+.a-hero img{aspect-ratio:1200/630;object-fit:cover}
+.site-f .w{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.site-f nav,.site-f .links{display:flex;flex-wrap:wrap;gap:8px 14px}
+.art{max-width:68ch}
+@media(max-width:760px){.site-h .w{padding-top:8px;padding-bottom:8px}nav{display:flex;flex-wrap:wrap;gap:4px 0;width:100%;justify-content:flex-start}nav a{margin-left:0;margin-right:14px}.btn.ghost{margin-left:0;margin-top:8px}}
