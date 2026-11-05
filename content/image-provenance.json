@@ -17,6 +17,13 @@
   "scene": "Rows of identical white humanoid robots standing in formation on a large stage under coloured lights (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/agibot-six-g2-robots-convenience-store-livestream-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A wheeled humanoid robot restocking drink shelves in a convenience store with a camera on a tripod, no faces, logos or text",
+  "sha256": "43c4ba463871c981e5dcbc7ddd075a2b903edef89f64080266c79b02a8bb7d21",
+  "recorded": "2026-11-03"
+ },
  "src-img/agibot-worken-robot-work-metric-aha3-go-3-g2-max-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -32,6 +39,13 @@
   "legacy": true,
   "scene": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: generic bipedal warehouse robot beside cardboard boxes on a conveyor in a modern fulfilment centre, soft industrial lighting, no people, no faces, no logos, no readable text.",
+  "sha256": "953203ed1c68ffc6368b2c13c8e98a8c3ad61ff4b9d419f330cd9fbe75bd2810",
+  "recorded": "2026-11-05"
  },
  "src-img/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-hero.jpg": {
   "origin": "ai-generated",
@@ -132,6 +146,13 @@
   "legacy": true,
   "scene": "A grey bipedal humanoid robot carrying a parts tote past shelving in a car factory logistics area (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/figure-03-botq-campus-video-production-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A line of grey humanoid robots walking out of a factory building onto a campus walkway, no faces, logos or text",
+  "sha256": "faf6a2463be08e18ac6b1e692b14d7b289e7fe05c933b83e0372b1d930ef8fab",
+  "recorded": "2026-11-03"
  },
  "src-img/figure-04-design-lock-index-data-helix-3-hero.jpg": {
   "origin": "ai-generated",
@@ -460,6 +481,13 @@
   "scene": "A white humanoid robot working at a machine in a clean factory next to a worker in a blue cleanroom suit, with yellow floor safety markings",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/liberai-liber-0-world-action-model-zero-shot-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove, no faces, logos or text",
+  "sha256": "346bc41c5b57b5d5bcfab8f2068ac3b2323d27b14417485130bca03df899add3",
+  "recorded": "2026-11-04"
+ },
  "src-img/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -550,6 +578,13 @@
   "scene": "A white companion robot with a lifelike face seated at a wooden desk in a softly lit living room (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/robocolosseum-unitree-g1-humanoid-zero-task-completions-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
+  "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
+  "recorded": "2026-11-04"
+ },
  "src-img/rokae-10000th-humanoid-force-controlled-arm-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -581,6 +616,13 @@
   "legacy": true,
   "scene": "Humanoid robots working at assembly stations on a clean, bright factory line (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/south-korea-kimm-ai-humanoid-data-factory-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: Two white humanoid robots in a lab kitchen, one opening a fridge and one folding laundry, filmed by cameras on tripods, no faces, logos or text",
+  "sha256": "317ced0f2056dfab945641eda70bae39e400b90fc38e6d4c2b3d51e8681f5811",
+  "recorded": "2026-11-04"
  },
  "src-img/supermimic-berkeley-humanoid-control-one-gpu-hero.jpg": {
   "origin": "ai-generated",
@@ -696,6 +738,13 @@
   "sha256": "824aef0b4c2a9d0fa79fdb44f20cd71fdb408139d008c7a5c4311a97ec9d390c",
   "recorded": "2026-10-30"
  },
+ "src-img/xiaomi-humanoid-eight-hour-auto-parts-sorting-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot GenerateImage",
+  "prompt": "Photorealistic photo: Two white humanoid robots sorting metal car parts into grey bins at a factory workstation, no faces, logos or text",
+  "sha256": "d28db556cab0440aa41e9e093f7e827bc7c0d2dcd40e2c4fc2c895dff6455939",
+  "recorded": "2026-11-03"
+ },
  "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -713,47 +762,5 @@
   "legacy": true,
   "scene": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/xiaomi-humanoid-eight-hour-auto-parts-sorting-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: Two white humanoid robots sorting metal car parts into grey bins at a factory workstation, no faces, logos or text",
-  "sha256": "d28db556cab0440aa41e9e093f7e827bc7c0d2dcd40e2c4fc2c895dff6455939",
-  "recorded": "2026-11-03"
- },
- "src-img/figure-03-botq-campus-video-production-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A line of grey humanoid robots walking out of a factory building onto a campus walkway, no faces, logos or text",
-  "sha256": "faf6a2463be08e18ac6b1e692b14d7b289e7fe05c933b83e0372b1d930ef8fab",
-  "recorded": "2026-11-03"
- },
- "src-img/agibot-six-g2-robots-convenience-store-livestream-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A wheeled humanoid robot restocking drink shelves in a convenience store with a camera on a tripod, no faces, logos or text",
-  "sha256": "43c4ba463871c981e5dcbc7ddd075a2b903edef89f64080266c79b02a8bb7d21",
-  "recorded": "2026-11-03"
- },
- "src-img/south-korea-kimm-ai-humanoid-data-factory-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: Two white humanoid robots in a lab kitchen, one opening a fridge and one folding laundry, filmed by cameras on tripods, no faces, logos or text",
-  "sha256": "317ced0f2056dfab945641eda70bae39e400b90fc38e6d4c2b3d51e8681f5811",
-  "recorded": "2026-11-04"
- },
- "src-img/liberai-liber-0-world-action-model-zero-shot-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove, no faces, logos or text",
-  "sha256": "346bc41c5b57b5d5bcfab8f2068ac3b2323d27b14417485130bca03df899add3",
-  "recorded": "2026-11-04"
- },
- "src-img/robocolosseum-unitree-g1-humanoid-zero-task-completions-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
-  "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
-  "recorded": "2026-11-04"
  }
 }
