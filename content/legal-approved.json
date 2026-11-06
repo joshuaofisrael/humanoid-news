@@ -20,5 +20,25 @@
   "approved_by": "Joshua",
   "words": "Go for both",
   "time": "2026-11-04T10:25:00-05:00"
+ },
+ {
+  "queue_line": 56,
+  "id": "q56",
+  "review_item": 6,
+  "site": "humanoidbeat.com",
+  "title": "Agility's S-4 and Ars interview put Digit unit economics in the open: $8,500/mo RaaS, $200k buy, BOM path to $30k",
+  "sha256": "15f82f5a539734d2eb77bb8304283f66c753abd995f83c8da33091d5a9bb71d0",
+  "decision": "approved",
+  "approved_by": "Joshua Israel",
+  "approval_quote": "Yes",
+  "approval_prompt": "should I go with my suggestion and approve 1 to 6 and reject 7? Reply `approve 1-6, reject 7`",
+  "joshua_words": "Yes",
+  "authorized_by": "pt2288u",
+  "ts": "2026-11-06T10:53:17-05:00",
+  "approval_time": "2026-11-06 10:53 ET (America/New_York)",
+  "recorded_by": "Personal assistant (executor)",
+  "draft_path": "/workspace/content-review/drafts/humanoidbeat/agility-digit-unit-economics-s4-ars-november-2026.fb1119fbe21a.HOLD_REVIEW.json",
+  "note": "Joshua replied Yes to approve 1-6, reject 7 in chat 6 Nov 2026 ~10:48 AM ET",
+  "slug": "agility-digit-unit-economics-s4-ars-november-2026"
  }
 ]
