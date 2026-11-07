@@ -3,6 +3,7 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [Brett Adcock posts Figure 03 campus walk video: "One day the entire world will look like this"](https://humanoidbeat.com/news/figure-adcock-one-day-entire-world-video.html): Figure CEO Brett Adcock posted a new video on X on 6 November 2026 with the caption "One day the entire world will look like this," showing humanoid robots walking through campus and office spaces. Reactions on X were mixed.
 - [Chinese humanoid makers push factory and cafe trials in South Korea](https://humanoidbeat.com/news/chinese-humanoids-south-korea-factory-trials.html): UBTech, Unitree, AgiBot and Anyverse Dynamics are pursuing Korean deployments as Seoul expands physical AI funding, according to The Gadgeteer on 6 November 2026.
 - [Unitree CEO says GPT-6 powered humanoids painted and played chess with no prior training](https://humanoidbeat.com/news/unitree-gpt-6-painting-chess-ceo-claim.html): South China Morning Post reports Unitree founder Wang Xingxing said at CIIE in Shanghai that the firm's humanoids, powered by OpenAI's GPT-6, painted and played chess without prior training.
 - [Boston Dynamics pitches mobile robots as a security force multiplier](https://humanoidbeat.com/news/boston-dynamics-security-force-multiplier.html): Boston Dynamics said mobile robots can act as an intelligent force multiplier for security teams by automating routine patrols at large industrial and commercial sites.
