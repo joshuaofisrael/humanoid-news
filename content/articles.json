@@ -1,5 +1,86 @@
 [
  {
+  "slug": "musk-tesla-optimus-probably-rent-not-sell",
+  "date": "2026-11-07",
+  "updated": "2026-11-07",
+  "cat": "Industry",
+  "title": "Musk Says Tesla Will Probably Rent Out Optimus Robots Rather Than Sell Them",
+  "summary": "Elon Musk told Ron Baron that Tesla will probably rent out its Optimus humanoid robots rather than sell them, while discussing manufacturing costs and productivity expectations.",
+  "body": [
+   "Tesla could pursue a rental-based business model for its Optimus humanoid robots rather than selling them directly to customers. Elon Musk discussed the possibility with investor Ron Baron during the 33rd Annual Baron Investment Conference in New York on Friday, November 6.",
+   "When Baron asked whether Tesla would rent or sell the robots, Musk responded: \"I think probably rent them.\"",
+   "The exchange offers a clearer indication of Tesla's potential commercial approach, although the company has not announced rental prices, contractual terms or a finalized sales policy.",
+   "<h2>Musk favors renting over direct sales</h2>",
+   "The discussion took place during a fireside chat between Musk and Baron at the annual investment conference.",
+   "Baron asked Musk whether Tesla had decided how it would distribute its humanoid robots commercially. Rather than committing to a direct-sales model, Musk indicated that renting was the more likely option.",
+   "The answer suggests Tesla may be considering a recurring-revenue business model for Optimus.",
+   "Under such an arrangement, customers could potentially pay to use robots over an agreed period rather than purchasing the machines outright. This could allow Tesla to retain ownership of its hardware while generating ongoing revenue from deployments.",
+   "However, Musk did not specify whether the proposed rental approach would apply to all customers or whether Tesla might eventually offer both rental and purchase arrangements.",
+   "No rental rate was announced during the conversation. The company has also not disclosed minimum contract lengths, maintenance arrangements, insurance requirements or other commercial terms.",
+   "<h2>Manufacturing costs could fall toward $20,000</h2>",
+   "Musk and Baron also discussed the potential manufacturing cost of Optimus.",
+   "Baron suggested an initial production cost of approximately $30,000 per robot, potentially declining toward $20,000 over time.",
+   "Musk agreed with the figures, responding \"Yeah.\"",
+   "Before that exchange, Musk said Optimus would initially cost approximately as much as a car to manufacture, but that production costs should become considerably lower over time.",
+   "These figures are manufacturing-cost estimates discussed during the conference, not announced customer prices.",
+   "The distinction is particularly important if Tesla chooses to rent the robots. A manufacturing cost of $20,000 or $30,000 does not establish what customers would pay for access to an Optimus unit.",
+   "A rental business would also need to account for servicing, repairs, depreciation, logistics and the utilization rate of its robot fleet.",
+   "For now, Tesla has not published a commercial pricing structure.",
+   "<h2>Musk claims robots could outperform human workers</h2>",
+   "Musk also outlined his expectations for the productivity of humanoid robots.",
+   "He argued that a machine capable of operating continuously could generate substantially more weekly output than an ordinary human worker.",
+   "During the discussion, Musk suggested that Optimus could eventually achieve approximately five times the weekly productivity of a person.",
+   "His reasoning was based on the possibility of operating for 168 hours per week, without the breaks, vacations and other interruptions associated with human labor.",
+   "These are Musk's projections rather than independently demonstrated productivity figures. Actual performance will depend on the tasks assigned, reliability, operating costs and the ability of robots to function safely in real working environments.",
+   "Nevertheless, the potential economic proposition is significant. If humanoid robots can perform repetitive industrial tasks reliably, businesses could potentially justify recurring payments based on labor savings and increased production.",
+   "<h2>External deliveries remain a longer-term target</h2>",
+   "Tesla's commercial ambitions for Optimus are still developing.",
+   "According to Not a Tesla App's November 6 reporting, Musk has discussed beginning deliveries to outside companies around the end of 2027. The company intends to deploy robots internally in its own factories before expanding external distribution.",
+   "That timeline remains a target rather than a confirmed delivery commitment.",
+   "The rental comments also leave important questions unanswered. Tesla has not announced whether customers will be able to purchase Optimus outright, whether rental contracts will be available to smaller businesses or how the company will handle maintenance and technical support.",
+   "For now, Musk's remarks provide an indication of Tesla's preferred commercial direction, but not a finalized business model.",
+   "If Tesla ultimately retains ownership and rents its humanoid robots to customers, Optimus could become a recurring-revenue business rather than a conventional hardware product."
+  ],
+  "sources": [
+   {
+    "title": "Musk: Tesla Will Rent Optimus Robots Instead of Selling Them",
+    "url": "https://www.notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them"
+   },
+   {
+    "title": "Baron Investment Conference 2026",
+    "url": "https://elonmuskarchive.org/video/baron-investment-conference-2026-11-06"
+   },
+   {
+    "title": "33rd Annual Baron Investment Conference",
+    "url": "https://www.baroncapitalgroup.com/conference-2026"
+   },
+   {
+    "title": "clankr on X: Musk on renting Optimus",
+    "url": "https://x.com/clankrmedia/status/2119008022349349077"
+   }
+  ],
+  "image": {
+   "src": "src-img/musk-tesla-optimus-probably-rent-not-sell-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot loading plain cardboard boxes onto a warehouse cart",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 7 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people faces logos or text",
+    "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+    "recorded": "2026-11-07",
+    "approved_by": "Joshua publish brief 2026-11-07: use bank PNG"
+   }
+  },
+  "seo_title": "Tesla Optimus: Musk Says Robots Will Probably Be Rented"
+ },
+ {
   "slug": "kist-kapex-humanoid-lg-commercialization-award",
   "date": "2026-11-07",
   "updated": "2026-11-07",

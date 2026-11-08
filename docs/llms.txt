@@ -3,6 +3,7 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [Musk Says Tesla Will Probably Rent Out Optimus Robots Rather Than Sell Them](https://humanoidbeat.com/news/musk-tesla-optimus-probably-rent-not-sell.html): Elon Musk told Ron Baron that Tesla will probably rent out its Optimus humanoid robots rather than sell them, while discussing manufacturing costs and productivity expectations.
 - [KIST KAPEX humanoid heads toward LG commercialization after science award](https://humanoidbeat.com/news/kist-kapex-humanoid-lg-commercialization-award.html): KIST’s KAPEX humanoid, built with more than 90% domestically made core parts and able to walk while carrying over 20 kg, has its technology path into LG after Lee Jong-won’s November science award.
 - [Hyundai Mobis starts Atlas actuator prototypes at Uiwang](https://humanoidbeat.com/news/hyundai-mobis-atlas-actuator-prototypes-uiwang.html): Hyundai Mobis began November prototype production of actuators for Boston Dynamics’ Atlas at its Uiwang research centre, aiming to supply all 31 joints by 2028.
 - [Agility’s Jonathan Hurst on getting balancing robots safely beyond the fence](https://humanoidbeat.com/news/agility-hurst-balancing-robot-standards.html): Agility Robotics pointed to a GeekWire conversation with co-founder and Chief Robot Officer Jonathan Hurst about what it takes to operate balancing robots outside a cage and the standards work behind that shift.

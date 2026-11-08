@@ -579,6 +579,13 @@
   "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot climbing ancient weathered stone steps on a misty Chinese mountain path, pine trees, morning fog, no people, no logos, no text",
   "approved_by": "Joshua 2026-11-04 10:24 EST: 'Of course replace the images with our own images'"
  },
+ "src-img/musk-tesla-optimus-probably-rent-not-sell-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people faces logos or text",
+  "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+  "recorded": "2026-11-07"
+ },
  "src-img/neura-4ne1-gen-4-tum-robogym-munich-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
