@@ -1,5 +1,145 @@
 [
  {
+  "slug": "adcock-figure-f03-keep-running",
+  "date": "2026-11-08",
+  "updated": "2026-11-08",
+  "cat": "Figure",
+  "title": "Adcock posts F.03 fleet video and says Figure plans to keep running the robots",
+  "summary": "Figure CEO Brett Adcock posted a video captioned 'F.03 humanoid robots' and, asked whether F.03 would be decommissioned once a successor arrives, replied that the plan is to keep running them.",
+  "body": [
+   "<strong>Short answer:</strong> Figure chief executive Brett Adcock <a href=\"https://x.com/adcock_brett/status/2119127304265949511\">posted a 90-second video</a> on 7 November 2026 captioned simply \"F.03 humanoid robots\". When a follower asked whether F.03 would eventually be decommissioned as the company works on its next robot, Adcock <a href=\"https://x.com/adcock_brett/status/2119155644448305558\">replied</a>: \"The plan is to keep running them, it's quite a good robot.\"",
+   "The question came from an X user who suggested Figure was close to finishing the design of a \"Figure 4\" and asked whether \"Figure 3 eventually be decommissioned, or do you find it too valuable?\" Adcock did not confirm anything about a successor's design or timing in his answer. He only addressed the fate of the current fleet.",
+   "<h2>Why the reply matters</h2>",
+   "Humanoid makers are iterating quickly, and early buyers and partners want to know whether hardware bought or deployed today will be supported once the next generation arrives. Adcock's answer suggests Figure intends to keep F.03 units in service rather than retire them on a fixed schedule.",
+   "<h2>What was not said</h2>",
+   "Adcock gave no numbers for the F.03 fleet, no deployment sites and no timeline for a next-generation robot in these posts. Any claim that a \"Figure 4\" is near completion comes from the follower's question, not from Figure. HumanoidBeat treats the <a href=\"https://x.com/adcock_brett/status/2119127304265949511\">video post</a> and the <a href=\"https://x.com/adcock_brett/status/2119155644448305558\">reply</a> as the public record."
+  ],
+  "sources": [
+   {
+    "title": "Brett Adcock on X: F.03 humanoid robots",
+    "url": "https://x.com/adcock_brett/status/2119127304265949511"
+   },
+   {
+    "title": "Brett Adcock on X: the plan is to keep running them",
+    "url": "https://x.com/adcock_brett/status/2119155644448305558"
+   }
+  ],
+  "image": {
+   "src": "src-img/adcock-figure-f03-keep-running-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot carrying a crate down a sunlit warehouse aisle",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 8 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people faces logos or text",
+    "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+    "recorded": "2026-11-08",
+    "approved_by": "Joshua publish brief 2026-11-08: use bank PNG"
+   }
+  },
+  "seo_title": "Brett Adcock: Figure plans to keep running F.03 humanoids"
+ },
+ {
+  "slug": "xinhua-ubtech-humanoid-news-anchors",
+  "date": "2026-11-08",
+  "updated": "2026-11-08",
+  "cat": "Industry",
+  "title": "Xinhua and UBTech unveil humanoid robot news anchors Xinyan and Xinyu",
+  "summary": "Xinhua unveiled two life-size humanoid robot news anchors, Xinyan and Xinyu, built with UBTech and styled by Zhang Yimou, at the World Media Summit in Beijing on 5 November.",
+  "body": [
+   "China's state news agency <a href=\"https://english.news.cn/20261105/5512de653656416f94cf201e908e689b/c.html\">Xinhua unveiled</a> two humanoid robot news anchors at the World Media Summit in Beijing on 5 November, describing them as the world's first bionic humanoid robot news anchors. That \"world's first\" label is Xinhua's own claim.",
+   "<h2>Who built them</h2>",
+   "The life-size anchors are named Xinyan (female) and Xinyu (male), <a href=\"https://eastfrontier.com/2026/11/06/chinas-xinhua-and-ubtech-unveil-humanoid-robot-news-anchors-styled-by-zhang-yimou/\">EastFrontier reported</a>, citing Xinhua. Hong Kong-listed UBTech supplied the technology, from bionic skin, hardware and an operating system to an emotion model and production of the robots. Film director Zhang Yimou was lead image designer, and Xinhua says it fully owns the intellectual property.",
+   "<h2>Where their words come from</h2>",
+   "The anchors draw content from Xinhua Yudian, the agency's AI agent for current-affairs news. UBTech chief executive Zhou Jian said the robots pull reviewed information in real time to avoid AI hallucinations. Qian Tong, director of Xinhua's New Media Center, described them as a supporting role in the newsroom that would help with presentation, output in several languages and live interaction.",
+   "<h2>Demonstration, not deployment</h2>",
+   "So far the robots have appeared at the summit, where one read news of the forum's opening on stage. Zhou listed possible next settings, including study bases, city reception venues and overseas cultural exchanges, but gave no dates. EastFrontier noted that every account so far originates with Xinhua, so speech quality, latency and cost have not been tested by outside reporters."
+  ],
+  "sources": [
+   {
+    "title": "Xinhua launches world's first bionic humanoid robot news anchors",
+    "url": "https://english.news.cn/20261105/5512de653656416f94cf201e908e689b/c.html"
+   },
+   {
+    "title": "China's Xinhua and UBTech unveil humanoid robot news anchors styled by Zhang Yimou",
+    "url": "https://eastfrontier.com/2026/11/06/chinas-xinhua-and-ubtech-unveil-humanoid-robot-news-anchors-styled-by-zhang-yimou/"
+   }
+  ],
+  "image": {
+   "src": "src-img/xinhua-ubtech-humanoid-news-anchors-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Black humanoid robot under spotlights on an exhibition stage",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 8 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
+    "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
+    "recorded": "2026-11-08",
+    "approved_by": "Joshua publish brief 2026-11-08: use bank PNG"
+   }
+  },
+  "seo_title": "Xinhua and UBTech unveil humanoid robot news anchors"
+ },
+ {
+  "slug": "embodied-ai-air-wheeled-factory-robot-munich",
+  "date": "2026-11-08",
+  "updated": "2026-11-08",
+  "cat": "Industry",
+  "title": "Embodied AI unveils AIR, a wheeled two-arm robot built to work beside factory staff",
+  "summary": "Swiss startup Embodied AI unveiled AIR at Humanoid Europe 2026 in Munich, a wheeled robot with light tendon-driven arms that it says can work beside factory staff without a safety cage.",
+  "body": [
+   "Swiss robotics startup Embodied AI unveiled AIR at Humanoid Europe 2026 in Munich on 6 November, a two-armed robot on a wheeled base that it says can work alongside factory staff without a safety cage, according to its <a href=\"https://www.businesswire.com/news/home/20261106661068/en/Embodied-AI-Unveils-AIR-a-Physically-Safe-Humanoid-Robot-That-Learns-on-the-Job\">announcement</a> and <a href=\"https://www.humanoidsdaily.com/news/embodied-ai-air-wheeled-humanoid-factory-humanoid-europe\">Humanoids Daily</a>.",
+   "<h2>Light arms, heavy torso</h2>",
+   "The company calls AIR a humanoid, but it has no legs: it is a torso, two arms and a head on wheels. Embodied AI keeps the motors and other heavy parts in the torso and drives the arms through cables, so the moving parts stay light and give way on contact. A conventional industrial arm is heavy and stiff, which is why it usually sits behind a fence or light curtain. The company has not published AIR's height, weight, reach, battery life or full payload.",
+   "<h2>Teleoperated first, autonomous later</h2>",
+   "A remote operator runs AIR from its first shift, and each shift is recorded as training data. The company says the robot takes the task over on its own within about a month. It reports a 95% average task success rate in paid pilots with a consumer electronics maker and an automotive and industrial technology supplier, neither of which it has named, and has not said how success is defined.",
+   "<h2>Who is behind it</h2>",
+   "Embodied AI is a 25-person spinout from Swiss university EPFL, based in Lausanne, led by chief executive Francesco Stella. It plans CE marking in 2027, when the EU's new Machinery Regulation takes effect, and says orders open after the Munich show. No price or delivery date has been published, and until it carries the CE mark AIR cannot be sold as a finished machine in the EU."
+  ],
+  "sources": [
+   {
+    "title": "Embodied AI Unveils AIR, a Physically Safe Humanoid Robot That Learns on the Job",
+    "url": "https://www.businesswire.com/news/home/20261106661068/en/Embodied-AI-Unveils-AIR-a-Physically-Safe-Humanoid-Robot-That-Learns-on-the-Job"
+   },
+   {
+    "title": "Swiss Startup Embodied AI Unveils AIR, a Wheeled Robot Built to Work Beside Factory Staff Without a Cage",
+    "url": "https://www.humanoidsdaily.com/news/embodied-ai-air-wheeled-humanoid-factory-humanoid-europe"
+   }
+  ],
+  "image": {
+   "src": "src-img/embodied-ai-air-wheeled-factory-robot-munich-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot working beside a hard-hatted worker at a car plant",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 8 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot working beside a hard-hatted worker at a car plant, no people faces logos or text",
+    "sha256": "18033c30d0715983891cc093f78c53285cff8b2616b150a467b212911cb90701",
+    "recorded": "2026-11-08",
+    "approved_by": "Joshua publish brief 2026-11-08: use bank PNG"
+   }
+  },
+  "seo_title": "Embodied AI unveils wheeled AIR robot for cage-free factory work"
+ },
+ {
   "slug": "musk-tesla-optimus-probably-rent-not-sell",
   "date": "2026-11-07",
   "updated": "2026-11-07",
