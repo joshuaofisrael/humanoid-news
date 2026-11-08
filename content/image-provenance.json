@@ -1,4 +1,11 @@
 {
+ "src-img/adcock-figure-f03-keep-running-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people faces logos or text",
+  "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+  "recorded": "2026-11-08"
+ },
  "src-img/agco-agility-digit-pilot-hesston-kansas-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -158,6 +165,13 @@
   "legacy": true,
   "scene": "A robotic arm with a two-finger gripper gently picking a strawberry from a tray in a lab (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/embodied-ai-air-wheeled-factory-robot-munich-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot working beside a hard-hatted worker at a car plant, no people faces logos or text",
+  "sha256": "18033c30d0715983891cc093f78c53285cff8b2616b150a467b212911cb90701",
+  "recorded": "2026-11-08"
  },
  "src-img/eth-zurich-acp-humanoid-climbing-contact-planning-hero.jpg": {
   "origin": "ai-generated",
@@ -809,6 +823,13 @@
   "prompt": "Photorealistic photo: Two white humanoid robots sorting metal car parts into grey bins at a factory workstation, no faces, logos or text",
   "sha256": "d28db556cab0440aa41e9e093f7e827bc7c0d2dcd40e2c4fc2c895dff6455939",
   "recorded": "2026-11-03"
+ },
+ "src-img/xinhua-ubtech-humanoid-news-anchors-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
+  "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
+  "recorded": "2026-11-08"
  },
  "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg": {
   "origin": "ai-generated",
