@@ -1,913 +1,936 @@
 {
- "src-img/1x-neo-home-robot-explained-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot hanging laundry on an apartment balcony at blue hour, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-balcony-laundry.png; prompt reconstructed from the bank description.",
-  "sha256": "364c3632ecaf65a078f3737a7ac7510f5e390774d7ff938757062695c60021a2",
-  "recorded": "2026-11-09"
- },
- "src-img/adcock-figure-f03-keep-running-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people faces logos or text",
-  "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
-  "recorded": "2026-11-08"
- },
- "src-img/agco-agility-digit-pilot-hesston-kansas-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "5df2b37e39b9d55e11615e6d5a3e683390ceff41739b8173b30ed5c0694c4c9b",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A humanoid robot stacking metal machine parts beside a large green tractor on a factory floor (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/agibot-110-a3-humanoids-guinness-dance-record-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "3f505a801f58dede471fb73950f72257abb94ca9d609e70d362a7d6ab2a81f70",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "Rows of identical white humanoid robots standing in formation on a large stage under coloured lights (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/agibot-six-g2-robots-convenience-store-livestream-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A wheeled humanoid robot restocking drink shelves in a convenience store with a camera on a tripod, no faces, logos or text",
-  "sha256": "43c4ba463871c981e5dcbc7ddd075a2b903edef89f64080266c79b02a8bb7d21",
-  "recorded": "2026-11-03"
- },
- "src-img/agibot-worken-robot-work-metric-aha3-go-3-g2-max-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white industrial humanoid robot with plain unbranded panels and simple gripper hands lifting a plain grey plastic tote from a low metal shelf in a clean, brightly lit modern factory hall. Soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "bb397a2ba044fc358561f9dda52ee3f07fd006397878da8d36ad24ea3cca5bce",
-  "recorded": "2026-10-30"
- },
- "src-img/agility-digit-5-nvidia-igx-thor-pittsburgh-hub-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "332431b1de4f1eeba031aa1e4d46517fb40afcd6d4db884a373a01575eabc204",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/agility-digit-unit-economics-s4-ars-november-2026-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "fdcca3a9c4efb61323ce4c3fe319e63b54fa663044e563c2f74d142a63108583",
-  "recorded": "2026-11-05",
-  "scene": "Generic bipedal warehouse robot beside cardboard boxes on a conveyor in a modern fulfilment centre",
-  "prompt": "Photorealistic photo: generic bipedal warehouse robot beside cardboard boxes on a conveyor, soft industrial lighting, no people, no logos, no readable text.",
-  "approved_by": "Joshua steering 2026-11-05: hero images ready; use image-map SHA256 in humanoid/photon provenance"
- },
- "src-img/agility-hurst-balancing-robot-standards-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Dark grey humanoid robot in a motion-capture research lab, no people faces logos or text",
-  "sha256": "ebed1c6a215c3d124c91405b8ad6a8aebc6873731054798554561f3b33200d82",
-  "recorded": "2026-11-07"
- },
- "src-img/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: generic bipedal warehouse robot beside cardboard boxes on a conveyor in a modern fulfilment centre, soft industrial lighting, no people, no faces, no logos, no readable text.",
-  "sha256": "953203ed1c68ffc6368b2c13c8e98a8c3ad61ff4b9d419f330cd9fbe75bd2810",
-  "recorded": "2026-11-05"
- },
- "src-img/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey and white two-legged humanoid robot with plain unbranded panels carrying a plain grey plastic tote along an aisle of a bright, clean modern warehouse with tall metal shelving. Natural light from skylights, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "125bfcf21f1a256953dfe74de0679387d84093e702018fcdb04546a8933594fd",
-  "recorded": "2026-10-31"
- },
- "src-img/aimoga-mobo-family-companion-humanoid-preorders-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a small 0.9-metre white home companion humanoid robot with a matte white body and a dark glossy visor head (no cartoon face), standing on a beige rug in a sunny, empty family living room. Natural window light. No people, no text, no logos.",
-  "sha256": "9c334326a5cf21f29c95944c49336eb0ac3317ba4c00380a146b912975a6c16b",
-  "recorded": "2026-10-30"
- },
- "src-img/alibaba-amap-lambda0-humanoid-model-human-video-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "707cddcf79d5cf7b9432630b101207d2bc17b52182c10ec8a3ee8f1ccbe27899",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A small grey humanoid robot placing a plastic bottle into a pedal bin in a bright research lab (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/amazon-whole-body-dexterity-humanoid-torso-carrying-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "18ea9014f6459438da199e663e1b812321fcd532d7336c9ae8ac27eeaab95bae",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A slim grey humanoid robot holding a plain cardboard box tucked under one arm beside warehouse shelving (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled-base humanoid robot with plain unbranded panels taking a generic car door trim part from a grey plastic container and placing it into a numbered-slot metal sequencing rack, beside a clean modern car assembly line with an unpainted generic car body in the background. Bright factory lighting, no people, no logos, no brand badges, no readable text, not a cartoon.",
-  "sha256": "df9b4194710dbaf594234159094a9e4800c0354b5842f396d1df624eb8f2fe6f",
-  "recorded": "2026-10-30"
- },
- "src-img/bipedal-balance-basics-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Engineer from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
-  "sha256": "6b4ee01c1d9887c768fe08ac1aa5ce581b112e6e83bd42c8db8e622b58513f28",
-  "recorded": "2026-11-09"
- },
- "src-img/boston-dynamics-electric-atlas-explained-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-torso-conveyor.png; prompt reconstructed from the bank description.",
-  "sha256": "d6630be9085aab216edf6f773e866953b25a10f2efb6b526276eb3b2f85ace30",
-  "recorded": "2026-11-09"
- },
- "src-img/boston-dynamics-security-force-multiplier-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage / image bank",
-  "prompt": "Photorealistic photo: Humanoid robot lifting a plastic tote from a warehouse shelf, no people faces logos or text",
-  "sha256": "259b47149c850361a15362c7d6020c178cbffe8b77e758ef1f9f64b7515ca28f",
-  "recorded": "2026-11-06"
- },
- "src-img/casbot-a-plus-plus-round-shoemaking-mining-robots-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "ab700d8c49397bad4b4c1fe4e12193da720e3318bb9f60427697512d09ccbac9",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white robotic arm pressing a rubber shoe sole onto an upper at a tidy footwear factory workstation (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/catch-it-all-unitree-g1-dexterous-hand-catching-research-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic dark grey humanoid robot seated on a plain stool in a bright, tidy robotics lab, raising one multi-fingered robotic hand to catch a small soft plush toy in mid-air. Motion frozen, soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "e55e8658f42aafba34cbedf966862f446ce19d45e27525e9bb85ca91af2f4e0f",
-  "recorded": "2026-10-31"
- },
- "src-img/china-100000-humanoids-2026-first-national-standards-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "2bd4e31dd120384a446a15a617d4ecceff3759813db0770c56af4a16bf26fce0",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A long modern factory hall with many humanoid robots working along parallel production lines (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/chinese-humanoid-makers-seek-trials-in-south-korea-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "e290823678fbe68cd9ab16b37b8f3b6c9f7a28095c3fe6b7848fff8e5859e3f3",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A grey humanoid robot handling metal engine parts on a conveyor in a modern factory (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/chinese-humanoids-south-korea-factory-trials-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage / image bank",
-  "prompt": "Photorealistic photo: White humanoid robot walking through a factory beside conveyor lines, no people faces logos or text",
-  "sha256": "ec85eb307dda5f25a7e08d1494e4732e5ffc24dd9f69d05687479cd0f5468d2b",
-  "recorded": "2026-11-06"
- },
- "src-img/deep-robotics-hangzhou-marathon-traffic-patrol-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Humanoid robot holding an umbrella while crossing a rain-soaked crosswalk at night, no people faces logos or text",
-  "sha256": "450c108821491a8b1d0166fe7e67080fa8e8eec802cca04904e089fa66347686",
-  "recorded": "2026-11-09"
- },
- "src-img/eka-robotics-150m-series-a-vision-force-action-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "3675d94da1896eaf10db1526e6bb64abd236a835e3f326b49e0de207a8f58506",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A robotic arm with a two-finger gripper gently picking a strawberry from a tray in a lab (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/embodied-ai-air-wheeled-factory-robot-munich-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Humanoid robot working beside a hard-hatted worker at a car plant, no people faces logos or text",
-  "sha256": "18033c30d0715983891cc093f78c53285cff8b2616b150a467b212911cb90701",
-  "recorded": "2026-11-08"
- },
- "src-img/eth-zurich-acp-humanoid-climbing-contact-planning-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "6b87198149ac4a7c969aae9d84e80a3bf59844d80768fa18298826b9cf6c634a",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A compact grey humanoid robot climbing a short metal ladder onto a concrete platform in an empty research lab (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/faw-volkswagen-ubtech-humanoid-logistics-trials-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "0b90bbe0a9c0693e6a192399d8523dfd6f08f7ce4e3d8c54d6d0336aabec2ddd",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A grey bipedal humanoid robot carrying a parts tote past shelving in a car factory logistics area (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/figure-03-botq-campus-video-production-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A line of grey humanoid robots walking out of a factory building onto a campus walkway, no faces, logos or text",
-  "sha256": "faf6a2463be08e18ac6b1e692b14d7b289e7fe05c933b83e0372b1d930ef8fab",
-  "recorded": "2026-11-03"
- },
- "src-img/figure-04-design-lock-index-data-helix-3-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "9edb2ae96f83b6e210b36c70049f075be8355240cc32e94f5951be92ca6bc0a4",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A partly assembled white humanoid robot on a test stand in a clean engineering lab with battery packs on a bench (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/figure-adcock-one-day-entire-world-video-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage / image bank",
-  "prompt": "Photorealistic photo: Row of partly built humanoid robots on an assembly line, no people faces logos or text",
-  "sha256": "1d1e8055a5cdd97f8b1660c55977d493ab572671c7660576b8606253fca9593b",
-  "recorded": "2026-11-07"
- },
- "src-img/generative-bionics-amd-physical-ai-data-factory-italy-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "66b8ef22c9422cae6ebf89906e29a315d26f18c2afa7f172073d8c93db2c21c9",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "Rows of identical white humanoid robots practising tasks at assembly stations while overhead cameras record them (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/google-gemini-robotics-er-2-public-preview-google-cloud-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photo: an industrial robot arm and a generic white humanoid robot working side by side at a clean research lab bench, soft glow from a monitor nearby, shallow depth of field, natural lighting. No people, no text, no logos.",
-  "sha256": "64fc3659eb44e35325f7010d5e15cde31eae75f54803166eabe56c35cf49680f",
-  "recorded": "2026-10-28"
- },
- "src-img/gxo-agility-digit-two-more-sites-three-manufacturing-customers-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "bfe45455879950667a444f9d68a27e499d029cb271ce2fd05d03beea0d67ed80",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A bipedal humanoid robot placing a plastic tote onto a conveyor in a large, brightly lit fulfilment warehouse (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/humanoid-grocery-photo.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "a5151a7fc35ce616a58defc18c4dc672691e455fe620f2eca32fc346c2cabd5f",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "Humanoid robot in a grocery aisle (site imagery)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/humanoid-hero-photo.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "949067a97683fedd94a441115bbb89addccfa59ccc28e28706d9e4291faf23b6",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "Dark metallic humanoid robot with glowing cyan eyes in a factory",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/humanoid-robot-prices-compared-2026-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic wide shot of five different generic humanoid robots of varying heights, builds and plain grey or white finishes, standing in a row like a product showroom display under soft studio lighting, clean minimalist white backdrop, no text, no logos, no brand markings, no human people, realistic metal and plastic surfaces, professional product photography style",
-  "sha256": "368ea4d8ed73b08f23fa2b4a0c81760b11b57f7e2f95196d42e348ca73dafa5d",
-  "recorded": "2026-11-02"
- },
- "src-img/hyundai-mobis-atlas-actuator-prototypes-uiwang-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Row of unfinished humanoid robot torsos with exposed wiring on a line, no people faces logos or text",
-  "sha256": "b2ac0497c92034a71462e6d680a2727ca3d6a8d07134964119c868471fafd842",
-  "recorded": "2026-11-07"
- },
- "src-img/inline/agibot-worken-robot-work-metric-aha3-go-3-g2-max-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic close-up photograph of a generic dexterous robot hand with five fingers, each fingertip fitted with a small black tactile sensor pad, gently pinching a plain machined aluminium block. Grey industrial background, shallow depth of field. No people, no text, no logos.",
-  "sha256": "e28ba81971af589e491fc66611ce96c7ee076f4a93b9199ed748a6fb5e464850",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a row of four identical calm generic grey humanoid robots standing at plain wall-mounted charging stations along the side of a quiet, clean logistics hall, soft overhead lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "ad50bbd9d0d8329277b53b3d03bbc855992940ebef32aca2db79353448e2969a",
-  "recorded": "2026-10-31"
- },
- "src-img/inline/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a wide monitor on a desk in a dim engineering office showing a detailed 3D digital-twin rendering of a factory logistics area with shelving, containers and a generic humanoid robot model. No people, no logos, no readable text or software brand names, not a cartoon.",
-  "sha256": "01267834c5e1e94be9bce2e457a279ec3b66a2cb55661032bd9c50b832eaaa63",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/catch-it-all-unitree-g1-dexterous-hand-catching-research-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a small neat collection of everyday objects laid out on a white lab table, a soft plush turtle toy, a small canvas sandbag, a plain unbranded foil snack bag, a plastic green bowl and a rubber toy bear, soft even lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "e5398664f3d343a5747b2e65db68c711e14f906f299a58d269230581199803ee",
-  "recorded": "2026-10-31"
- },
- "src-img/inline/china-100000-humanoids-2026-first-national-standards-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "c58079c3401279f3b28cd55aa1bcb643bf19fc50072e67a680aec454447657ea",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic humanoid robot sorting cardboard parcels at a conveyor in a large clean warehouse, no people, no flags, no text or logos."
- },
- "src-img/inline/china-100000-humanoids-2026-first-national-standards-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "6ad097a83076e83ef4b3cbf4357fb5c75ec17b5f6ce43557021733dd170e73f9",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic humanoid robot standing on a testing platform in a laboratory with sensors and cameras on stands, calm lighting, no people, no text or logos."
- },
- "src-img/inline/eka-robotics-150m-series-a-vision-force-action-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "e9dc4cc3503a81788fd2090005ae6b787237c1f3827c19a0c079464d85554fc2",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal close-up of a generic robotic gripper holding a light bulb near a lamp socket on a clean lab test bench, no people, no text or logos."
- },
- "src-img/inline/eka-robotics-150m-series-a-vision-force-action-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "82116a8ec3d66fd8158354a224480174edea5f492b97ed41ee789fcebb0e3403",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic robot arm placing small packages onto a moving conveyor belt in a bright, tidy warehouse, no people, no text or logos."
- },
- "src-img/inline/fotex-unitree-hive-grocery-restocking-pilot-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "9f797cb8b69e84fb089c4b2b39eda588821fef12d49d9ddf71dc78f4db4a0b74",
-  "recorded": "2026-10-27",
-  "prompt": "A white humanoid robot working in an empty supermarket aisle at night, scanning shelves of packaged goods under dim store lighting."
- },
- "src-img/inline/humanoid-robot-prices-compared-2026-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photoreal image of a generic grey humanoid robot standing inside an open cardboard shipping crate on a warehouse loading dock, with a forklift blurred in the background, soft daylight through a loading bay door. No people, no text, no logos, no human people visible, realistic industrial photography style.",
-  "sha256": "ef8ca0e152b2d48c70e66ffc4973357b3a898e1251e9283dd3c6e2a4c7877709",
-  "recorded": "2026-11-02"
- },
- "src-img/inline/korea-safety-rules-robros-humanoids-factories-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "b9b8be27bf5e8267da7958c244cb16c06155123b52e89f21b3725cd0a7931289",
-  "recorded": "2026-10-27",
-  "prompt": "A humanoid robot walking along a marked safety lane on a factory floor beside a human worker in a hard hat and high-visibility vest, with floor markings and a safety light visible."
- },
- "src-img/inline/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a tidy electronics workbench with an open plain white robot head shell, a small unmarked circuit board and a small camera module laid out neatly on an anti-static mat, soft overhead lighting, shallow depth of field, no people, no hands, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "4420bd67b53d237eee8577c56e5ec77dbcd074781be575fa7f3197f83987dbe6",
-  "recorded": "2026-10-31"
- },
- "src-img/inline/minerva-humanoids-10m-pre-seed-general-catalyst-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "0bff9fd5302d233cdd109438449d43553b1a772b38bfb12e7f261544070d1c62",
-  "recorded": "2026-10-27",
-  "prompt": "A humanoid robot inspecting industrial equipment in a hazardous plant environment while a specialist operates it remotely from a control room."
- },
- "src-img/inline/mount-tai-robot-challenge-3100-steps-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: a generic four-legged robot dog with no logos or text carrying a small crate of fresh eggs and a watermelon strapped on its back, walking up uneven granite stairs on a mountain trail, shallow depth of field, overcast light, no people faces, no text",
-  "sha256": "d0adaae7e495199bbca7e1c6ced0dd0c5614298886a8a97b338889363c27c71c",
-  "recorded": "2026-11-03"
- },
- "src-img/inline/neura-aims-five-robot-gyms-by-end-2026-nyt-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photograph, 16:9, of a generic white humanoid robot placing a plain dark automotive metal bracket into a grey plastic bin on a factory table. Clean industrial lighting, shallow depth of field. No people, no text, no logos, no brand marks.",
-  "sha256": "09451ccbfae3ec8069e44218c39979f7869863cd68352d55a9f2bb3bc2d674f8",
-  "recorded": "2026-10-29"
- },
- "src-img/inline/neura-aims-five-robot-gyms-by-end-2026-nyt-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photograph, 16:9, of an empty training room with a row of plain black motion-capture suits hanging on stands, and one generic humanoid robot standing nearby. Soft overhead light, realistic fabric and metal. No people, no faces, no text, no logos.",
-  "sha256": "9f7e474714136fa20a783bf92721c221ccbd479668477263dc069322645d7e51",
-  "recorded": "2026-10-29"
- },
- "src-img/inline/nvidia-isaac-agile-one-sn-reference-humanoid-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "eaaa9a6abcc26aa387d4a4fd26922047dbf3eb43c1527ddfccf683a6e25f756b",
-  "recorded": "2026-10-27",
-  "prompt": "A humanoid robot in a robotics development lab, with an engineer at a workstation showing a simulation view of a robot, no readable brand logos."
- },
- "src-img/inline/published-humanoid-runtimes-and-recharge-times-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic close photograph, 16:9, of a plain rectangular battery pack seated in the open back panel of a generic humanoid robot torso on a workshop stand. Visible screws and cooling fins, no labels or writing. Soft workshop lighting. No people, no text, no logos.",
-  "sha256": "5ab3038e6d39d32845ab0d33dd3a2b2482ab12ac02a36f6d504a7a2124e36268",
-  "recorded": "2026-10-29"
- },
- "src-img/inline/published-humanoid-runtimes-and-recharge-times-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photograph, 16:9, of three identical generic humanoid robots standing in a row at simple plain charging docks along a clean warehouse wall at dawn. Cool blue light, realistic concrete floor, no people, no readable text, no logos, no brand marks.",
-  "sha256": "b28ec2de4f91984b0449a3891f2c25c27726a6241768c4414cbc243553f2e62f",
-  "recorded": "2026-10-29"
- },
- "src-img/inline/samsung-chairman-visits-rx-robotics-office-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic close-up photograph of a generic five-finger metallic robotic hand with thin tendon-like cables along each finger, holding a small plain unmarked aluminium bracket above a grey workbench. Shallow depth of field, soft studio light. No people, no text, no logos.",
-  "sha256": "2af2b5c07f7a2ad4a6beb5909dd5074e1ed045cc5eee7bfa981eafbb71b30ec7",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/samsung-chairman-visits-rx-robotics-office-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photograph, 16:9, looking along an empty glass-walled research corridor in a modern office building. Through one window a generic humanoid robot stands beside a workbench in a bright lab. No people, no faces, no readable text, no logos, realistic daylight.",
-  "sha256": "e450cd0c6a8b9cc20e423110643878f07ae29effab8609aa852fdea098fd1cbe",
-  "recorded": "2026-10-29"
- },
- "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic close-up photograph of a white and grey humanoid robot's two hands at a factory assembly station, lowering a small cylindrical metal actuator part into a steel fixture on the bench. Shallow depth of field, industrial lighting. No people, no text, no logos.",
-  "sha256": "17f68e3b94cac4087982bc79bc87a701a44063263e9cb330ab2f1702bdd42e1d",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "7810921026e5dca8ec5b4fa278bfb2498a837e9d5724114c9d3e943ca3d0ae18",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic humanoid robot practising lifting plastic storage containers from a shelf in a tidy robot training area, floor markings, no people, no text or logos."
- },
- "src-img/inline/supermimic-berkeley-humanoid-control-one-gpu-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "6b8ee0e046e1a07e49bd7785742e6864e052cd344eb5e06190eaef90a73a9970",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal view down a clean data centre aisle with rows of server racks and soft blue indicator lights, no people, no text or logos."
- },
- "src-img/inline/supermimic-berkeley-humanoid-control-one-gpu-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a generic white bipedal humanoid robot in a deep crouch on a padded grey laboratory floor, arms swung back as if about to jump, soft lab lighting. No people, no text, no logos.",
-  "sha256": "5e6c60323568f885d8d700a0865696b8238fe14766b8a1fff877d528a5a892ba",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/syndexy-c1-humanoid-first-small-batch-precision-assembly-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic macro photograph of two generic white robotic fingertips with small dark tactile sensor pads carefully inserting a thin flat ribbon cable connector into an unmarked green circuit board, studio-quality lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "a441618f17279ac7afbc58d8e01c7d4304e0f3ec934c84c92e834c2253b5c01b",
-  "recorded": "2026-10-31"
- },
- "src-img/inline/tesla-optimus-deliveries-late-2027-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "85c8b98eb6a368f12964ce89f2204497f6f37f485c40cccbe4eccf2f10aa8b38",
-  "recorded": "2026-10-27",
-  "prompt": "A generic humanoid robot being assembled on a clean, high-volume factory line, with technicians in safety glasses and no visible brand logos."
- },
- "src-img/inline/unitree-rehearsal-self-evolving-robot-ai-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "0e1b018587cf954cbf8c00eda4f2a83accdf1b12ba901ac40c3a41d25199b66e",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic humanoid robot walking along a floor-marked practice course in a bright robotics lab, no people, no text or logos."
- },
- "src-img/inline/unitree-rehearsal-self-evolving-robot-ai-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "53e05107778a59c3aebd523b80e67cd6913da420b1b15ab9ef7659f57d8b552e",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal close shot of two monitors on a desk showing abstract wireframe humanoid skeleton simulations, no readable text, no people, no logos."
- },
- "src-img/inline/us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic close-up photograph of generic unbranded robot components on a clean steel workbench: compact electric actuators, precision gear sets, encoders and small sensor boards, neatly arranged. Soft studio lighting, shallow depth of field, no people, no logos, no text, not a cartoon.",
-  "sha256": "9d7b5d1ee8315b9d619bd93983bda510caadcba37c800297f929903292d47f84",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/why-figure-03-treadmill-test-is-trending-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "88f3e62ee3da1d3b81b6e002fd97b145a4f8f6900cf8d49cd154bf5ca13359ed",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal close-up of a generic humanoid robot's feet walking on a treadmill belt, shallow depth of field, no people, no text or logos."
- },
- "src-img/inline/why-figure-03-treadmill-test-is-trending-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "73edafafd9a45e7ac5eec3a2bbfbfce3a14f1d3e33ca07a8a52a7f7c6093aab7",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal wide shot of a quiet robotics test facility with a single generic humanoid walking on a treadmill at the centre, empty workbenches around it, no people, no text or logos."
- },
- "src-img/inline/why-tau-robotics-humanoid-home-cleaning-subscription-is-trending-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a calm generic light-grey humanoid robot with plain unbranded panels pushing a plain unbranded upright vacuum cleaner across a light oak floor in a bright modern living room with a sofa and rug. Natural window light, no people, no logos, no text, not a cartoon.",
-  "sha256": "7187592dffae17824dcd47ba5240b9bbf0b0823c2a1ae89c06c8f54316fd66fa",
-  "recorded": "2026-10-30"
- },
- "src-img/inline/why-tesla-optimus-december-reservations-report-is-trending-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a smartphone lying face down on a tidy wooden desk next to a small generic white humanoid robot model figure, warm desk lamp light, shallow depth of field, no screen visible, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "a68fdc0e87dc3559ec09f5e92d2733f275216ff65de82e672138afc8ebdf6a2c",
-  "recorded": "2026-10-31"
- },
- "src-img/inline/why-unitree-h2-x-guardian-video-is-trending-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "48acb4d7374e21a45258b664d94d23a2f1e4c74495ea36249b16f8073a4a2315",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic dark humanoid robot standing at the edge of a raised padded platform in an indoor test hall, crash mats below, no people, no text or logos."
- },
- "src-img/inline/why-unitree-h2-x-guardian-video-is-trending-2.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "64cb9a056861cf6678371b4330ba5c847ab58e66514ef39f1db2cd9cf7208639",
-  "recorded": "2026-10-27",
-  "prompt": "Photoreal scene of a generic humanoid robot standing still inside yellow floor safety markings in a test hall, safety cones and tape, no people, no text or logos."
- },
- "src-img/inline/x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid-1.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph of a computer monitor in a dim robotics lab displaying a colourful 3D point cloud and a false-colour depth map of a tabletop scene with blocks and a robot gripper. No people, no logos, no readable text, not a cartoon.",
-  "sha256": "8e0dce0fdca9e8d2bc302c4e41c21f4780e9712837bfb14702769259b26ff552",
-  "recorded": "2026-10-30"
- },
- "src-img/kist-kapex-humanoid-lg-commercialization-award-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Robotic hand gently holding an egg against a dark background, no people faces logos or text",
-  "sha256": "0123b4692449ff3a4e18cd2e138780b1487b5a53b4b0f26bce81c56c16ceff59",
-  "recorded": "2026-11-07"
- },
- "src-img/korea-safety-rules-robros-humanoids-factories-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "9e33aed4b618bcf1de182f913d5225ac7f20a4d11e4cc96eab5eb5347a88e249",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white humanoid robot working at a machine in a clean factory next to a worker in a blue cleanroom suit, with yellow floor safety markings",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/liberai-liber-0-world-action-model-zero-shot-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove, no faces, logos or text",
-  "sha256": "346bc41c5b57b5d5bcfab8f2068ac3b2323d27b14417485130bca03df899add3",
-  "recorded": "2026-11-04"
- },
- "src-img/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic friendly service humanoid robot about child height with plain yellow and white unbranded panels standing near a reception desk in a bright, empty modern hotel lobby. Soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no signage, no brand markings, not a cartoon.",
-  "sha256": "3cac473bbde1c7e084bb0164b2ffae00258c96f459b3c1f16db883fad23ce618",
-  "recorded": "2026-10-31"
- },
- "src-img/machenta-40m-seed-robots-learn-from-one-demonstration-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photo: a generic white humanoid robot carefully packing small items into a plain cardboard box on a table in a bright, modern robotics lab, calm atmosphere. No people, no text, no logos.",
-  "sha256": "e3c8dd70c2a102b7ab8b2ed327d9f9ad97744e136dfa7150e4cb36fc59d95aa1",
-  "recorded": "2026-10-28"
- },
- "src-img/minerva-humanoids-10m-pre-seed-general-catalyst-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "9f135b93d6c757b61fe7a3b470f952d18b72a64786289d95162f94824e896fd6",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white humanoid robot walking through a steamy industrial plant with large pipework",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/mosense-rmb100m-angel-plus-robot-electronic-skin-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "231c434804c5514063de495bd464062c2b901186d69f2db847afd907218d2094",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "Close-up of a grey robotic hand and forearm covered in a thin, flexible sensor skin with a fine grid pattern, on a lab bench (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/mount-tai-robot-challenge-3100-steps-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "16b58de0ef8ce4904d1eecc0d3d8910a770e14f56cd6afa37232fbccb39ee832",
-  "recorded": "2026-11-04",
-  "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot climbing ancient weathered stone steps on a misty Chinese mountain path, pine trees, morning fog, no people, no logos, no text",
-  "approved_by": "Joshua 2026-11-04 10:24 EST: 'Of course replace the images with our own images'"
- },
- "src-img/musk-tesla-optimus-probably-rent-not-sell-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people faces logos or text",
-  "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
-  "recorded": "2026-11-07"
- },
- "src-img/neura-4ne1-gen-4-tum-robogym-munich-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "37b4c74a231aed2eb29756dd47534c453bc335b0512dc14533b47185fd041bc2",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A slim grey-and-white humanoid robot standing in an open work cell in a bright university robotics training hall (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/neura-aims-five-robot-gyms-by-end-2026-nyt-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic wide photograph, 16:9, of a large bright industrial training hall. Several identical generic white humanoid robots practise at separate open workstations, stacking plain cardboard boxes. Overhead industrial lights, polished concrete floor. No people, no readable text, no logos, no brand marks.",
-  "sha256": "e5e9ce7dde82dd9e90b7cabd0eaaded5fef8264de4d035978e1b9cfd9d97dee1",
-  "recorded": "2026-10-29"
- },
- "src-img/noetix-robotics-hong-kong-ipo-filing-report-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "25a61fb268735ae333986f6b8eb90d9c48c95ab266ddf3a5e23e2d44c7159ef3",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A small, child-height white humanoid robot standing on a classroom table next to a laptop (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/nvidia-isaac-agile-one-sn-reference-humanoid-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "b7e94ddad26b8cae0bf86c71b10a8a45f60a4b17fa9526317989b39f5484ac3d",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A humanoid robot in profile beside racks of servers with blue indicator lights in a data centre",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/nvidia-isaac-gr00t-explained-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-datacenter-floor.png; prompt reconstructed from the bank description.",
-  "sha256": "ba36a95a1c4eb785fb32bd1cb7d5a114869040dddadd79013906ba3c93719e78",
-  "recorded": "2026-11-09"
- },
- "src-img/primebot-reports-10000-personal-robots-produced-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot watering hanging plants in a sunlit apartment, no people faces logos or text",
-  "sha256": "8cb7825467e1515f3d265d0cc266f3cbc2b8cb73dd32777f06a3c096e95f6ea6",
-  "recorded": "2026-11-09"
- },
- "src-img/published-humanoid-runtimes-and-recharge-times-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photograph, 16:9, of a generic grey humanoid robot standing at a plain wall-mounted charging dock in a quiet warehouse aisle. A small amber lamp glows on the dock. Evening light from high windows, realistic metal and concrete. No people, no readable text, no logos, no brand marks.",
-  "sha256": "12cbfc9b4825ac28bfe3e37b2204f85a35171a31e2a8706b071c0c016f225573",
-  "recorded": "2026-10-29"
- },
- "src-img/realbotix-echo-companion-humanoid-line-2027-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "56cde3b9afdcf658fc18501eb4a2dcfcd52b5d4cfce4e9e078d517b200846a95",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white companion robot with a lifelike face seated at a wooden desk in a softly lit living room (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/robocolosseum-unitree-g1-humanoid-zero-task-completions-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
-  "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
-  "recorded": "2026-11-04"
- },
- "src-img/rokae-10000th-humanoid-force-controlled-arm-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "a8282d9ce7588ba74812fefe3c4cc605469c133cf10e3ab999e4548dc5272acf",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A wheeled humanoid robot with two slim white robotic arms assembling small metal actuator parts on a clean factory workbench (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/samsung-chairman-visits-rx-robotics-office-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photograph, wide 16:9, of a bright modern robotics laboratory with floor-to-ceiling windows and a softly blurred city skyline. One generic white-and-grey humanoid robot stands at a clean metal workbench, both hands near small unmarked metal brackets. No people, no faces, no readable text, no logos, no brand marks. Natural daylight, sharp focus, realistic metal and plastic surfaces.",
-  "sha256": "55741debaab7601628320fceabdc6b49cd48389fbfa0ec9fa87c167da6a6c3d0",
-  "recorded": "2026-10-29"
- },
- "src-img/samsung-five-finger-humanoid-hands-rx-division-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic macro photograph of a single grey five-fingered robotic hand with visible tendon cables along each finger, holding a small metal tool like a pen on a workbench. Shallow depth of field, soft lab light. No people, no text, no logos.",
-  "sha256": "68c091343cec2ca3d1938e9427de5a2ba4d00b967155a5b41d67644793cd1621",
-  "recorded": "2026-10-30"
- },
- "src-img/schaeffler-taicang-humanoids-build-humanoid-actuators-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "bde9a4e7803feb2753734c422088881795c7bd42ea98c691fc3e149bb22f5098",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "Humanoid robots working at assembly stations on a clean, bright factory line (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/south-korea-kimm-ai-humanoid-data-factory-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: Two white humanoid robots in a lab kitchen, one opening a fridge and one folding laundry, filmed by cameras on tripods, no faces, logos or text",
-  "sha256": "317ced0f2056dfab945641eda70bae39e400b90fc38e6d4c2b3d51e8681f5811",
-  "recorded": "2026-11-04"
- },
- "src-img/supermimic-berkeley-humanoid-control-one-gpu-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "bf543d04daabf8318c613b8a896875aad61d9c7aeea9053ed094d1be0b45f9eb",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A graphite humanoid robot balancing on one leg in a motion-capture laboratory (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/syndexy-c1-humanoid-first-small-batch-precision-assembly-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled humanoid robot with a torso, head and two slender arms with multi-fingered hands, working at a clean electronics assembly workstation and placing a small unmarked circuit board into a plain grey housing. Bright, even factory lighting, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "bf387305afeefbb3e04ef3a5064c4881b7a77793aabdec727f48dbcdba65b465",
-  "recorded": "2026-10-31"
- },
- "src-img/tesla-optimus-deliveries-late-2027-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "6f666a4f0e9e22b97d2299a9fff9669944061a765c693dceccce76970b928e18",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white humanoid robot holding a stamped black metal vehicle panel on a car assembly line",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/toyota-honda-humanoid-factory-trials-japan-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "230f69391dd760da68ccd15c1c6b01e8d68fa1ed6481ab6ac3a8b85ec1670507",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white humanoid robot routing a bundle of wire-harness cables inside an unfinished car body on an assembly line (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/unitree-g1-vs-h1-specs-compared-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Grey humanoid robot reaching for a blank paint can on a high store shelf, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-store-shelf.png; prompt reconstructed from the bank description.",
-  "sha256": "48a8903d40a10cc92febedc81f9d0ebc53779035206ae33290b4c304822f97fa",
-  "recorded": "2026-11-09"
- },
- "src-img/unitree-gpt-6-painting-chess-ceo-claim-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage / image bank",
-  "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
-  "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
-  "recorded": "2026-11-06"
- },
- "src-img/unitree-h2-x-loses-leg-side-flip-hangzhou-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "49ea2001a592e8f9901fe3140f0d883684c2d2dce77cbdefc6bfaabe81bf1f36",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A tall dark-grey humanoid robot lying on its side on a black exhibition mat with a detached lower leg beside it, empty stage behind (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/unitree-rehearsal-self-evolving-robot-ai-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "9bb9f8c261a810aecb126134f31589cf940069c3280c779eef60865f65ed29cc",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A humanoid robot standing in a research lab next to workstation monitors showing abstract robot simulations (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a quiet port warehouse loading dock with open plain wooden shipping crates containing generic unbranded industrial robot arms, and one calm generic grey humanoid robot standing upright inside a padded crate. Overcast daylight through the dock door, realistic textures, no people, no flags, no logos, no text or labels, not a cartoon.",
-  "sha256": "4f79b54d52600dafcc7ec9c0d18d4982664c0835c85323bf81fef0afe202216f",
-  "recorded": "2026-10-30"
- },
- "src-img/what-is-a-vision-language-action-model-robots-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot stirring a steaming pot on a home kitchen stove, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-kitchen-stir.png; prompt reconstructed from the bank description.",
-  "sha256": "d600d8c5d3a39d4ef9dcbd1aaf8b02dbb1864699eefb70c61b850ad148db1ff1",
-  "recorded": "2026-11-09"
- },
- "src-img/why-figure-03-treadmill-test-is-trending-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "e960700b8573d1dbccf01f1616bfa0dffe44187f9dfe232492666ce4df973f7d",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A white humanoid robot walking on a treadmill in a bright testing laboratory (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/why-reward-ai-om-1-humanoid-delivery-demo-is-trending-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot carrying a plain unbranded cardboard parcel up the outdoor front steps of a suburban house, daylight. No people, no text, no logos.",
-  "sha256": "6bb0d9fa6c7da61cc8b0735830372b41833bc8cd7bb03fcc633b6ca80eb620b9",
-  "recorded": "2026-10-28"
- },
- "src-img/why-tau-robotics-humanoid-home-cleaning-subscription-is-trending-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey humanoid robot with plain unbranded panels wiping a white kitchen counter with a blue microfibre cloth in a bright, tidy modern San Francisco-style apartment with large windows. Natural daylight, realistic textures, no people, no logos, no text, no brand markings, not a cartoon.",
-  "sha256": "23d0d63690c4f2404623e31fbf15f698cb65a49f0a91c0dcec3ca07581c0e9d2",
-  "recorded": "2026-10-30"
- },
- "src-img/why-tesla-optimus-december-reservations-report-is-trending-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic sleek white and dark grey humanoid robot with plain unbranded panels standing still on a low round display platform in an empty, softly lit modern showroom with pale walls. Shallow depth of field, realistic materials, no people, no logos, no text, no signage, no brand markings, not a cartoon.",
-  "sha256": "2320973b405ff7441cdade7a9ab5e41f2cc3f8d24ee8190f0d341acd951c8ece",
-  "recorded": "2026-10-31"
- },
- "src-img/why-ucla-phonebot-smartphone-humanoid-is-trending-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "4de1ed39d56df8c0726c669593d82f56f9164926dc1d1e6fa5e1e59e2d31b64b",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A small two-legged robot made of black servo motors with a smartphone mounted as its torso, on a lab bench (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/why-unitree-h2-x-guardian-video-is-trending-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "561702c8963e61cf5b08eeed8d34f4054f8a2398e61d4cf51e2a5944e9e54723",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A dark graphite humanoid robot standing calmly in a scrapyard of old cars at dusk (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Hyper-realistic photograph, 16:9, of a calm generic dual-arm humanoid robot torso with plain unbranded white panels and a head camera, seated at a lab table and placing a plain computer mouse onto a mouse pad, with a small wire basket, a phone charger with cable and a small bin on the table. Clean university robotics lab, soft overhead lighting, no people, no logos, no text, not a cartoon.",
-  "sha256": "824aef0b4c2a9d0fa79fdb44f20cd71fdb408139d008c7a5c4311a97ec9d390c",
-  "recorded": "2026-10-30"
- },
- "src-img/xiaomi-humanoid-eight-hour-auto-parts-sorting-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage",
-  "prompt": "Photorealistic photo: Two white humanoid robots sorting metal car parts into grey bins at a factory workstation, no faces, logos or text",
-  "sha256": "d28db556cab0440aa41e9e093f7e827bc7c0d2dcd40e2c4fc2c895dff6455939",
-  "recorded": "2026-11-03"
- },
- "src-img/xinhua-ubtech-humanoid-news-anchors-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
-  "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
-  "recorded": "2026-11-08"
- },
- "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "bb7cf354ac5f88192429084cfac04a5e574166da47224429d276ecc191170066",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A sleek humanoid robot raising an open hand for a high five in a bright, empty robotics lab (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/yaskawa-humanoid-launch-within-two-years-tokyo-robotics-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
-  "sha256": "d82ca864b7d2d81a10190a6fe1decc182b1dd270c89e3eb4c572c810bed2712c",
-  "recorded": "2026-10-27",
-  "legacy": true,
-  "scene": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
-  "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- }
+  "src-img/1x-neo-home-robot-explained-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Humanoid robot folding towels in a bright living room, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/robot-folding-laundry.png; prompt reconstructed from the bank description.",
+    "sha256": "2c3a7e9ec2282041794bc4de932db6c0cf5bd87a5919a73a4dcdd3a855c73c47",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/robot-folding-laundry.png"
+  },
+  "src-img/adcock-figure-f03-keep-running-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people faces logos or text",
+    "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+    "recorded": "2026-11-08"
+  },
+  "src-img/agco-agility-digit-pilot-hesston-kansas-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "5df2b37e39b9d55e11615e6d5a3e683390ceff41739b8173b30ed5c0694c4c9b",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A humanoid robot stacking metal machine parts beside a large green tractor on a factory floor (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/agibot-110-a3-humanoids-guinness-dance-record-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "3f505a801f58dede471fb73950f72257abb94ca9d609e70d362a7d6ab2a81f70",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "Rows of identical white humanoid robots standing in formation on a large stage under coloured lights (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/agibot-six-g2-robots-convenience-store-livestream-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: A wheeled humanoid robot restocking drink shelves in a convenience store with a camera on a tripod, no faces, logos or text",
+    "sha256": "43c4ba463871c981e5dcbc7ddd075a2b903edef89f64080266c79b02a8bb7d21",
+    "recorded": "2026-11-03"
+  },
+  "src-img/agibot-worken-robot-work-metric-aha3-go-3-g2-max-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white industrial humanoid robot with plain unbranded panels and simple gripper hands lifting a plain grey plastic tote from a low metal shelf in a clean, brightly lit modern factory hall. Soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "bb397a2ba044fc358561f9dda52ee3f07fd006397878da8d36ad24ea3cca5bce",
+    "recorded": "2026-10-30"
+  },
+  "src-img/agility-digit-5-nvidia-igx-thor-pittsburgh-hub-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "332431b1de4f1eeba031aa1e4d46517fb40afcd6d4db884a373a01575eabc204",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/agility-digit-unit-economics-s4-ars-november-2026-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "fdcca3a9c4efb61323ce4c3fe319e63b54fa663044e563c2f74d142a63108583",
+    "recorded": "2026-11-05",
+    "scene": "Generic bipedal warehouse robot beside cardboard boxes on a conveyor in a modern fulfilment centre",
+    "prompt": "Photorealistic photo: generic bipedal warehouse robot beside cardboard boxes on a conveyor, soft industrial lighting, no people, no logos, no readable text.",
+    "approved_by": "Joshua steering 2026-11-05: hero images ready; use image-map SHA256 in humanoid/photon provenance"
+  },
+  "src-img/agility-hurst-balancing-robot-standards-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Dark grey humanoid robot in a motion-capture research lab, no people faces logos or text",
+    "sha256": "ebed1c6a215c3d124c91405b8ad6a8aebc6873731054798554561f3b33200d82",
+    "recorded": "2026-11-07"
+  },
+  "src-img/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: generic bipedal warehouse robot beside cardboard boxes on a conveyor in a modern fulfilment centre, soft industrial lighting, no people, no faces, no logos, no readable text.",
+    "sha256": "953203ed1c68ffc6368b2c13c8e98a8c3ad61ff4b9d419f330cd9fbe75bd2810",
+    "recorded": "2026-11-05"
+  },
+  "src-img/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey and white two-legged humanoid robot with plain unbranded panels carrying a plain grey plastic tote along an aisle of a bright, clean modern warehouse with tall metal shelving. Natural light from skylights, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "125bfcf21f1a256953dfe74de0679387d84093e702018fcdb04546a8933594fd",
+    "recorded": "2026-10-31"
+  },
+  "src-img/aimoga-mobo-family-companion-humanoid-preorders-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a small 0.9-metre white home companion humanoid robot with a matte white body and a dark glossy visor head (no cartoon face), standing on a beige rug in a sunny, empty family living room. Natural window light. No people, no text, no logos.",
+    "sha256": "9c334326a5cf21f29c95944c49336eb0ac3317ba4c00380a146b912975a6c16b",
+    "recorded": "2026-10-30"
+  },
+  "src-img/alibaba-amap-lambda0-humanoid-model-human-video-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "707cddcf79d5cf7b9432630b101207d2bc17b52182c10ec8a3ee8f1ccbe27899",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A small grey humanoid robot placing a plastic bottle into a pedal bin in a bright research lab (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/amazon-whole-body-dexterity-humanoid-torso-carrying-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "18ea9014f6459438da199e663e1b812321fcd532d7336c9ae8ac27eeaab95bae",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A slim grey humanoid robot holding a plain cardboard box tucked under one arm beside warehouse shelving (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled-base humanoid robot with plain unbranded panels taking a generic car door trim part from a grey plastic container and placing it into a numbered-slot metal sequencing rack, beside a clean modern car assembly line with an unpainted generic car body in the background. Bright factory lighting, no people, no logos, no brand badges, no readable text, not a cartoon.",
+    "sha256": "df9b4194710dbaf594234159094a9e4800c0354b5842f396d1df624eb8f2fe6f",
+    "recorded": "2026-10-30"
+  },
+  "src-img/bipedal-balance-basics-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Engineer from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
+    "sha256": "6b4ee01c1d9887c768fe08ac1aa5ce581b112e6e83bd42c8db8e622b58513f28",
+    "recorded": "2026-11-09"
+  },
+  "src-img/boston-dynamics-electric-atlas-explained-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Two humanoid robots at a car-parts assembly station with sparks, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/robots-car-assembly.png; prompt reconstructed from the bank description.",
+    "sha256": "9899dffe5746c2403fd18ac08e472b65ea57915fbe1b2a2b0e46763d5bbef6b3",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/robots-car-assembly.png"
+  },
+  "src-img/boston-dynamics-security-force-multiplier-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage / image bank",
+    "prompt": "Photorealistic photo: Humanoid robot lifting a plastic tote from a warehouse shelf, no people faces logos or text",
+    "sha256": "259b47149c850361a15362c7d6020c178cbffe8b77e758ef1f9f64b7515ca28f",
+    "recorded": "2026-11-06"
+  },
+  "src-img/casbot-a-plus-plus-round-shoemaking-mining-robots-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "ab700d8c49397bad4b4c1fe4e12193da720e3318bb9f60427697512d09ccbac9",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white robotic arm pressing a rubber shoe sole onto an upper at a tidy footwear factory workstation (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/catch-it-all-unitree-g1-dexterous-hand-catching-research-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic dark grey humanoid robot seated on a plain stool in a bright, tidy robotics lab, raising one multi-fingered robotic hand to catch a small soft plush toy in mid-air. Motion frozen, soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "e55e8658f42aafba34cbedf966862f446ce19d45e27525e9bb85ca91af2f4e0f",
+    "recorded": "2026-10-31"
+  },
+  "src-img/china-100000-humanoids-2026-first-national-standards-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "2bd4e31dd120384a446a15a617d4ecceff3759813db0770c56af4a16bf26fce0",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A long modern factory hall with many humanoid robots working along parallel production lines (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/chinese-humanoid-makers-seek-trials-in-south-korea-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "e290823678fbe68cd9ab16b37b8f3b6c9f7a28095c3fe6b7848fff8e5859e3f3",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A grey humanoid robot handling metal engine parts on a conveyor in a modern factory (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/chinese-humanoids-south-korea-factory-trials-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage / image bank",
+    "prompt": "Photorealistic photo: White humanoid robot walking through a factory beside conveyor lines, no people faces logos or text",
+    "sha256": "ec85eb307dda5f25a7e08d1494e4732e5ffc24dd9f69d05687479cd0f5468d2b",
+    "recorded": "2026-11-06"
+  },
+  "src-img/deep-robotics-hangzhou-marathon-traffic-patrol-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Humanoid robot holding an umbrella while crossing a rain-soaked crosswalk at night, no people faces logos or text",
+    "sha256": "450c108821491a8b1d0166fe7e67080fa8e8eec802cca04904e089fa66347686",
+    "recorded": "2026-11-09"
+  },
+  "src-img/eka-robotics-150m-series-a-vision-force-action-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "3675d94da1896eaf10db1526e6bb64abd236a835e3f326b49e0de207a8f58506",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A robotic arm with a two-finger gripper gently picking a strawberry from a tray in a lab (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/embodied-ai-air-wheeled-factory-robot-munich-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Humanoid robot working beside a hard-hatted worker at a car plant, no people faces logos or text",
+    "sha256": "18033c30d0715983891cc093f78c53285cff8b2616b150a467b212911cb90701",
+    "recorded": "2026-11-08"
+  },
+  "src-img/eth-zurich-acp-humanoid-climbing-contact-planning-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "6b87198149ac4a7c969aae9d84e80a3bf59844d80768fa18298826b9cf6c634a",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A compact grey humanoid robot climbing a short metal ladder onto a concrete platform in an empty research lab (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/faw-volkswagen-ubtech-humanoid-logistics-trials-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "0b90bbe0a9c0693e6a192399d8523dfd6f08f7ce4e3d8c54d6d0336aabec2ddd",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A grey bipedal humanoid robot carrying a parts tote past shelving in a car factory logistics area (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/figure-03-botq-campus-video-production-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: A line of grey humanoid robots walking out of a factory building onto a campus walkway, no faces, logos or text",
+    "sha256": "faf6a2463be08e18ac6b1e692b14d7b289e7fe05c933b83e0372b1d930ef8fab",
+    "recorded": "2026-11-03"
+  },
+  "src-img/figure-04-design-lock-index-data-helix-3-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "9edb2ae96f83b6e210b36c70049f075be8355240cc32e94f5951be92ca6bc0a4",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A partly assembled white humanoid robot on a test stand in a clean engineering lab with battery packs on a bench (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/figure-adcock-one-day-entire-world-video-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage / image bank",
+    "prompt": "Photorealistic photo: Row of partly built humanoid robots on an assembly line, no people faces logos or text",
+    "sha256": "1d1e8055a5cdd97f8b1660c55977d493ab572671c7660576b8606253fca9593b",
+    "recorded": "2026-11-07"
+  },
+  "src-img/generative-bionics-amd-physical-ai-data-factory-italy-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "66b8ef22c9422cae6ebf89906e29a315d26f18c2afa7f172073d8c93db2c21c9",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "Rows of identical white humanoid robots practising tasks at assembly stations while overhead cameras record them (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/google-gemini-robotics-er-2-public-preview-google-cloud-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photo: an industrial robot arm and a generic white humanoid robot working side by side at a clean research lab bench, soft glow from a monitor nearby, shallow depth of field, natural lighting. No people, no text, no logos.",
+    "sha256": "64fc3659eb44e35325f7010d5e15cde31eae75f54803166eabe56c35cf49680f",
+    "recorded": "2026-10-28"
+  },
+  "src-img/gxo-agility-digit-two-more-sites-three-manufacturing-customers-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "bfe45455879950667a444f9d68a27e499d029cb271ce2fd05d03beea0d67ed80",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A bipedal humanoid robot placing a plastic tote onto a conveyor in a large, brightly lit fulfilment warehouse (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/humanoid-grocery-photo.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "a5151a7fc35ce616a58defc18c4dc672691e455fe620f2eca32fc346c2cabd5f",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "Humanoid robot in a grocery aisle (site imagery)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/humanoid-hero-photo.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "949067a97683fedd94a441115bbb89addccfa59ccc28e28706d9e4291faf23b6",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "Dark metallic humanoid robot with glowing cyan eyes in a factory",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/humanoid-robot-prices-compared-2026-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic wide shot of five different generic humanoid robots of varying heights, builds and plain grey or white finishes, standing in a row like a product showroom display under soft studio lighting, clean minimalist white backdrop, no text, no logos, no brand markings, no human people, realistic metal and plastic surfaces, professional product photography style",
+    "sha256": "368ea4d8ed73b08f23fa2b4a0c81760b11b57f7e2f95196d42e348ca73dafa5d",
+    "recorded": "2026-11-02"
+  },
+  "src-img/hyundai-mobis-atlas-actuator-prototypes-uiwang-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Row of unfinished humanoid robot torsos with exposed wiring on a line, no people faces logos or text",
+    "sha256": "b2ac0497c92034a71462e6d680a2727ca3d6a8d07134964119c868471fafd842",
+    "recorded": "2026-11-07"
+  },
+  "src-img/inline/agibot-worken-robot-work-metric-aha3-go-3-g2-max-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic close-up photograph of a generic dexterous robot hand with five fingers, each fingertip fitted with a small black tactile sensor pad, gently pinching a plain machined aluminium block. Grey industrial background, shallow depth of field. No people, no text, no logos.",
+    "sha256": "e28ba81971af589e491fc66611ce96c7ee076f4a93b9199ed748a6fb5e464850",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a row of four identical calm generic grey humanoid robots standing at plain wall-mounted charging stations along the side of a quiet, clean logistics hall, soft overhead lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "ad50bbd9d0d8329277b53b3d03bbc855992940ebef32aca2db79353448e2969a",
+    "recorded": "2026-10-31"
+  },
+  "src-img/inline/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a wide monitor on a desk in a dim engineering office showing a detailed 3D digital-twin rendering of a factory logistics area with shelving, containers and a generic humanoid robot model. No people, no logos, no readable text or software brand names, not a cartoon.",
+    "sha256": "01267834c5e1e94be9bce2e457a279ec3b66a2cb55661032bd9c50b832eaaa63",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/catch-it-all-unitree-g1-dexterous-hand-catching-research-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a small neat collection of everyday objects laid out on a white lab table, a soft plush turtle toy, a small canvas sandbag, a plain unbranded foil snack bag, a plastic green bowl and a rubber toy bear, soft even lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "e5398664f3d343a5747b2e65db68c711e14f906f299a58d269230581199803ee",
+    "recorded": "2026-10-31"
+  },
+  "src-img/inline/china-100000-humanoids-2026-first-national-standards-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "c58079c3401279f3b28cd55aa1bcb643bf19fc50072e67a680aec454447657ea",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic humanoid robot sorting cardboard parcels at a conveyor in a large clean warehouse, no people, no flags, no text or logos."
+  },
+  "src-img/inline/china-100000-humanoids-2026-first-national-standards-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "6ad097a83076e83ef4b3cbf4357fb5c75ec17b5f6ce43557021733dd170e73f9",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic humanoid robot standing on a testing platform in a laboratory with sensors and cameras on stands, calm lighting, no people, no text or logos."
+  },
+  "src-img/inline/eka-robotics-150m-series-a-vision-force-action-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "e9dc4cc3503a81788fd2090005ae6b787237c1f3827c19a0c079464d85554fc2",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal close-up of a generic robotic gripper holding a light bulb near a lamp socket on a clean lab test bench, no people, no text or logos."
+  },
+  "src-img/inline/eka-robotics-150m-series-a-vision-force-action-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "82116a8ec3d66fd8158354a224480174edea5f492b97ed41ee789fcebb0e3403",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic robot arm placing small packages onto a moving conveyor belt in a bright, tidy warehouse, no people, no text or logos."
+  },
+  "src-img/inline/fotex-unitree-hive-grocery-restocking-pilot-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "9f797cb8b69e84fb089c4b2b39eda588821fef12d49d9ddf71dc78f4db4a0b74",
+    "recorded": "2026-10-27",
+    "prompt": "A white humanoid robot working in an empty supermarket aisle at night, scanning shelves of packaged goods under dim store lighting."
+  },
+  "src-img/inline/humanoid-robot-prices-compared-2026-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photoreal image of a generic grey humanoid robot standing inside an open cardboard shipping crate on a warehouse loading dock, with a forklift blurred in the background, soft daylight through a loading bay door. No people, no text, no logos, no human people visible, realistic industrial photography style.",
+    "sha256": "ef8ca0e152b2d48c70e66ffc4973357b3a898e1251e9283dd3c6e2a4c7877709",
+    "recorded": "2026-11-02"
+  },
+  "src-img/inline/korea-safety-rules-robros-humanoids-factories-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "b9b8be27bf5e8267da7958c244cb16c06155123b52e89f21b3725cd0a7931289",
+    "recorded": "2026-10-27",
+    "prompt": "A humanoid robot walking along a marked safety lane on a factory floor beside a human worker in a hard hat and high-visibility vest, with floor markings and a safety light visible."
+  },
+  "src-img/inline/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a tidy electronics workbench with an open plain white robot head shell, a small unmarked circuit board and a small camera module laid out neatly on an anti-static mat, soft overhead lighting, shallow depth of field, no people, no hands, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "4420bd67b53d237eee8577c56e5ec77dbcd074781be575fa7f3197f83987dbe6",
+    "recorded": "2026-10-31"
+  },
+  "src-img/inline/minerva-humanoids-10m-pre-seed-general-catalyst-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "0bff9fd5302d233cdd109438449d43553b1a772b38bfb12e7f261544070d1c62",
+    "recorded": "2026-10-27",
+    "prompt": "A humanoid robot inspecting industrial equipment in a hazardous plant environment while a specialist operates it remotely from a control room."
+  },
+  "src-img/inline/mount-tai-robot-challenge-3100-steps-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: a generic four-legged robot dog with no logos or text carrying a small crate of fresh eggs and a watermelon strapped on its back, walking up uneven granite stairs on a mountain trail, shallow depth of field, overcast light, no people faces, no text",
+    "sha256": "d0adaae7e495199bbca7e1c6ced0dd0c5614298886a8a97b338889363c27c71c",
+    "recorded": "2026-11-03"
+  },
+  "src-img/inline/neura-aims-five-robot-gyms-by-end-2026-nyt-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photograph, 16:9, of a generic white humanoid robot placing a plain dark automotive metal bracket into a grey plastic bin on a factory table. Clean industrial lighting, shallow depth of field. No people, no text, no logos, no brand marks.",
+    "sha256": "09451ccbfae3ec8069e44218c39979f7869863cd68352d55a9f2bb3bc2d674f8",
+    "recorded": "2026-10-29"
+  },
+  "src-img/inline/neura-aims-five-robot-gyms-by-end-2026-nyt-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photograph, 16:9, of an empty training room with a row of plain black motion-capture suits hanging on stands, and one generic humanoid robot standing nearby. Soft overhead light, realistic fabric and metal. No people, no faces, no text, no logos.",
+    "sha256": "9f7e474714136fa20a783bf92721c221ccbd479668477263dc069322645d7e51",
+    "recorded": "2026-10-29"
+  },
+  "src-img/inline/nvidia-isaac-agile-one-sn-reference-humanoid-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "eaaa9a6abcc26aa387d4a4fd26922047dbf3eb43c1527ddfccf683a6e25f756b",
+    "recorded": "2026-10-27",
+    "prompt": "A humanoid robot in a robotics development lab, with an engineer at a workstation showing a simulation view of a robot, no readable brand logos."
+  },
+  "src-img/inline/published-humanoid-runtimes-and-recharge-times-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic close photograph, 16:9, of a plain rectangular battery pack seated in the open back panel of a generic humanoid robot torso on a workshop stand. Visible screws and cooling fins, no labels or writing. Soft workshop lighting. No people, no text, no logos.",
+    "sha256": "5ab3038e6d39d32845ab0d33dd3a2b2482ab12ac02a36f6d504a7a2124e36268",
+    "recorded": "2026-10-29"
+  },
+  "src-img/inline/published-humanoid-runtimes-and-recharge-times-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photograph, 16:9, of three identical generic humanoid robots standing in a row at simple plain charging docks along a clean warehouse wall at dawn. Cool blue light, realistic concrete floor, no people, no readable text, no logos, no brand marks.",
+    "sha256": "b28ec2de4f91984b0449a3891f2c25c27726a6241768c4414cbc243553f2e62f",
+    "recorded": "2026-10-29"
+  },
+  "src-img/inline/samsung-chairman-visits-rx-robotics-office-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic close-up photograph of a generic five-finger metallic robotic hand with thin tendon-like cables along each finger, holding a small plain unmarked aluminium bracket above a grey workbench. Shallow depth of field, soft studio light. No people, no text, no logos.",
+    "sha256": "2af2b5c07f7a2ad4a6beb5909dd5074e1ed045cc5eee7bfa981eafbb71b30ec7",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/samsung-chairman-visits-rx-robotics-office-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photograph, 16:9, looking along an empty glass-walled research corridor in a modern office building. Through one window a generic humanoid robot stands beside a workbench in a bright lab. No people, no faces, no readable text, no logos, realistic daylight.",
+    "sha256": "e450cd0c6a8b9cc20e423110643878f07ae29effab8609aa852fdea098fd1cbe",
+    "recorded": "2026-10-29"
+  },
+  "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic close-up photograph of a white and grey humanoid robot's two hands at a factory assembly station, lowering a small cylindrical metal actuator part into a steel fixture on the bench. Shallow depth of field, industrial lighting. No people, no text, no logos.",
+    "sha256": "17f68e3b94cac4087982bc79bc87a701a44063263e9cb330ab2f1702bdd42e1d",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/schaeffler-taicang-humanoids-build-humanoid-actuators-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "7810921026e5dca8ec5b4fa278bfb2498a837e9d5724114c9d3e943ca3d0ae18",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic humanoid robot practising lifting plastic storage containers from a shelf in a tidy robot training area, floor markings, no people, no text or logos."
+  },
+  "src-img/inline/supermimic-berkeley-humanoid-control-one-gpu-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "6b8ee0e046e1a07e49bd7785742e6864e052cd344eb5e06190eaef90a73a9970",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal view down a clean data centre aisle with rows of server racks and soft blue indicator lights, no people, no text or logos."
+  },
+  "src-img/inline/supermimic-berkeley-humanoid-control-one-gpu-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a generic white bipedal humanoid robot in a deep crouch on a padded grey laboratory floor, arms swung back as if about to jump, soft lab lighting. No people, no text, no logos.",
+    "sha256": "5e6c60323568f885d8d700a0865696b8238fe14766b8a1fff877d528a5a892ba",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/syndexy-c1-humanoid-first-small-batch-precision-assembly-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic macro photograph of two generic white robotic fingertips with small dark tactile sensor pads carefully inserting a thin flat ribbon cable connector into an unmarked green circuit board, studio-quality lighting, shallow depth of field, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "a441618f17279ac7afbc58d8e01c7d4304e0f3ec934c84c92e834c2253b5c01b",
+    "recorded": "2026-10-31"
+  },
+  "src-img/inline/tesla-optimus-deliveries-late-2027-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "85c8b98eb6a368f12964ce89f2204497f6f37f485c40cccbe4eccf2f10aa8b38",
+    "recorded": "2026-10-27",
+    "prompt": "A generic humanoid robot being assembled on a clean, high-volume factory line, with technicians in safety glasses and no visible brand logos."
+  },
+  "src-img/inline/unitree-rehearsal-self-evolving-robot-ai-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "0e1b018587cf954cbf8c00eda4f2a83accdf1b12ba901ac40c3a41d25199b66e",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic humanoid robot walking along a floor-marked practice course in a bright robotics lab, no people, no text or logos."
+  },
+  "src-img/inline/unitree-rehearsal-self-evolving-robot-ai-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "53e05107778a59c3aebd523b80e67cd6913da420b1b15ab9ef7659f57d8b552e",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal close shot of two monitors on a desk showing abstract wireframe humanoid skeleton simulations, no readable text, no people, no logos."
+  },
+  "src-img/inline/us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic close-up photograph of generic unbranded robot components on a clean steel workbench: compact electric actuators, precision gear sets, encoders and small sensor boards, neatly arranged. Soft studio lighting, shallow depth of field, no people, no logos, no text, not a cartoon.",
+    "sha256": "9d7b5d1ee8315b9d619bd93983bda510caadcba37c800297f929903292d47f84",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/why-figure-03-treadmill-test-is-trending-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "88f3e62ee3da1d3b81b6e002fd97b145a4f8f6900cf8d49cd154bf5ca13359ed",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal close-up of a generic humanoid robot's feet walking on a treadmill belt, shallow depth of field, no people, no text or logos."
+  },
+  "src-img/inline/why-figure-03-treadmill-test-is-trending-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "73edafafd9a45e7ac5eec3a2bbfbfce3a14f1d3e33ca07a8a52a7f7c6093aab7",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal wide shot of a quiet robotics test facility with a single generic humanoid walking on a treadmill at the centre, empty workbenches around it, no people, no text or logos."
+  },
+  "src-img/inline/why-tau-robotics-humanoid-home-cleaning-subscription-is-trending-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a calm generic light-grey humanoid robot with plain unbranded panels pushing a plain unbranded upright vacuum cleaner across a light oak floor in a bright modern living room with a sofa and rug. Natural window light, no people, no logos, no text, not a cartoon.",
+    "sha256": "7187592dffae17824dcd47ba5240b9bbf0b0823c2a1ae89c06c8f54316fd66fa",
+    "recorded": "2026-10-30"
+  },
+  "src-img/inline/why-tesla-optimus-december-reservations-report-is-trending-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a smartphone lying face down on a tidy wooden desk next to a small generic white humanoid robot model figure, warm desk lamp light, shallow depth of field, no screen visible, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "a68fdc0e87dc3559ec09f5e92d2733f275216ff65de82e672138afc8ebdf6a2c",
+    "recorded": "2026-10-31"
+  },
+  "src-img/inline/why-unitree-h2-x-guardian-video-is-trending-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "48acb4d7374e21a45258b664d94d23a2f1e4c74495ea36249b16f8073a4a2315",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic dark humanoid robot standing at the edge of a raised padded platform in an indoor test hall, crash mats below, no people, no text or logos."
+  },
+  "src-img/inline/why-unitree-h2-x-guardian-video-is-trending-2.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "64cb9a056861cf6678371b4330ba5c847ab58e66514ef39f1db2cd9cf7208639",
+    "recorded": "2026-10-27",
+    "prompt": "Photoreal scene of a generic humanoid robot standing still inside yellow floor safety markings in a test hall, safety cones and tape, no people, no text or logos."
+  },
+  "src-img/inline/x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid-1.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph of a computer monitor in a dim robotics lab displaying a colourful 3D point cloud and a false-colour depth map of a tabletop scene with blocks and a robot gripper. No people, no logos, no readable text, not a cartoon.",
+    "sha256": "8e0dce0fdca9e8d2bc302c4e41c21f4780e9712837bfb14702769259b26ff552",
+    "recorded": "2026-10-30"
+  },
+  "src-img/kist-kapex-humanoid-lg-commercialization-award-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Robotic hand gently holding an egg against a dark background, no people faces logos or text",
+    "sha256": "0123b4692449ff3a4e18cd2e138780b1487b5a53b4b0f26bce81c56c16ceff59",
+    "recorded": "2026-11-07"
+  },
+  "src-img/korea-safety-rules-robros-humanoids-factories-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "9e33aed4b618bcf1de182f913d5225ac7f20a4d11e4cc96eab5eb5347a88e249",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white humanoid robot working at a machine in a clean factory next to a worker in a blue cleanroom suit, with yellow floor safety markings",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/liberai-liber-0-world-action-model-zero-shot-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: A white dexterous robot hand placing a clear plastic cup on a lab table beside a thin black sensor glove, no faces, logos or text",
+    "sha256": "346bc41c5b57b5d5bcfab8f2068ac3b2323d27b14417485130bca03df899add3",
+    "recorded": "2026-11-04"
+  },
+  "src-img/lightberry-lumi-dow-conditional-approval-fcc-covered-list-exemption-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic friendly service humanoid robot about child height with plain yellow and white unbranded panels standing near a reception desk in a bright, empty modern hotel lobby. Soft daylight, shallow depth of field, realistic materials, no people, no logos, no text, no signage, no brand markings, not a cartoon.",
+    "sha256": "3cac473bbde1c7e084bb0164b2ffae00258c96f459b3c1f16db883fad23ce618",
+    "recorded": "2026-10-31"
+  },
+  "src-img/machenta-40m-seed-robots-learn-from-one-demonstration-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photo: a generic white humanoid robot carefully packing small items into a plain cardboard box on a table in a bright, modern robotics lab, calm atmosphere. No people, no text, no logos.",
+    "sha256": "e3c8dd70c2a102b7ab8b2ed327d9f9ad97744e136dfa7150e4cb36fc59d95aa1",
+    "recorded": "2026-10-28"
+  },
+  "src-img/minerva-humanoids-10m-pre-seed-general-catalyst-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "9f135b93d6c757b61fe7a3b470f952d18b72a64786289d95162f94824e896fd6",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white humanoid robot walking through a steamy industrial plant with large pipework",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/mosense-rmb100m-angel-plus-robot-electronic-skin-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "231c434804c5514063de495bd464062c2b901186d69f2db847afd907218d2094",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "Close-up of a grey robotic hand and forearm covered in a thin, flexible sensor skin with a fine grid pattern, on a lab bench (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/mount-tai-robot-challenge-3100-steps-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "16b58de0ef8ce4904d1eecc0d3d8910a770e14f56cd6afa37232fbccb39ee832",
+    "recorded": "2026-11-04",
+    "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot climbing ancient weathered stone steps on a misty Chinese mountain path, pine trees, morning fog, no people, no logos, no text",
+    "approved_by": "Joshua 2026-11-04 10:24 EST: 'Of course replace the images with our own images'"
+  },
+  "src-img/musk-tesla-optimus-probably-rent-not-sell-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people faces logos or text",
+    "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+    "recorded": "2026-11-07"
+  },
+  "src-img/neura-4ne1-gen-4-tum-robogym-munich-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "37b4c74a231aed2eb29756dd47534c453bc335b0512dc14533b47185fd041bc2",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A slim grey-and-white humanoid robot standing in an open work cell in a bright university robotics training hall (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/neura-aims-five-robot-gyms-by-end-2026-nyt-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic wide photograph, 16:9, of a large bright industrial training hall. Several identical generic white humanoid robots practise at separate open workstations, stacking plain cardboard boxes. Overhead industrial lights, polished concrete floor. No people, no readable text, no logos, no brand marks.",
+    "sha256": "e5e9ce7dde82dd9e90b7cabd0eaaded5fef8264de4d035978e1b9cfd9d97dee1",
+    "recorded": "2026-10-29"
+  },
+  "src-img/noetix-robotics-hong-kong-ipo-filing-report-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "25a61fb268735ae333986f6b8eb90d9c48c95ab266ddf3a5e23e2d44c7159ef3",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A small, child-height white humanoid robot standing on a classroom table next to a laptop (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/nvidia-isaac-agile-one-sn-reference-humanoid-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "b7e94ddad26b8cae0bf86c71b10a8a45f60a4b17fa9526317989b39f5484ac3d",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A humanoid robot in profile beside racks of servers with blue indicator lights in a data centre",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/nvidia-isaac-gr00t-explained-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/robot-datacenter-floor.png; prompt reconstructed from the bank description.",
+    "sha256": "cc4762fee55a7da83d1824d7dc4859356bade3169184a8bb49a8873bcbba1aeb",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/robot-datacenter-floor.png"
+  },
+  "src-img/primebot-reports-10000-personal-robots-produced-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: White humanoid robot watering hanging plants in a sunlit apartment, no people faces logos or text",
+    "sha256": "8cb7825467e1515f3d265d0cc266f3cbc2b8cb73dd32777f06a3c096e95f6ea6",
+    "recorded": "2026-11-09"
+  },
+  "src-img/published-humanoid-runtimes-and-recharge-times-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photograph, 16:9, of a generic grey humanoid robot standing at a plain wall-mounted charging dock in a quiet warehouse aisle. A small amber lamp glows on the dock. Evening light from high windows, realistic metal and concrete. No people, no readable text, no logos, no brand marks.",
+    "sha256": "12cbfc9b4825ac28bfe3e37b2204f85a35171a31e2a8706b071c0c016f225573",
+    "recorded": "2026-10-29"
+  },
+  "src-img/realbotix-echo-companion-humanoid-line-2027-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "56cde3b9afdcf658fc18501eb4a2dcfcd52b5d4cfce4e9e078d517b200846a95",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white companion robot with a lifelike face seated at a wooden desk in a softly lit living room (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/robocolosseum-unitree-g1-humanoid-zero-task-completions-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
+    "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
+    "recorded": "2026-11-04"
+  },
+  "src-img/rokae-10000th-humanoid-force-controlled-arm-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "a8282d9ce7588ba74812fefe3c4cc605469c133cf10e3ab999e4548dc5272acf",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A wheeled humanoid robot with two slim white robotic arms assembling small metal actuator parts on a clean factory workbench (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/samsung-chairman-visits-rx-robotics-office-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photograph, wide 16:9, of a bright modern robotics laboratory with floor-to-ceiling windows and a softly blurred city skyline. One generic white-and-grey humanoid robot stands at a clean metal workbench, both hands near small unmarked metal brackets. No people, no faces, no readable text, no logos, no brand marks. Natural daylight, sharp focus, realistic metal and plastic surfaces.",
+    "sha256": "55741debaab7601628320fceabdc6b49cd48389fbfa0ec9fa87c167da6a6c3d0",
+    "recorded": "2026-10-29"
+  },
+  "src-img/samsung-five-finger-humanoid-hands-rx-division-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic macro photograph of a single grey five-fingered robotic hand with visible tendon cables along each finger, holding a small metal tool like a pen on a workbench. Shallow depth of field, soft lab light. No people, no text, no logos.",
+    "sha256": "68c091343cec2ca3d1938e9427de5a2ba4d00b967155a5b41d67644793cd1621",
+    "recorded": "2026-10-30"
+  },
+  "src-img/schaeffler-taicang-humanoids-build-humanoid-actuators-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "bde9a4e7803feb2753734c422088881795c7bd42ea98c691fc3e149bb22f5098",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "Humanoid robots working at assembly stations on a clean, bright factory line (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/south-korea-kimm-ai-humanoid-data-factory-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: Two white humanoid robots in a lab kitchen, one opening a fridge and one folding laundry, filmed by cameras on tripods, no faces, logos or text",
+    "sha256": "317ced0f2056dfab945641eda70bae39e400b90fc38e6d4c2b3d51e8681f5811",
+    "recorded": "2026-11-04"
+  },
+  "src-img/supermimic-berkeley-humanoid-control-one-gpu-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "bf543d04daabf8318c613b8a896875aad61d9c7aeea9053ed094d1be0b45f9eb",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A graphite humanoid robot balancing on one leg in a motion-capture laboratory (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/syndexy-c1-humanoid-first-small-batch-precision-assembly-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled humanoid robot with a torso, head and two slender arms with multi-fingered hands, working at a clean electronics assembly workstation and placing a small unmarked circuit board into a plain grey housing. Bright, even factory lighting, shallow depth of field, realistic materials, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "bf387305afeefbb3e04ef3a5064c4881b7a77793aabdec727f48dbcdba65b465",
+    "recorded": "2026-10-31"
+  },
+  "src-img/tesla-optimus-deliveries-late-2027-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "6f666a4f0e9e22b97d2299a9fff9669944061a765c693dceccce76970b928e18",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white humanoid robot holding a stamped black metal vehicle panel on a car assembly line",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/toyota-honda-humanoid-factory-trials-japan-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "230f69391dd760da68ccd15c1c6b01e8d68fa1ed6481ab6ac3a8b85ec1670507",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white humanoid robot routing a bundle of wire-harness cables inside an unfinished car body on an assembly line (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/unitree-g1-vs-h1-specs-compared-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Low-angle shot of humanoid robot legs climbing concrete stairs, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/robot-legs-stairs.png; prompt reconstructed from the bank description.",
+    "sha256": "d6b1f908274861dc0b3719ffd15a7c46a35ae55eb241b54b6ac71d59eda716ef",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/robot-legs-stairs.png"
+  },
+  "src-img/unitree-gpt-6-painting-chess-ceo-claim-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage / image bank",
+    "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
+    "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
+    "recorded": "2026-11-06"
+  },
+  "src-img/unitree-h2-x-loses-leg-side-flip-hangzhou-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "49ea2001a592e8f9901fe3140f0d883684c2d2dce77cbdefc6bfaabe81bf1f36",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A tall dark-grey humanoid robot lying on its side on a black exhibition mat with a detached lower leg beside it, empty stage behind (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/unitree-rehearsal-self-evolving-robot-ai-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "9bb9f8c261a810aecb126134f31589cf940069c3280c779eef60865f65ed29cc",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A humanoid robot standing in a research lab next to workstation monitors showing abstract robot simulations (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/us-section-232-robotics-imports-national-security-negotiations-no-new-tariffs-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a quiet port warehouse loading dock with open plain wooden shipping crates containing generic unbranded industrial robot arms, and one calm generic grey humanoid robot standing upright inside a padded crate. Overcast daylight through the dock door, realistic textures, no people, no flags, no logos, no text or labels, not a cartoon.",
+    "sha256": "4f79b54d52600dafcc7ec9c0d18d4982664c0835c85323bf81fef0afe202216f",
+    "recorded": "2026-10-30"
+  },
+  "src-img/what-is-a-vision-language-action-model-robots-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Extreme close-up of a humanoid robot's dark glass visor, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/visor-closeup.png; prompt reconstructed from the bank description.",
+    "sha256": "6fd7686e397bc0464fe472ae01ee3298c8665b908dca5f49d45c115c31929c7c",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/visor-closeup.png"
+  },
+  "src-img/why-figure-03-treadmill-test-is-trending-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "e960700b8573d1dbccf01f1616bfa0dffe44187f9dfe232492666ce4df973f7d",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A white humanoid robot walking on a treadmill in a bright testing laboratory (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/why-reward-ai-om-1-humanoid-delivery-demo-is-trending-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot carrying a plain unbranded cardboard parcel up the outdoor front steps of a suburban house, daylight. No people, no text, no logos.",
+    "sha256": "6bb0d9fa6c7da61cc8b0735830372b41833bc8cd7bb03fcc633b6ca80eb620b9",
+    "recorded": "2026-10-28"
+  },
+  "src-img/why-tau-robotics-humanoid-home-cleaning-subscription-is-trending-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic grey humanoid robot with plain unbranded panels wiping a white kitchen counter with a blue microfibre cloth in a bright, tidy modern San Francisco-style apartment with large windows. Natural daylight, realistic textures, no people, no logos, no text, no brand markings, not a cartoon.",
+    "sha256": "23d0d63690c4f2404623e31fbf15f698cb65a49f0a91c0dcec3ca07581c0e9d2",
+    "recorded": "2026-10-30"
+  },
+  "src-img/why-tesla-optimus-december-reservations-report-is-trending-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic sleek white and dark grey humanoid robot with plain unbranded panels standing still on a low round display platform in an empty, softly lit modern showroom with pale walls. Shallow depth of field, realistic materials, no people, no logos, no text, no signage, no brand markings, not a cartoon.",
+    "sha256": "2320973b405ff7441cdade7a9ab5e41f2cc3f8d24ee8190f0d341acd951c8ece",
+    "recorded": "2026-10-31"
+  },
+  "src-img/why-ucla-phonebot-smartphone-humanoid-is-trending-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "4de1ed39d56df8c0726c669593d82f56f9164926dc1d1e6fa5e1e59e2d31b64b",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A small two-legged robot made of black servo motors with a smartphone mounted as its torso, on a lab bench (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/why-unitree-h2-x-guardian-video-is-trending-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "561702c8963e61cf5b08eeed8d34f4054f8a2398e61d4cf51e2a5944e9e54723",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A dark graphite humanoid robot standing calmly in a scrapyard of old cars at dusk (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/x-era-e0-5-open-source-3d-world-action-model-zerith-h1-humanoid-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Hyper-realistic photograph, 16:9, of a calm generic dual-arm humanoid robot torso with plain unbranded white panels and a head camera, seated at a lab table and placing a plain computer mouse onto a mouse pad, with a small wire basket, a phone charger with cable and a small bin on the table. Clean university robotics lab, soft overhead lighting, no people, no logos, no text, not a cartoon.",
+    "sha256": "824aef0b4c2a9d0fa79fdb44f20cd71fdb408139d008c7a5c4311a97ec9d390c",
+    "recorded": "2026-10-30"
+  },
+  "src-img/xiaomi-humanoid-eight-hour-auto-parts-sorting-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage",
+    "prompt": "Photorealistic photo: Two white humanoid robots sorting metal car parts into grey bins at a factory workstation, no faces, logos or text",
+    "sha256": "d28db556cab0440aa41e9e093f7e827bc7c0d2dcd40e2c4fc2c895dff6455939",
+    "recorded": "2026-11-03"
+  },
+  "src-img/xinhua-ubtech-humanoid-news-anchors-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
+    "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
+    "recorded": "2026-11-08"
+  },
+  "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "bb7cf354ac5f88192429084cfac04a5e574166da47224429d276ecc191170066",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A sleek humanoid robot raising an open hand for a high five in a bright, empty robotics lab (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/yaskawa-humanoid-launch-within-two-years-tokyo-robotics-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
+    "sha256": "d82ca864b7d2d81a10190a6fe1decc182b1dd270c89e3eb4c572c810bed2712c",
+    "recorded": "2026-10-27",
+    "legacy": true,
+    "scene": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
+    "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+  },
+  "src-img/how-humanoid-robots-learn-teleoperation-simulation-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Engineer from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/engineer-test-stand.png; prompt reconstructed from the bank description. Person visible only from behind; no face shown.",
+    "sha256": "7b7513f23897be1a8474472a268dc21cd4eb0d0150d5096f8b8664411469ed92",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/engineer-test-stand.png"
+  },
+  "src-img/humanoid-robot-degrees-of-freedom-explained-hero.jpg": {
+    "origin": "ai-generated",
+    "generator": "Grok Bot image bank",
+    "prompt": "Photorealistic photo: Close-up of a scuffed humanoid robot hand threading a needle through dark fabric, no people faces logos or text",
+    "prompt_note": "Image-bank file humanoid-beat/robot-sewing-needle.png; prompt reconstructed from the bank description.",
+    "sha256": "52ff0089baf63c9d46ea289a0770af3fc7b4395590eeccc3b10cbc12da05a4c2",
+    "recorded": "2026-11-09",
+    "bank_file": "humanoid-beat/robot-sewing-needle.png"
+  }
 }
