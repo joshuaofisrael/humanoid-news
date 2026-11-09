@@ -1,4 +1,12 @@
 {
+ "src-img/1x-neo-home-robot-explained-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot hanging laundry on an apartment balcony at blue hour, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-balcony-laundry.png; prompt reconstructed from the bank description.",
+  "sha256": "364c3632ecaf65a078f3737a7ac7510f5e390774d7ff938757062695c60021a2",
+  "recorded": "2026-11-09"
+ },
  "src-img/adcock-figure-f03-keep-running-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
@@ -109,6 +117,14 @@
   "sha256": "df9b4194710dbaf594234159094a9e4800c0354b5842f396d1df624eb8f2fe6f",
   "recorded": "2026-10-30"
  },
+ "src-img/boston-dynamics-electric-atlas-explained-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-torso-conveyor.png; prompt reconstructed from the bank description.",
+  "sha256": "d6630be9085aab216edf6f773e866953b25a10f2efb6b526276eb3b2f85ace30",
+  "recorded": "2026-11-09"
+ },
  "src-img/boston-dynamics-security-force-multiplier-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage / image bank",
@@ -156,6 +172,13 @@
   "prompt": "Photorealistic photo: White humanoid robot walking through a factory beside conveyor lines, no people faces logos or text",
   "sha256": "ec85eb307dda5f25a7e08d1494e4732e5ffc24dd9f69d05687479cd0f5468d2b",
   "recorded": "2026-11-06"
+ },
+ "src-img/deep-robotics-hangzhou-marathon-traffic-patrol-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot holding an umbrella while crossing a rain-soaked crosswalk at night, no people faces logos or text",
+  "sha256": "450c108821491a8b1d0166fe7e67080fa8e8eec802cca04904e089fa66347686",
+  "recorded": "2026-11-09"
  },
  "src-img/eka-robotics-150m-series-a-vision-force-action-hero.jpg": {
   "origin": "ai-generated",
@@ -634,6 +657,21 @@
   "scene": "A humanoid robot in profile beside racks of servers with blue indicator lights in a data centre",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/nvidia-isaac-gr00t-explained-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-datacenter-floor.png; prompt reconstructed from the bank description.",
+  "sha256": "ba36a95a1c4eb785fb32bd1cb7d5a114869040dddadd79013906ba3c93719e78",
+  "recorded": "2026-11-09"
+ },
+ "src-img/primebot-reports-10000-personal-robots-produced-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot watering hanging plants in a sunlit apartment, no people faces logos or text",
+  "sha256": "8cb7825467e1515f3d265d0cc266f3cbc2b8cb73dd32777f06a3c096e95f6ea6",
+  "recorded": "2026-11-09"
+ },
  "src-img/published-humanoid-runtimes-and-recharge-times-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -730,6 +768,14 @@
   "scene": "A white humanoid robot routing a bundle of wire-harness cables inside an unfinished car body on an assembly line (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/unitree-g1-vs-h1-specs-compared-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Grey humanoid robot reaching for a blank paint can on a high store shelf, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-store-shelf.png; prompt reconstructed from the bank description.",
+  "sha256": "48a8903d40a10cc92febedc81f9d0ebc53779035206ae33290b4c304822f97fa",
+  "recorded": "2026-11-09"
+ },
  "src-img/unitree-gpt-6-painting-chess-ceo-claim-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage / image bank",
@@ -761,6 +807,14 @@
   "prompt": "Hyper-realistic photograph, 16:9, of a quiet port warehouse loading dock with open plain wooden shipping crates containing generic unbranded industrial robot arms, and one calm generic grey humanoid robot standing upright inside a padded crate. Overcast daylight through the dock door, realistic textures, no people, no flags, no logos, no text or labels, not a cartoon.",
   "sha256": "4f79b54d52600dafcc7ec9c0d18d4982664c0835c85323bf81fef0afe202216f",
   "recorded": "2026-10-30"
+ },
+ "src-img/what-is-a-vision-language-action-model-robots-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot stirring a steaming pot on a home kitchen stove, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-kitchen-stir.png; prompt reconstructed from the bank description.",
+  "sha256": "d600d8c5d3a39d4ef9dcbd1aaf8b02dbb1864699eefb70c61b850ad148db1ff1",
+  "recorded": "2026-11-09"
  },
  "src-img/why-figure-03-treadmill-test-is-trending-hero.jpg": {
   "origin": "ai-generated",
@@ -848,45 +902,5 @@
   "legacy": true,
   "scene": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
- },
- "src-img/what-is-a-vision-language-action-model-robots-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot stirring a steaming pot on a home kitchen stove, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-kitchen-stir.png; prompt reconstructed from the bank description.",
-  "sha256": "d600d8c5d3a39d4ef9dcbd1aaf8b02dbb1864699eefb70c61b850ad148db1ff1",
-  "recorded": "2026-11-09"
- },
- "src-img/boston-dynamics-electric-atlas-explained-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-torso-conveyor.png; prompt reconstructed from the bank description.",
-  "sha256": "d6630be9085aab216edf6f773e866953b25a10f2efb6b526276eb3b2f85ace30",
-  "recorded": "2026-11-09"
- },
- "src-img/unitree-g1-vs-h1-specs-compared-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: Grey humanoid robot reaching for a blank paint can on a high store shelf, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-store-shelf.png; prompt reconstructed from the bank description.",
-  "sha256": "48a8903d40a10cc92febedc81f9d0ebc53779035206ae33290b4c304822f97fa",
-  "recorded": "2026-11-09"
- },
- "src-img/1x-neo-home-robot-explained-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot hanging laundry on an apartment balcony at blue hour, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-balcony-laundry.png; prompt reconstructed from the bank description.",
-  "sha256": "364c3632ecaf65a078f3737a7ac7510f5e390774d7ff938757062695c60021a2",
-  "recorded": "2026-11-09"
- },
- "src-img/nvidia-isaac-gr00t-explained-hero.jpg": {
-  "origin": "ai-generated",
-  "generator": "Grok Bot image bank",
-  "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
-  "prompt_note": "Image-bank file humanoid-beat/robot-datacenter-floor.png; prompt reconstructed from the bank description.",
-  "sha256": "ba36a95a1c4eb785fb32bd1cb7d5a114869040dddadd79013906ba3c93719e78",
-  "recorded": "2026-11-09"
  }
 }
