@@ -1,5 +1,107 @@
 [
  {
+  "slug": "deep-robotics-hangzhou-marathon-traffic-patrol",
+  "date": "2026-11-09",
+  "updated": "2026-11-09",
+  "cat": "Deployments",
+  "title": "DEEP Robotics details its Hangxing No. 2 humanoid traffic patrols at the Hangzhou Marathon",
+  "summary": "DEEP Robotics says its DR02-based Hangxing No. 2 humanoids monitored intersections, patrolled preset routes and answered public questions at four points around the November 1 Hangzhou Marathon.",
+  "body": [
+   "DEEP Robotics has published a detailed account of how its humanoid robots helped with traffic management at the 2026 Hangzhou Marathon on November 1. In an <a href=\"https://www.accessnewswire.com/newsroom/en/industrial-and-manufacturing/deep-robotics-humanoid-robots-support-traffic-management-at-the-2026-h-1248687\">ACCESS Newswire release</a> dated November 8, the company said robots were stationed at four key locations around Huanglong Sports Center during a race with 36,000 runners.",
+   "The bipedal robot, called \"Hangxing No. 2,\" was developed jointly with local traffic police. The marathon was its first race. DEEP Robotics says it handled intersection monitoring, autonomous patrols, traffic-violation warnings, public information and technology demonstrations.",
+   "<h2>What the robot is</h2>",
+   "According to the company and <a href=\"https://www.globaltimes.cn/page/202611/1373413.shtml\">Global Times</a>, Hangxing No. 2 is built on DEEP Robotics' DR02 humanoid. Its listed specifications:",
+   "- <strong>Height:</strong> 178 cm - <strong>Weather rating:</strong> IP66 dust and water resistance - <strong>Operating temperature:</strong> -20°C to 55°C - <strong>Compute:</strong> a 275 TOPS unit - <strong>Sensors:</strong> LiDAR, a depth camera and wide-angle cameras",
+   "<h2>Tasks at the race</h2>",
+   "At the start area and nearby major intersections, DEEP Robotics says the robot spotted violations such as unsafe pedestrian crossings and vehicles forcing their way through junctions. It then broadcast safety reminders and performed standard traffic-control gestures to help officers direct pedestrians.",
+   "The robots also patrolled preset routes around the venue to fill gaps left by fixed surveillance cameras. The company says they stop and wait or steer around people and obstacles in their path. If a route becomes impassable, a robot ends its patrol and switches to a safe standby mode. During peak arrival and departure times, the robots also answered public questions so officers could spend less time giving directions.",
+   "\"Marathon security is concentrated in time, with dense crowds and highly repetitive tasks, which makes it a good scenario for robots to take on first,\" DEEP Robotics representative Meng Yuan told Global Times.",
+   "<h2>What is not reported</h2>",
+   "All of this comes from DEEP Robotics and coverage based on its statements. Neither the release nor Global Times gives counts of interventions, detection accuracy figures, or details on how much human operators controlled the robots during the event.",
+   "The Hangzhou Marathon, a World Athletics Gold Label race, drew more than 300,000 applicants this year. Global Times notes that traffic-police robots also worked at the Beijing Yizhuang Half Marathon in April."
+  ],
+  "sources": [
+   {
+    "title": "DEEP Robotics Humanoid Robots Support Traffic Management at the 2026 Hangzhou Marathon",
+    "url": "https://www.accessnewswire.com/newsroom/en/industrial-and-manufacturing/deep-robotics-humanoid-robots-support-traffic-management-at-the-2026-h-1248687"
+   },
+   {
+    "title": "Humanoid robot traffic police on duty at 2026 Hangzhou Marathon",
+    "url": "https://www.globaltimes.cn/page/202611/1373413.shtml"
+   }
+  ],
+  "image": {
+   "src": "src-img/deep-robotics-hangzhou-marathon-traffic-patrol-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot holding an umbrella while crossing a rain-soaked crosswalk at night",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 9 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot holding an umbrella while crossing a rain-soaked crosswalk at night, no people faces logos or text",
+    "sha256": "450c108821491a8b1d0166fe7e67080fa8e8eec802cca04904e089fa66347686",
+    "recorded": "2026-11-09",
+    "approved_by": "Joshua publish brief 2026-11-09: use bank PNG"
+   }
+  },
+  "seo_title": "DEEP Robotics humanoid traffic robots at Hangzhou Marathon"
+ },
+ {
+  "slug": "primebot-reports-10000-personal-robots-produced",
+  "date": "2026-11-09",
+  "updated": "2026-11-09",
+  "cat": "Industry",
+  "title": "PrimeBOT says it has built 10,000 Q1 and T1 personal robots, half of them in 14 days",
+  "summary": "Swancor-AgiBOT venture PrimeBOT reached 10,000 units on November 8, about two weeks after hitting 5,000. It has not published retail sales or pricing.",
+  "body": [
+   "PrimeBOT, a joint venture that makes small consumer humanoid robots, produced its 10,000th personal robot on November 8, <a href=\"https://retailnews.asia/primebot-produces-10000th-personal-robot-as-output-doubles-in-14-days\">RetailNews Asia reported</a>. Production has doubled in two weeks: the company finished its first 5,000 units on October 25 and built 5,000 more over the next 14 days.",
+   "RetailNews Asia attributes the numbers to operational disclosures reported by Sina Technology.",
+   "<h2>Who is behind PrimeBOT</h2>",
+   "PrimeBOT pairs industrial materials maker Shangwei New Materials, also known as Swancor Advanced Materials, with robotics developer AgiBOT. Swancor is the parent company named in the production disclosures.",
+   "<h2>The two robots</h2>",
+   "PrimeBOT makes two small units aimed at companionship, play and education rather than household chores:",
+   "- <strong>Q1:</strong> a humanoid about 0.8 meters tall that folds down to fit in a backpack. It runs an open-source system with customizable, 3D-printable outer shells and personality software that users can design themselves. - <strong>T1:</strong> a robot that converts between a wheeled humanoid and a four-legged chassis.",
+   "According to the report, PrimeBOT started mass-producing complete units in October and made its first customer handovers of both models that month. It targets hobbyists, students and entry-level buyers.",
+   "<h2>Engagement claims</h2>",
+   "Liu Dongfang, co-president of the robotics business and head of its Q business division, claimed:",
+   "- A monthly user activity rate above 98% - About three hours of average daily connection time - More than 100 daily interactions per user - Peak concurrent online connections above 40%",
+   "RetailNews Asia notes that the company gave no independent audit, sample sizes, observation periods or definitions of an \"active interaction\" for these figures.",
+   "<h2>What is missing</h2>",
+   "The 10,000 figure counts robots made, not robots sold. PrimeBOT has not released retail sales, channel inventory, distributor deliveries, returns or official retail pricing. RetailNews Asia says retail sell-through and channel inventory are the next numbers to watch."
+  ],
+  "sources": [
+   {
+    "title": "PrimeBOT Produces 10,000th Personal Robot as Output Doubles in 14 Days",
+    "url": "https://retailnews.asia/primebot-produces-10000th-personal-robot-as-output-doubles-in-14-days"
+   }
+  ],
+  "image": {
+   "src": "src-img/primebot-reports-10000-personal-robots-produced-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot watering hanging plants in a sunlit apartment",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 9 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot watering hanging plants in a sunlit apartment, no people faces logos or text",
+    "sha256": "8cb7825467e1515f3d265d0cc266f3cbc2b8cb73dd32777f06a3c096e95f6ea6",
+    "recorded": "2026-11-09",
+    "approved_by": "Joshua publish brief 2026-11-09: use bank PNG"
+   }
+  },
+  "seo_title": "PrimeBOT hits 10,000 personal robots produced"
+ },
+ {
   "slug": "adcock-figure-f03-keep-running",
   "date": "2026-11-08",
   "updated": "2026-11-08",
