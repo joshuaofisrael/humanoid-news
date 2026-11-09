@@ -848,5 +848,45 @@
   "legacy": true,
   "scene": "A dual-arm humanoid robot torso on a wheeled mobile base working at an assembly bench in a bright modern factory (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/what-is-a-vision-language-action-model-robots-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot stirring a steaming pot on a home kitchen stove, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-kitchen-stir.png; prompt reconstructed from the bank description.",
+  "sha256": "d600d8c5d3a39d4ef9dcbd1aaf8b02dbb1864699eefb70c61b850ad148db1ff1",
+  "recorded": "2026-11-09"
+ },
+ "src-img/boston-dynamics-electric-atlas-explained-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-torso-conveyor.png; prompt reconstructed from the bank description.",
+  "sha256": "d6630be9085aab216edf6f773e866953b25a10f2efb6b526276eb3b2f85ace30",
+  "recorded": "2026-11-09"
+ },
+ "src-img/unitree-g1-vs-h1-specs-compared-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Grey humanoid robot reaching for a blank paint can on a high store shelf, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-store-shelf.png; prompt reconstructed from the bank description.",
+  "sha256": "48a8903d40a10cc92febedc81f9d0ebc53779035206ae33290b4c304822f97fa",
+  "recorded": "2026-11-09"
+ },
+ "src-img/1x-neo-home-robot-explained-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot hanging laundry on an apartment balcony at blue hour, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-balcony-laundry.png; prompt reconstructed from the bank description.",
+  "sha256": "364c3632ecaf65a078f3737a7ac7510f5e390774d7ff938757062695c60021a2",
+  "recorded": "2026-11-09"
+ },
+ "src-img/nvidia-isaac-gr00t-explained-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
+  "prompt_note": "Image-bank file humanoid-beat/robot-datacenter-floor.png; prompt reconstructed from the bank description.",
+  "sha256": "ba36a95a1c4eb785fb32bd1cb7d5a114869040dddadd79013906ba3c93719e78",
+  "recorded": "2026-11-09"
  }
 }
