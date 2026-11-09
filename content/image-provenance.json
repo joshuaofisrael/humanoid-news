@@ -117,6 +117,13 @@
   "sha256": "df9b4194710dbaf594234159094a9e4800c0354b5842f396d1df624eb8f2fe6f",
   "recorded": "2026-10-30"
  },
+ "src-img/bipedal-balance-basics-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Engineer from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
+  "sha256": "6b4ee01c1d9887c768fe08ac1aa5ce581b112e6e83bd42c8db8e622b58513f28",
+  "recorded": "2026-11-09"
+ },
  "src-img/boston-dynamics-electric-atlas-explained-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",

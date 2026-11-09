@@ -1,5 +1,62 @@
 [
  {
+  "slug": "bipedal-balance-basics",
+  "date": "2026-11-09",
+  "updated": "2026-11-09",
+  "cat": "Explainers",
+  "title": "How bipedal robots stay balanced while walking",
+  "summary": "Balance depends on ground contacts, centre-of-mass motion and footstep timing: support regions, zero-moment points and recovery steps.",
+  "body": [
+   "A biped does not remain upright simply by keeping its torso vertical. Its controller must manage the forces transmitted through its feet while the body's mass continues to move. Standing, stepping and recovering from a shove are related problems, but each has a different contact pattern and different limits on what the robot can do next.",
+   "<h2>The support region is a force constraint</h2>",
+   "When a robot stands on a flat floor, each contact can push against the ground but cannot pull the floor upward. Ground friction also limits how much sideways force a foot can transmit before it slips. MIT's <a href=\"https://underactuated.mit.edu/humanoids.html\">*Underactuated Robotics*</a> notes describe these constraints explicitly and show how they restrict the motion of the centre of mass. A controller cannot demand arbitrary acceleration merely because its motors are powerful.",
+   "The <strong>centre of mass</strong> is a weighted average position of the robot's mass. The <strong>centre of pressure</strong> is different: it is the effective location of the resultant normal ground force. On level ground, under the assumptions developed in <a href=\"https://underactuated.mit.edu/contact.html\">MIT's notes</a>, the centre of pressure is also a zero-moment point, or ZMP. Its location is constrained by the convex hull of the ground contact points. With both feet planted, that region can extend between them. With one foot supporting the body, the available region is much smaller.",
+   "That explains why lifting a foot is a meaningful control event. The controller loses a set of ground contacts, and the remaining foot must supply the needed forces and moments. A foot can remain planted while the robot's mass moves, but the allowable acceleration is limited by contact geometry and friction.",
+   "<h2>Why centre of mass and ZMP are not interchangeable</h2>",
+   "A common shortcut says a robot is balanced whenever its centre of mass sits above its foot. That is a static intuition, not a complete walking rule. MIT derives a relationship between horizontal centre-of-mass acceleration and the distance between the centre of mass and centre of pressure. In a simplified constant-height case, horizontal acceleration is proportional to that displacement divided by the height above the ground.",
+   "The implication is important: a moving robot may deliberately place its centre of mass ahead of its centre of pressure so that it accelerates forward into the next step. Likewise, a robot can be statically \"outside\" a naive centre-of-mass rule and still be under control if its planned contacts and accelerations stay inside the force limits. Balance during walking is about managing momentum through contact, not freezing the torso over a footprint.",
+   "<h2>Recovery needs a plan for the next contact</h2>",
+   "If an external push shifts the centre of mass, the robot may need a recovery step. That step is not just a reflex kick. The landing location has to create a new support region that can produce the forces needed to slow or redirect the body. <a href=\"https://arxiv.org/abs/2311.08409\">Recent learning-based locomotion work</a> often trains policies that choose foot placements and joint commands together under contact constraints, rather than treating balance as a separate posture controller.",
+   "<h2>What this means in practice</h2>",
+   "Factory and home humanoids that walk near people have to keep these limits in view. Narrow feet, slippery floors, backpack loads and unexpected bumps all shrink the set of safe accelerations. When a demo shows a robot absorbing a shove, the useful question is whether the recovery stayed inside measured contact limits—or whether the floor, footwear and push magnitude were chosen to make the recovery easy.",
+   "The sources above are teaching notes and research papers, not product claims. They explain the mechanics that any bipedal controller has to respect, whether the implementation uses classical ZMP planning, model-predictive control or learned policies."
+  ],
+  "sources": [
+   {
+    "title": "Underactuated Robotics: Humanoids",
+    "url": "https://underactuated.mit.edu/humanoids.html"
+   },
+   {
+    "title": "Underactuated Robotics: Contact and friction",
+    "url": "https://underactuated.mit.edu/contact.html"
+   },
+   {
+    "title": "Learning humanoid locomotion with transformers (arXiv:2311.08409)",
+    "url": "https://arxiv.org/abs/2311.08409"
+   }
+  ],
+  "image": {
+   "src": "src-img/bipedal-balance-basics-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Engineer from behind adjusting a humanoid robot on a lab test stand",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 9 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Engineer from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
+    "sha256": "6b4ee01c1d9887c768fe08ac1aa5ce581b112e6e83bd42c8db8e622b58513f28",
+    "recorded": "2026-11-09",
+    "approved_by": "Joshua publish brief 2026-11-09: use bank PNG"
+   }
+  },
+  "seo_title": "How bipedal robots stay balanced while walking"
+ },
+ {
   "slug": "deep-robotics-hangzhou-marathon-traffic-patrol",
   "date": "2026-11-09",
   "updated": "2026-11-09",
