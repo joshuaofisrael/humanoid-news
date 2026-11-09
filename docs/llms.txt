@@ -99,4 +99,5 @@
 - [Editorial standards](https://humanoidbeat.com/standards.html)
 - [Corrections](https://humanoidbeat.com/corrections.html)
 - [Contact](https://humanoidbeat.com/contact.html)
+- [Image policy](https://humanoidbeat.com/image-policy/)
 - [RSS](https://humanoidbeat.com/feed.xml)
