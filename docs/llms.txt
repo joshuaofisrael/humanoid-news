@@ -3,6 +3,8 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [Boston Dynamics puts Atlas on wheels to push its motors to the limit](https://humanoidbeat.com/news/atlas-wheels-motor-research.html): Boston Dynamics fitted scooter wheels to Atlas's ankles and retrained its whole body controller to stress test actuators. It says the wheeled version is not a product.
+- [Nvidia releases Isaac Lab 3.0 and GR00T 2 at CoRL as robot training shifts to dexterity](https://humanoidbeat.com/news/nvidia-isaac-lab-3-corl.html): At the Conference on Robot Learning, Nvidia launched Isaac Lab 3.0, the GR00T 2 world action model and new benchmarks for precise manipulation tasks.
 - [How bipedal robots stay balanced while walking](https://humanoidbeat.com/news/bipedal-balance-basics.html): Balance depends on ground contacts, centre-of-mass motion and footstep timing: support regions, zero-moment points and recovery steps.
 - [DEEP Robotics details its Hangxing No. 2 humanoid traffic patrols at the Hangzhou Marathon](https://humanoidbeat.com/news/deep-robotics-hangzhou-marathon-traffic-patrol.html): DEEP Robotics says its DR02-based Hangxing No. 2 humanoids monitored intersections, patrolled preset routes and answered public questions at four points around the November 1 Hangzhou Marathon.
 - [PrimeBOT says it has built 10,000 Q1 and T1 personal robots, half of them in 14 days](https://humanoidbeat.com/news/primebot-reports-10000-personal-robots-produced.html): Swancor-AgiBOT venture PrimeBOT reached 10,000 units on November 8, about two weeks after hitting 5,000. It has not published retail sales or pricing.
