@@ -1,5 +1,132 @@
 [
  {
+  "slug": "safety-rated-robot-stops",
+  "date": "2026-11-11",
+  "updated": "2026-11-11",
+  "cat": "Explainers",
+  "title": "Robot Safety Standards and Safety-Rated Stops: Where Humanoids Fit",
+  "summary": "Understand ISO 10218, ISO/TS 15066, safety-rated monitored stops, and the differences between cobots and humanoids in industrial risk assessments.",
+  "body": [
+   "A robot stopping when someone walks nearby may look safe, but the engineering question is more precise: what detected the person, which safety function commanded the stop, how is standstill monitored, and under what conditions can motion resume? Industrial robot safety standards address systems and applications, not just the appearance or shape of the machine.",
+   "<h2>What ISO 10218 covers</h2>",
+   "OSHA's robotics standards page describes <strong>ISO 10218-1</strong> as covering the inherent safe design, protective measures, and information for use of industrial robots. <strong>ISO 10218-2</strong> addresses integration of the robot into a complete system, including end effectors and related equipment. That distinction matters because a robot can be supplied with protective capabilities yet become hazardous when fitted with a tool or installed beside other machinery.",
+   "The publicly accessible OSHA material summarizes the scope of these standards; it is not the complete paid standards text. OSHA also notes that ISO 10218 is directed at industrial robots, not every service or consumer robot. Its safety principles may still be useful elsewhere, but applicability cannot be inferred merely because a machine has two arms or walks on legs.",
+   "<strong>ISO/TS 15066:2016</strong> supplies safety requirements specific to collaborative robots and robot systems, as a supplement to the industrial robot standards; OSHA's standards page notes it was adopted in the U.S. as RIA TR R15.606. Calling a robot “collaborative” therefore requires more than an informal description of it sharing a room with people.",
+   "<h2>A protective stop is not the same as an emergency stop</h2>",
+   "An emergency stop is an operator-initiated protective measure for emergencies. A protective stop can be triggered by a safeguard, such as an intrusion detected by a presence-sensing system. OSHA discusses both in its industrial robotics guidance, alongside interlocked barriers, speed and separation monitoring, and other risk-reduction measures.",
+   "One particular concept is a <strong>safety-rated monitored stop</strong>. OSHA explains that this is also called a monitored standstill and describes it as a Category 2 stop in the NFPA 79-2017 terminology referenced by its manual. Power to the actuators is retained while the robot remains in a monitored stopped state. That can support a quicker resumption of operation than repeatedly removing actuator power, but it depends on continued monitoring and appropriate safeguards.",
+   "Do not treat the term “Category 2” as a generic label for every safe stop. It identifies a specific stopping behavior in the cited context. Nor should a software pause button be assumed to implement a safety-rated function. The safety system must be designed, assessed, and validated for the application.",
+   "<h2>Four ways collaborative operation can be organized</h2>",
+   "OSHA's technical manual describes several approaches. <strong>Speed and separation monitoring</strong> uses protective sensing to detect workers and can slow or stop a robot as separation decreases. <strong>Hand-guided controls</strong> allow a worker to direct motion using an appropriate hold-to-run control. <strong>Power and force limiting</strong> permits certain contacts only when the application controls the resulting forces and pressures. OSHA also discusses the safety-rated monitored stop, while noting that it is used with other collaborative techniques rather than by itself.",
+   "These modes are not interchangeable. A robot that avoids contact by stopping when a worker enters a zone is addressing a different interaction from one designed to tolerate limited contact during motion. The correct combination follows from the tasks and hazards identified in a risk assessment.",
+   "OSHA specifically emphasizes that the relevant contact includes the robot, end effector, and workpiece. A rounded arm carrying a sharp tool or heavy part cannot be evaluated on arm geometry alone. Protective measures can also include padding, elimination of sharp projections, limiting devices, and presence-sensing safeguards.",
+   "<h2>Cobots versus humanoids: different labels, same questions</h2>",
+   "A <strong>cobot</strong> usually refers to a robot intended for collaborative applications, often a stationary manipulator. A <strong>humanoid</strong> describes a body form, not a safety classification. The categories can overlap in principle, but neither label independently establishes a safe application. OSHA distinguishes collaborative industrial applications by their designed direct interaction with workers, not by whether the robot has a humanlike silhouette.",
+   "Consider a fixed collaborative arm that loads parts beside a worker. Its risk assessment must cover the shared workstation, tool, part, and anticipated contacts. Now consider a mobile humanoid that walks through the same plant carrying a crate. The assessment must additionally consider travel paths, changing contact locations, loss of balance, and falling loads. These are application-specific hazards; simply importing a fixed-arm safety claim would leave important questions unanswered.",
+   "OSHA separately discusses industrial mobile robots and recognizes that mobile platforms can carry manipulator systems. That provides a useful comparison for walking robots, but it does not mean every humanoid automatically falls within one specific standard's scope.",
+   "<h2>Risk assessment determines the safeguards</h2>",
+   "OSHA describes a task-based process: identify intended use and foreseeable tasks, identify hazards, estimate risk, choose risk-reduction measures, and validate the result. It also calls for checking stopping performance and safety distances and reassessing the application when conditions change. Training and procedures complement engineering safeguards; they do not replace them.",
+   "For a factory buyer, the practical questions are concrete. Which stop functions are safety-rated? What sensors trigger them? Is standstill monitored? Can a restart occur automatically, and under what conditions? What happens to a carried object when motion stops? Which edition and scope of each standard is the integrator claiming, and what evidence supports that claim? Those answers matter more than whether the robot is marketed as a cobot, an industrial humanoid, or a general-purpose assistant."
+  ],
+  "sources": [
+   {
+    "title": "OSHA: Robotics – Standards",
+    "url": "https://www.osha.gov/robotics/standards"
+   },
+   {
+    "title": "OSHA Technical Manual, Section IV Chapter 4",
+    "url": "https://www.osha.gov/otm/section-4-safety-hazards/chapter-4"
+   }
+  ],
+  "image": {
+   "src": "src-img/safety-rated-robot-stops-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Row of partly built humanoid robots on an assembly line",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 11 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Row of partly built humanoid robots on an assembly line, no people faces logos or text",
+    "sha256": "85fc3476b520b6a72815f7f3dcbcdfded05c69dc68375cd71ee6a10ef8617181",
+    "recorded": "2026-11-11",
+    "approved_by": "Joshua publish brief 2026-11-11: use bank PNG"
+   }
+  },
+  "seo_title": "Robot Safety Standards and Safety-Rated Stops: Where Humanoids Fit"
+ },
+ {
+  "slug": "what-is-whole-body-control",
+  "date": "2026-11-11",
+  "updated": "2026-11-11",
+  "cat": "Explainers",
+  "title": "Whole-Body Control: How Humanoids Coordinate Arms, Legs, and Balance",
+  "summary": "Whole-body control coordinates a humanoid’s many joints while respecting balance, contact forces, and limits. See how task priorities and optimization work.",
+  "body": [
+   "A humanoid carrying a box cannot control its arms independently of its legs. The load changes how the body must balance, and a step changes the ground contacts available to support it. <strong>Whole-body control</strong> is the approach of coordinating the robot's many joints and contacts as one coupled system, rather than treating every limb as an isolated machine.",
+   "<h2>One body, competing objectives</h2>",
+   "A humanoid may need to keep its feet in contact with the floor, maintain its torso orientation, move a hand toward a target, and avoid exceeding actuator limits, all at the same time. Those goals can conflict. Reaching farther may require leaning; leaning changes the required support forces; preserving balance may require reducing the reach or taking a step.",
+   "MIT's <em>Underactuated Robotics</em> notes frame highly articulated legged robots around center-of-mass dynamics, contact forces, footstep planning, and whole-body control. The crucial idea is that an instruction such as “move the hand here” is incomplete. The controller also needs to know what the feet are doing and which body motions are physically feasible while the hand moves.",
+   "A conventional arm bolted to the floor has a fixed base. A walking humanoid has a floating base: its torso is not attached to the world by a rigid joint. Its feet temporarily provide the support. As contacts are made and broken, the equations and allowable motions change. This makes a coordinated controller especially important during walking and manipulation at the same time.",
+   "<h2>Tasks are often written in operational space</h2>",
+   "A controller can specify an objective in terms of a hand position, torso orientation, center-of-mass motion, or foot contact rather than prescribing every joint angle in advance. The robot's kinematics relate these task-space goals to the joints. But multiple sets of joint motions may satisfy the same hand movement, and some may be much safer or easier than others.",
+   "Whole-body methods use the remaining freedom to satisfy additional objectives. For example, the hand can move toward a shelf while the torso stays approximately upright and the stance foot remains fixed. If the task becomes infeasible, the controller needs a rule for which objective takes precedence. A sensible priority structure might preserve hard physical and safety constraints before optimizing the accuracy of a reach.",
+   "<h2>Why optimization appears so often</h2>",
+   "Kim and colleagues describe prioritized whole-body controllers that incorporate centroidal momentum dynamics, task priorities, contact reaction forces, and internal-force constraints. Their 2018 research uses quadratic programming and discusses friction-cone constraints and smooth contact transitions. A quadratic program selects control variables that best satisfy an objective while obeying stated constraints.",
+   "This is not magic optimization that makes every requested movement possible. If a foot lacks enough friction, no numerical solver can create it. If a joint has reached its limit, a controller must change the requested motion or redistribute the task. The value of the optimization formulation is that those conflicts can be represented explicitly rather than hidden in separate limb commands.",
+   "A useful mental model is a robot holding a crate while stepping sideways. The controller has to allocate joint effort between maintaining the crate's pose and controlling the center of mass. It must also keep the supporting foot from sliding and prepare the next foot contact. Solving only the hand trajectory would omit most of the problem.",
+   "<h2>Contacts can be tools, not just obstacles</h2>",
+   "A robot can use its environment to stabilize itself. Rouxel, Ivaldi, and Mouret describe a whole-body force-control approach for position-controlled robots that supports multiple contacts, such as a hand against a wall or handrail. Their SEIKO pipeline uses two quadratic programs and was evaluated on the full-scale Talos humanoid in tasks including pushing, reaching, stair climbing, and sloped-surface stepping.",
+   "That work highlights a subtle distinction. A robot that can command joint positions does not necessarily have direct control of contact forces. The researchers address this through an explicit flexibility model and optimization. A hand resting on a wall is not simply another position target: the force transmitted through that contact affects balance and must be accounted for.",
+   "<h2>Safety constraints belong inside the motion problem</h2>",
+   "Paredes and Hereid propose a whole-body task-space controller with constraints involving the zero-moment point, friction cone, and torque, along with additional safety conditions. They report experiments involving the Digit biped. The broader lesson is that posture and balance are not afterthoughts to be checked only after a movement has been generated. They can be integrated into the calculation that generates movement.",
+   "Still, a research controller demonstrated in one setup should not be mistaken for universal reliability. Results depend on the robot's actuation, contact model, sensing, and task conditions. An evaluator should ask which constraints are hard, which are soft, what happens when objectives conflict, and whether the robot can recover from unexpected contact.",
+   "Whole-body control is therefore best understood as an allocation problem: distribute limited motion and force capability across the entire robot while keeping the current contacts and intended task consistent. It is the coordination layer that makes walking while working a coherent engineering objective rather than two unrelated demonstrations."
+  ],
+  "sources": [
+   {
+    "title": "MIT Underactuated Robotics: Humanoids",
+    "url": "https://underactuated.mit.edu/humanoids.html"
+   },
+   {
+    "title": "Kim et al., Prioritized Whole-Body Controller with Contact Constraints (arXiv)",
+    "url": "https://arxiv.org/abs/1807.01222"
+   },
+   {
+    "title": "Rouxel, Ivaldi and Mouret, Multi-Contact Whole-Body Force Control (arXiv)",
+    "url": "https://arxiv.org/abs/2312.16465"
+   },
+   {
+    "title": "Paredes and Hereid, Safe Whole-Body Task Space Control for Humanoid Robots (arXiv)",
+    "url": "https://arxiv.org/abs/2311.08409"
+   }
+  ],
+  "image": {
+   "src": "src-img/what-is-whole-body-control-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot carrying a crate down a sunlit warehouse aisle",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 11 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people faces logos or text",
+    "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+    "recorded": "2026-11-11",
+    "approved_by": "Joshua publish brief 2026-11-11: use bank PNG"
+   }
+  },
+  "seo_title": "Whole-Body Control: How Humanoids Coordinate Arms, Legs, and Balance"
+ },
+ {
   "slug": "atlas-wheels-motor-research",
   "date": "2026-11-10",
   "updated": "2026-11-10",

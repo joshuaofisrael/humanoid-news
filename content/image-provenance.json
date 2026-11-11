@@ -746,6 +746,13 @@
   "scene": "A wheeled humanoid robot with two slim white robotic arms assembling small metal actuator parts on a clean factory workbench (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/safety-rated-robot-stops-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Row of partly built humanoid robots on an assembly line, no people faces logos or text",
+  "sha256": "85fc3476b520b6a72815f7f3dcbcdfded05c69dc68375cd71ee6a10ef8617181",
+  "recorded": "2026-11-11"
+ },
  "src-img/samsung-chairman-visits-rx-robotics-office-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -859,6 +866,13 @@
   "sha256": "6fd7686e397bc0464fe472ae01ee3298c8665b908dca5f49d45c115c31929c7c",
   "recorded": "2026-11-09",
   "bank_file": "humanoid-beat/visor-closeup.png"
+ },
+ "src-img/what-is-whole-body-control-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people faces logos or text",
+  "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+  "recorded": "2026-11-11"
  },
  "src-img/why-figure-03-treadmill-test-is-trending-hero.jpg": {
   "origin": "ai-generated",
