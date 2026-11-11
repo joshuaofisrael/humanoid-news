@@ -253,6 +253,20 @@
   "sha256": "1d1e8055a5cdd97f8b1660c55977d493ab572671c7660576b8606253fca9593b",
   "recorded": "2026-11-07"
  },
+ "src-img/figure-ai-night-shift-coordinator-hiring-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Unbranded humanoid robot folding laundry in a living room, no logos or faces, no people faces logos or text",
+  "sha256": "225db1674f27b2eb6aab9690ff01b17766e6d7b7a0b122810f2be7c049439c3d",
+  "recorded": "2026-11-11"
+ },
+ "src-img/gemini-robotics-2-5-apollo-mercedes-kitting-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot stacking boxes on a pallet at a loading dock at night, no logos or faces, no people faces logos or text",
+  "sha256": "0dfa8deaca144c7bb4bb81c6dcd510be6f4645f7f4df3a3c66531894bc9e646b",
+  "recorded": "2026-11-11"
+ },
  "src-img/generative-bionics-amd-physical-ai-data-factory-italy-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",

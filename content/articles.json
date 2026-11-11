@@ -1,5 +1,99 @@
 [
  {
+  "slug": "figure-ai-night-shift-coordinator-hiring",
+  "date": "2026-11-11",
+  "updated": "2026-11-11",
+  "cat": "Industry",
+  "title": "Figure AI is hiring a night-shift coordinator to oversee humanoid robots",
+  "summary": "Business Insider reported that Figure AI posted a contract-to-hire overnight role in Santa Clara to schedule operators, troubleshoot robot failures and sometimes run the machines themselves.",
+  "body": [
+   "Figure AI is advertising a night-shift coordinator job in Santa Clara, California, to oversee its humanoid robots and the people who operate them, <a href=\"https://www.businessinsider.com/figure-ai-hiring-human-babysit-robots-overnight-2026-11\">Business Insider reported</a> on 10 November.",
+   "According to the report, the contract-to-hire role involves scheduling and coaching the team, troubleshooting robot failures and safety issues, and sometimes operating the machines. It pays $40 to $45 an hour, runs from 10:30 p.m. to 7 a.m., and includes a weekend shift. The posting says the coordinator will be on their feet most of the time and must be able to lift, carry and manoeuvre equipment or humanoid hardware weighing up to 50 pounds.",
+   "Business Insider quoted the job ad: \"You'll set priorities, keep robots running for real commercial use cases, solve problems as they come up, and hand the day team a clear, accurate picture of what happened overnight. You'll be the one making the calls.\"",
+   "The opening sits alongside other human roles Figure is advertising. The company is also seeking humanoid robot operators to work directly with the machines to test and validate new behaviours and skills, the report said.",
+   "Figure, founded in 2022, has said it is focused on work that people do not want to do, starting with structured, repetitive tasks in manufacturing, shipping and logistics, warehousing and retail. Business Insider quoted the company's website: \"Robots that can think, learn, reason, and interact with their environments will eventually be capable of performing tasks better than humans.\" The site also said that, over time, \"humans could leave the loop altogether as robots become capable of building other robots.\" Those are the company's stated aims, not an independent assessment of current systems.",
+   "The overnight coordinator job is a reminder that Figure's present operations still depend on human supervision. A vacancy for a graveyard-shift lead is not, on its own, evidence of how many robots the company has in commercial use, or of how often they fail. It does show that Figure wants someone on site through the night to keep robots running and to brief the day team.",
+   "Business Insider also recapped earlier Figure fundraising and a recent public listing by rival Agility Robotics. Those points are background from that report and are not the subject of the new job posting."
+  ],
+  "sources": [
+   {
+    "title": "Figure AI Is Hiring a Human to Babysit Humanoid Robots Overnight",
+    "url": "https://www.businessinsider.com/figure-ai-hiring-human-babysit-robots-overnight-2026-11"
+   }
+  ],
+  "image": {
+   "src": "src-img/figure-ai-night-shift-coordinator-hiring-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Unbranded humanoid robot folding laundry in a living room, no logos or faces",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 11 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Unbranded humanoid robot folding laundry in a living room, no logos or faces, no people faces logos or text",
+    "sha256": "225db1674f27b2eb6aab9690ff01b17766e6d7b7a0b122810f2be7c049439c3d",
+    "recorded": "2026-11-11",
+    "approved_by": "Joshua publish brief 2026-11-11: use bank PNG"
+   }
+  },
+  "seo_title": "Figure AI is hiring a night-shift coordinator to oversee humanoid robots"
+ },
+ {
+  "slug": "gemini-robotics-2-5-apollo-mercedes-kitting",
+  "date": "2026-11-11",
+  "updated": "2026-11-11",
+  "cat": "Industry",
+  "title": "Gemini Robotics 2.5 helps Apollo 2 kit Mercedes parts at a 96% success rate, DeepMind says",
+  "summary": "Google DeepMind said Gemini Robotics 2.5, its new vision-language-action model, ran a proof of concept with Apptronik's Apollo 2 humanoid on Mercedes-Benz lines in Hungary and Germany.",
+  "body": [
+   "Google DeepMind introduced Gemini Robotics 2.5 on 10 November, calling it the company's most capable vision-language-action model to date. In a <a href=\"https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/\">blog post</a> by Carolina Parada, the lab said the model increases both the range of skills a robot can learn and the speed at which it can acquire them, with gains in dexterity, reliability and safety.",
+   "The headline industrial result is a proof of concept with Apptronik and Mercedes-Benz. DeepMind said Apollo 2 humanoid robots used the new model on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany, to sort automotive parts from bulk bins into sequenced trays. The lab reported a 96% success rate on that kitting task. The embodied reasoning model, Gemini Robotics ER, tracked the workflow, while Gemini Robotics 2.5 controlled the hands and arms as the robot picked metal brackets and corrected for gaps, DeepMind said.",
+   "Apptronik marked the release on X the same day: \"Tying a bow, sorting car parts... it's called range.\" DeepMind's post lists tying a bow on a gift box among more than 200 evaluation tasks, alongside serving food with tongs and pipetting liquid, as examples of tool use and handling deformable or delicate objects. The lab says Gemini Robotics 2.5 achieved a 30% to 100% higher success rate than previous baselines, depending on the task, and completed tasks 20% to 30% faster. Those figures are DeepMind's own evaluations.",
+   "Sundar Pichai, Google's chief executive, reposted Parada's announcement on X, quoting her description of Gemini Robotics 2.5 \"for real-world general dexterity.\"",
+   "Jeff Cardenas, Apptronik's co-founder and chief executive, is quoted in the DeepMind post: \"This is what we built Apollo for: useful work alongside people in real industrial settings. Pairing Apollo 2 with Gemini Robotics, we saw the models improve dramatically in just a few weeks of post-training and carry over to Mercedes-Benz production with very little drop-off. This is the foundation for bringing humanoid robots to industrial and commercial environments at scale.\"",
+   "The model works on more than one robot type, DeepMind said, including Apollo 2 with the five-finger, 22 degree-of-freedom SharpaWave hand, and the Franka Duo platform with two-fingered grippers. On safety, the lab said inference-time reasoning guidance improved safe task completion around obstacles by 33% and around nearby people by 43% in its evaluations. It is also releasing ASIMOV-Jailbreak, an open benchmark of adversarial robotics prompts. DeepMind said Gemini 4 Argon scores 99.5% jailbreak resistance on that test, compared with 82% for the previous Gemini Robotics ER 2 baseline.",
+   "Gemini Robotics 2.5 is rolling out to DeepMind's robotics partners, the post says. The Mercedes-Benz work is described as a proof of concept, not a claim that the robots are in full production use across the automaker's plants."
+  ],
+  "sources": [
+   {
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+   },
+   {
+    "title": "Apptronik on X",
+    "url": "https://x.com/Apptronik/status/2120207146113753350"
+   },
+   {
+    "title": "Sundar Pichai on X",
+    "url": "https://x.com/sundarpichai/status/2120321486108119261"
+   }
+  ],
+  "image": {
+   "src": "src-img/gemini-robotics-2-5-apollo-mercedes-kitting-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot stacking boxes on a pallet at a loading dock at night, no logos or faces",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 11 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot stacking boxes on a pallet at a loading dock at night, no logos or faces, no people faces logos or text",
+    "sha256": "0dfa8deaca144c7bb4bb81c6dcd510be6f4645f7f4df3a3c66531894bc9e646b",
+    "recorded": "2026-11-11",
+    "approved_by": "Joshua publish brief 2026-11-11: use bank PNG"
+   }
+  },
+  "seo_title": "Gemini Robotics 2.5 helps Apollo 2 kit Mercedes parts at a 96% success rate, DeepMind says"
+ },
+ {
   "slug": "safety-rated-robot-stops",
   "date": "2026-11-11",
   "updated": "2026-11-11",
