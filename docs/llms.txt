@@ -3,6 +3,7 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [Runway releases Praxis-1, an open-weight world action model for robots](https://humanoidbeat.com/news/runway-praxis-1-open-weights.html): Runway said on 11 November that Praxis-1, a 27-billion-parameter model already used by partners on a legged humanoid, an industrial arm and a warehouse robot, is now available under Apache 2.0.
 - [Figure AI is hiring a night-shift coordinator to oversee humanoid robots](https://humanoidbeat.com/news/figure-ai-night-shift-coordinator-hiring.html): Business Insider reported that Figure AI posted a contract-to-hire overnight role in Santa Clara to schedule operators, troubleshoot robot failures and sometimes run the machines themselves.
 - [Gemini Robotics 2.5 helps Apollo 2 kit Mercedes parts at a 96% success rate, DeepMind says](https://humanoidbeat.com/news/gemini-robotics-2-5-apollo-mercedes-kitting.html): Google DeepMind said Gemini Robotics 2.5, its new vision-language-action model, ran a proof of concept with Apptronik's Apollo 2 humanoid on Mercedes-Benz lines in Hungary and Germany.
 - [Robot Safety Standards and Safety-Rated Stops: Where Humanoids Fit](https://humanoidbeat.com/news/safety-rated-robot-stops.html): Understand ISO 10218, ISO/TS 15066, safety-rated monitored stops, and the differences between cobots and humanoids in industrial risk assessments.
