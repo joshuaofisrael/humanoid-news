@@ -526,7 +526,7 @@
  {
   "slug": "adcock-figure-f03-keep-running",
   "date": "2026-11-08",
-  "updated": "2026-11-08",
+  "updated": "2026-11-11",
   "cat": "Figure",
   "title": "Adcock posts F.03 fleet video and says Figure plans to keep running the robots",
   "summary": "Figure CEO Brett Adcock posted a video captioned 'F.03 humanoid robots' and, asked whether F.03 would be decommissioned once a successor arrives, replied that the plan is to keep running them.",
@@ -536,7 +536,8 @@
    "<h2>Why the reply matters</h2>",
    "Humanoid makers are iterating quickly, and early buyers and partners want to know whether hardware bought or deployed today will be supported once the next generation arrives. Adcock's answer suggests Figure intends to keep F.03 units in service rather than retire them on a fixed schedule.",
    "<h2>What was not said</h2>",
-   "Adcock gave no numbers for the F.03 fleet, no deployment sites and no timeline for a next-generation robot in these posts. Any claim that a \"Figure 4\" is near completion comes from the follower's question, not from Figure. HumanoidBeat treats the <a href=\"https://x.com/adcock_brett/status/2119127304265949511\">video post</a> and the <a href=\"https://x.com/adcock_brett/status/2119155644448305558\">reply</a> as the public record."
+   "Adcock gave no numbers for the F.03 fleet, no deployment sites and no timeline for a next-generation robot in these posts. Any claim that a \"Figure 4\" is near completion comes from the follower's question, not from Figure. HumanoidBeat treats the <a href=\"https://x.com/adcock_brett/status/2119127304265949511\">video post</a> and the <a href=\"https://x.com/adcock_brett/status/2119155644448305558\">reply</a> as the public record.",
+    "Figure later posted a hiring notice for a <a href=\"figure-ai-night-shift-coordinator-hiring.html\">night-shift coordinator to oversee humanoid robots</a>."
   ],
   "sources": [
    {
@@ -2944,7 +2945,7 @@
  {
   "slug": "google-gemini-robotics-er-2-public-preview-google-cloud",
   "date": "2026-10-28",
-  "updated": "2026-10-28",
+  "updated": "2026-11-11",
   "cat": "Research",
   "title": "Google opens Gemini Robotics ER 2, a high-level 'robot brain' model, to cloud customers in public preview",
   "seo_title": "Gemini Robotics ER 2 enters public preview on Google Cloud",
@@ -2953,7 +2954,8 @@
    "<strong>Short answer:</strong> Google has made Gemini Robotics Embodied Reasoning 2 (ER 2) available in public preview on its Gemini platform, according to a Google Cloud blog post published on 27 October 2026 by Carolina Parada, head of Google DeepMind's robotics team, and Adrian Jones. Google describes ER 2 as a robot's high-level reasoning model that plans multi-step tasks and directs lower-level control systems, and says it works across robot types from stationary arms to full humanoids.",
    "In Google's description, ER 2 does not move motors directly. Developers declare low-level interfaces, such as vision-language-action (VLA) models, navigation APIs or custom functions, as tools that the model can call, and stream video, audio or text into it. Google says the model can then plan long tasks involving hundreds of decisions, check from video whether a step actually succeeded, retry failed steps without restarting a whole workflow, and coordinate teams of different robots that share an understanding of the workspace.",
    "The post gives some company-reported figures: Google says ER 2 pinpoints the video frame at which a key event happens, such as when to stop pouring a liquid, with 91.3% accuracy and a mean error of 0.96 seconds, and that it can read values from more than ten kinds of instruments, including dials, sight glasses, digital displays and thermometers. Google also points to tooling for testing behaviours in simulators such as MuJoCo-Warp and NVIDIA Isaac Sim, labelling demonstration videos, and training custom VLA models on its cloud.",
-   "The announcement includes supportive comments from Boston Dynamics about its Spot quadruped inspection product, from data-collection start-up DeepReach, from Arm, and from A*STAR's materials research institute, which said it wants to use the model to help lab robots work with existing equipment. Google did not publish pricing in the post itself; it links to separate documentation and a DeepMind technical report. For other recent work on humanoid foundation models, see our report on <a href=\"alibaba-amap-lambda0-humanoid-model-human-video.html\">Alibaba Amap's Lambda-0</a> and our <a href=\"../topics/research.html\">research hub</a>."
+   "The announcement includes supportive comments from Boston Dynamics about its Spot quadruped inspection product, from data-collection start-up DeepReach, from Arm, and from A*STAR's materials research institute, which said it wants to use the model to help lab robots work with existing equipment. Google did not publish pricing in the post itself; it links to separate documentation and a DeepMind technical report. For other recent work on humanoid foundation models, see our report on <a href=\"alibaba-amap-lambda0-humanoid-model-human-video.html\">Alibaba Amap's Lambda-0</a> and our <a href=\"../topics/research.html\">research hub</a>.",
+    "Google DeepMind has since described a later robotics result: <a href=\"gemini-robotics-2-5-apollo-mercedes-kitting.html\">Gemini Robotics 2.5 helping Apollo 2 kit Mercedes parts</a>."
   ],
   "analysis": [
    "Opinion: Splitting a robot's software into a general 'planner' model and separate low-level skill models is becoming a common pattern, and putting the planner behind a cloud API lowers the barrier for humanoid makers that do not train their own large models. The figures are Google's own benchmarks, so independent tests on real humanoid deployments will matter more than the launch numbers."
@@ -3985,7 +3987,7 @@
  {
   "slug": "liberai-liber-0-world-action-model-zero-shot",
   "date": "2026-11-04",
-  "updated": "2026-11-04",
+  "updated": "2026-11-11",
   "cat": "Research",
   "title": "LiberAI's Liber-0 Completes 36% of Unseen Robot Tasks Zero-Shot",
   "summary": "LiberAI says its Liber-0 world action model, pretrained on 2.2 million hours of human experience, succeeded in 36% of trials on 60 tasks it was not trained for.",
@@ -3996,7 +3998,8 @@
    "For comparison, <a href=\"https://www.liberai.com/blog/liber0/\">LiberAI's technical blog</a> reports testing GPT-6 Astra on its own as a robot controller on the same tasks, over 180 trials. It scored 8.3% on pick-and-place and 5.0% on short non-pick-and-place tasks, and LiberAI says it struggled with contact-rich work that needs precise hand control. These are LiberAI's own results and have not been independently reproduced.",
    "<strong>Learning from people, not robots.</strong> Liber-0 is pretrained on more than 2.2 million hours of human experience. To turn human video into actions a robot can copy, LiberAI records hand motion with its LiberSense Glove, which the blog says is 0.3 mm thick and weighs 131 g. Its LEO robot platform uses dexterous hands, articulated wrists and a waist, with cameras placed to match how the human data was filmed. A shared \"embodiment representation\" tells the model about the body it is controlling.",
    "LiberAI says glove recordings scaled better than far larger amounts of web video in its tests, and that mixing them with limited robot data beat robot-only training while using 75% fewer robot demonstrations. For multi-step jobs, Liber-0 can optionally pair with a reasoning model such as GPT-6 Astra to plan intermediate goals.",
-   "<a href=\"https://roboticsandautomationnews.com/2026/11/04/from-human-experience-to-robot-action-liberai-launches-liber-0-world-action-model/106378/\">Robotics &amp; Automation News</a> also covered the launch. A 36% success rate is far from deployment-ready, but it suggests human recordings could cut the cost of teaching robots each new task one demonstration at a time."
+   "<a href=\"https://roboticsandautomationnews.com/2026/11/04/from-human-experience-to-robot-action-liberai-launches-liber-0-world-action-model/106378/\">Robotics &amp; Automation News</a> also covered the launch. A 36% success rate is far from deployment-ready, but it suggests human recordings could cut the cost of teaching robots each new task one demonstration at a time.",
+    "Runway later released <a href=\"runway-praxis-1-open-weights.html\">Praxis-1, an open-weight world action model for robots</a>."
   ],
   "sources": [
    {
@@ -4120,7 +4123,7 @@
  {
   "slug": "boston-dynamics-electric-atlas-explained",
   "date": "2026-11-09",
-  "updated": "2026-11-09",
+  "updated": "2026-11-11",
   "cat": "Explainers",
   "title": "Boston Dynamics' electric Atlas explained: specs, battery swaps and Hyundai",
   "seo_title": "Boston Dynamics electric Atlas: specs and what it does",
@@ -4130,7 +4133,8 @@
    "<strong>Hydraulic to electric.</strong> In its April 2024 blog post Boston Dynamics said the electric Atlas would be stronger and have a broader range of motion than any previous generation, and that it would test applications with a small group of customers, beginning with Hyundai, over the following few years. Why the industry has moved to electric joints is covered in our <a href=\"electric-vs-hydraulic-actuators-humanoid-robots.html\">actuators explainer</a>.",
    "<strong>Published specs.</strong> On its Atlas product page Boston Dynamics lists a height of 1.9 m (6.2 ft) and weight of 90 kg (198 lb), plus: battery life of 4 hours; weight capacity of 50 kg (110 lb) instantaneous and 30 kg (66 lb) sustained; 56 degrees of freedom; a reach of 2.3 m (7.5 ft); and continuous range of motion in its joints. Those are the company's own figures. What a degree of freedom means is explained in <a href=\"humanoid-robot-degrees-of-freedom-explained.html\">degrees of freedom explained</a>.",
    "<strong>Working without stopping.</strong> Boston Dynamics says Atlas autonomously walks to a charging station and swaps out its own battery before returning to work. It also says Atlas needs minimal supervision for material handling, supports barcode scanning and workflow integrations, and connects to factory and warehouse systems through its Orbit software. When one Atlas learns a skill, the company says it can be deployed across the fleet.",
-   "<strong>How it compares.</strong> For context on battery life across makers, see <a href=\"published-humanoid-runtimes-and-recharge-times.html\">published humanoid runtimes</a>. Boston Dynamics has not published a price for Atlas; our <a href=\"humanoid-robot-prices-compared-2026.html\">price comparison</a> lists the makers that have."
+   "<strong>How it compares.</strong> For context on battery life across makers, see <a href=\"published-humanoid-runtimes-and-recharge-times.html\">published humanoid runtimes</a>. Boston Dynamics has not published a price for Atlas; our <a href=\"humanoid-robot-prices-compared-2026.html\">price comparison</a> lists the makers that have.",
+    "Boston Dynamics later showed a research testbed that <a href=\"atlas-wheels-motor-research.html\">puts Atlas on wheels to push its motors</a>."
   ],
   "disclaimer": "Specifications are Boston Dynamics' published figures and have not been independently tested. Boston Dynamics is majority-owned by Hyundai Motor Group; this is not investment advice.",
   "sources": [
