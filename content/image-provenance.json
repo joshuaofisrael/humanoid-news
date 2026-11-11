@@ -760,6 +760,13 @@
   "scene": "A wheeled humanoid robot with two slim white robotic arms assembling small metal actuator parts on a clean factory workbench (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/runway-praxis-1-open-weights-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot seated on a charging bench in a dim lab at night, no logos or faces, no people faces logos or text",
+  "sha256": "cf442a17844b7fd36b2cfe82f80cd7cdea8524fecae2388f492d98b5907c80d9",
+  "recorded": "2026-11-11"
+ },
  "src-img/safety-rated-robot-stops-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
