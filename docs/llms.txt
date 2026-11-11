@@ -3,6 +3,8 @@
 > Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more.
 
 ## Articles
+- [Figure AI is hiring a night-shift coordinator to oversee humanoid robots](https://humanoidbeat.com/news/figure-ai-night-shift-coordinator-hiring.html): Business Insider reported that Figure AI posted a contract-to-hire overnight role in Santa Clara to schedule operators, troubleshoot robot failures and sometimes run the machines themselves.
+- [Gemini Robotics 2.5 helps Apollo 2 kit Mercedes parts at a 96% success rate, DeepMind says](https://humanoidbeat.com/news/gemini-robotics-2-5-apollo-mercedes-kitting.html): Google DeepMind said Gemini Robotics 2.5, its new vision-language-action model, ran a proof of concept with Apptronik's Apollo 2 humanoid on Mercedes-Benz lines in Hungary and Germany.
 - [Robot Safety Standards and Safety-Rated Stops: Where Humanoids Fit](https://humanoidbeat.com/news/safety-rated-robot-stops.html): Understand ISO 10218, ISO/TS 15066, safety-rated monitored stops, and the differences between cobots and humanoids in industrial risk assessments.
 - [Whole-Body Control: How Humanoids Coordinate Arms, Legs, and Balance](https://humanoidbeat.com/news/what-is-whole-body-control.html): Whole-body control coordinates a humanoid’s many joints while respecting balance, contact forces, and limits. See how task priorities and optimization work.
 - [Boston Dynamics puts Atlas on wheels to push its motors to the limit](https://humanoidbeat.com/news/atlas-wheels-motor-research.html): Boston Dynamics fitted scooter wheels to Atlas's ankles and retrained its whole body controller to stress test actuators. It says the wheeled version is not a product.
