@@ -47,6 +47,13 @@
   "sha256": "bb397a2ba044fc358561f9dda52ee3f07fd006397878da8d36ad24ea3cca5bce",
   "recorded": "2026-10-30"
  },
+ "src-img/agile-robots-500m-series-f-softbank-8-5-billion-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables, no people faces logos or text",
+  "sha256": "b5e65cb57fd4362accb7bb25e116cf6c1ddbc7a755776fbb952db7821b2afea8",
+  "recorded": "2026-11-12"
+ },
  "src-img/agility-digit-5-nvidia-igx-thor-pittsburgh-hub-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -124,6 +131,13 @@
   "prompt": "Hyper-realistic photograph, 16:9, of a calm generic white wheeled-base humanoid robot with plain unbranded panels taking a generic car door trim part from a grey plastic container and placing it into a numbered-slot metal sequencing rack, beside a clean modern car assembly line with an unpainted generic car body in the background. Bright factory lighting, no people, no logos, no brand badges, no readable text, not a cartoon.",
   "sha256": "df9b4194710dbaf594234159094a9e4800c0354b5842f396d1df624eb8f2fe6f",
   "recorded": "2026-10-30"
+ },
+ "src-img/beijing-embodied-robot-plan-200000-units-a-year-2028-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Two humanoid robots at a car-parts assembly station with sparks, no people faces logos or text",
+  "sha256": "03bb7f45ac218d46aa87a6e89f6970debb91794f74bd949fb1dba8cfc306345d",
+  "recorded": "2026-11-12"
  },
  "src-img/bipedal-balance-basics-hero.jpg": {
   "origin": "ai-generated",
@@ -291,6 +305,13 @@
   "legacy": true,
   "scene": "A bipedal humanoid robot placing a plastic tote onto a conveyor in a large, brightly lit fulfilment warehouse (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/gxo-apptronik-letter-of-intent-up-to-1000-apollo-humanoids-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people faces logos or text",
+  "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+  "recorded": "2026-11-12"
  },
  "src-img/how-humanoid-robots-learn-teleoperation-simulation-hero.jpg": {
   "origin": "ai-generated",
@@ -601,6 +622,13 @@
   "sha256": "8e0dce0fdca9e8d2bc302c4e41c21f4780e9712837bfb14702769259b26ff552",
   "recorded": "2026-10-30"
  },
+ "src-img/joyson-delivers-first-robot-brain-backpack-to-unitree-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Engineer seen from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
+  "sha256": "6b4ee01c1d9887c768fe08ac1aa5ce581b112e6e83bd42c8db8e622b58513f28",
+  "recorded": "2026-11-12"
+ },
  "src-img/kist-kapex-humanoid-lg-commercialization-award-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
@@ -838,6 +866,13 @@
   "scene": "A white humanoid robot routing a bundle of wire-harness cables inside an unfinished car body on an assembly line (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/ubtech-yongda-400-u1-pro-humanoids-car-showrooms-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
+  "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
+  "recorded": "2026-11-12"
+ },
  "src-img/unitree-g1-vs-h1-specs-compared-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
@@ -963,6 +998,13 @@
   "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
   "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
   "recorded": "2026-11-08"
+ },
+ "src-img/xixuan-chuangzhi-ubtech-metax-robot-chip-500-million-yuan-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
+  "sha256": "f961cc4e3b2bbe6e36b01528156602574a3cb3329bc36b2d4f08603baf555f52",
+  "recorded": "2026-11-12"
  },
  "src-img/xpeng-iron-vla-2-gesture-demo-hero.jpg": {
   "origin": "ai-generated",
