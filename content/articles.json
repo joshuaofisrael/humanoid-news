@@ -1,5 +1,288 @@
 [
  {
+  "slug": "agile-robots-500m-series-f-softbank-8-5-billion",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "cat": "Funding",
+  "title": "Agile Robots raises $500 million in a SoftBank-led round at an $8.5 billion valuation",
+  "summary": "Munich's Agile Robots says its Series F, led by SoftBank with NVIDIA and Hitachi taking part, takes total funding to about $2 billion and will pay for US growth and more production.",
+  "body": [
+   "Agile Robots, the Munich robotics company that builds humanoid and mobile robots as well as robot arms and hands, said on 12 November that it has closed a $500 million Series F round at a valuation of $8.5 billion. According to the <a href=\"https://www.agile-robots.com/de/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/\">company's announcement</a>, SoftBank Group led the round, NVIDIA, Hitachi, Hitachi Ventures and T.Capital also took part, and the money brings its total funding to about $2 billion. <a href=\"https://tech.eu/2026/11/12/softbank-leads-500m-funding-round-in-agile-robots/\">Tech.eu</a> reported the same figures.",
+   "The company said it will use the money to grow in the United States, add production capacity, including in Germany, and speed up work on new robot applications. Earlier this year Agile Robots opened a production site in Fürstenfeldbruck near Munich that it says can turn out up to 10,000 humanoid robots a year, on legs or wheels.",
+   "Agile Robots was founded in 2018 as a spin-off from the German Aerospace Center (DLR). It says it has installed more than 20,000 industrial robotics solutions for customers in automotive, consumer electronics, logistics and other sectors, employs more than 2,000 research and development specialists, and holds more than 650 patents. Its group includes Franka Robotics, BÄR Automation, idealworks and Krause Automation, which it recently bought from thyssenkrupp, the company said.",
+   "In the announcement, founder and chief executive Zhaopeng Chen described physical AI as a shift that will change how goods are made, built and moved, and said the round lets the company expand internationally faster. Dennis Chang, a managing partner at SoftBank Investment Advisers, said the investor backs Agile Robots because it combines deep robotics expertise with the ability to deliver at industrial scale.",
+   "HumanoidBeat has previously covered Agile Robots' humanoid work, including <a href=\"https://humanoidbeat.com/news/audi-agile-robots-mobile-humanoids-parts-sequencing-ingolstadt.html\">Audi's proof of concept with its mobile humanoids for parts sequencing</a> and <a href=\"https://humanoidbeat.com/news/nvidia-isaac-agile-one-sn-reference-humanoid.html\">the Agile ONE SN reference humanoid it unveiled alongside NVIDIA's Isaac update</a>."
+  ],
+  "sources": [
+   {
+    "title": "Agile Robots SE: Physical AI leader Agile Robots raises $500 million Series F funding",
+    "url": "https://www.agile-robots.com/de/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/"
+   },
+   {
+    "title": "Tech.eu: SoftBank leads $500M funding round in Agile Robots",
+    "url": "https://tech.eu/2026/11/12/softbank-leads-500m-funding-round-in-agile-robots/"
+   }
+  ],
+  "image": {
+   "src": "src-img/agile-robots-500m-series-f-softbank-8-5-billion-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 12 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Unfinished humanoid robot torsos hanging from a factory conveyor with dangling cables, no people faces logos or text",
+    "sha256": "b5e65cb57fd4362accb7bb25e116cf6c1ddbc7a755776fbb952db7821b2afea8",
+    "recorded": "2026-11-12",
+    "approved_by": "Joshua all-out brief 2026-11-12: use bank PNG"
+   }
+  },
+  "seo_title": "Agile Robots raises $500 million in a SoftBank-led round at an $8.5 billion valuation",
+  "disclaimer": "This article reports a funding announcement. The valuation, capacity and installation figures come from the company and a news report and have not been independently verified. It is not investment advice."
+ },
+ {
+  "slug": "gxo-apptronik-letter-of-intent-up-to-1000-apollo-humanoids",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "cat": "Deployments",
+  "title": "GXO signs letter of intent with Apptronik for up to 1,000 Apollo humanoids, if trials succeed",
+  "summary": "GXO and Apptronik will widen Apollo warehouse trials from 2027 and, subject to agreed KPIs, intend to roll out up to 1,000 robots over four years under a robotics-as-a-service model.",
+  "body": [
+   "Contract logistics company GXO said on 12 November that it has signed a letter of intent with Apptronik to expand trials of the Apollo humanoid robot and to work out a robotics-as-a-service model for deploying it at scale. Under the plan described in <a href=\"https://www.financialcontent.com/article/gnwcq-2026-11-12-gxo-and-apptronik-expand-partnership-to-scale-humanoid-deployment\">GXO's press release</a>, the companies intend to move toward a global rollout of up to 1,000 Apollo robots over the next four years, with the first deployment in North America in late 2027.",
+   "That number is conditional. The release says the rollout depends on the trials succeeding and on Apollo meeting performance, safety and operational KPIs agreed by both companies. No financial terms were disclosed, and the agreement is a letter of intent rather than a purchase order. <a href=\"https://www.unite.ai/gxo-targets-up-to-1-000-apollo-humanoids-if-warehouse-trials-succeed/\">Unite.AI</a> described it as a conditional path toward 1,000 robots.",
+   "From 2027 the trials will put Apollo into live operations across several warehouse workflows: goods-to-person and person-to-goods picking, moving cases and totes, packing and sortation. Each use case will be assessed and sequenced separately against the agreed productivity, safety and operational measures, and the trials will also test how the robot works alongside GXO staff and existing automation, the companies said.",
+   "The partnership dates to a 2024 proof-of-concept programme. GXO said Apollo completed a pilot in the United States earlier this year focused on autonomous picking of small consumer goods, and that the two companies have run data collection and live autonomous evaluations on more than 50 logistics tasks at Apptronik's Robot Park training facility.",
+   "GXO already works with other humanoid makers: HumanoidBeat reported in October that it is <a href=\"https://humanoidbeat.com/news/gxo-agility-digit-two-more-sites-three-manufacturing-customers.html\">adding Agility Robotics' Digit at two more sites</a>. Apptronik's Apollo was also in the news this week when Google DeepMind said <a href=\"https://humanoidbeat.com/news/gemini-robotics-2-5-apollo-mercedes-kitting.html\">Gemini Robotics 2.5 ran a proof of concept with Apollo 2 on Mercedes-Benz lines</a>."
+  ],
+  "sources": [
+   {
+    "title": "GlobeNewswire via FinancialContent: GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-11-12-gxo-and-apptronik-expand-partnership-to-scale-humanoid-deployment"
+   },
+   {
+    "title": "Unite.AI: GXO Targets Up to 1,000 Apollo Humanoids If Warehouse Trials Succeed",
+    "url": "https://www.unite.ai/gxo-targets-up-to-1-000-apollo-humanoids-if-warehouse-trials-succeed/"
+   }
+  ],
+  "image": {
+   "src": "src-img/gxo-apptronik-letter-of-intent-up-to-1000-apollo-humanoids-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot loading plain cardboard boxes onto a warehouse cart",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 12 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people faces logos or text",
+    "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+    "recorded": "2026-11-12",
+    "approved_by": "Joshua all-out brief 2026-11-12: use bank PNG"
+   }
+  },
+  "seo_title": "GXO signs letter of intent with Apptronik for up to 1,000 Apollo humanoids, if trials succeed",
+  "analysis": [
+   "A letter of intent with a ceiling of 1,000 robots over four years is a statement of direction, not a delivery schedule. The useful detail is the gating: each workflow has to clear its own KPIs before it scales, which means the eventual fleet size will depend on how many of the listed tasks Apollo can do reliably in live sites."
+  ],
+  "disclaimer": "This article reports a company announcement. The rollout figures are the companies' stated intentions, subject to conditions, and have not been independently verified. It is not investment advice."
+ },
+ {
+  "slug": "ubtech-yongda-400-u1-pro-humanoids-car-showrooms",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "cat": "Industry",
+  "title": "UBTECH agrees to supply 400 U1 Pro humanoids to car dealer Yongda for its showrooms",
+  "summary": "Yongda Auto will buy 400 of UBTECH's U1 Pro ultra-bionic humanoids for showrooms and customer service, with delivery planned this year; the contract value was not disclosed.",
+  "body": [
+   "UBTECH signed a strategic cooperation agreement with car dealer Yongda Auto on 11 November under which Yongda will buy 400 of UBTECH's U1 Pro ultra-bionic humanoid robots, <a href=\"https://www.yicai.com/news/103436828.html\">Yicai reported</a>, citing UBTECH. UBTECH plans to deliver the robots within this year, according to the report.",
+   "The robots are meant for product demonstrations, sales promotion and customer service in Yongda's dealerships, <a href=\"https://servospace.io/news/ubtech-yongda-400-u1-pro-humanoid-robots-car-dealer-order\">Servospace reported</a>. The two companies also plan to sell and lease robots through car retail, open a UBTECH experience centre in Shanghai and test store-in-store robot displays at selected Yongda outlets in eastern China. Yicai said the partners will also cooperate on industry applications, delivery services and data.",
+   "Neither company has disclosed the contract value. At the U1 Pro's list price of RMB 169,800, 400 units would come to about RMB 67.92 million (roughly $10.1 million) at list price, Servospace calculated, noting that this is an estimate and not the deal value. UBTECH told Chinese media it is the first large order it has disclosed for its ultra-bionic line, according to Servospace.",
+   "Yongda, a Hong Kong-listed luxury car dealer, describes its robot business in its interim report as being at the incubation and business-model validation stage, with no large-scale revenue yet, Servospace reported."
+  ],
+  "sources": [
+   {
+    "title": "Yicai: UBTECH and Yongda sign purchase contract for first batch of 400 U1 Pro humanoids (Chinese)",
+    "url": "https://www.yicai.com/news/103436828.html"
+   },
+   {
+    "title": "Servospace: UBTECH and Yongda Auto sign deal for 400 U1 Pro bionic humanoids for car showrooms",
+    "url": "https://servospace.io/news/ubtech-yongda-400-u1-pro-humanoid-robots-car-dealer-order"
+   }
+  ],
+  "image": {
+   "src": "src-img/ubtech-yongda-400-u1-pro-humanoids-car-showrooms-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Black humanoid robot under spotlights on an exhibition stage",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 12 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Black humanoid robot under spotlights on an exhibition stage, no people faces logos or text",
+    "sha256": "7beb5d3921742d86a1e828f570bd4e0072638a8d456a40c9d8b73088ec961ebf",
+    "recorded": "2026-11-12",
+    "approved_by": "Joshua all-out brief 2026-11-12: use bank PNG"
+   }
+  },
+  "seo_title": "UBTECH agrees to supply 400 U1 Pro humanoids to car dealer Yongda for its showrooms",
+  "analysis": [
+   "This is a channel deal, not a factory deployment. The buyer is a car retailer putting humanoids in showrooms and planning to resell or lease them, so the order says more about UBTECH building a consumer sales network than about robots doing production work. The real test will be whether Yongda reports any robot resale or leasing revenue."
+  ],
+  "disclaimer": "Order details come from the companies as reported by Yicai and Servospace. The contract value was not disclosed; the list-price figure is an estimate. This is not investment advice."
+ },
+ {
+  "slug": "beijing-embodied-robot-plan-200000-units-a-year-2028",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "cat": "Policy",
+  "title": "Beijing targets 200,000 embodied robots a year by 2028 in a new three-year plan",
+  "summary": "A Beijing action plan issued on 11 November sets 2028 goals for robot output capacity, compute, training data, component specs and safety rules for the city's embodied robot industry.",
+  "body": [
+   "The Beijing Municipal Bureau of Economy and Information Technology issued a three-year action plan for the city's embodied intelligent robot industry on 11 November, according to the <a href=\"https://www.beijing.gov.cn/zhengce/zhengcefagui/202611/t20261111_4942067.html\">notice published on the Beijing government portal</a>. The plan covers 2026 to 2028 and runs until 31 December 2028.",
+   "Its headline industrial goals for 2028 are to build up at least five internationally leading and ten domestically leading humanoid robot makers, and to give Beijing the capacity to produce 200,000 complete robots a year, using a mix of contract manufacturing and companies' own production lines. The wider Beijing, Tianjin and Hebei region is meant to hold 25% of China's complete-robot capacity, with more than 60% of key components sourced locally. <a href=\"http://bj.people.com.cn/n2/2026/1111/c14540-41748014.html\">People's Daily Online</a> summarised the plan as six programmes covering models, the supply chain, research, applications, the industry ecosystem and safety.",
+   "For AI training, the plan calls for new dedicated embodied-AI compute clusters totalling more than 50,000 PFLOPS and for more than one million hours of high-quality robot data collected in at least 100 real-world settings. It also asks for a testing ground built around real tasks, with a neutral evaluation and certification platform and public model rankings.",
+   "The document sets hardware targets for the robots themselves: a rated payload of more than 40% of the robot's own weight, a mean time between failures above 2,000 hours, a design life of more than five years and at least four hours of battery life in continuous work. Component goals include dexterous hands that cost less than 10,000 yuan each and batteries with an energy density of 350 Wh/kg.",
+   "On deployment, the bureau wants at least 20 benchmark use cases in industry, 20 in services such as elder care and retail, and 10 in special fields such as emergency response, plus at least 15 solutions that can be rolled out at scale. It also aims to foster at least 200 innovative small and mid-sized companies and to have local organisations lead or join work on at least 8 international and 30 national standards.",
+   "The safety section calls for testing and certification centres and a \"one machine, one code\" system to give each robot an identity and an auditable record across research, production, scrapping and recycling."
+  ],
+  "sources": [
+   {
+    "title": "Beijing Municipal Government: Notice on the action plan for high-quality development of the embodied intelligent robot industry, 2026 to 2028 (Chinese)",
+    "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202611/t20261111_4942067.html"
+   },
+   {
+    "title": "People's Daily Online Beijing: Six projects to accelerate Beijing's embodied robot industry (Chinese)",
+    "url": "http://bj.people.com.cn/n2/2026/1111/c14540-41748014.html"
+   }
+  ],
+  "image": {
+   "src": "src-img/beijing-embodied-robot-plan-200000-units-a-year-2028-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Two humanoid robots at a car-parts assembly station with sparks",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 12 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Two humanoid robots at a car-parts assembly station with sparks, no people faces logos or text",
+    "sha256": "03bb7f45ac218d46aa87a6e89f6970debb91794f74bd949fb1dba8cfc306345d",
+    "recorded": "2026-11-12",
+    "approved_by": "Joshua all-out brief 2026-11-12: use bank PNG"
+   }
+  },
+  "seo_title": "Beijing targets 200,000 embodied robots a year by 2028 in a new three-year plan",
+  "disclaimer": "This is a summary of a Chinese-language government document, translated by HumanoidBeat. It is not legal advice; see the official text for exact wording."
+ },
+ {
+  "slug": "xixuan-chuangzhi-ubtech-metax-robot-chip-500-million-yuan",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "cat": "Funding",
+  "title": "UBTECH and MetaX's robot chip venture Xixuan Chuangzhi raises 500 million yuan",
+  "summary": "The six-month-old Wuxi chip company says its 500 million yuan angel round values it at 4 billion yuan and will fund a robot SoC due in 2028.",
+  "body": [
+   "Xixuan Chuangzhi, an embodied AI chip company set up by humanoid maker UBTECH and Chinese GPU designer MetaX, has completed a 500 million yuan angel round, the <a href=\"https://www.cs.com.cn/ssgs/01/2026/11/12/detail_2026111210051774.html\">China Securities Journal reported</a> on 12 November, citing a post on UBTECH's WeChat account. The company's post-money valuation is 4 billion yuan.",
+   "GGV Capital and Matrix Partners China co-led the round, with Heli Capital, CDH, SAIC Hengxu Capital, Yaotu Capital and Zhengxuan Capital among the other investors, according to the report. Based in Wuxi, Xixuan Chuangzhi was founded in May 2026 by UBTECH, MetaX and industrial machinery parts maker Fenglong.",
+   "Its first chip is designed as a robot system-on-chip that handles both high-level reasoning and low-level motion control, a combination Chinese robot makers describe as putting the big brain and the small brain on one chip. <a href=\"https://zhidx.com/p/609605.html\">Zhidx reported</a> that the company says the chip is meant to outperform NVIDIA's Thor, and that it plans to use general-purpose GPU cores with a CUDA-like software stack for adapting AI frameworks and models on the device.",
+   "The company plans to give industry partners a development and validation platform in 2027 and to launch its first SoC with a full embodied AI solution in 2028. It said the money will go to chip and compute platform development, a software toolchain, hiring, and joint validation with robot makers ahead of volume delivery. The first products are aimed at robots working in semi-structured environments.",
+   "MetaX founder Chen Weiliang chairs the company and UBTECH founder Zhou Jian is vice chairman, according to Zhidx, citing corporate registry data. Chief executive Yang Xianbo was previously a senior vice president at New H3C."
+  ],
+  "sources": [
+   {
+    "title": "China Securities Journal: Embodied AI chip company Xixuan Chuangzhi completes 500 million yuan financing (Chinese)",
+    "url": "https://www.cs.com.cn/ssgs/01/2026/11/12/detail_2026111210051774.html"
+   },
+   {
+    "title": "Zhidx: MetaX and UBTECH team up on robot chips, raise 500 million yuan (Chinese)",
+    "url": "https://zhidx.com/p/609605.html"
+   }
+  ],
+  "image": {
+   "src": "src-img/xixuan-chuangzhi-ubtech-metax-robot-chip-500-million-yuan-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot inspecting cables under a raised data centre floor with a flashlight",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 12 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot inspecting cables under a raised data centre floor with a flashlight, no people faces logos or text",
+    "sha256": "f961cc4e3b2bbe6e36b01528156602574a3cb3329bc36b2d4f08603baf555f52",
+    "recorded": "2026-11-12",
+    "approved_by": "Joshua all-out brief 2026-11-12: use bank PNG"
+   }
+  },
+  "seo_title": "UBTECH and MetaX's robot chip venture Xixuan Chuangzhi raises 500 million yuan",
+  "disclaimer": "This article reports a funding announcement. The valuation and chip performance goals are the company's own statements as reported by Chinese media and have not been independently verified. It is not investment advice."
+ },
+ {
+  "slug": "joyson-delivers-first-robot-brain-backpack-to-unitree",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "cat": "Industry",
+  "title": "Joyson Electronics delivers its first robot brain backpack compute module to Unitree",
+  "summary": "Auto supplier Joyson says it handed Unitree its first high-performance robot brain backpack on 10 November, an add-on compute and power unit for Unitree's humanoids and quadrupeds.",
+  "body": [
+   "Chinese auto parts maker Joyson Electronics said it delivered its first high-performance robot brain backpack to Unitree Robotics on 10 November, moving the two companies' strategic partnership into the product delivery phase. The announcement was distributed through <a href=\"https://www.tmcnet.com/usubmit/2026/11/11/10479863.htm\">PR Newswire</a> on 11 November. <a href=\"https://www.yicai.com/news/103436211.html\">Yicai reported</a> that the unit was supplied by Joyson's Ningbo-based robotics subsidiary.",
+   "According to Joyson, the backpack combines an edge computing platform with an energy system and works with Unitree's humanoid, quadruped and wheeled robots. It can run as a standalone external compute module for perception, data collection, autonomous decision-making and motion control, and supports running embodied AI models on the robot itself. Joyson also says it improves energy management and significantly extends how long a robot can operate between charges. The company did not publish compute, power or battery figures.",
+   "The two companies are also jointly developing dexterous hands and an energy management system for high-performance solid-state batteries, Joyson said, with the goal of standardised components that can be mass-produced and used across different robot types.",
+   "Beyond components, the partnership targets industrial use: Joyson said the companies are working on data collection in automotive parts production, combined hardware and software, training industrial foundation models, pilot deployments on production lines and wider replication. Yicai said both sides expect further progress within the year."
+  ],
+  "sources": [
+   {
+    "title": "PR Newswire via TMCnet: Joyson Electronics Delivered First High-performance Robotic Brain Backpack to Unitree Robotics",
+    "url": "https://www.tmcnet.com/usubmit/2026/11/11/10479863.htm"
+   },
+   {
+    "title": "Yicai: Joyson Electronics delivers first high-compute robot brain backpack to Unitree (Chinese)",
+    "url": "https://www.yicai.com/news/103436211.html"
+   }
+  ],
+  "image": {
+   "src": "src-img/joyson-delivers-first-robot-brain-backpack-to-unitree-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Engineer seen from behind adjusting a humanoid robot on a lab test stand",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 12 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Engineer seen from behind adjusting a humanoid robot on a lab test stand, no people faces logos or text",
+    "sha256": "6b4ee01c1d9887c768fe08ac1aa5ce581b112e6e83bd42c8db8e622b58513f28",
+    "recorded": "2026-11-12",
+    "approved_by": "Joshua all-out brief 2026-11-12: use bank PNG"
+   }
+  },
+  "seo_title": "Joyson Electronics delivers its first robot brain backpack compute module to Unitree",
+  "analysis": [
+   "Bolting extra compute and battery onto a humanoid as a backpack is a practical way to run larger on-board models without redesigning the robot. Without published specifications, though, it is not yet possible to compare the unit with the compute already built into Unitree's robots or with modules from other suppliers."
+  ]
+ },
+ {
   "slug": "runway-praxis-1-open-weights",
   "date": "2026-11-11",
   "updated": "2026-11-11",
@@ -537,7 +820,7 @@
    "Humanoid makers are iterating quickly, and early buyers and partners want to know whether hardware bought or deployed today will be supported once the next generation arrives. Adcock's answer suggests Figure intends to keep F.03 units in service rather than retire them on a fixed schedule.",
    "<h2>What was not said</h2>",
    "Adcock gave no numbers for the F.03 fleet, no deployment sites and no timeline for a next-generation robot in these posts. Any claim that a \"Figure 4\" is near completion comes from the follower's question, not from Figure. HumanoidBeat treats the <a href=\"https://x.com/adcock_brett/status/2119127304265949511\">video post</a> and the <a href=\"https://x.com/adcock_brett/status/2119155644448305558\">reply</a> as the public record.",
-    "Figure later posted a hiring notice for a <a href=\"figure-ai-night-shift-coordinator-hiring.html\">night-shift coordinator to oversee humanoid robots</a>."
+   "Figure later posted a hiring notice for a <a href=\"figure-ai-night-shift-coordinator-hiring.html\">night-shift coordinator to oversee humanoid robots</a>."
   ],
   "sources": [
    {
@@ -2955,7 +3238,7 @@
    "In Google's description, ER 2 does not move motors directly. Developers declare low-level interfaces, such as vision-language-action (VLA) models, navigation APIs or custom functions, as tools that the model can call, and stream video, audio or text into it. Google says the model can then plan long tasks involving hundreds of decisions, check from video whether a step actually succeeded, retry failed steps without restarting a whole workflow, and coordinate teams of different robots that share an understanding of the workspace.",
    "The post gives some company-reported figures: Google says ER 2 pinpoints the video frame at which a key event happens, such as when to stop pouring a liquid, with 91.3% accuracy and a mean error of 0.96 seconds, and that it can read values from more than ten kinds of instruments, including dials, sight glasses, digital displays and thermometers. Google also points to tooling for testing behaviours in simulators such as MuJoCo-Warp and NVIDIA Isaac Sim, labelling demonstration videos, and training custom VLA models on its cloud.",
    "The announcement includes supportive comments from Boston Dynamics about its Spot quadruped inspection product, from data-collection start-up DeepReach, from Arm, and from A*STAR's materials research institute, which said it wants to use the model to help lab robots work with existing equipment. Google did not publish pricing in the post itself; it links to separate documentation and a DeepMind technical report. For other recent work on humanoid foundation models, see our report on <a href=\"alibaba-amap-lambda0-humanoid-model-human-video.html\">Alibaba Amap's Lambda-0</a> and our <a href=\"../topics/research.html\">research hub</a>.",
-    "Google DeepMind has since described a later robotics result: <a href=\"gemini-robotics-2-5-apollo-mercedes-kitting.html\">Gemini Robotics 2.5 helping Apollo 2 kit Mercedes parts</a>."
+   "Google DeepMind has since described a later robotics result: <a href=\"gemini-robotics-2-5-apollo-mercedes-kitting.html\">Gemini Robotics 2.5 helping Apollo 2 kit Mercedes parts</a>."
   ],
   "analysis": [
    "Opinion: Splitting a robot's software into a general 'planner' model and separate low-level skill models is becoming a common pattern, and putting the planner behind a cloud API lowers the barrier for humanoid makers that do not train their own large models. The figures are Google's own benchmarks, so independent tests on real humanoid deployments will matter more than the launch numbers."
@@ -3999,7 +4282,7 @@
    "<strong>Learning from people, not robots.</strong> Liber-0 is pretrained on more than 2.2 million hours of human experience. To turn human video into actions a robot can copy, LiberAI records hand motion with its LiberSense Glove, which the blog says is 0.3 mm thick and weighs 131 g. Its LEO robot platform uses dexterous hands, articulated wrists and a waist, with cameras placed to match how the human data was filmed. A shared \"embodiment representation\" tells the model about the body it is controlling.",
    "LiberAI says glove recordings scaled better than far larger amounts of web video in its tests, and that mixing them with limited robot data beat robot-only training while using 75% fewer robot demonstrations. For multi-step jobs, Liber-0 can optionally pair with a reasoning model such as GPT-6 Astra to plan intermediate goals.",
    "<a href=\"https://roboticsandautomationnews.com/2026/11/04/from-human-experience-to-robot-action-liberai-launches-liber-0-world-action-model/106378/\">Robotics &amp; Automation News</a> also covered the launch. A 36% success rate is far from deployment-ready, but it suggests human recordings could cut the cost of teaching robots each new task one demonstration at a time.",
-    "Runway later released <a href=\"runway-praxis-1-open-weights.html\">Praxis-1, an open-weight world action model for robots</a>."
+   "Runway later released <a href=\"runway-praxis-1-open-weights.html\">Praxis-1, an open-weight world action model for robots</a>."
   ],
   "sources": [
    {
@@ -4134,7 +4417,7 @@
    "<strong>Published specs.</strong> On its Atlas product page Boston Dynamics lists a height of 1.9 m (6.2 ft) and weight of 90 kg (198 lb), plus: battery life of 4 hours; weight capacity of 50 kg (110 lb) instantaneous and 30 kg (66 lb) sustained; 56 degrees of freedom; a reach of 2.3 m (7.5 ft); and continuous range of motion in its joints. Those are the company's own figures. What a degree of freedom means is explained in <a href=\"humanoid-robot-degrees-of-freedom-explained.html\">degrees of freedom explained</a>.",
    "<strong>Working without stopping.</strong> Boston Dynamics says Atlas autonomously walks to a charging station and swaps out its own battery before returning to work. It also says Atlas needs minimal supervision for material handling, supports barcode scanning and workflow integrations, and connects to factory and warehouse systems through its Orbit software. When one Atlas learns a skill, the company says it can be deployed across the fleet.",
    "<strong>How it compares.</strong> For context on battery life across makers, see <a href=\"published-humanoid-runtimes-and-recharge-times.html\">published humanoid runtimes</a>. Boston Dynamics has not published a price for Atlas; our <a href=\"humanoid-robot-prices-compared-2026.html\">price comparison</a> lists the makers that have.",
-    "Boston Dynamics later showed a research testbed that <a href=\"atlas-wheels-motor-research.html\">puts Atlas on wheels to push its motors</a>."
+   "Boston Dynamics later showed a research testbed that <a href=\"atlas-wheels-motor-research.html\">puts Atlas on wheels to push its motors</a>."
   ],
   "disclaimer": "Specifications are Boston Dynamics' published figures and have not been independently tested. Boston Dynamics is majority-owned by Hyundai Motor Group; this is not investment advice.",
   "sources": [
