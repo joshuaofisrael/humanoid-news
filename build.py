@@ -162,9 +162,9 @@ def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None
 <link rel="alternate" type="application/rss+xml" title="{NAME}" href="{r}feed.xml"><link rel="stylesheet" href="{r}assets/style.css?v={ASSET_VER}">
 """ + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds) + f"""</head><body>
 <a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
-<header class="site-h"><div class="w"><a class="logo" href="{SITE_URL}/" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{SITE_URL}/">News</a><a href="{r}about.html">About</a><a href="{r}contact.html">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
+<header class="site-h"><div class="w"><a class="logo" href="{SITE_URL}/" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{SITE_URL}/">News</a><a href="{r}topics/">Topics</a><a href="{r}about.html">About</a><a href="{r}contact.html">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
 <main id="main">{content}</main>
-<footer class="site-f"><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}standards.html">Editorial standards</a> · <a href="{r}corrections.html">Corrections</a> · <a href="{r}contact.html">Contact</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}image-policy/">Image policy</a> · <a href="{r}feed.xml">RSS</a></p>
+<footer class="site-f"><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}topics/">Topics</a> · <a href="{r}standards.html">Editorial standards</a> · <a href="{r}corrections.html">Corrections</a> · <a href="{r}contact.html">Contact</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}image-policy/">Image policy</a> · <a href="{r}feed.xml">RSS</a></p>
 </div></footer>
 <script defer src="{r}assets/app.js?v={ASSET_VER}"></script>{beacon}</body></html>"""
     p = os.path.join(OUT, path); os.makedirs(os.path.dirname(p) or OUT, exist_ok=True); open(p, "w", encoding="utf-8").write(h)
@@ -426,7 +426,16 @@ for h in HUBS:
         hld = {"@context": "https://schema.org", "@graph": [{k: v for k, v in hld.items() if k != "@context"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in g["faq"]]}]}
     ht = f"{h['h1']} | HumanoidBeat"
     page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], HUB_META.get(h["slug"]) or ((h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"]),
-         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{gh}{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › <a href="{SITE_URL}/topics/">Topics</a></p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{gh}{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+# Topic index
+if HUBS:
+    lis = "".join(f'<li><a href="{h["slug"]}.html"><strong>{esc(h["name"])}</strong></a> <span class="meta">({len(h["items"])} stories)</span><br>{esc(h["intro"])}</li>' for h in HUBS)
+    ild = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Humanoid robot topics", "url": f"{SITE_URL}/topics/", "description": "Browse HumanoidBeat by company and theme. Each hub lists matching stories, newest first, with sources on the article.", "publisher": PUB,
+           "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE_URL}/topics/{h['slug']}.html", "name": h["name"]} for i, h in enumerate(HUBS)]}}
+    page("topics/index.html", "Humanoid robot topics | HumanoidBeat",
+         "Browse HumanoidBeat by company and theme: Figure, Unitree, Agility, NVIDIA, deployments, research, funding and regional coverage.",
+         f'<div class="prose page"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>Topics</h1><p>These pages group our humanoid robot reporting by company and theme. The sources for each claim live on the story.</p><ul class="hub-list">{lis}</ul></div>', 1, ild)
+
 # ---------------------------------------------------------------- deployment tracker (evergreen, linkable; every row links to a sourced story)
 TRK = json.load(open("content/tracker.json")) if os.path.exists("content/tracker.json") else []
 _bys = {a["slug"]: a for a in A}
@@ -464,7 +473,7 @@ page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="pr
 _img_pol = """<h1>Image policy</h1><p>Most images on HumanoidBeat are AI-generated illustrations. They do not show real events, real photographs or real people as they actually appeared, and they are not photos of the events we report. Each one carries a "Source" link under the image that leads to this page.</p><p>Some articles use Creative Commons photographs. These are credited under the image with the photographer, the licence and a link to the original.</p>"""
 page("image-policy/index.html", f"Image policy | {NAME}", f"Image policy for {NAME}: how AI-generated and Creative Commons images are labelled.", f'<div class="prose page">{_img_pol}</div>', 1)
 
-urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + ([(TRK_PATH, _upd, None)] if TRK_PATH else []) + [(f, BUILD_DATE, None) for f in legal] + [("image-policy/", BUILD_DATE, None)]
+urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + ([("topics/", max(h["items"][0].get("updated", h["items"][0]["date"]) for h in HUBS), None)] if HUBS else []) + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + ([(TRK_PATH, _upd, None)] if TRK_PATH else []) + [(f, BUILD_DATE, None) for f in legal] + [("image-policy/", BUILD_DATE, None)]
 def sm(u, d, im):
     x = f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod>"
     if im: x += f"<image:image><image:loc>{im['url']}</image:loc></image:image>"
@@ -476,7 +485,7 @@ bots = ["Googlebot", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "Clau
 open(OUT + "/ads.txt", "w").write("google.com, pub-5681559774142917, DIRECT, f08c47fec0942fa0\n")
 open(OUT + "/robots.txt", "w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/news-sitemap.xml\n")
 open(OUT + f"/{INDEXNOW_KEY}.txt", "w").write(INDEXNOW_KEY)
-open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + "\n## Topics\n" + "".join(f"- [{h['h1']}]({SITE_URL}/topics/{h['slug']}.html)\n" for h in HUBS) + (f"\n## Resources\n- [Humanoid robot deployment tracker]({SITE_URL}/{TRK_PATH}): every humanoid pilot and deployment we have reported, with sources\n" if TRK_PATH else "") + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [Image policy]({SITE_URL}/image-policy/)\n- [RSS]({SITE_URL}/feed.xml)\n")
+open(OUT + "/llms.txt", "w").write(f"# {NAME}\n\n> {DESC}\n\n## Articles\n" + "".join(f"- [{a['title']}]({SITE_URL}/news/{a['slug']}.html): {a['summary']}\n" for a in A) + "\n## Topics\n- [Topics](" + SITE_URL + "/topics/): Hubs by company and theme\n" + "".join(f"- [{h['h1']}]({SITE_URL}/topics/{h['slug']}.html)\n" for h in HUBS) + (f"\n## Resources\n- [Humanoid robot deployment tracker]({SITE_URL}/{TRK_PATH}): every humanoid pilot and deployment we have reported, with sources\n" if TRK_PATH else "") + f"\n## About\n- [About]({SITE_URL}/about.html)\n- [Editorial standards]({SITE_URL}/standards.html)\n- [Corrections]({SITE_URL}/corrections.html)\n- [Contact]({SITE_URL}/contact.html)\n- [Image policy]({SITE_URL}/image-policy/)\n- [RSS]({SITE_URL}/feed.xml)\n")
 def rfc(d): return datetime.datetime.fromisoformat(d + "T12:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
 def rfc_article(a):
     raw = (a.get("publish_at") or "").strip()
