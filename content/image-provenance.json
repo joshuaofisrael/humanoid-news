@@ -118,6 +118,13 @@
   "scene": "A slim grey humanoid robot holding a plain cardboard box tucked under one arm beside warehouse shelving (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/asus-gallop-humanoid-motherboard-packing-pilots-2027-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Mechanical robot hand gently holding an egg under studio light, no people faces logos or text",
+  "sha256": "740f5bffe4f1d683bdf9f6fa058f9e7f5bb496cd4fe1cfa856e9f7498cb8a204",
+  "recorded": "2026-11-13"
+ },
  "src-img/atlas-wheels-motor-research-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
@@ -856,6 +863,13 @@
   "legacy": true,
   "scene": "A white humanoid robot holding a stamped black metal vehicle panel on a car assembly line",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/topstar-star-industrial-humanoid-tops-day-2026-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot stacking boxes on a pallet at a loading dock at night, no people faces logos or text",
+  "sha256": "0dfa8deaca144c7bb4bb81c6dcd510be6f4645f7f4df3a3c66531894bc9e646b",
+  "recorded": "2026-11-13"
  },
  "src-img/toyota-honda-humanoid-factory-trials-japan-hero.jpg": {
   "origin": "ai-generated",

@@ -1,5 +1,101 @@
 [
  {
+  "slug": "asus-gallop-humanoid-motherboard-packing-pilots-2027",
+  "date": "2026-11-13",
+  "updated": "2026-11-13",
+  "cat": "Industry",
+  "title": "ASUS unveils Gallop, a humanoid learning to pack motherboard accessories, with customer pilots planned for 2027",
+  "summary": "ASUS says its first humanoid robot is training at a group electronics factory, aiming for 99.5% success within 20 seconds per board, with market availability targeted for the second half of 2028.",
+  "body": [
+   "Taiwanese computer maker ASUS has introduced Gallop, its first humanoid robot, and says the machine is already learning a real job in one of its group factories. According to an <a href=\"https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/\">ASUS pressroom post</a>, Gallop is training at an electronics manufacturing services (EMS) plant to pack motherboard accessories, a station built for human workers. Customer pilots are planned for 2027, with market availability targeted for the second half of 2028.",
+   "ASUS chose a hard first task. The station involves 15 small parts, many of them in thin, clear bags, and takes a person about 20 seconds per board. The company says its target is 99.5% success within 20 seconds, the same standard it holds people to. Small, thin and soft parts are exactly what simple grippers struggle with, which is why ASUS wants two arms and dexterous hands at an unchanged human workstation.",
+   "The robot learns mostly by watching skilled workers. ASUS says experienced staff wear a small head camera, with their consent, so Gallop can see how the job is really done; simulation then generates variations of each example, and an operator wearing a VR headset and gloves guides the robot through the task on the same parts and cameras as the real station. ASUS says it does not build its own giant AI model but starts from leading open models and swaps in better ones as they arrive, thanks to a modular design. <a href=\"https://interestingengineering.com/ai-robotics/asus-gallop-humanoid-robot-unveiled\">Interesting Engineering</a> reported the same targets and timeline.",
+   "ASUS co-CEO S.Y. Hsu first introduced the robot in a CNBC interview, the company says. ASUS has not published a price, a production volume or test success rates to date, so the 99.5% figure is a goal rather than a result."
+  ],
+  "sources": [
+   {
+    "title": "ASUS Pressroom: Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
+    "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/"
+   },
+   {
+    "title": "Interesting Engineering: ASUS builds humanoid robot to pack tiny parts in electronics factories",
+    "url": "https://interestingengineering.com/ai-robotics/asus-gallop-humanoid-robot-unveiled"
+   }
+  ],
+  "image": {
+   "src": "src-img/asus-gallop-humanoid-motherboard-packing-pilots-2027-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Mechanical robot hand gently holding an egg under studio light",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 13 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Mechanical robot hand gently holding an egg under studio light, no people faces logos or text",
+    "sha256": "740f5bffe4f1d683bdf9f6fa058f9e7f5bb496cd4fe1cfa856e9f7498cb8a204",
+    "recorded": "2026-11-13",
+    "approved_by": "Daily news brief 2026-11-13: image bank first"
+   }
+  },
+  "seo_title": "ASUS unveils Gallop, a humanoid learning to pack motherboard accessories, with customer pilots planned for 2027",
+  "analysis": [
+   "ASUS is pitching an advantage most humanoid start-ups lack: its own factories to test in, on real parts and under real quality rules. A single packing station with a published success target is a narrower, more checkable claim than a general-purpose demo, and the 2027 pilots will show whether Gallop can hit it without a person standing beside it."
+  ]
+ },
+ {
+  "slug": "topstar-star-industrial-humanoid-tops-day-2026",
+  "date": "2026-11-13",
+  "updated": "2026-11-13",
+  "cat": "Industry",
+  "title": "Topstar unveils Star, a 172 cm industrial humanoid for sorting and material handling",
+  "summary": "The Dongguan automation firm showed its first full-size bipedal humanoid on 11 November, with two 7-axis arms carrying 10 kg each. It has not given a production timeline or price.",
+  "body": [
+   "Chinese industrial robot maker Topstar has unveiled Star, its first full-size bipedal humanoid. The robot was shown at the company's TOPS DAY 2026 open day in Dongguan on 11 November, <a href=\"https://theroboticsmedia.com/article/topstar-star-industrial-humanoid-robot\">The Robotics Media reports</a>, citing Pandaily. Star stands 172 cm tall and weighs 72 kg, figures that match <a href=\"https://www.topstarltd.com/lang-cn/newsview/2538.html\">Topstar's own release</a>.",
+   "Each of its two arms has seven axes and a 10 kg load capacity, with cross-axis wrist joints meant to move more like a human wrist than a conventional industrial arm. Topstar says Star's main jobs will be material handling and sorting, work it already automates with wheeled robots and fixed workstations in customer factories.",
+   "Topstar describes the plan as a closed loop of scenario, robot, data and AI: Star is meant to gather physical scene data during real operations and feed it back into the models that control it, rather than relying only on simulation, <a href=\"https://autonews.gasgoo.com/articles/news/topstar-unveils-industrial-bipedal-humanoid-robot-star-2120371531565408257\">Gasgoo reports</a>. The humanoid joins a line-up that already includes wheeled sorting robots and Xingzai, a quadruped launched in January 2026 for inspection and forest-firefighting work.",
+   "At the same event the company showed the S400, a five-axis machine built by its subsidiary Avmi for precision machining of humanoid robot joints, and announced a procurement agreement with Kaihang Technology. Topstar has not disclosed a mass-production timeline, pricing or initial customers for Star.",
+   "The launch adds another factory-focused humanoid to a busy week for Chinese makers, after UBTech's 400-unit U1 Pro order from car dealer Yongda, which <a href=\"/news/ubtech-yongda-400-u1-pro-humanoids-car-showrooms.html\">we covered on Thursday</a>."
+  ],
+  "sources": [
+   {
+    "title": "The Robotics Media: Topstar Unveils Star Industrial Humanoid Robot in China",
+    "url": "https://theroboticsmedia.com/article/topstar-star-industrial-humanoid-robot"
+   },
+   {
+    "title": "Topstar: TOPS DAY 2026 news release (Chinese)",
+    "url": "https://www.topstarltd.com/lang-cn/newsview/2538.html"
+   },
+   {
+    "title": "Gasgoo: Topstar Unveils Industrial Bipedal Humanoid Robot Star",
+    "url": "https://autonews.gasgoo.com/articles/news/topstar-unveils-industrial-bipedal-humanoid-robot-star-2120371531565408257"
+   }
+  ],
+  "image": {
+   "src": "src-img/topstar-star-industrial-humanoid-tops-day-2026-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot stacking boxes on a pallet at a loading dock at night",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 13 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot stacking boxes on a pallet at a loading dock at night, no people faces logos or text",
+    "sha256": "0dfa8deaca144c7bb4bb81c6dcd510be6f4645f7f4df3a3c66531894bc9e646b",
+    "recorded": "2026-11-13",
+    "approved_by": "Daily news brief 2026-11-13: image bank first"
+   }
+  },
+  "seo_title": "Topstar unveils Star, a 172 cm industrial humanoid for sorting and material handling"
+ },
+ {
   "slug": "agile-robots-500m-series-f-softbank-8-5-billion",
   "date": "2026-11-12",
   "updated": "2026-11-12",
