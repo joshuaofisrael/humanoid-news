@@ -297,6 +297,13 @@
   "scene": "Rows of identical white humanoid robots practising tasks at assembly stations while overhead cameras record them (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/genki-robotics-humanoid-debut-takaichi-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Silhouette of a humanoid robot on a grassy hill at sunset, no people faces logos or text",
+  "sha256": "dc2b129d2865b61ff86b41708aebcee835944effdb015f862297243eeac97c65",
+  "recorded": "2026-11-14"
+ },
  "src-img/google-gemini-robotics-er-2-public-preview-google-cloud-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -755,6 +762,13 @@
   "prompt": "Photorealistic photo: Mechanical robot hand gently holding an egg under studio light, no people faces logos or text",
   "sha256": "740f5bffe4f1d683bdf9f6fa058f9e7f5bb496cd4fe1cfa856e9f7498cb8a204",
   "recorded": "2026-11-10"
+ },
+ "src-img/nvidia-soma-retargeter-v0-2-five-humanoids-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Low-angle shot of humanoid robot legs climbing concrete stairs, no people faces logos or text",
+  "sha256": "b129c423e4d2735f1123f670b8a0cbaafb63c3f0feeaed8ba9c7be9840e18286",
+  "recorded": "2026-11-14"
  },
  "src-img/primebot-reports-10000-personal-robots-produced-hero.jpg": {
   "origin": "ai-generated",

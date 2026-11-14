@@ -1,5 +1,104 @@
 [
  {
+  "slug": "genki-robotics-humanoid-debut-takaichi",
+  "date": "2026-11-14",
+  "updated": "2026-11-14",
+  "cat": "Industry",
+  "title": "Andy Rubin's Genki Robotics shows its humanoid in public for the first time, to Japan's prime minister",
+  "summary": "The Tokyo start-up brought a freshly built prototype to Sanae Takaichi's 12 November meeting on physical AI and says its first product model is due toward the end of the year.",
+  "body": [
+   "Genki Robotics, the Tokyo humanoid start-up founded by Android creator Andy Rubin, has shown its robot in public for the first time. According to <a href=\"https://www.humanoidsdaily.com/news/genki-robotics-humanoid-debut-takaichi-kantei\">Humanoids Daily</a>, the company brought it to a meeting with Prime Minister Sanae Takaichi at the Prime Minister's Office on 12 November, where Rubin, its chief executive, and chief technology officer Koichi Nishiwaki represented the firm.",
+   "The unit was very new. Genki said the last parts arrived the previous Friday, the team assembled it over the weekend and it took its first steps on Monday, Humanoids Daily reports. At the meeting the full-size biped stood on a fixed support rather than walking, while video beside it showed it walking and doing tabletop work, <a href=\"https://robottoday.com/industry-briefing/genki-robotics-shows-humanoid-prototype-to-japan-s-prime-minister-sanae-takaichi/18128\">RobotToday</a> says.",
+   "Genki told the meeting it has been through several rounds of prototypes and is building its first product model toward the end of the year. It listed target abilities as walking on flat ground and stairs, patrolling and carrying objects, and said it designs its own hardware, from joint actuators to cameras, drawing on Japanese component makers and supply chains. RobotToday reports the company is also talking to Japanese telecom operators about connecting the robot to mobile networks, with no agreement or timeline disclosed.",
+   "Humanoids Daily reports that Rubin co-founded the company in May 2025, that it raised a seed round of about $50 million, and that it was reported in April to have reached a valuation of about $1 billion in a Series A.",
+   "The meeting was part of the government's physical AI push. In <a href=\"https://japan.kantei.go.jp/105/actions/202611/12ikenkoukan.html\">remarks published by the Prime Minister's Office</a>, Takaichi said her cabinet has made physical AI one of 17 strategic fields under the Japan Growth Strategy, with targets of about 10 million AI-powered robots deployed by 2040 and a 20 trillion yen market, more than 30 percent of the global total."
+  ],
+  "sources": [
+   {
+    "title": "Humanoids Daily: Genki Robotics debuts its humanoid at the Prime Minister's Office",
+    "url": "https://www.humanoidsdaily.com/news/genki-robotics-humanoid-debut-takaichi-kantei"
+   },
+   {
+    "title": "Prime Minister's Office of Japan: Exchange of Views with Companies Involved in Physical AI",
+    "url": "https://japan.kantei.go.jp/105/actions/202611/12ikenkoukan.html"
+   },
+   {
+    "title": "RobotToday: Genki Robotics shows humanoid prototype to Japan's Prime Minister Sanae Takaichi",
+    "url": "https://robottoday.com/industry-briefing/genki-robotics-shows-humanoid-prototype-to-japan-s-prime-minister-sanae-takaichi/18128"
+   }
+  ],
+  "image": {
+   "src": "src-img/genki-robotics-humanoid-debut-takaichi-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Silhouette of a humanoid robot on a grassy hill at sunset",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 14 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Silhouette of a humanoid robot on a grassy hill at sunset, no people faces logos or text",
+    "sha256": "dc2b129d2865b61ff86b41708aebcee835944effdb015f862297243eeac97c65",
+    "recorded": "2026-11-14",
+    "approved_by": "Daily news brief 2026-11-14: image bank first"
+   }
+  },
+  "seo_title": "Andy Rubin's Genki Robotics shows its humanoid in public for the first time, to Japan's prime minister",
+  "analysis": [
+   "Genki is pitching an Android-style open platform for humanoids while leaning on Japanese suppliers for hardware. A robot that first walked days before its debut is a prototype, not a product, so the year-end product model is the next checkable milestone."
+  ]
+ },
+ {
+  "slug": "nvidia-soma-retargeter-v0-2-five-humanoids",
+  "date": "2026-11-14",
+  "updated": "2026-11-14",
+  "cat": "NVIDIA",
+  "title": "NVIDIA's open source SOMA Retargeter v0.2 maps human motion onto five humanoid robots",
+  "summary": "The release adds reference configurations for Unitree G1 and H2, Booster T1, and AgiBot X2 Ultra and A3T3, turning human motion-capture clips into robot joint trajectories for policy training.",
+  "body": [
+   "NVIDIA has published a walkthrough of SOMA Retargeter, an open source tool that adapts recorded or generated human motion to a specific humanoid robot's proportions and joints. In a <a href=\"https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/\">post on its developer blog</a>, the company says the v0.2 release includes reference configurations and retargeted examples for five robots: Unitree G1, Unitree H2, Booster T1, AgiBot X2 Ultra and AgiBot A3T3.",
+   "The problem it addresses is simple to state: a robot cannot copy a person's joint angles directly because its limbs, joints and range of motion differ. NVIDIA says the tool reads a BVH animation on its shared SOMA skeleton, scales the motion targets to the robot, solves inverse kinematics using Newton, built on NVIDIA Warp, and applies corrections such as foot-plant adjustment.",
+   "The output is a CSV file with the robot's root position, orientation and joint angles for each frame. NVIDIA says those trajectories can be converted into motion-library formats for policy training workflows such as SONIC and ProtoMotions, then checked in simulation for balance, contact and tracking.",
+   "Input motion can come from motion capture, from video reconstruction with GEM-X, or from generative models such as Kimodo and ARDY, according to the blog. The release ships sample clips supplied by Bones from its BONES-SEED dataset, and the code is on <a href=\"https://github.com/NVIDIA/soma-retargeter\">GitHub</a>."
+  ],
+  "sources": [
+   {
+    "title": "NVIDIA Technical Blog: Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
+    "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
+   },
+   {
+    "title": "GitHub: NVIDIA/soma-retargeter",
+    "url": "https://github.com/NVIDIA/soma-retargeter"
+   }
+  ],
+  "image": {
+   "src": "src-img/nvidia-soma-retargeter-v0-2-five-humanoids-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Low-angle shot of humanoid robot legs climbing concrete stairs",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 14 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Low-angle shot of humanoid robot legs climbing concrete stairs, no people faces logos or text",
+    "sha256": "b129c423e4d2735f1123f670b8a0cbaafb63c3f0feeaed8ba9c7be9840e18286",
+    "recorded": "2026-11-14",
+    "approved_by": "Daily news brief 2026-11-14: image bank first"
+   }
+  },
+  "seo_title": "NVIDIA's open source SOMA Retargeter v0.2 maps human motion onto five humanoid robots",
+  "analysis": [
+   "Retargeting is unglamorous plumbing, but it sits between the large pool of human motion data and the policies that make humanoids walk. Shipping ready-made configurations for popular research robots lowers the setup cost for labs that train on those platforms."
+  ]
+ },
+ {
   "slug": "asus-gallop-humanoid-motherboard-packing-pilots-2027",
   "date": "2026-11-13",
   "updated": "2026-11-13",
