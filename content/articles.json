@@ -1,5 +1,164 @@
 [
  {
+  "slug": "openai-disbands-standalone-robotics-team-humanoid-demo-2027",
+  "date": "2026-11-15",
+  "updated": "2026-11-15",
+  "cat": "Industry",
+  "title": "OpenAI folds its robotics team into core research but keeps a 2027 humanoid demo target",
+  "summary": "Fortune reported that OpenAI has disbanded its stand-alone robotics team, moving researchers under chief research officer Mark Chen and applied and hardware staff under president Greg Brockman. OpenAI says robotics remains core to its plans.",
+  "body": [
+   "OpenAI no longer has a stand-alone robotics team. The company confirmed the reorganisation to <a href=\"https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/\">Fortune</a>, which reported it as an exclusive on 13 November, and the industry account The Humanoid Hub <a href=\"https://x.com/TheHumanoidHub/status/2121845231733846454\">summarised the move on X</a> early on Sunday, noting that OpenAI is still building its own humanoid with a first public demo targeted for 2027.",
+   "According to Fortune, the robotics research team now reports to chief research officer Mark Chen as part of the main research organisation, while the applied robotics and hardware teams have moved into the larger Applied organisation under president Greg Brockman. A company spokesperson told Fortune that robotics remains a core part of OpenAI's long-term vision and presented the change as a sign of commitment rather than a retreat.",
+   "The stated reason is a bet that general-purpose models can control robots directly. Fortune reports that OpenAI researchers had expected at the start of the year to build on video models such as Sora, but that frontier models including GPT-6 Astra have since shown they can be applied to robotics. It cites an NVIDIA study in which an Astra-powered agent scored 74.8% on a simulated manipulation benchmark, against 51.0% for the best specialised robot models on that leaderboard. That result was in simulation, not on physical robots.",
+   "OpenAI wound down an earlier robotics team in 2020, Fortune notes. The timing was tight enough that OpenAI's registered booth at the CoRL robotics conference in Austin this week sat empty. <a href=\"https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/\">The Decoder</a>, which first described the move as a disbanding, updated its story after OpenAI clarified that robotics work continues."
+  ],
+  "sources": [
+   {
+    "title": "The Humanoid Hub on X: OpenAI has disbanded its stand-alone robotics team",
+    "url": "https://x.com/TheHumanoidHub/status/2121845231733846454"
+   },
+   {
+    "title": "Fortune: OpenAI disbands stand-alone robotics team as its general models start running robots",
+    "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+   },
+   {
+    "title": "The Decoder: OpenAI reassigns robotics researchers to other teams",
+    "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/"
+   }
+  ],
+  "image": {
+   "src": "src-img/openai-disbands-standalone-robotics-team-humanoid-demo-2027-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Silhouette of a humanoid robot on a foggy bridge railing overlooking a misty river",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 15 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Silhouette of a humanoid robot on a foggy bridge railing overlooking a misty river, no people faces logos or text",
+    "sha256": "2cda800efd0e311d84c6c17f2ab93f8b183478b8c94488888b8d0867c07502c1",
+    "recorded": "2026-11-15",
+    "approved_by": "Daily news brief 2026-11-15: image bank first"
+   }
+  },
+  "seo_title": "OpenAI folds its robotics team into core research but keeps a 2027 humanoid demo target",
+  "analysis": [
+   "If general models really can drive robot control, the advantage shifts toward companies with robots already deployed and collecting site-specific data, a point MIT professor Russ Tedrake made to Fortune. OpenAI's 2027 humanoid demo is now the checkable milestone for its own version of that bet."
+  ]
+ },
+ {
+  "slug": "apple-halo-unitree-g1-simulation-trained-humanoid",
+  "date": "2026-11-15",
+  "updated": "2026-11-15",
+  "cat": "Research",
+  "title": "Apple researchers train a Unitree G1 to move through unseen rooms using mostly simulated data",
+  "summary": "Apple's HALO system ran entirely on the robot and completed 91% of 360 single-task trials in six real environments, with no teleoperation data. Chained tasks were harder, averaging 70%.",
+  "body": [
+   "A team of Apple researchers has trained a Unitree G1 humanoid to walk to objects, sit on chairs, crawl under tables and push boxes in rooms it had never seen, learning mostly from motion data generated in simulation. <a href=\"https://www.humanoidsdaily.com/news/apple-halo-humanoid-synthetic-data-unitree-g1\">Humanoids Daily</a> detailed the system, called HALO, on 15 November; the <a href=\"https://arxiv.org/abs/2611.06908\">paper</a> was posted to arXiv earlier this month, and the code is on <a href=\"https://github.com/apple-aiml-research/ml-halo\">Apple's research GitHub</a>.",
+   "The robot completed 91% of 360 single-task trials across six real, unmapped environments without any teleoperation data, Humanoids Daily reports. Chaining skills was harder, with an average of 70% across three sequences, and some chains, such as crouching under a table and then sitting, worked in only 60% of tries in a single test environment.",
+   "The training data came from a pipeline that generates human-like motions with a diffusion model, places them in 1,000 procedurally generated rooms and renders them in NVIDIA's Isaac Sim from the robot's own camera viewpoint, producing about 296 hours of footage. Some human data remains, including public motion-capture clips used to train the motion tracker.",
+   "On the robot, an off-the-shelf vision-language model breaks a request such as \"go sit on the chair\" into steps, a motion generator plans a few seconds of whole-body movement from the camera image, and a reinforcement-learning tracker follows that plan at 50 Hz. The setup adds a wide-angle camera and a Mac mini on the robot's back, and runs untethered.",
+   "The authors list limits: each new skill still needs a person to write prompts and keyframes, the robot has no sense of touch, and none of the six skills involves grasping objects. Humanoids Daily notes the paper does not compare HALO with other published systems under matching conditions."
+  ],
+  "sources": [
+   {
+    "title": "Humanoids Daily: Apple's HALO teaches a Unitree G1 to navigate unseen rooms with simulation-generated data",
+    "url": "https://www.humanoidsdaily.com/news/apple-halo-humanoid-synthetic-data-unitree-g1"
+   },
+   {
+    "title": "arXiv: Perceptive Humanoid Motion from Simulation",
+    "url": "https://arxiv.org/abs/2611.06908"
+   },
+   {
+    "title": "GitHub: apple-aiml-research/ml-halo",
+    "url": "https://github.com/apple-aiml-research/ml-halo"
+   }
+  ],
+  "image": {
+   "src": "src-img/apple-halo-unitree-g1-simulation-trained-humanoid-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot carrying a cardboard box through a dusty residential attic",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 15 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot carrying a cardboard box through a dusty residential attic, no people faces logos or text",
+    "sha256": "184a2cd3379f478ed404ebc117d3724ace44e4cc98ba789f84992b27afeb40c7",
+    "recorded": "2026-11-15",
+    "approved_by": "Daily news brief 2026-11-15: image bank first"
+   }
+  },
+  "seo_title": "Apple researchers train a Unitree G1 to move through unseen rooms using mostly simulated data",
+  "analysis": [
+   "Replacing hours of teleoperation with generated data is the economic point here. The weak spots, chained tasks and no manipulation, are exactly where real deployments would demand more."
+  ]
+ },
+ {
+  "slug": "supermimic-humanoid-motion-tracker-training-minutes-one-gpu",
+  "date": "2026-11-15",
+  "updated": "2026-11-15",
+  "cat": "Research",
+  "title": "Open source humanoid motion trackers now train in minutes on one GPU after Berkeley's SuperMimic",
+  "summary": "A UC Berkeley paper and a string of community projects built on it cut training for a Unitree G1 whole-body motion tracker from days on GPU clusters to a few minutes in simulation. The community results have not been tested on real robots.",
+  "body": [
+   "Training a controller that lets a humanoid follow human motion clips used to take a GPU cluster. In under four weeks that has dropped to a few minutes on a single card, <a href=\"https://www.humanoidsdaily.com/news/supermimic-blinkmimic-xmimic-humanoid-motion-tracking-minutes\">Humanoids Daily reports</a>, thanks to a UC Berkeley paper and a run of open source projects built on top of it.",
+   "The paper, <a href=\"https://arxiv.org/abs/2610.28480\">SuperMimic</a>, was posted to arXiv on 20 October by a team including Pieter Abbeel and Koushil Sreenath. Instead of the usual model-free reinforcement learning, it trains a neural network to predict how the robot's body responds to actions, then improves the tracking policy by backpropagating through that learned model. The authors say three hours on one GPU beat a baseline trained for seven days on 128 GPUs, and that the policy transferred to a physical Unitree G1.",
+   "The paper shipped without code. An ETH Zürich researcher published an unofficial reimplementation the next day, and others followed: InstantTrack, BlinkMimic and XMimic each took the previous project's code and made it faster, Humanoids Daily says. The official Berkeley code appeared on GitHub around 10 November.",
+   "<a href=\"https://arxiv.org/abs/2611.16422\">BlinkMimic</a>, whose paper was posted on 12 November, reports reaching its target in 3.4 minutes on one RTX 4090, and XMimic reports 0.86 minutes on four H100s, both on a 40-clip benchmark in simulation. A community list, <a href=\"https://github.com/miao-org/awesome-supermimic\">awesome-supermimic</a>, now tracks more than 40 implementations and extensions.",
+   "The caveat is important: none of the community projects reports a test on a real robot, and their speed figures come from a narrow benchmark of 40 motion clips."
+  ],
+  "sources": [
+   {
+    "title": "Humanoids Daily: After SuperMimic, open-source humanoid motion trackers now train in minutes on one GPU",
+    "url": "https://www.humanoidsdaily.com/news/supermimic-blinkmimic-xmimic-humanoid-motion-tracking-minutes"
+   },
+   {
+    "title": "arXiv: SuperMimic, Scaling Humanoid Whole-Body Control with One Differentiable World Model",
+    "url": "https://arxiv.org/abs/2610.28480"
+   },
+   {
+    "title": "arXiv: BlinkMimic",
+    "url": "https://arxiv.org/abs/2611.16422"
+   },
+   {
+    "title": "GitHub: awesome-supermimic",
+    "url": "https://github.com/miao-org/awesome-supermimic"
+   }
+  ],
+  "image": {
+   "src": "src-img/supermimic-humanoid-motion-tracker-training-minutes-one-gpu-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Matte grey humanoid robot stacking folded gym mats against a cinderblock wall",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 15 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Matte grey humanoid robot stacking folded gym mats against a cinderblock wall, no people faces logos or text",
+    "sha256": "c4f33ba9a95097ab44ca08097d24f058e4c6d72f251a9415e369db5f11320c43",
+    "recorded": "2026-11-15",
+    "approved_by": "Daily news brief 2026-11-15: image bank first"
+   }
+  },
+  "seo_title": "Open source humanoid motion trackers now train in minutes on one GPU after Berkeley's SuperMimic",
+  "analysis": [
+   "Fast, cheap training puts whole-body control experiments within reach of small labs and hobbyists. The next proof point is whether the minute-scale policies hold up on hardware, where the original paper's three-hour result was tested."
+  ]
+ },
+ {
   "slug": "genki-robotics-humanoid-debut-takaichi",
   "date": "2026-11-14",
   "updated": "2026-11-14",

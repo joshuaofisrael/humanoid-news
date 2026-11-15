@@ -118,6 +118,13 @@
   "scene": "A slim grey humanoid robot holding a plain cardboard box tucked under one arm beside warehouse shelving (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/apple-halo-unitree-g1-simulation-trained-humanoid-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot carrying a cardboard box through a dusty residential attic, no people faces logos or text",
+  "sha256": "184a2cd3379f478ed404ebc117d3724ace44e4cc98ba789f84992b27afeb40c7",
+  "recorded": "2026-11-15"
+ },
  "src-img/asus-gallop-humanoid-motherboard-packing-pilots-2027-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
@@ -770,6 +777,13 @@
   "sha256": "b129c423e4d2735f1123f670b8a0cbaafb63c3f0feeaed8ba9c7be9840e18286",
   "recorded": "2026-11-14"
  },
+ "src-img/openai-disbands-standalone-robotics-team-humanoid-demo-2027-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Silhouette of a humanoid robot on a foggy bridge railing overlooking a misty river, no people faces logos or text",
+  "sha256": "2cda800efd0e311d84c6c17f2ab93f8b183478b8c94488888b8d0867c07502c1",
+  "recorded": "2026-11-15"
+ },
  "src-img/primebot-reports-10000-personal-robots-produced-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
@@ -861,6 +875,13 @@
   "legacy": true,
   "scene": "A graphite humanoid robot balancing on one leg in a motion-capture laboratory (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
+ },
+ "src-img/supermimic-humanoid-motion-tracker-training-minutes-one-gpu-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Matte grey humanoid robot stacking folded gym mats against a cinderblock wall, no people faces logos or text",
+  "sha256": "c4f33ba9a95097ab44ca08097d24f058e4c6d72f251a9415e369db5f11320c43",
+  "recorded": "2026-11-15"
  },
  "src-img/syndexy-c1-humanoid-first-small-batch-precision-assembly-hero.jpg": {
   "origin": "ai-generated",
