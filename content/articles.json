@@ -1,5 +1,93 @@
 [
  {
+  "slug": "lg-korea-robot-industry-association-humanoid-safety-standards",
+  "date": "2026-11-16",
+  "updated": "2026-11-16",
+  "cat": "Policy",
+  "title": "LG Electronics signs up to help write Korea's humanoid robot safety and quality tests",
+  "summary": "An agreement with the Korea Robot Industry Association covers testing procedures, certification and standards work, with pilot safety certifications planned for robots including LG's CLOiD. LG is preparing a bipedal humanoid for early 2027.",
+  "body": [
+   "LG Electronics has signed a memorandum of understanding with the Korea Robot Industry Association to develop safety and quality evaluation standards for humanoid robots, <a href=\"https://theaiinsider.tech/2026/11/16/lg-electronics-partners-with-korean-robotics-group-to-develop-humanoid-safety-standards/\">The AI Insider reports</a>. The agreement was signed on 13 November in Seoul.",
+   "The two sides will work on testing procedures, certification requirements and standards meant to judge how safe, reliable and usable humanoid robots are when they work alongside people. LG says it wants safety and quality testing to start earlier in development, before robots reach homes and workplaces.",
+   "Under the deal, LG will help set up the evaluation system for the association's Humanoid Robot Safety Certification Center and take part in developing national and international standards. The company also plans to pursue pilot safety certifications in South Korea for robots including its LG CLOiD.",
+   "The agreement comes as LG develops a bipedal robot based on NVIDIA reference technology, with an unveiling targeted for the first quarter of 2027, according to the report. LG has previously shown CLOiD learning manufacturing tasks at its LG Data Factory, which collects data used to train robots.",
+   "Kim Chang-min, head of LG's Quality Management Center, said the work would help LG become a robot brand customers can use with confidence. Association president Cho Young-hoon said trust in safety and quality is essential for humanoids to spread into daily life and industry."
+  ],
+  "sources": [
+   {
+    "title": "The AI Insider: LG Electronics partners with Korean robotics group to develop humanoid safety standards",
+    "url": "https://theaiinsider.tech/2026/11/16/lg-electronics-partners-with-korean-robotics-group-to-develop-humanoid-safety-standards/"
+   }
+  ],
+  "image": {
+   "src": "src-img/lg-korea-robot-industry-association-humanoid-safety-standards-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot carrying a wooden plank on a residential building site, no faces, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 16 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot carrying a wooden plank on a residential building site, no faces, logos or readable text, no people faces logos or text",
+    "sha256": "fe1140d266b1b4066d286444e8a097eaf2d9638bf2b1f4798f6e5965122e57df",
+    "recorded": "2026-11-16",
+    "approved_by": "Daily news brief 2026-11-16: image bank first"
+   }
+  },
+  "seo_title": "LG Electronics signs up to help write Korea's humanoid robot safety and quality tests",
+  "analysis": [
+   "Shared test methods matter more than any single robot launch if humanoids are to work near people. Being in the room when the rules are written also gives LG an early read on what its own 2027 robot will need to pass."
+  ]
+ },
+ {
+  "slug": "gitex-world-robotix-dubai-humanoid-exhibition-december",
+  "date": "2026-11-16",
+  "updated": "2026-11-16",
+  "cat": "Industry",
+  "title": "GITEX Global adds a dedicated robotics show in Dubai, with Unitree, UBTECH and Lumos humanoids on the list",
+  "summary": "GITEX World RobotiX runs from 8 to 11 December at Expo City Dubai. Lumos Robotics will bring its MOS 2 wheeled robot and NIX S3 humanoid, alongside exhibitors including Unitree, UBTECH, AiMOGA and DEEP Robotics.",
+  "body": [
+   "GITEX Global will hold its first dedicated robotics exhibition, GITEX World RobotiX, at the Dubai Exhibition Centre in Expo City Dubai from 8 to 11 December, <a href=\"https://roboticsandautomationnews.com/2026/11/15/gitex-global-to-showcase-latest-humanoid-robots-and-physical-ai-technologies-in-dubai/107161/\">Robotics and Automation News reports</a>. It will feature humanoid robots, autonomous mobile machines, quadrupeds, exoskeletons and robot development tools.",
+   "Named exhibitors include Unitree, UBTECH, AiMOGA, DEEP Robotics and UAE-based Micropolis Robotics. Chinese maker Lumos Robotics will give the Middle East debut of its MOS 2, a wheeled two-arm robot for industrial work that the company says can carry up to 50 kg and run for more than eight hours. Lumos will also run live demonstrations of its NIX S3 humanoid, which has 21 degrees of freedom.",
+   "Distributor Lootah Robotics plans to show machines from Unitree, AGIBOT, Pudu Robotics, UBTECH and EngineAI. On the computing side, JWIPC will introduce robot controllers based on NVIDIA's Thor module and Songying Technology will demonstrate its ORCA simulation and training software, according to the report.",
+   "The article cites Counterpoint Research figures putting global humanoid shipments above 22,000 units in the first half of 2026, up 300% year on year, with more than 50,000 expected by the end of the year. Those are the research firm's estimates.",
+   "GITEX World RobotiX is part of the 46th GITEX Global, which opens with a summit at Dubai World Trade Centre on 7 December. Organisers expect more than 6,000 exhibitors across the event and its associated shows."
+  ],
+  "sources": [
+   {
+    "title": "Robotics and Automation News: GITEX Global to showcase latest humanoid robots and physical AI technologies in Dubai",
+    "url": "https://roboticsandautomationnews.com/2026/11/15/gitex-global-to-showcase-latest-humanoid-robots-and-physical-ai-technologies-in-dubai/107161/"
+   }
+  ],
+  "image": {
+   "src": "src-img/gitex-world-robotix-dubai-humanoid-exhibition-december-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot seen from behind pulling a plain suitcase through an empty terminal, no logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 16 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot seen from behind pulling a plain suitcase through an empty terminal, no logos or readable text, no people faces logos or text",
+    "sha256": "30f315c5880015b77ebdc15c3f1cbb2f5896c3456cc83d171a22cc3ce88d3e75",
+    "recorded": "2026-11-16",
+    "approved_by": "Daily news brief 2026-11-16: image bank first"
+   }
+  },
+  "seo_title": "GITEX Global adds a dedicated robotics show in Dubai, with Unitree, UBTECH and Lumos humanoids on the list",
+  "analysis": [
+   "Trade shows mostly feature demonstrations rather than deployments. The Gulf is worth watching, though, as governments there fund pilots in hospitality and public services."
+  ]
+ },
+ {
   "slug": "openai-disbands-standalone-robotics-team-humanoid-demo-2027",
   "date": "2026-11-15",
   "updated": "2026-11-15",
