@@ -694,6 +694,13 @@
   "sha256": "3cac473bbde1c7e084bb0164b2ffae00258c96f459b3c1f16db883fad23ce618",
   "recorded": "2026-10-31"
  },
+ "src-img/lunate-boreas-humanoid-robots-etf-abu-dhabi-securities-exchange-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Row of partly built white humanoid robots on a factory assembly line with workers seen from behind, no faces, logos or readable text, no people faces logos or text",
+  "sha256": "85fc3476b520b6a72815f7f3dcbcdfded05c69dc68375cd71ee6a10ef8617181",
+  "recorded": "2026-11-17"
+ },
  "src-img/machenta-40m-seed-robots-learn-from-one-demonstration-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -827,6 +834,13 @@
   "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
   "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
   "recorded": "2026-11-04"
+ },
+ "src-img/robotera-xhand-1-pro-u-orders-nvidia-dexumi-gr00t-2-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Robotic hand gently holding an egg against a dark background, no logos or readable text, no people faces logos or text",
+  "sha256": "0123b4692449ff3a4e18cd2e138780b1487b5a53b4b0f26bce81c56c16ceff59",
+  "recorded": "2026-11-17"
  },
  "src-img/rokae-10000th-humanoid-force-controlled-arm-hero.jpg": {
   "origin": "ai-generated",
