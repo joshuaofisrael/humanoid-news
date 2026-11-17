@@ -1,5 +1,96 @@
 [
  {
+  "slug": "lunate-boreas-humanoid-robots-etf-abu-dhabi-securities-exchange",
+  "date": "2026-11-17",
+  "updated": "2026-11-17",
+  "cat": "Funding",
+  "title": "Abu Dhabi's Lunate plans a humanoid robot ETF on the Abu Dhabi Securities Exchange",
+  "summary": "The Boreas VettaFi Humanoid Robots UCITS ETF is expected to list on 8 December under the ticker ROBOTS, initially holding 41 companies across chips, robot parts, humanoid makers and software.",
+  "body": [
+   "Lunate, the Abu Dhabi investment firm, plans to launch an exchange-traded fund focused on humanoid robots, <a href=\"https://x.com/TheNationalNews/status/2122627719414349826\">The National reported on X</a> on Tuesday morning. According to <a href=\"https://www.thenationalnews.com/business/markets/2026/11/17/abu-dhabis-lunate-to-launch-humanoid-robot-focused-etf-on-adx/\">the newspaper's article</a>, Lunate said in a statement that the Boreas VettaFi Humanoid Robots UCITS ETF is expected to list on the Abu Dhabi Securities Exchange on 8 December under the ticker ROBOTS.",
+   "The fund will track the VettaFi Humanoid Robot Select Markets Net Total Return Index and will initially hold 41 companies from Asia, the US and Europe, The National says. They span four parts of the humanoid value chain: semiconductors, robot parts, humanoid robot developers and software. The article does not name the holdings or give the fund's fees.",
+   "Sherif Salem, partner and head of public markets at Lunate, called it the firm's fifth thematic offering on the exchange. The Boreas range already includes ETFs on AI data, power and infrastructure, quantum computing and luxury, and is listed on the ADX and Germany's Xetra. Lunate runs the range, with product development and research support from Northwind, its consultant on thematic ETF strategy.",
+   "Northwind chief executive Geir Espeskog said the fund aims to give exposure to humanoid developers and the supply chain behind them \"rather than try to pick a single winner\". The article also cites projections that annual humanoid shipments could rise from 20,000 in 2025 to 10 million in 2035, figures it does not attribute to a named forecaster."
+  ],
+  "sources": [
+   {
+    "title": "The National on X: Abu Dhabi's Lunate to launch humanoid robot-focused ETF on ADX",
+    "url": "https://x.com/TheNationalNews/status/2122627719414349826"
+   },
+   {
+    "title": "The National: Abu Dhabi to capitalise on humanoid robot boom with new index fund",
+    "url": "https://www.thenationalnews.com/business/markets/2026/11/17/abu-dhabis-lunate-to-launch-humanoid-robot-focused-etf-on-adx/"
+   }
+  ],
+  "image": {
+   "src": "src-img/lunate-boreas-humanoid-robots-etf-abu-dhabi-securities-exchange-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Row of partly built white humanoid robots on a factory assembly line with workers seen from behind, no faces, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 17 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Row of partly built white humanoid robots on a factory assembly line with workers seen from behind, no faces, logos or readable text, no people faces logos or text",
+    "sha256": "85fc3476b520b6a72815f7f3dcbcdfded05c69dc68375cd71ee6a10ef8617181",
+    "recorded": "2026-11-17",
+    "approved_by": "Daily news brief 2026-11-17: image bank first"
+   }
+  },
+  "seo_title": "Abu Dhabi's Lunate plans a humanoid robot ETF on the Abu Dhabi Securities Exchange",
+  "analysis": [
+   "Most of the best-known humanoid makers are still private, so a listed fund like this mostly buys suppliers and large technology groups rather than pure humanoid companies. The holdings list, once published, will show how much of the fund is really about humanoids."
+  ],
+  "disclaimer": "This is news reporting, not investment advice. Details come from Lunate's statement as reported by The National; the fund's prospectus and holdings had not been published when we checked."
+ },
+ {
+  "slug": "robotera-xhand-1-pro-u-orders-nvidia-dexumi-gr00t-2",
+  "date": "2026-11-17",
+  "updated": "2026-11-17",
+  "cat": "Industry",
+  "title": "Robotera opens orders for the XHAND 1 Pro-U, the robot hand used in NVIDIA's GR00T 2 DexUMI demos",
+  "summary": "The 16-degree-of-freedom hand is built to match NVIDIA's DexUMI wearable exoskeleton joint for joint, so human hand motion maps onto the robot. The first batch is 40 units, with no price published.",
+  "body": [
+   "Beijing company Robotera has opened commercial orders for the XHAND 1 Pro-U, a five-finger robot hand designed to match NVIDIA's DexUMI exoskeleton, <a href=\"https://www.humanoidsdaily.com/news/robotera-xhand-1-pro-u-dexumi-gr00t-2\">Humanoids Daily reports</a>. It is the hand NVIDIA used in its DexUMI demos of the GR00T 2 robot model, shown at the Conference on Robot Learning (CoRL) in Austin last week.",
+   "DexUMI is a wearable hand. A person puts it on and handles real objects while it records finger joint angles and fingertip forces. The XHAND 1 Pro-U has 16 degrees of freedom laid out to match the exoskeleton, so motion captured on a human hand maps directly onto the robot hand, according to the report.",
+   "Two of the hands ran on the Tianji dual-arm robot in the demos, in which the robot made banana yogurt and lit a lamp with a match. Robotera reports success rates of 60%, 80% and 75% on three multi-step tasks trained without teleoperation. Those are the company's figures, not independent results.",
+   "The first batch is limited to 40 units. Robotera has not published a price, weight or grip force, Humanoids Daily says. NVIDIA has released the DexUMI exoskeleton design files under a CC BY 4.0 licence, and the GR00T 2 model weights are due in December."
+  ],
+  "sources": [
+   {
+    "title": "Humanoids Daily: Robotera opens orders for XHAND 1 Pro-U, the hand in NVIDIA's GR00T 2 DexUMI demos",
+    "url": "https://www.humanoidsdaily.com/news/robotera-xhand-1-pro-u-dexumi-gr00t-2"
+   }
+  ],
+  "image": {
+   "src": "src-img/robotera-xhand-1-pro-u-orders-nvidia-dexumi-gr00t-2-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Robotic hand gently holding an egg against a dark background, no logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 17 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Robotic hand gently holding an egg against a dark background, no logos or readable text, no people faces logos or text",
+    "sha256": "0123b4692449ff3a4e18cd2e138780b1487b5a53b4b0f26bce81c56c16ceff59",
+    "recorded": "2026-11-17",
+    "approved_by": "Daily news brief 2026-11-17: image bank first"
+   }
+  },
+  "seo_title": "Robotera opens orders for the XHAND 1 Pro-U, the robot hand used in NVIDIA's GR00T 2 DexUMI demos",
+  "analysis": [
+   "Hands are one of the hardest parts of a humanoid, and data collection is the bottleneck for training them. A commercial hand that matches an open exoskeleton design gives labs a ready-made pairing for gathering human demonstrations, which could matter more than the hand itself."
+  ]
+ },
+ {
   "slug": "lg-korea-robot-industry-association-humanoid-safety-standards",
   "date": "2026-11-16",
   "updated": "2026-11-16",
