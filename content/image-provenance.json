@@ -318,6 +318,13 @@
   "sha256": "30f315c5880015b77ebdc15c3f1cbb2f5896c3456cc83d171a22cc3ce88d3e75",
   "recorded": "2026-11-16"
  },
+ "src-img/globalfoundries-atlas-early-adopter-first-chipmaker-spot-fabs-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Cleanroom workers in white suits seen from behind under yellow light, no faces, logos or readable text, no people faces logos or text",
+  "sha256": "fdc153661aa24196e8bf590d8785bda6ec8c91ca975e02bbeb8f71fff16f8519",
+  "recorded": "2026-11-18"
+ },
  "src-img/google-gemini-robotics-er-2-public-preview-google-cloud-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -383,6 +390,13 @@
   "prompt": "Photorealistic wide shot of five different generic humanoid robots of varying heights, builds and plain grey or white finishes, standing in a row like a product showroom display under soft studio lighting, clean minimalist white backdrop, no text, no logos, no brand markings, no human people, realistic metal and plastic surfaces, professional product photography style",
   "sha256": "368ea4d8ed73b08f23fa2b4a0c81760b11b57f7e2f95196d42e348ca73dafa5d",
   "recorded": "2026-11-02"
+ },
+ "src-img/hyundai-full-ownership-boston-dynamics-softbank-stake-atlas-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot working beside a hard-hatted worker at a car plant, worker seen from behind, no faces, logos or readable text, no people faces logos or text",
+  "sha256": "18033c30d0715983891cc093f78c53285cff8b2616b150a467b212911cb90701",
+  "recorded": "2026-11-18"
  },
  "src-img/hyundai-mobis-atlas-actuator-prototypes-uiwang-hero.jpg": {
   "origin": "ai-generated",
