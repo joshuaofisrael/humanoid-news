@@ -215,6 +215,13 @@
   "scene": "A long modern factory hall with many humanoid robots working along parallel production lines (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/chinese-humanoid-engineers-denied-us-visas-ces-2027-xpeng-engineai-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot seen from behind pulling a plain suitcase through an empty airport hall, no people, logos or readable text, no people faces logos or text",
+  "sha256": "30f315c5880015b77ebdc15c3f1cbb2f5896c3456cc83d171a22cc3ce88d3e75",
+  "recorded": "2026-11-19"
+ },
  "src-img/chinese-humanoid-makers-seek-trials-in-south-korea-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
