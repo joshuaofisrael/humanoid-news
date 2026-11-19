@@ -1,5 +1,55 @@
 [
  {
+  "slug": "chinese-humanoid-engineers-denied-us-visas-ces-2027-xpeng-engineai",
+  "date": "2026-11-19",
+  "updated": "2026-11-19",
+  "cat": "Policy",
+  "title": "One Chinese robot maker pulled out of CES after all 15 of its engineers were refused US visas",
+  "summary": "Engineers at several Chinese humanoid makers, including Xpeng and EngineAI, have been denied US visas ahead of CES in January, Nikkei Asia reports. Marketing staff were mostly approved; one company withdrew from the show.",
+  "body": [
+   "The engineers who make Chinese humanoids walk on stage may not make it to Las Vegas. \"Sources: technical staff at several Chinese humanoid robot makers have been denied US visas ahead of CES, hampering their efforts to showcase their hardware,\" <a href=\"https://x.com/Techmeme/status/2123292984716456052\">Techmeme posted on X</a> on Thursday, citing Nikkei Asia.",
+   "<a href=\"https://asia.nikkei.com/business/technology/us-visa-denials-hit-xpeng-other-chinese-robot-makers-ahead-of-ces\">Nikkei Asia</a> reports that researchers and engineers at several Chinese humanoid makers, including Xpeng and Engine AI, have been refused US visas ahead of the show in early January. According to <a href=\"https://eastfrontier.com/2026/11/19/chinese-robot-engineers-from-xpeng-and-engineai-denied-us-visas-before-ces/\">EastFrontier's summary of the report</a>, staff with science and engineering backgrounds were turned down for B-1/B-2 business and tourism visas, while most marketing employees were approved.",
+   "The losses are uneven. At least one Chinese robot maker has withdrawn from CES after all 15 of its technical staff failed to get visas, citing \"geopolitical complexities\", and at another about half of the applicants were rejected, according to people who spoke to Nikkei. Xpeng and EngineAI did not respond to Nikkei's requests for comment. AgiBot and Unitree remain on the exhibitor list, and people close to both said they still plan to send staff from mainland China.",
+   "Chris Pereira, founder of consultancy iMpact, told Nikkei that about 40% of his clients planning to attend CES had been refused, mostly AI and robotics executives and technical staff. He also pointed to Chinese restrictions on travel by AI talent, and expects more companies to choose shows in Europe and Singapore instead.",
+   "The refusals come after two US moves on imported robots this year: the FCC added foreign-made \"advanced robotic devices\", including humanoids, to its Covered List in July, and a Section 232 proclamation in October found that robotics imports threaten national security, without imposing tariffs yet, EastFrontier reports. Our <a href=\"/news/humanoid-robot-prices-compared-2026.html\">humanoid price guide</a> covers many of the Chinese models affected."
+  ],
+  "sources": [
+   {
+    "title": "Techmeme on X: technical staff at several Chinese humanoid robot makers denied US visas ahead of CES (Nikkei Asia) (19 Nov 2026)",
+    "url": "https://x.com/Techmeme/status/2123292984716456052"
+   },
+   {
+    "title": "Nikkei Asia: US visa denials hit Xpeng, other Chinese robot makers ahead of CES (19 Nov 2026)",
+    "url": "https://asia.nikkei.com/business/technology/us-visa-denials-hit-xpeng-other-chinese-robot-makers-ahead-of-ces"
+   },
+   {
+    "title": "EastFrontier: Chinese robot engineers from Xpeng and EngineAI denied US visas before CES (19 Nov 2026)",
+    "url": "https://eastfrontier.com/2026/11/19/chinese-robot-engineers-from-xpeng-and-engineai-denied-us-visas-before-ces/"
+   }
+  ],
+  "image": {
+   "src": "src-img/chinese-humanoid-engineers-denied-us-visas-ces-2027-xpeng-engineai-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot seen from behind pulling a plain suitcase through an empty airport hall, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 19 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot seen from behind pulling a plain suitcase through an empty airport hall, no people, logos or readable text, no people faces logos or text",
+    "sha256": "30f315c5880015b77ebdc15c3f1cbb2f5896c3456cc83d171a22cc3ce88d3e75",
+    "recorded": "2026-11-19",
+    "approved_by": "Daily news brief 2026-11-19: image bank first"
+   }
+  },
+  "seo_title": "One Chinese robot maker pulled out of CES after all 15 of its engineers were refused US visas",
+  "analysis": "Humanoid demos depend on the people who tune and run them, so refusing engineers while admitting marketers hits exactly the part of CES that matters. The test comes in January: whether Chinese booths show live robots, video loops or empty space."
+ },
+ {
   "slug": "tesla-optimus-factory-giga-texas-7-million-sq-ft-drone-steel-march-2027",
   "date": "2026-11-19",
   "updated": "2026-11-19",
