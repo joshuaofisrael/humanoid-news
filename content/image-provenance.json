@@ -183,6 +183,13 @@
   "sha256": "259b47149c850361a15362c7d6020c178cbffe8b77e758ef1f9f64b7515ca28f",
   "recorded": "2026-11-06"
  },
+ "src-img/brett-adcock-more-humanoids-than-humans-figure-hq-tesla-china-podcast-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot standing in a bright research lab with workbenches, no people, logos or readable text, no people faces logos or text",
+  "sha256": "ebed1c6a215c3d124c91405b8ad6a8aebc6873731054798554561f3b33200d82",
+  "recorded": "2026-11-19"
+ },
  "src-img/casbot-a-plus-plus-round-shoemaking-mining-robots-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",

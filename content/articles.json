@@ -1,5 +1,55 @@
 [
  {
+  "slug": "brett-adcock-more-humanoids-than-humans-figure-hq-tesla-china-podcast",
+  "date": "2026-11-19",
+  "updated": "2026-11-19",
+  "cat": "Industry",
+  "title": "\"More humanoids on campus than humans\": Brett Adcock takes aim at Tesla and China's dancing robots",
+  "summary": "On Peter Diamandis's podcast, recorded at Figure HQ, Figure's founder said he has not seen much from Tesla's humanoid in two or three years and that China's dance demos are the opposite of the work Figure does.",
+  "body": [
+   "Figure founder Brett Adcock says his company has crossed a symbolic line. \"We recorded at Figure HQ, we now have more humanoids on campus than humans,\" he <a href=\"https://x.com/adcock_brett/status/2123080663909978394\">posted on X</a> on Wednesday, announcing a new podcast with Peter Diamandis and Dave Blundin. Figure has not published head counts for either, so this is Adcock's own claim.",
+   "The episode is on <a href=\"https://www.youtube.com/watch?v=E864U582FVY\">YouTube</a> as \"Robotic Deep-Dive: Beating China, the Race Against Tesla, & New Robotics Timeline With Brett Adcock\". Its chapters cover when humanoids will enter homes, robot pricing and \"the Figure 4 breakthrough\", robots building other robots, and scaling production to millions of robots.",
+   "The sharpest moment came when Diamandis asked about the competition. In a clip <a href=\"https://x.com/TheHumanoidHub/status/2123144410976387104\">shared by The Humanoid Hub</a>, Diamandis asks: \"As you think about competition, is it Tesla and China?\" Adcock answers: \"I personally haven't seen much out of Tesla in two or three years. I've seen some teleoperated robots.\"",
+   "On China, Adcock said in the same clip: \"I've seen China do a lot of dancing.\" He argued that the neural network work behind dance demos is \"literally 180-degree different work\" from what Figure is building, adding that if Figure were told to out-dance China, \"we'd have to pivot everybody's strategy\".",
+   "Tesla did not respond in the clip, and the remarks are one competitor's view of another. Tesla has said it is building a dedicated Optimus factory in Austin; we have covered its <a href=\"/news/tesla-optimus-deliveries-late-2027.html\">delivery timeline</a> before."
+  ],
+  "sources": [
+   {
+    "title": "Brett Adcock on X: My podcast with Peter and David is now live (18 Nov 2026)",
+    "url": "https://x.com/adcock_brett/status/2123080663909978394"
+   },
+   {
+    "title": "The Humanoid Hub on X: Brett Adcock on Tesla and China (18 Nov 2026)",
+    "url": "https://x.com/TheHumanoidHub/status/2123144410976387104"
+   },
+   {
+    "title": "YouTube: Robotic Deep-Dive: Beating China, the Race Against Tesla, and New Robotics Timeline With Brett Adcock",
+    "url": "https://www.youtube.com/watch?v=E864U582FVY"
+   }
+  ],
+  "image": {
+   "src": "src-img/brett-adcock-more-humanoids-than-humans-figure-hq-tesla-china-podcast-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot standing in a bright research lab with workbenches, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 19 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot standing in a bright research lab with workbenches, no people, logos or readable text, no people faces logos or text",
+    "sha256": "ebed1c6a215c3d124c91405b8ad6a8aebc6873731054798554561f3b33200d82",
+    "recorded": "2026-11-19",
+    "approved_by": "Daily news brief 2026-11-19: image bank first"
+   }
+  },
+  "seo_title": "\"More humanoids on campus than humans\": Brett Adcock takes aim at Tesla and China's dancing robots",
+  "analysis": "Founders talking down rivals is nothing new, but the dance jab lands on a real debate: choreographed demos look impressive, while paid work in factories and warehouses is harder to film. Adcock's headcount claim is the easier one to check, if Figure ever shows the numbers."
+ },
+ {
   "slug": "agility-names-daniel-diez-president-sullivan-cpo-lang-cao",
   "date": "2026-11-19",
   "updated": "2026-11-19",
