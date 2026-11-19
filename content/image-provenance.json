@@ -962,6 +962,13 @@
   "scene": "A white humanoid robot holding a stamped black metal vehicle panel on a car assembly line",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/tesla-optimus-factory-giga-texas-7-million-sq-ft-drone-steel-march-2027-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Row of unfinished humanoid robot torsos with exposed wiring on a production line, no people, logos or readable text, no people faces logos or text",
+  "sha256": "b2ac0497c92034a71462e6d680a2727ca3d6a8d07134964119c868471fafd842",
+  "recorded": "2026-11-19"
+ },
  "src-img/topstar-star-industrial-humanoid-tops-day-2026-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot image bank",
