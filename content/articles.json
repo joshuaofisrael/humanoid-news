@@ -1,5 +1,101 @@
 [
  {
+  "slug": "agility-names-daniel-diez-president-sullivan-cpo-lang-cao",
+  "date": "2026-11-19",
+  "updated": "2026-11-19",
+  "cat": "Industry",
+  "title": "Two weeks after its Nasdaq debut, Agility reshuffles the top team: Daniel Diez becomes President",
+  "summary": "Chris \"Sully\" Sullivan, who joined in May, is now Chief Product Officer and Ana Lang becomes Chief Administrative Officer. Agility says Diez secured more than $300 million in committed multi-year Digit 5 orders.",
+  "body": [
+   "Agility Robotics has named a new President, Chief Product Officer and Chief Administrative Officer. <a href=\"https://x.com/agilityrobotics/status/2123069661487190053\">The company posted on X</a> on Wednesday: \"Daniel Diez is now President, Christopher “Sully” Sullivan is Chief Product Officer, and Ana Lang is Chief Administrative Officer.\"",
+   "According to <a href=\"https://www.agilityrobotics.com/content/agility-robotics-evolves-executive-leadership-team-to-support-next-phase-of-growth-as-a-public-company\">Agility's announcement</a>, Diez was previously Chief Business Officer and joined in 2024 as Chief Strategy Officer. As President he leads the whole commercial business. Agility credits him with more than $300 million in committed multi-year orders for Digit 5, which it describes as potential multi-year value subject to contractual milestones and product specifications. Before Agility he held senior roles at Magic Leap, including Chief Commercial Officer.",
+   "Sullivan joined in May 2026 as Vice President of Customer Success. He will now run product strategy for Digit, Agility Arc and future products, and keep the customer success team. He previously worked at Automated Tire, Onward Robotics, Berkshire Grey and Symbotic. Lang, previously Chief Legal and People Officer, keeps the legal and people functions, serves as General Counsel and Corporate Secretary, and takes on governance, compliance and risk as Agility operates as a public company.",
+   "\"Humanoid robots have moved from pilots to real work,\" Diez said in the release. \"As President, my focus is to scale our commercial business: more customers, larger deployments and new partnerships.\" Chief executive Peggy Johnson said the team is \"built to turn demand for Digit into deployments at scale\".",
+   "The changes come two weeks after Agility completed its merger with Churchill Capital Corp XI on 4 November and <a href=\"/news/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid.html\">began trading on Nasdaq as AGLT</a>. The company points to the <a href=\"/news/gxo-agility-digit-two-more-sites-three-manufacturing-customers.html\">expanded GXO deal and three paid manufacturing evaluations</a> and a <a href=\"/news/agco-agility-digit-pilot-hesston-kansas.html\">planned AGCO pilot</a> as the momentum behind the reshuffle. <a href=\"https://robottoday.com/industry-briefing/agility-robotics-names-daniel-diez-president-christopher-sullivan-chief-product-officer/18456\">RobotToday</a> notes that Agility gave no timeline for the AGCO pilot or the paid evaluations."
+  ],
+  "sources": [
+   {
+    "title": "Agility Robotics on X: three leadership appointments",
+    "url": "https://x.com/agilityrobotics/status/2123069661487190053"
+   },
+   {
+    "title": "Agility: Agility Robotics evolves executive leadership team to support next phase of growth as a public company (18 Nov 2026)",
+    "url": "https://www.agilityrobotics.com/content/agility-robotics-evolves-executive-leadership-team-to-support-next-phase-of-growth-as-a-public-company"
+   },
+   {
+    "title": "RobotToday: Agility Robotics names Daniel Diez President, Christopher Sullivan Chief Product Officer",
+    "url": "https://robottoday.com/industry-briefing/agility-robotics-names-daniel-diez-president-christopher-sullivan-chief-product-officer/18456"
+   }
+  ],
+  "image": {
+   "src": "src-img/agility-names-daniel-diez-president-sullivan-cpo-lang-cao-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot carrying a crate down a sunlit warehouse aisle, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 19 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people, logos or readable text, no people faces logos or text",
+    "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+    "recorded": "2026-11-19",
+    "approved_by": "Daily news brief 2026-11-19: image bank first"
+   }
+  },
+  "seo_title": "Two weeks after its Nasdaq debut, Agility reshuffles the top team: Daniel Diez becomes President",
+  "analysis": "Putting the head of sales in the President job and a deployment veteran in charge of product says where Agility thinks the pressure is now: turning the $300 million order figure, with its milestones and conditions, into robots working on customer sites."
+ },
+ {
+  "slug": "robotera-humanoids-11-china-post-hubs-guangdong-1500-parcels-hour",
+  "date": "2026-11-19",
+  "updated": "2026-11-19",
+  "cat": "Deployments",
+  "title": "ROBOTERA humanoids now sort parcels at 11 China Post hubs, at more than 1,500 an hour",
+  "summary": "The rollout spans eight cities in Guangdong after a pilot that began in Guangzhou in March. ROBOTERA also ran live parcel-sorting demos with its M7 robot at this week's APEC CEO Summit.",
+  "body": [
+   "Chinese humanoid maker ROBOTERA says its robots are now working across China Post's Guangdong network, at 11 postal hubs in eight cities: Guangzhou, Shenzhen, Dongguan, Jiangmen, Shantou, Shanwei, Jieyang and Heyuan. <a href=\"https://www.prnewswire.com/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941865.html\">The company announced the rollout</a> on 17 November and calls it the largest and most geographically spread deployment of embodied AI robots in logistics so far, a claim it does not back with comparison figures.",
+   "The project began as a pilot at the Guangzhou Postal District Center in March 2026. ROBOTERA says its robots average an induction rate of more than 1,500 parcels per hour, which it describes as comparable to experienced human workers. Induction is the step of placing parcels onto a sorting line. The company says the system rejects irregular items and adjusts its speed to cut jams and missed parcels, and uses ROBOTERA's own five-fingered hand.",
+   "ROBOTERA argues the robots help most at peak times, when parcel volumes can reach several times their normal level, and on night shifts. Guangdong is China's largest province by express parcel volume, the company notes. It says the same system has also been deployed in postal operations in East China.",
+   "Two days later, ROBOTERA said it had been invited to the APEC CEO Summit, held from 17 to 19 November, for the second year running. <a href=\"https://www.prnewswire.com/news-releases/robotera-invited-to-apec-ceo-summit-for-second-consecutive-year-showcases-real-world-humanoid-robot-applications-302945294.html\">According to that release</a>, its M7 humanoid ran live parcel-sorting demonstrations, and founder and chief executive Jianyu Chen gave a talk at APEC Finance Night titled \"Putting Robots to Work at Night\". The company says it now has deployments with China Post and SF Express, with robots operating in more than 10 logistics centres.",
+   "ROBOTERA has not published how many robots are in service, how long they run between charges in live shifts, or what China Post pays. Earlier this month the company opened orders for <a href=\"/news/robotera-xhand-1-pro-u-orders-nvidia-dexumi-gr00t-2.html\">its XHAND 1 Pro-U robot hand</a>, and our <a href=\"/humanoid-robot-deployment-tracker.html\">deployment tracker</a> follows announced rollouts like this one."
+  ],
+  "sources": [
+   {
+    "title": "PR Newswire: ROBOTERA expands humanoid robot deployment across China Post's Guangdong network (17 Nov 2026)",
+    "url": "https://www.prnewswire.com/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941865.html"
+   },
+   {
+    "title": "PR Newswire: ROBOTERA invited to APEC CEO Summit for second consecutive year (19 Nov 2026)",
+    "url": "https://www.prnewswire.com/news-releases/robotera-invited-to-apec-ceo-summit-for-second-consecutive-year-showcases-real-world-humanoid-robot-applications-302945294.html"
+   }
+  ],
+  "image": {
+   "src": "src-img/robotera-humanoids-11-china-post-hubs-guangdong-1500-parcels-hour-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot stacking boxes on a pallet at a loading dock at night, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 19 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot stacking boxes on a pallet at a loading dock at night, no people, logos or readable text, no people faces logos or text",
+    "sha256": "0dfa8deaca144c7bb4bb81c6dcd510be6f4645f7f4df3a3c66531894bc9e646b",
+    "recorded": "2026-11-19",
+    "approved_by": "Daily news brief 2026-11-19: image bank first"
+   }
+  },
+  "seo_title": "ROBOTERA humanoids now sort parcels at 11 China Post hubs, at more than 1,500 an hour",
+  "analysis": "Parcel induction is one of the clearest early jobs for humanoids: repetitive, measurable and easy to compare with a human rate. The 1,500-an-hour figure is the company's own, so the useful next disclosure would be uptime and robot count across the 11 hubs."
+ },
+ {
   "slug": "globalfoundries-atlas-early-adopter-first-chipmaker-spot-fabs",
   "date": "2026-11-18",
   "updated": "2026-11-18",

@@ -79,6 +79,13 @@
   "sha256": "ebed1c6a215c3d124c91405b8ad6a8aebc6873731054798554561f3b33200d82",
   "recorded": "2026-11-07"
  },
+ "src-img/agility-names-daniel-diez-president-sullivan-cpo-lang-cao-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot carrying a crate down a sunlit warehouse aisle, no people, logos or readable text, no people faces logos or text",
+  "sha256": "ced79553803280277e59940dad752ae0694fb8b652bed19c935e20e6c6abca85",
+  "recorded": "2026-11-19"
+ },
  "src-img/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage",
@@ -848,6 +855,13 @@
   "prompt": "Photorealistic photo: A white humanoid robot standing in a cluttered real-world test room beside a table of household objects, cameras on tripods recording it, no faces, logos or text",
   "sha256": "459e8b5ea4a65d5d75bdbb4c517391ae838da6608552f99aedf580395ba36fb9",
   "recorded": "2026-11-04"
+ },
+ "src-img/robotera-humanoids-11-china-post-hubs-guangdong-1500-parcels-hour-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot stacking boxes on a pallet at a loading dock at night, no people, logos or readable text, no people faces logos or text",
+  "sha256": "0dfa8deaca144c7bb4bb81c6dcd510be6f4645f7f4df3a3c66531894bc9e646b",
+  "recorded": "2026-11-19"
  },
  "src-img/robotera-xhand-1-pro-u-orders-nvidia-dexumi-gr00t-2-hero.jpg": {
   "origin": "ai-generated",
