@@ -63,6 +63,13 @@
   "scene": "A grey bipedal humanoid robot carrying a plastic tote through a bright warehouse aisle (AI-generated image)",
   "prompt_note": "Generated before the 27 Oct 2026 legal-hold gate; exact prompt was not logged. Scene recorded from the published alt text."
  },
+ "src-img/agility-digit-unique-cryptographic-identity-every-robot-fleet-security-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people, logos or readable text, no people faces logos or text",
+  "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+  "recorded": "2026-11-20"
+ },
  "src-img/agility-digit-unit-economics-s4-ars-november-2026-hero.jpg": {
   "origin": "ai-generated",
   "generator": "Grok Bot GenerateImage (own AI-generated image, captioned 'AI-generated image')",
@@ -768,6 +775,20 @@
   "recorded": "2026-11-04",
   "prompt": "Hyper-realistic photo: a generic grey bipedal humanoid robot climbing ancient weathered stone steps on a misty Chinese mountain path, pine trees, morning fog, no people, no logos, no text",
   "approved_by": "Joshua 2026-11-04 10:24 EST: 'Of course replace the images with our own images'"
+ },
+ "src-img/movens-5m-dataset-zhejiang-unitree-g1-5-million-motions-10000-hours-movens-zero-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: White humanoid robot arranging colourful wooden blocks at an empty classroom desk, no people, logos or readable text, no people faces logos or text",
+  "sha256": "4d5e3cc7e9d0882191a872f090664b551bbf4d0a6ef02cf857bb130e73173d66",
+  "recorded": "2026-11-20"
+ },
+ "src-img/musk-optimus-unscripted-demo-month-or-two-dishes-12-18-months-tomorrowx-hero.jpg": {
+  "origin": "ai-generated",
+  "generator": "Grok Bot image bank",
+  "prompt": "Photorealistic photo: Humanoid robot washing dishes at a kitchen sink in evening light, no people, logos or readable text, no people faces logos or text",
+  "sha256": "e72352f3a656be0f446a3911f43daa101b028cab19a2962b6a81e75757952aeb",
+  "recorded": "2026-11-20"
  },
  "src-img/musk-tesla-optimus-probably-rent-not-sell-hero.jpg": {
   "origin": "ai-generated",
