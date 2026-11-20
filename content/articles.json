@@ -1,5 +1,165 @@
 [
  {
+  "slug": "musk-optimus-unscripted-demo-month-or-two-dishes-12-18-months-tomorrowx",
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "cat": "Tesla",
+  "title": "Musk says every humanoid demo you have seen is staged, and promises Optimus will do an unscripted one within two months",
+  "summary": "Speaking remotely at the TomorrowX Summit in Austin, Elon Musk said Tesla may show an authentic, unstaged Optimus demo in a month or two, and that the robot could wash and put away a dirty plate in 12 to 18 months.",
+  "body": [
+   "Elon Musk has a problem with other companies' robot videos. \"Elon Musk says Tesla might give an unscripted Optimus demo in a month or two,\" <a href=\"https://x.com/XRoboHub/status/2123429477292376457\">XRoboHub posted on X</a> on Thursday. \"Asked when Optimus could take out the trash and do the dishes, he put that at 12 to 18 months.\"",
+   "Musk was speaking remotely from Shenzhen to the TomorrowX Summit in Austin. According to a <a href=\"https://singjupost.com/transcript-elon-musk-on-why-the-future-should-make-you-glad-to-be-alive-tomorrowx-summit/\">transcript of the session</a>, he said Tesla will show Optimus \"when we can do a demo that we feel that the demo is authentic and not just staged or pre-programmed. Because really, the humanoid robot demos that you see are staged and pre-programmed. They are not real.\"",
+   "<h2>The apple test</h2>",
+   "His example was simple. Current robots, he said, can be told to \"go pick up an apple,\" but if you move the table \"it won't be able to pick up the apple anymore.\" Tesla's demo \"might be, I don't know, in a month or two,\" he said, and should show what Optimus can actually do.",
+   "He also cited a test from programmer John Carmack: hand a robot a boxed toy remote-control car and see if it can unbox it, unscrew the battery cover, fit the batteries, screw the lid back on and drive it. \"There's no robot in the world that can do that,\" Musk said.",
+   "<h2>Dishes in 12 to 18 months</h2>",
+   "Asked about household chores, Musk described scraping a dirty plate, washing it, drying it and putting it away. \"There's no humanoid robot that can do that at all,\" he said. \"But I think Optimus will be able to do it in 12 to 18 months.\" The <a href=\"https://x.com/CyberRobooo/status/2123254415733956764\">CyberRobooo account</a> picked out his comment that Optimus will start in heavy industry: mining and refining ore, which Musk tied to national security.",
+   "<h2>Read with care</h2>",
+   "Musk's timelines for Tesla products have often slipped, and none of these dates are commitments. The 12-to-18-month figure is for a capability, not for sales. Tesla has separately pointed to Optimus deliveries from late 2027, as covered in <a href=\"/news/tesla-optimus-deliveries-late-2027.html\">our deliveries story</a>, and Musk has floated renting rather than selling the robot, as reported in <a href=\"/news/musk-tesla-optimus-probably-rent-not-sell.html\">our rent-not-sell story</a>.",
+   "Whether Tesla's own demo meets the standard Musk set for everyone else is the thing to watch."
+  ],
+  "sources": [
+   {
+    "title": "XRoboHub on X: Elon Musk says Tesla might give an unscripted Optimus demo in a month or two (19 Nov 2026)",
+    "url": "https://x.com/XRoboHub/status/2123429477292376457"
+   },
+   {
+    "title": "CyberRobooo on X: Tesla Optimus will start out as a miner (19 Nov 2026)",
+    "url": "https://x.com/CyberRobooo/status/2123254415733956764"
+   },
+   {
+    "title": "The Singju Post: Transcript of Elon Musk at the TomorrowX Summit",
+    "url": "https://singjupost.com/transcript-elon-musk-on-why-the-future-should-make-you-glad-to-be-alive-tomorrowx-summit/"
+   }
+  ],
+  "image": {
+   "src": "src-img/musk-optimus-unscripted-demo-month-or-two-dishes-12-18-months-tomorrowx-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Humanoid robot washing dishes at a kitchen sink in evening light, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 20 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Humanoid robot washing dishes at a kitchen sink in evening light, no people, logos or readable text, no people faces logos or text",
+    "sha256": "e72352f3a656be0f446a3911f43daa101b028cab19a2962b6a81e75757952aeb",
+    "recorded": "2026-11-20",
+    "approved_by": "Daily news brief 2026-11-20: image bank first"
+   }
+  },
+  "seo_title": "Musk says every humanoid demo you have seen is staged, and promises Optimus will do an unscripted one within two months"
+ },
+ {
+  "slug": "movens-5m-dataset-zhejiang-unitree-g1-5-million-motions-10000-hours-movens-zero",
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "cat": "Research",
+  "title": "Researchers turned internet videos into 5 million moves a Unitree G1 can actually perform, and released the model",
+  "summary": "Zhejiang University, Unitree and partners have released Movens-5M, 5 million robot-executable motion sequences built from online video, and Movens-Zero, a model that drives a Unitree G1 from text, speech, video or music.",
+  "body": [
+   "Humanoids have a data problem, and this team went to YouTube-scale video to fix it. \"Zhejiang University and Unitree Robotics have released Movens-5M, a dataset of 5 million motion sequences for training humanoid robots,\" <a href=\"https://x.com/XRoboHub/status/2123706354183385243\">XRoboHub posted on X</a> on Friday. \"The model weights and training code are public, too.\"",
+   "<h2>What is in the dataset</h2>",
+   "According to the paper summary on <a href=\"https://www.microsoft.com/en-us/research/publication/movens-zero-scaling-humanoid-motion-foundation-models-with-large-scale-human-videos/\">Microsoft Research</a>, one of the partner institutions, Movens-5M contains 15 million human-motion sequences and 5 million \"physically executable humanoid-motion sequences spanning over 10,000 hours\", aligned with text, video, speech and music. The <a href=\"https://movens-zero.github.io/\">project page</a> lists Zhejiang University, Unitree Robotics and their joint lab among the authors, with others including Microsoft Research, Peking University and the National University of Singapore.",
+   "The hard part is turning human video into motion a robot can do. The project page describes a five-stage pipeline that cuts clips, filters for quality, labels them, reconstructs and retargets the human motion to Unitree's G1, then checks it by running it in closed-loop simulation. Motions the robot cannot reproduce are dropped.",
+   "<h2>What the model does</h2>",
+   "The data trains Movens-Zero. The researchers say text, video, speech and music share one motion space, and the model replans in real time from the latest instruction and the robot's state. XRoboHub says the demos show a G1 following written and spoken commands, copying moves from videos and dancing to music.",
+   "<h2>Why it matters</h2>",
+   "Motion capture is precise but expensive, while internet video is huge but messy. A pipeline that filters video down to physically checked motion could give robot makers far more training data. Releasing weights and code means other labs can test that claim. The work is built around Unitree's G1, one of the most widely used research humanoids, covered in our <a href=\"/news/apple-halo-unitree-g1-simulation-trained-humanoid.html\">Apple Halo story</a>.",
+   "Demo videos show the best cases. How well the model handles motions it has not seen is a question for independent tests."
+  ],
+  "sources": [
+   {
+    "title": "XRoboHub on X: Zhejiang University and Unitree Robotics have released Movens-5M (20 Nov 2026)",
+    "url": "https://x.com/XRoboHub/status/2123706354183385243"
+   },
+   {
+    "title": "Movens-Zero project page",
+    "url": "https://movens-zero.github.io/"
+   },
+   {
+    "title": "Microsoft Research: Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos",
+    "url": "https://www.microsoft.com/en-us/research/publication/movens-zero-scaling-humanoid-motion-foundation-models-with-large-scale-human-videos/"
+   }
+  ],
+  "image": {
+   "src": "src-img/movens-5m-dataset-zhejiang-unitree-g1-5-million-motions-10000-hours-movens-zero-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot arranging colourful wooden blocks at an empty classroom desk, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 20 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot arranging colourful wooden blocks at an empty classroom desk, no people, logos or readable text, no people faces logos or text",
+    "sha256": "4d5e3cc7e9d0882191a872f090664b551bbf4d0a6ef02cf857bb130e73173d66",
+    "recorded": "2026-11-20",
+    "approved_by": "Daily news brief 2026-11-20: image bank first"
+   }
+  },
+  "seo_title": "Researchers turned internet videos into 5 million moves a Unitree G1 can actually perform, and released the model"
+ },
+ {
+  "slug": "agility-digit-unique-cryptographic-identity-every-robot-fleet-security",
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "cat": "Agility",
+  "title": "Agility says no two Digit robots share an identity, so one hacked robot can’t take down a fleet",
+  "summary": "Agility Robotics says every Digit humanoid has its own cryptographic identity built into the hardware, so a problem with one unit stays contained. CEO Peggy Johnson also told the FT manufacturers face an existential labour problem.",
+  "body": [
+   "As humanoids move into warehouses, the question is not just what they can lift but who else can control them. \"Every Digit robot is its own secured system, with a unique cryptographic identity baked into the hardware. No two share an identity,\" <a href=\"https://x.com/agilityrobotics/status/2123504116408172671\">Agility Robotics posted on X</a> on Thursday. \"The reason: if something happens to one unit, it stays contained — not spread across the fleet.\"",
+   "<h2>How Agility describes its security</h2>",
+   "The post links to a talk by CTO Pras Velagapudi. A <a href=\"https://roboboom.com/briefs/agility-foundations-data-security-27\">RoboBoom summary of that talk</a> says each Digit has a unique cryptographic identity, encrypted storage and controlled device access, and that robot-to-cloud traffic is authenticated at both ends and encrypted. Velagapudi says this helps limit a problem to a single unit.",
+   "Two other points stand out. Safety limits are stored on each robot, so a lost connection, a remote command or outside access cannot override them. And because Digit's cameras may capture faces, shipping labels or customer products, the cloud side has to protect that data too. Velagapudi points to industry incidents where hidden access paths let attackers send commands or see data across many robots, without naming companies.",
+   "These are Agility's descriptions of its own design. No independent security audit was published with them.",
+   "<h2>The labour pitch</h2>",
+   "Later on Thursday Agility shared comments from CEO Peggy Johnson to the Financial Times. Manufacturers face \"an existential problem with the labor that they can't get,\" she said, according to the <a href=\"https://x.com/agilityrobotics/status/2123550395133759721\">company's post</a>, which adds that workers are retiring, fewer are replacing them and reshoring is adding demand.",
+   "<h2>Why it matters</h2>",
+   "Buyers are moving from pilots to fleets. Agility is now listed on Nasdaq, as covered in <a href=\"/news/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid.html\">our AGLT debut story</a>, and is adding sites with GXO, as covered in <a href=\"/news/gxo-agility-digit-two-more-sites-three-manufacturing-customers.html\">our GXO story</a>. When a site runs dozens of robots, one compromised unit should not mean a fleet-wide incident. Security is becoming a selling point."
+  ],
+  "sources": [
+   {
+    "title": "Agility Robotics on X: Every Digit robot is its own secured system, with a unique cryptographic identity (19 Nov 2026)",
+    "url": "https://x.com/agilityrobotics/status/2123504116408172671"
+   },
+   {
+    "title": "Agility Robotics on X: Peggy Johnson told the FT manufacturers face an existential problem with labor (19 Nov 2026)",
+    "url": "https://x.com/agilityrobotics/status/2123550395133759721"
+   },
+   {
+    "title": "RoboBoom: Agility Foundations: Data Security video brief (Pras Velagapudi)",
+    "url": "https://roboboom.com/briefs/agility-foundations-data-security-27"
+   }
+  ],
+  "image": {
+   "src": "src-img/agility-digit-unique-cryptographic-identity-every-robot-fleet-security-hero.jpg",
+   "crop": [
+    0,
+    0.05,
+    1.0
+   ],
+   "ai": true,
+   "alt": "White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 20 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: White humanoid robot loading plain cardboard boxes onto a warehouse cart, no people, logos or readable text, no people faces logos or text",
+    "sha256": "c6fc53ee5ca48a0db594550494fb756c1f9bad800227b40e21a25e8295b3393f",
+    "recorded": "2026-11-20",
+    "approved_by": "Daily news brief 2026-11-20: image bank first"
+   }
+  },
+  "seo_title": "Agility says no two Digit robots share an identity, so one hacked robot can’t take down a fleet"
+ },
+ {
   "slug": "chinese-humanoid-engineers-denied-us-visas-ces-2027-xpeng-engineai",
   "date": "2026-11-19",
   "updated": "2026-11-19",
