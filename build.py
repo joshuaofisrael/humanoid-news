@@ -15,7 +15,7 @@ ISSUES = "https://github.com/joshuaofisrael/humanoid-news/issues"; BUILD_DATE = 
 CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
-OUT = "docs"; ASSET_VER = "7"
+OUT = "docs"; ASSET_VER = "8"
 # ----------------------------------------------------------------
 
 TODO_IMAGES = []
@@ -127,7 +127,7 @@ def make_inline(slug, n, spec):
     return {"name": name, "w": w, "h": h, "w6": 600, "h6": round(H * 600 / W), "src": p, "srcw": W}
 
 def inline_fig(m, spec):
-    cap = f'<a class="src" href="{SITE_URL}/image-policy/">Source</a>'
+    cap = f'<a class="src" href="{SITE_URL}/image-policy/">AI-generated image</a>'
     return (f'<figure class="inl"><img src="../img/{m["name"]}-1200.webp" srcset="../img/{m["name"]}-600.webp 600w, ../img/{m["name"]}-1200.webp 1200w" '
             f'sizes="(max-width:760px) 100vw, 720px" width="{m["w"]}" height="{m["h"]}" alt="{esc(spec["alt"])}" loading="lazy" decoding="async">'
             f'<figcaption>{cap}</figcaption></figure>')
@@ -135,7 +135,7 @@ def inline_fig(m, spec):
 def is_ai(im): return bool(im.get("ai"))
 AI_LICENCE = "generated; rights held by the site owner (see terms.html)"
 def credit_html(im):
-    if is_ai(im): return f'<a class="src" href="{SITE_URL}/image-policy/">Source</a>'
+    if is_ai(im): return f'<a class="src" href="{SITE_URL}/image-policy/">AI-generated image</a>'
     s = f'Photo: {esc(im["credit"])}'
     if im.get("source_url"): s += f' · <a href="{esc(im["source_url"])}" rel="noopener">Source</a>'
     return s + f' · {esc(im["license"])}'
@@ -147,7 +147,8 @@ def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None
     r = base if base is not None else "../" * depth
     url = SITE_URL + "/" + (path[:-10] if path.endswith("index.html") else path)
     og = image or {"url": f"{SITE_URL}/img/og-default.jpg", "alt": NAME + ": humanoid robot news"}
-    lds = [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "publisher": PUB}] + ([ld] if ld else [])
+    more_ld = ld if isinstance(ld, list) else ([ld] if ld else [])
+    lds = [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "publisher": PUB}] + more_ld
     beacon = f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{CF_BEACON_TOKEN}"}}\'></script>' if CF_BEACON_TOKEN else ""
     robots = "noindex" if path == "404.html" else "index,follow,max-image-preview:large,max-snippet:-1"
     h = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -164,7 +165,7 @@ def page(path, title, desc, content, depth=0, ld=None, typ="website", image=None
 <a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
 <header class="site-h"><div class="w"><a class="logo" href="{SITE_URL}/" aria-label="{NAME} home">{MARK}<span>Humanoid<b>News</b></span></a><nav aria-label="Main"><a href="{SITE_URL}/">News</a><a href="{r}topics/">Topics</a><a href="{r}about.html">About</a><a href="{r}contact.html">Contact</a><a href="{r}feed.xml">RSS</a></nav></div></header>
 <main id="main">{content}</main>
-<footer class="site-f"><div class="w"><p><a href="{r}about.html">About</a> · <a href="{r}topics/">Topics</a> · <a href="{r}standards.html">Editorial standards</a> · <a href="{r}corrections.html">Corrections</a> · <a href="{r}contact.html">Contact</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}image-policy/">Image policy</a> · <a href="{r}feed.xml">RSS</a></p>
+<footer class="site-f"><div class="w"><p class="byline">By <a rel="author" href="{r}about.html">{NAME} Staff</a></p><p><a href="{r}about.html">About</a> · <a href="{r}topics/">Topics</a> · <a href="{r}standards.html">Editorial standards</a> · <a href="{r}corrections.html">Corrections</a> · <a href="{r}contact.html">Contact</a> · <a href="{r}terms.html">Terms</a> · <a href="{r}privacy.html">Privacy</a> · <a href="{r}disclaimer.html">Disclaimer</a> · <a href="{r}image-policy/">Image policy</a> · <a href="{r}feed.xml">RSS</a></p>
 </div></footer>
 <script defer src="{r}assets/app.js?v={ASSET_VER}"></script>{beacon}</body></html>"""
     p = os.path.join(OUT, path); os.makedirs(os.path.dirname(p) or OUT, exist_ok=True); open(p, "w", encoding="utf-8").write(h)
@@ -238,9 +239,9 @@ HUB_GUIDE = {  # optional evergreen overview per hub: every fact comes from a li
         ],
     },
     "agility-robotics": {
-        "asof": "31 October 2026",
+        "asof": "31 October 2026 for the deployment figures below; listing status updated 20 November 2026",
         "facts": [
-            'Agility and the blank-check company Churchill Capital Corp XI expect their merger to raise gross capital of about $465 million before transaction expenses: about $164 million from Churchill XI\'s trust, about $201 million from a PIPE at $10 per share led by Foxconn, and $100 million Agility says it already received. They expect the deal to close on 4 November 2026, after a Churchill XI shareholder vote on 2 November, with shares due to start trading on Nasdaq as AGLT on 5 November, according to the companies\' <a href="https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross-capital-raise-of-approximately-465-million-and-anticipated-closing-of-business-combination" rel="noopener">30 October announcement</a> (<a href="../news/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt.html">our AGLT report</a>).',
+            'Agility announced on 5 November 2026 that it had completed its business combination with Churchill Capital Corp XI and that its common stock had begun trading on Nasdaq as AGLT. The company said the combination and related financings represented about $465 million in gross capital before expenses. That is the company\'s account, in its <a href="https://www.agilityrobotics.com/content/agility-becomes-first-u-s-publicly-listed-pure-play-humanoid-robotics-company-begins-trading-today-on-nasdaq-as-aglt" rel="noopener">5 November release</a> (<a href="../news/agility-nasdaq-debut-aglt-first-us-pure-play-humanoid.html">our listing report</a>). The October announcement of the expected close is still linked from <a href="../news/agility-robotics-churchill-xi-465m-raise-nasdaq-aglt.html">our earlier AGLT report</a>. This is not investment advice.',
             'Agility says Digit already works with GXO, Schaeffler and Toyota Motor Manufacturing Canada, and that it has added four customers in automotive, consumer goods and agriculture (<a href="../news/agility-digit-5-nvidia-igx-thor-pittsburgh-hub.html">Digit 5 and Pittsburgh report</a>).',
             'GXO, Agility\'s first commercial customer, has used Digit at Flowery Branch, Georgia, under a multi-year agreement that began in June 2024, and Agility says Digit has moved more than 100,000 totes there. GXO plans two more US sites, Statesville, North Carolina, and Lebanon, Tennessee, from early 2027 (<a href="../news/gxo-agility-digit-two-more-sites-three-manufacturing-customers.html">GXO expansion report</a>).',
             'AGCO plans a Digit pilot at its Hesston, Kansas, factory from 2027, starting with sorting and stacking parts and placing totes for storage (<a href="../news/agco-agility-digit-pilot-hesston-kansas.html">AGCO pilot report</a>).',
@@ -252,8 +253,8 @@ HUB_GUIDE = {  # optional evergreen overview per hub: every fact comes from a li
         "faq": [
             ("What does the Digit humanoid robot do?", "In the deployments Agility has announced, Digit handles repetitive material handling: moving totes in GXO's e-commerce fulfilment sites, and, in AGCO's planned pilot, sorting and stacking parts and placing totes for storage."),
             ("When will Digit 5 be available?", "Agility says early-access deliveries of Digit 5 should begin in the first half of 2027, and its 30 October 2026 announcement targets general availability for the end of 2027. These are the company's targets."),
-            ("Is Agility Robotics a public company?", "Not yet, as of 31 October 2026. Agility is merging with the blank-check company Churchill Capital Corp XI. The companies expect the deal to close on 4 November 2026, subject to a shareholder vote on 2 November, and the combined company's shares to begin trading on Nasdaq on 5 November. This is not investment advice."),
-            ("What is the AGLT ticker?", "AGLT is the Nasdaq ticker under which the combined Agility Robotics and Churchill Capital Corp XI company is expected to trade, starting 5 November 2026 according to the companies. Agility says the deal should bring in about $465 million in gross capital before expenses. This is not investment advice."),
+            ("Is Agility Robotics a public company?", "Agility announced on 5 November 2026 that its common stock had begun trading on Nasdaq as AGLT after it completed the combination with Churchill Capital Corp XI. That is the company's account of the listing. This is not investment advice."),
+            ("What is the AGLT ticker?", "AGLT is the Nasdaq ticker Agility announced for its common stock when trading began on 5 November 2026. The company said the combination and related financings were about $465 million in gross capital before expenses. Warrants trade as AGLTW, according to the same release. This is not investment advice."),
             ("How long does Digit 5's battery last?", "Agility says Digit 5's Nyobolt battery will run for 90 minutes and recharge in 9 minutes. These are the company's own figures, not an independent test."),
             ("How many Digit robots are deployed?", "Agility has not published a robot count in the announcements we have covered, and GXO's expansion did not say how many robots will go to the new sites."),
         ],
@@ -315,11 +316,20 @@ for hs, hn, h1, intro, rx in HUB_DEFS:
     if len(items) >= 3: HUBS.append({"slug": hs, "name": hn, "h1": h1, "intro": intro, "items": items})
 for a in A: a["_hubs"] = [h for h in HUBS if a in h["items"]]
 _TRK_EARLY = {t["story"] for t in json.load(open("content/tracker.json"))} if os.path.exists("content/tracker.json") else set()
+BROAD_HUBS = {"deployments", "research", "funding-policy", "china", "europe", "south-korea"}
 def related(a, n=4):
     sc = []
     for b in A:
         if b is a: continue
-        k = sum(1 for h in a["_hubs"] if b in h["items"]) * 2 + (b["cat"] == a["cat"]) * 3
+        specific = broad = 0
+        for h in a["_hubs"]:
+            if b in h["items"]:
+                if h["slug"] in BROAD_HUBS:
+                    broad += 1
+                else:
+                    specific += 1
+        # A named company or robot hub outranks a catch-all such as "deployments".
+        k = specific * 5 + min(broad, 1) * 2 + (b["cat"] == a["cat"]) * 3
         if k: sc.append((k, b["date"], b))
     sc.sort(key=lambda x: (x[0], x[1]), reverse=True)
     out = [x[2] for x in sc[:n]]
@@ -327,6 +337,74 @@ def related(a, n=4):
         if len(out) >= n: break
         if b is not a and b not in out: out.append(b)
     return out
+
+def crumbs_html(pairs):
+    """pairs: (name, href or None). The last item is the current page."""
+    bits = []
+    for i, (name, href) in enumerate(pairs):
+        if i:
+            bits.append('<span class="sep" aria-hidden="true">/</span>')
+        if href and i < len(pairs) - 1:
+            bits.append(f'<a href="{href}">{esc(name)}</a>')
+        else:
+            bits.append(f'<span aria-current="page">{esc(name)}</span>')
+    return f'<nav class="crumbs" aria-label="Breadcrumb">{"".join(bits)}</nav>'
+
+def crumbs_ld(pairs):
+    """pairs: (name, absolute url)."""
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": name, "item": url} for i, (name, url) in enumerate(pairs, 1)]}
+
+def next_reads(items, heading, img_prefix, href_for):
+    lis = []
+    for b in items:
+        thumb = ""
+        if has_img(b):
+            thumb = f'<img src="{img_prefix}{b["slug"]}-600.webp" width="600" height="315" alt="" loading="lazy" decoding="async">'
+        lis.append(f'<li><a href="{href_for(b)}">{thumb}<span>{esc(b["title"])}</span></a></li>')
+    if not lis:
+        return ""
+    return f'<aside class="next-reads"><h2>{esc(heading)}</h2><ul>{"".join(lis)}</ul></aside>'
+
+def compare_box(heading, links):
+    if not links:
+        return ""
+    lis = "".join(f'<li><a href="{href}">{esc(text)}</a></li>' for href, text in links)
+    return f'<aside class="compare"><h2>{esc(heading)}</h2><ul>{lis}</ul></aside>'
+
+def link_first_term(html, term, href):
+    """Link the first plain-text mention of term that is not already inside an anchor."""
+    if not term or href in html:
+        return html
+    parts = re.split(r'(<[^>]+>)', html)
+    in_a = False
+    pat = re.compile(r'(?<!\w)' + re.escape(term) + r'(?!\w)')
+    for i, part in enumerate(parts):
+        if part.startswith("<"):
+            low = part.lower()
+            if low.startswith("<a ") or low == "<a>" or low.startswith("<a\n"):
+                in_a = True
+            elif low.startswith("</a"):
+                in_a = False
+            continue
+        if in_a:
+            continue
+        m = pat.search(part)
+        if not m:
+            continue
+        parts[i] = part[:m.start()] + f'<a href="{href}">{part[m.start():m.end()]}</a>' + part[m.end():]
+        return "".join(parts)
+    return html
+
+def explainer_compare(a, used):
+    """Lookup pages get a compare box of other explainers, not a repeat of the next-read list."""
+    if a.get("cat") != "Explainers":
+        return ""
+    skip = {id(b) for b in used}
+    pool = [b for b in A if b.get("cat") == "Explainers" and b is not a and id(b) not in skip]
+    pool.sort(key=lambda b: sum(1 for h in a.get("_hubs", []) if b in h["items"]), reverse=True)
+    return compare_box("Compare with", [(f'{b["slug"]}.html', b["title"]) for b in pool[:3]])
+
 def seo_title(a):
     t = a.get("seo_title") or a["title"]
     return t + " | HumanoidBeat" if len(t) + 15 <= 65 else t
@@ -354,9 +432,10 @@ sections += '<section class="sec faq" id="faq"><div class="w prose"><h2 class="s
 FAQ_LD = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in FAQ]}
 hero = (f'<section class="hero hero-photo"><picture><source type="image/webp" srcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" sizes="100vw">'
         f'<img class="hero-bg" src="img/hero.jpg" width="1920" height="1080" alt="Dark metallic humanoid robot with glowing cyan eyes in a factory (AI-generated image)" fetchpriority="high" decoding="async"></picture>'
-        f'<div class="hero-shade"></div>{HERO_SVG}<div class="w"><div class="hero-tx"><span class="kicker">Humanoid robotics · daily</span><h1>The humanoid robot race, <em>answered first.</em></h1><p>{esc(DESC)}</p><a class="btn" href="#latest">Read the latest</a><a class="btn ghost" href="feed.xml">RSS feed</a><p class="cap"><a href="{SITE_URL}/image-policy/">Source</a></p></div></div></section>')
+        f'<div class="hero-shade"></div>{HERO_SVG}<div class="w"><div class="hero-tx"><span class="kicker">Humanoid robotics · daily</span><p class="byline">By <a rel="author" href="about.html">{NAME} Staff</a></p><h1>The humanoid robot race, <em>answered first.</em></h1><p>{esc(DESC)}</p><a class="btn" href="#latest">Read the latest</a><a class="btn ghost" href="feed.xml">RSS feed</a><p class="cap"><a href="{SITE_URL}/image-policy/">AI-generated image</a></p></div></div></section>')
 page("index.html", f"{NAME}: Humanoid Robot News & Analysis", DESC, hero + sections, 0, ld=FAQ_LD, extra_head='<link rel="preload" as="image" type="image/webp" href="img/hero-1200.webp" imagesrcset="img/hero-1200.webp 1200w, img/hero-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">')
 
+_by_slug = {x["slug"]: x for x in A}
 for a in A:
     u = f"{SITE_URL}/news/{a['slug']}.html"
     ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": a["title"], "description": a["summary"], "datePublished": published_iso(a), "dateModified": a.get("updated", a["date"]),
@@ -371,7 +450,40 @@ for a in A:
     for n, sp in enumerate(a.get("inline_images", []), 1):
         m = make_inline(a["slug"], n, sp)
         if m: ins.setdefault(int(sp["insert_after_paragraph"]), []).append(inline_fig(m, sp)); a["_inl"].append((m, sp))
-    body = "".join(f'<p{" class=lede" if i == 0 else ""}>{p}</p>' + "".join(ins.get(i + 1, [])) for i, p in enumerate(a["body"]))
+    rels = []
+    seen = set()
+    for slug in re.findall(r'href="(?:\.\./news/)?([a-z0-9-]+)\.html"', " ".join(a["body"])):
+        b = _by_slug.get(slug)
+        if not b or slug in seen:
+            continue
+        seen.add(slug)
+        rels.append(b)
+    for b in related(a, 12):
+        if b["slug"] in seen:
+            continue
+        seen.add(b["slug"])
+        rels.append(b)
+        if len(rels) >= 8:
+            break
+    rels = rels[:8]
+    mid_items, end_items = rels[:4], (rels[4:8] or rels[:4])
+    mid_at = min(max(2, len(a["body"]) // 2), len(a["body"]) - 1) if len(a["body"]) >= 2 else None
+    hub_href = f'../topics/{a["_hubs"][0]["slug"]}.html' if a.get("_hubs") else ""
+    linked_hub = False
+    chunks = []
+    for i, p in enumerate(a["body"]):
+        para = f'<p{" class=lede" if i == 0 else ""}>{p}</p>' + "".join(ins.get(i + 1, []))
+        if hub_href and not linked_hub:
+            if hub_href in para:
+                linked_hub = True
+            else:
+                new = link_first_term(para, a["_hubs"][0]["name"], hub_href)
+                linked_hub = new != para
+                para = new
+        chunks.append(para)
+        if mid_at and i + 1 == mid_at:
+            chunks.append(next_reads(mid_items, "Related reading", "../img/", lambda b: b["slug"] + ".html"))
+    body = "".join(chunks)
     if isinstance(ld.get("image"), list):
         ld["image"] += [{"@type": "ImageObject", "url": f"{SITE_URL}/img/{m['name']}-1200.webp", "width": m["w"], "height": m["h"], "caption": sp.get("caption") or sp["alt"]} for m, sp in a["_inl"]]
     upd = a.get("updated", a["date"])
@@ -382,12 +494,20 @@ for a in A:
         why = '<aside class="why"><h2>Why it\'s trending</h2><ul>' + "".join(f"<li>{w}</li>" for w in a["why"]) + "</ul></aside>"
     src = "".join(f'<li><a href="{esc(s["url"])}" rel="noopener">{esc(s["title"])}</a></li>' for s in a["sources"])
     tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
-    rel = '<aside class="related"><h2>Related coverage</h2><ul>' + "".join(f'<li><a href="{b["slug"]}.html">{esc(b["title"])}</a> <span class="meta">· {fd(b["date"])}</span></li>' for b in related(a)) + "</ul>"
+    rel = next_reads(end_items, "Read next", "../img/", lambda b: b["slug"] + ".html")
     if a["slug"] in _TRK_EARLY: rel += '<p class="meta">This story is part of our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>'
     if a["_hubs"]: rel += '<p class="meta">More on: ' + " · ".join(f'<a href="../topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in a["_hubs"]) + "</p>"
-    rel += "</aside>"
-    c = f'{fig}<article class="prose art"><p style="margin:24px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1><p class="meta" style="font-size:.9rem">By {NAME} Staff · Published {published_html(a)} · Last updated <time datetime="{upd}">{fd(upd)}</time></p>{body}{ana}{why}{dis}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
-    page(f"news/{a['slug']}.html", seo_title(a), META_DESC.get(a["slug"], a["summary"]), c, 1, ld, "article", a["_og"])
+    if a["_hubs"]:
+        hub = a["_hubs"][0]
+        trail = [("News", f"{SITE_URL}/", f"{SITE_URL}/"), (hub["name"], f"../topics/{hub['slug']}.html", f"{SITE_URL}/topics/{hub['slug']}.html"), (a["title"], None, u)]
+    else:
+        trail = [("News", f"{SITE_URL}/", f"{SITE_URL}/"), ("Topics", "../topics/", f"{SITE_URL}/topics/"), (a["title"], None, u)]
+    crumbs = crumbs_html([(name, href) for name, href, _abs in trail])
+    bld = crumbs_ld([(name, absu) for name, _href, absu in trail])
+    cmp = explainer_compare(a, rels)
+    byline = f'<p class="byline">By <a rel="author" href="{SITE_URL}/about.html">{NAME} Staff</a> · Published {published_html(a)} · Last updated <time datetime="{upd}">{fd(upd)}</time></p>'
+    c = f'{fig}<article class="prose art">{crumbs}<p style="margin:18px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1>{byline}{body}{ana}{why}{dis}{cmp}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
+    page(f"news/{a['slug']}.html", seo_title(a), META_DESC.get(a["slug"], a["summary"]), c, 1, [ld, bld], "article", a["_og"])
 
 L = f"<strong>{LLC}</strong>"
 CORRECTIONS = [  # (date, article slug, text) - newest first; add an entry for every significant correction
@@ -402,10 +522,10 @@ CONTACT = (f'<p>Email: <a href="mailto:{EMAIL}">{EMAIL}</a></p>' if EMAIL else '
 analytics = "We use Cloudflare Web Analytics, a privacy-focused service that measures page views without cookies or cross-site tracking. " if CF_BEACON_TOKEN else ""
 FORM = f'''<h2>Send us a message</h2><div id="thanks" class="note" role="status" tabindex="-1" hidden><h2>Thank you</h2><p>Your message has been sent. We will reply if a response is needed.</p></div><form id="cf" class="cf" method="POST" action="https://formsubmit.co/{FORM_TO}" data-ajax="https://formsubmit.co/ajax/{FORM_TO}"><p><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="120"></p><p><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="200"></p><p><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" rows="6" required maxlength="4000"></textarea></p><input type="text" name="_honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"><input type="hidden" name="_subject" value="HumanoidBeat contact"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="{SITE_URL}/contact.html?sent=1#thanks"><p><button type="submit" class="btn">Send message</button></p><p id="cf-err" role="alert" hidden>Sorry, the message could not be sent. Please try again, or use the GitHub link below.</p><p class="fine">Messages are emailed to the site owner only so we can respond. They are not shared or sold. See our <a href="privacy.html">privacy policy</a>.</p></form>'''
 legal = {
-"about.html": ("About", f"<h1>About {NAME}</h1><p>{NAME} is an independent publication covering humanoid robots: the companies, the technology, the deployments and the policy. Every story is written originally, leads with the answer, and links to the sources its facts come from. We do not invent facts or quotes. See our <a href=\"standards.html\">editorial standards</a>, <a href=\"corrections.html\">corrections policy</a> and <a href=\"contact.html\">contact page</a>.</p><h2>Images</h2><p>All images on {NAME} are AI-generated, photorealistic scenes created for illustration and labelled with a \"Source\" link to our <a href=\"image-policy/\">image policy</a>. They are generic and do not depict real people or real news events.</p>"),
+"about.html": ("About", f"<h1>About {NAME}</h1><p>{NAME} is an independent publication covering humanoid robots: the companies, the technology, the deployments and the policy. Every story is written originally, leads with the answer, and links to the sources its facts come from. We do not invent facts or quotes. See our <a href=\"standards.html\">editorial standards</a>, <a href=\"corrections.html\">corrections policy</a> and <a href=\"contact.html\">contact page</a>.</p><h2>Who writes the stories</h2><p class=\"byline\">By <a rel=\"author\" href=\"about.html\">{NAME} Staff</a></p><p>Humanoid News Staff is the editorial desk for this site. Every story uses that byline. We do not publish staff biographies or personal credentials. The desk follows the <a href=\"standards.html\">editorial standards</a> and logs meaningful fixes on the <a href=\"corrections.html\">corrections</a> page.</p><h2>Images</h2><p>All images on {NAME} are AI-generated, photorealistic scenes created for illustration. Each one is labelled <a href=\"image-policy/\">AI-generated image</a>, and that label links to the image policy. They are generic and do not depict real people or real news events.</p>"),
 "contact.html": ("Contact", f"<h1>Contact</h1>{FORM}<h2>Alternative: public issue tracker</h2>{CONTACT}<p>For corrections, please include the article link, the sentence in question, and a source that supports the fix. Please do not post private personal information in a public issue. See our <a href=\"corrections.html\">corrections policy</a>.</p>"),
 "corrections.html": ("Corrections Policy", f"<h1>Corrections Policy</h1><p>We aim to be accurate. If we get something wrong, we fix it and say so.</p><h2>How we correct</h2><ul><li>Factual errors are corrected in the article as soon as they are verified, and the article's <strong>Last updated</strong> date changes.</li><li>Significant corrections are logged below with the date and what changed.</li><li>If a claim cannot be verified against a cited source, we soften it or remove it.</li><li>We will review and, where justified, remove or amend content about a named person or company on request, once the concern is identified and the sources checked.</li></ul><h2>How to report an error</h2>{CONTACT}<h2>Corrections log</h2>{CLOG}"),
-"standards.html": ("Editorial Standards", f"<h1>Editorial Standards: Sources and Ethics</h1><h2>Sourcing</h2><ul><li>Every factual claim must trace to a named, linkable source (company announcement, regulator or government release, filing, or reputable news outlet) listed at the bottom of the article.</li><li>We prefer primary sources and say when a claim is only a company's own statement (\"according to the company\").</li><li>We do not publish unsourced numbers, dates, or quotes. If we cannot verify something, we leave it out.</li></ul><h2>Original writing</h2><ul><li>Articles are written in our own words. We use only brief, attributed quotations.</li></ul><h2>Fairness</h2><ul><li>We do not state or imply wrongdoing by any person or company unless an authoritative source reports it, and then we attribute it.</li><li>We do not speculate about individuals.</li></ul><h2>Opinion and analysis</h2><ul><li>Analysis and opinion are clearly labelled as such and kept separate from reported facts.</li></ul><h2>Company announcements vs. verified claims</h2><ul><li>Statements, figures and timelines that come from a company's own announcement are attributed to that company, and we say when they have not been independently verified.</li><li>We describe something as confirmed only where an independent source we cite supports it.</li><li>Targets, forecasts and roadmaps stated by companies are reported as their targets, not as outcomes. We do not promise or imply any result for readers, customers or investors.</li></ul><h2>Images</h2><ul><li>Images are AI-generated photorealistic scenes. Each carries a \"Source\" link to the <a href=\"image-policy/\">image policy</a> page. They do not depict real identifiable people or real news events.</li></ul><h2>Not advice</h2><ul><li>Nothing on the site is investment, legal, medical or other professional advice. Articles about funding or listed companies are reports of announcements, not recommendations.</li></ul><h2>Updates</h2><ul><li>Each article shows its published and last-updated dates. See the <a href=\"corrections.html\">corrections policy</a>.</li></ul><p>Independence: {NAME} is not affiliated with the companies it covers unless stated. Ownership details are in our <a href=\"terms.html\">Terms of Use</a>.</p><p><em>Last updated: 23 October 2026.</em></p>"),
+"standards.html": ("Editorial Standards", f"<h1>Editorial Standards: Sources and Ethics</h1><h2>Sourcing</h2><ul><li>Every factual claim must trace to a named, linkable source (company announcement, regulator or government release, filing, or reputable news outlet) listed at the bottom of the article.</li><li>We prefer primary sources and say when a claim is only a company's own statement (\"according to the company\").</li><li>We do not publish unsourced numbers, dates, or quotes. If we cannot verify something, we leave it out.</li></ul><h2>Original writing</h2><ul><li>Articles are written in our own words. We use only brief, attributed quotations.</li></ul><h2>Fairness</h2><ul><li>We do not state or imply wrongdoing by any person or company unless an authoritative source reports it, and then we attribute it.</li><li>We do not speculate about individuals.</li></ul><h2>Opinion and analysis</h2><ul><li>Analysis and opinion are clearly labelled as such and kept separate from reported facts.</li></ul><h2>Company announcements vs. verified claims</h2><ul><li>Statements, figures and timelines that come from a company's own announcement are attributed to that company, and we say when they have not been independently verified.</li><li>We describe something as confirmed only where an independent source we cite supports it.</li><li>Targets, forecasts and roadmaps stated by companies are reported as their targets, not as outcomes. We do not promise or imply any result for readers, customers or investors.</li></ul><h2>Images</h2><ul><li>Images are AI-generated photorealistic scenes. Each is labelled \"AI-generated image\", and that label links to the <a href=\"image-policy/\">image policy</a> page. They do not depict real identifiable people or real news events.</li></ul><h2>Not advice</h2><ul><li>Nothing on the site is investment, legal, medical or other professional advice. Articles about funding or listed companies are reports of announcements, not recommendations.</li></ul><h2>Updates</h2><ul><li>Each article shows its published and last-updated dates. See the <a href=\"corrections.html\">corrections policy</a>.</li><li>Stories are bylined Humanoid News Staff, the site's editorial desk. That byline links to the about page. It is not a personal biography.</li></ul><p>Independence: {NAME} is not affiliated with the companies it covers unless stated. Ownership details are in our <a href=\"terms.html\">Terms of Use</a>.</p><p><em>Last updated: 20 November 2026.</em></p>"),
 "terms.html": ("Terms of Use", f"<h1>Terms of Use</h1><p>These Terms govern your use of {NAME}, owned and operated by {L} (\"we\"). By using the site you agree to them.</p><h2>Content</h2><p>All original content is © 2026 {LLC}. You may share links and brief quotations with attribution. Third-party trademarks belong to their owners and are used for identification only.</p><h2>No warranty</h2><p>The site is provided \"as is\" without warranties of any kind. To the fullest extent permitted by law, {LLC} is not liable for any damages arising from your use of the site.</p><h2>Governing law</h2><p>These Terms are governed by the laws of the State of Florida, USA, and any dispute shall be resolved in the state or federal courts located in Florida.</p><h2>Changes</h2><p>We may update these Terms; continued use means acceptance.</p>"),
 "privacy.html": ("Privacy Policy", f"<h1>Privacy Policy</h1><p>This policy explains how {L}, operator of {NAME}, handles information.</p><h2>What we collect</h2><p>{analytics}Our hosting provider may log standard technical data (such as IP address and browser type) for security and operations. If you contact us through the contact form, your name, email address and message are sent by email to the site owner via the FormSubmit.co form service, and we keep them only to respond.</p><h2>Google Analytics 4</h2><p>We use Google Analytics 4, a web analytics service provided by Google, to understand how visitors use this site. It collects information such as pages viewed, time on page, referring site, approximate location (country or city, derived from IP address, which Google Analytics 4 does not store), device, browser and operating system. Where you consent, it sets first-party cookies (such as _ga and _ga_*) to distinguish visits. Analytics and advertising storage are set to denied by default using Google Consent Mode, and analytics cookies are only set after you give consent through the consent choice delivered by Google; without consent, Google may receive limited cookieless signals. Learn how Google uses data at <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"noopener\">policies.google.com/technologies/partner-sites</a>. You can opt out of Google Analytics with the <a href=\"https://tools.google.com/dlpage/gaoptout\" rel=\"noopener\">Google Analytics opt-out browser add-on</a>.</p><h2>Advertising</h2><p>This site uses Google AdSense. Google and its advertising partners use cookies and similar technologies to serve and measure ads, including ads based on your previous visits to this or other websites. You can learn how Google uses data from sites that use its services, and manage ad personalisation, at <a href=\"https://policies.google.com/technologies/ads\" rel=\"noopener\">policies.google.com/technologies/ads</a>. Visitors in the EU and UK are shown a consent choice delivered by Google. We do not run a separate consent banner.</p><h2>Google advertising cookies and your choices</h2><p>Third-party vendors, including Google, use cookies to serve ads based on a user’s prior visits to this website or other websites. Google’s use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href=\"https://adssettings.google.com/\" rel=\"nofollow noopener\">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor’s use of cookies for personalized advertising at <a href=\"https://www.aboutads.info/choices/\" rel=\"nofollow noopener\">aboutads.info/choices</a>. For more information, see <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\">how Google uses information from sites or apps that use its services</a>.</p><h2>Sharing</h2><p>We do not sell personal information.</p><h2>Your rights</h2><p>You may request access to or deletion of information you sent us through our <a href=\"contact.html\">contact page</a>.</p><h2>Governing law</h2><p>This policy is governed by the laws of the State of Florida, USA.</p>"),
 "disclaimer.html": ("Disclaimer", f"<h1>Disclaimer</h1><p>Content on {NAME} is for general information only and is not investment, legal or professional advice. We work to verify facts against cited sources but cannot guarantee completeness or accuracy. Reports of funding, earnings or company plans are summaries of announcements, not recommendations to buy, sell or hold any security. Images are AI-generated illustrations and not photographs of real events. {NAME} is not affiliated with any company it covers unless stated. Company names, product names and logos are trademarks of their owners. {NAME} is owned and operated by {L}, and this disclaimer is governed by the laws of the State of Florida, USA.</p>"),
@@ -425,16 +545,23 @@ for h in HUBS:
         gh = f'<h2>What we know so far</h2><p class="meta">As of {g["asof"]}, based on the stories below and their cited sources.</p><ul>' + "".join(f"<li>{x}</li>" for x in g["facts"]) + "</ul><h2>Questions readers ask</h2>" + "".join(f"<h3>{esc(q)}</h3><p>{esc(ans)}</p>" for q, ans in g["faq"]) + "<h2>All stories</h2>"
         hld = {"@context": "https://schema.org", "@graph": [{k: v for k, v in hld.items() if k != "@context"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in g["faq"]]}]}
     ht = f"{h['h1']} | HumanoidBeat"
+    hub_crumbs = crumbs_html([("News", f"{SITE_URL}/"), ("Topics", f"{SITE_URL}/topics/"), (h["name"], None)])
+    hub_bld = crumbs_ld([("News", f"{SITE_URL}/"), ("Topics", f"{SITE_URL}/topics/"), (h["name"], hu)])
+    latest = next_reads(h["items"][:4], "Latest in this topic", "../img/", lambda b: "../news/" + b["slug"] + ".html")
+    cmp = compare_box("Check another topic", [(o["slug"] + ".html", o["name"]) for o in HUBS if o is not h][:3])
+    byline = f'<p class="byline">By <a rel="author" href="{SITE_URL}/about.html">{NAME} Staff</a></p>'
     page(f"topics/{h['slug']}.html", ht if len(ht) <= 65 else h["h1"], HUB_META.get(h["slug"]) or ((h["intro"][:155].rsplit(" ", 1)[0] + "…") if len(h["intro"]) > 158 else h["intro"]),
-         f'<div class="prose page hub"><p class="meta"><a href="{SITE_URL}/">News</a> › <a href="{SITE_URL}/topics/">Topics</a></p><h1>{esc(h["h1"])}</h1><p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{gh}{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul><h2>Other topics</h2><p>{others}</p></div>', 1, hld)
+         f'<div class="prose page hub">{hub_crumbs}<h1>{esc(h["h1"])}</h1>{byline}<p>{esc(h["intro"])}</p><p class="meta">{len(h["items"])} stories · last updated <time datetime="{h["items"][0]["date"]}">{fd(h["items"][0]["date"])}</time></p>{latest}{gh}{('<p>See every pilot side by side in our <a href="../humanoid-robot-deployment-tracker.html">humanoid robot deployment tracker</a>.</p>' if h["slug"] == "deployments" and len(_TRK_EARLY) >= 5 else "")}<ul class="hub-list">{lst}</ul>{cmp}<h2>Other topics</h2><p>{others}</p></div>', 1, [hld, hub_bld])
 # Topic index
 if HUBS:
     lis = "".join(f'<li><a href="{h["slug"]}.html"><strong>{esc(h["name"])}</strong></a> <span class="meta">({len(h["items"])} stories)</span><br>{esc(h["intro"])}</li>' for h in HUBS)
     ild = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Humanoid robot topics", "url": f"{SITE_URL}/topics/", "description": "Browse HumanoidBeat by company and theme. Each hub lists matching stories, newest first, with sources on the article.", "publisher": PUB,
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE_URL}/topics/{h['slug']}.html", "name": h["name"]} for i, h in enumerate(HUBS)]}}
+    topics_crumbs = crumbs_html([("News", f"{SITE_URL}/"), ("Topics", None)])
+    topics_bld = crumbs_ld([("News", f"{SITE_URL}/"), ("Topics", f"{SITE_URL}/topics/")])
     page("topics/index.html", "Humanoid robot topics | HumanoidBeat",
          "Browse HumanoidBeat by company and theme: Figure, Unitree, Agility, NVIDIA, deployments, research, funding and regional coverage.",
-         f'<div class="prose page"><p class="meta"><a href="{SITE_URL}/">News</a> › Topics</p><h1>Topics</h1><p>These pages group our humanoid robot reporting by company and theme. The sources for each claim live on the story.</p><ul class="hub-list">{lis}</ul></div>', 1, ild)
+         f'<div class="prose page">{topics_crumbs}<h1>Topics</h1><p class="byline">By <a rel="author" href="{SITE_URL}/about.html">{NAME} Staff</a></p><p>These pages group our humanoid robot reporting by company and theme. The sources for each claim live on the story.</p><ul class="hub-list">{lis}</ul></div>', 1, [ild, topics_bld])
 
 # ---------------------------------------------------------------- deployment tracker (evergreen, linkable; every row links to a sourced story)
 TRK = json.load(open("content/tracker.json")) if os.path.exists("content/tracker.json") else []
@@ -458,11 +585,20 @@ if len(TRK) >= 5:
              "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f'{t["robot"]}: {t["where"]}', "url": f"{SITE_URL}/news/{t['story']}.html"} for i, t in enumerate(TRK)]}},
             {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": x}} for q, x in _tfaq]}]
     _hubl = " · ".join(f'<a href="topics/{h["slug"]}.html">{esc(h["name"])}</a>' for h in HUBS)
+    _trk_sorted = sorted((_bys[t["story"]] for t in TRK), key=lambda a: a.get("date", ""), reverse=True)
+    _reads = next_reads(_trk_sorted[:4], "Read a deployment report", "img/", lambda b: "news/" + b["slug"] + ".html")
+    _cmp = compare_box("Check another", [
+        ("topics/deployments.html", "Pilots and deployments"),
+        ("news/published-humanoid-runtimes-and-recharge-times.html", "Published runtimes and recharge times"),
+        ("news/humanoid-robot-prices-compared-2026.html", "Humanoid prices compared"),
+    ])
+    _trk_crumbs = crumbs_html([("News", f"{SITE_URL}/"), ("Deployment tracker", None)])
+    _trk_bld = crumbs_ld([("News", f"{SITE_URL}/"), ("Deployment tracker", _tu)])
     page(TRK_PATH, "Humanoid Robot Deployment Tracker | HumanoidBeat",
          "Where humanoid robots are working or being trialled: company, site, tasks and status for every pilot HumanoidBeat has reported, each linked to sources.",
-         f'<div class="prose page hub tracker"><p class="meta"><a href="{SITE_URL}/">News</a> › Tracker</p><h1>Humanoid robot deployment tracker</h1><p>{esc(_intro)}</p><p class="meta">{len(TRK)} entries · last updated <time datetime="{_upd}">{fd(_upd)}</time></p>'
+         f'<div class="prose page hub tracker">{_trk_crumbs}<h1>Humanoid robot deployment tracker</h1><p class="byline">By <a rel="author" href="{SITE_URL}/about.html">{NAME} Staff</a></p><p>{esc(_intro)}</p><p class="meta">{len(TRK)} entries · last updated <time datetime="{_upd}">{fd(_upd)}</time></p>'
          f'<div class="tbl"><table><thead><tr><th scope="col">Robot</th><th scope="col">Where</th><th scope="col">Tasks</th><th scope="col">Status (as reported)</th><th scope="col">Source</th></tr></thead><tbody>{_rows}</tbody></table></div>'
-         f'{_how}{_faqh}<h2>Browse by topic</h2><p>{_hubl}</p></div>', 0, _tld[0], extra_head=f'<script type="application/ld+json">{json.dumps(_tld[1], ensure_ascii=False)}</script>')
+         f'{_reads}{_how}{_faqh}{_cmp}<h2>Browse by topic</h2><p>{_hubl}</p></div>', 0, [_tld[0], _trk_bld], extra_head=f'<script type="application/ld+json">{json.dumps(_tld[1], ensure_ascii=False)}</script>')
 else:
     TRK_PATH = None
 page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="prose page"><h1>Page not found</h1><p>That page does not exist. <a href="{SITE_URL}/">Go to the latest news</a>.</p></div>', 0, base=SITE_URL + "/")
@@ -470,10 +606,11 @@ page("404.html", f"Page not found | {NAME}", "Page not found.", f'<div class="pr
 # sitemap (with image extension), robots, llms, feed, indexnow key
 
 # Image policy (Joshua 9 Nov 2026): /image-policy/ with Source captions
-_img_pol = """<h1>Image policy</h1><p>Most images on HumanoidBeat are AI-generated illustrations. They do not show real events, real photographs or real people as they actually appeared, and they are not photos of the events we report. Each one carries a "Source" link under the image that leads to this page.</p><p>Some articles use Creative Commons photographs. These are credited under the image with the photographer, the licence and a link to the original.</p>"""
+_img_pol = """<h1>Image policy</h1><p class="byline">By <a rel="author" href="../about.html">Humanoid News Staff</a></p><p>Most images on HumanoidBeat are AI-generated illustrations. They do not show real events, real photographs or real people as they actually appeared, and they are not photos of the events we report. Under each one, the words "AI-generated image" are a link to this page.</p><p>Some articles use Creative Commons photographs. These are credited under the image with the photographer, the licence and a link to the original.</p>"""
 page("image-policy/index.html", f"Image policy | {NAME}", f"Image policy for {NAME}: how AI-generated and Creative Commons images are labelled.", f'<div class="prose page">{_img_pol}</div>', 1)
 
-urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + ([("topics/", max(h["items"][0].get("updated", h["items"][0]["date"]) for h in HUBS), None)] if HUBS else []) + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + ([(TRK_PATH, _upd, None)] if TRK_PATH else []) + [(f, BUILD_DATE, None) for f in legal] + [("image-policy/", BUILD_DATE, None)]
+LEGAL_LASTMOD = {"about.html": "2026-11-20", "standards.html": "2026-11-20"}
+urls = [("", max(a.get("updated", a["date"]) for a in A), None)] + [(f"news/{a['slug']}.html", a.get("updated", a["date"]), a["_og"]) for a in A] + ([("topics/", max(h["items"][0].get("updated", h["items"][0]["date"]) for h in HUBS), None)] if HUBS else []) + [(f"topics/{h['slug']}.html", h["items"][0].get("updated", h["items"][0]["date"]), None) for h in HUBS] + ([(TRK_PATH, _upd, None)] if TRK_PATH else []) + [(f, LEGAL_LASTMOD.get(f, BUILD_DATE), None) for f in legal] + [("image-policy/", "2026-11-20", None)]
 def sm(u, d, im):
     x = f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod>"
     if im: x += f"<image:image><image:loc>{im['url']}</image:loc></image:image>"
