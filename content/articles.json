@@ -5702,5 +5702,112 @@
    "alt": "Close-up of a scuffed humanoid robot hand threading a needle through dark fabric (AI-generated image)",
    "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware."
   }
+ },
+ {
+  "slug": "nvidia-motionbricks-open-source-real-time-motion-model-unitree-g1-soma",
+  "date": "2026-11-21",
+  "updated": "2026-11-21",
+  "cat": "NVIDIA",
+  "title": "NVIDIA just open-sourced the motion engine behind its humanoid stack, and it runs a Unitree G1 in real time",
+  "summary": "NVIDIA Research has released MotionBricks, a real-time generative motion model with pretrained Unitree G1 and SOMA human models, under Apache 2.0 code. NVIDIA says it is now part of GR00T Whole-Body Control.",
+  "body": [
+   "Making a humanoid robot move smoothly from one pose to the next is hard, and NVIDIA has just given its answer away. \"NVIDIA open-sourced MotionBricks, a real-time motion model for animated characters and humanoid robots, trained on 313,526 motion clips,\" the <a href=\"https://x.com/TAAFTResearch/status/2124103919928291723\">TAAFT Research account posted on X</a> on Saturday. \"The same runtime drives a human body model called SOMA and the Unitree G1 humanoid robot.\"",
+   "<h2>What it does</h2>",
+   "You do not animate every step. \"You place the poses you want a character to reach, and the model fills in the motion between them,\" TAAFT wrote. The model looks at the most recent poses and the targets, decides how long the move should take, then generates the motion. Chain the outputs together and a character can walk, run, vault, duck and sit in one flow.",
+   "NVIDIA's <a href=\"https://nvlabs.github.io/motionbricks/\">project page</a> describes it as \"a large-scale, real-time generative framework\" that models \"over 350,000 motion clips with a single model\" and claims \"15000 FPS and 2 ms latency\". TAAFT's figures (313,526 clips and as little as 1.3 ms of GPU time per generation on an RTX 4090) differ slightly from the project page, so treat the exact numbers as NVIDIA's claims rather than independent tests.",
+   "<h2>Smart primitives, no retraining</h2>",
+   "The second idea is what NVIDIA calls smart primitives: reusable building blocks, such as a ledge to vault or a chair to sit on, that \"snap together like bricks\". The project page says MotionBricks \"applies to new downstream tasks in a zero-shot manner\", with \"no fine-tuning or task-specific tagging required\".",
+   "<h2>Why it matters for humanoids</h2>",
+   "This is not only a games tool. NVIDIA says MotionBricks \"is now a core organic component of NVIDIA's GR00T Whole-Body Control effort, powering the motion-generation layer of the stack.\" The <a href=\"https://github.com/NVlabs/motionbricks\">GitHub release</a> includes the runtime with pretrained SOMA and Unitree G1 models, interactive demos and editors for building primitives and scenes. TAAFT says the code is Apache 2.0 and the models use NVIDIA's Open Model Agreement, which allows commercial use.",
+   "For robot makers building on the G1, that is a free, ready-to-run motion layer. The open question is how well motion generated in simulation holds up on real hardware, on real floors, outside the demo."
+  ],
+  "sources": [
+   {
+    "title": "TAAFT Research on X: NVIDIA open-sourced MotionBricks, a real-time motion model for animated characters and humanoid robots",
+    "url": "https://x.com/TAAFTResearch/status/2124103919928291723"
+   },
+   {
+    "title": "MotionBricks project page (NVIDIA Research, SIGGRAPH 2026)",
+    "url": "https://nvlabs.github.io/motionbricks/"
+   },
+   {
+    "title": "NVlabs/motionbricks on GitHub",
+    "url": "https://github.com/NVlabs/motionbricks"
+   }
+  ],
+  "image": {
+   "src": "src-img/nvidia-motionbricks-open-source-real-time-motion-model-unitree-g1-soma-hero.jpg",
+   "crop": [
+    0,
+    0,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Grey humanoid robot walking on a snowy sidewalk in winter, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 21 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Grey humanoid robot walking on a snowy sidewalk in winter, no people, logos or readable text",
+    "sha256": "4d21c14d85caa094646b9636c01c600c696c55168ab3397fbffda2c09a32f4d7",
+    "recorded": "2026-11-21",
+    "approved_by": "Daily news brief 2026-11-21: image bank first"
+   }
+  },
+  "seo_title": "NVIDIA just open-sourced the motion engine behind its humanoid stack, and it runs a Unitree G1 in real time"
+ },
+ {
+  "slug": "foundation-phantom-mkii-humanoid-200-lb-payload-ip67-cortex-ii-military",
+  "date": "2026-11-21",
+  "updated": "2026-11-21",
+  "cat": "Industry",
+  "title": "This humanoid carries 200 pounds through rain and snow, and its maker won't rule out arming it",
+  "summary": "San Francisco start-up Foundation Future Industries has unveiled Phantom MKII, a 6ft, 195lb humanoid it says carries 200lb, is rated IP67 and runs 4-6 hours. Its CEO says the company would consider arming robots if the US military asked.",
+  "body": [
+   "Most humanoid makers want their robots in warehouses. Foundation wants its new one on building sites and battlefields. \"US firm unveils Phantom MKII battlefield humanoid robot with bigger payload, tougher build,\" <a href=\"https://x.com/OpenEyeComms/status/2124073420132384779\">OpenEye Comms posted on X</a> on Saturday. \"Shaped by Ukraine field trials, Foundation's Phantom MKII targets combat logistics.\"",
+   "<h2>The spec sheet</h2>",
+   "Foundation's <a href=\"https://foundation.bot/phantom\">product page</a> lists the MKII at 6.0ft tall and 195lbs, with a payload of \"200lbs / 90 kg\", 29 degrees of freedom and a runtime of 4 to 6 hours from a 3 kWh battery. It is rated \"Weatherproof IP67\" for \"rain, dust, heat, snow\", has modular joints that \"swap out so the work doesn't stop\", and is \"designed in California, made in the USA\", with scaling planned for 2027. The company says the specifications \"describe shipping capability\".",
+   "The robot ships with Cortex II, Foundation's control software, which the company says learns new tasks from human demonstrations. Interesting Engineering, citing a Fast Company interview, says some tasks need as few as 60 examples.",
+   "<h2>What changed from MK-1</h2>",
+   "According to <a href=\"https://interestingengineering.com/ai-robotics/us-foundation-phantom-mkii-humanoid-robot\">Interesting Engineering</a>, the redesign fixes problems found in field trials of the first Phantom: battery runtime, waterproofing and lifting capacity. CEO Sankaet Pathak says simpler assembly halves the bill-of-materials cost. Foundation sent two MK-1 units to Ukraine earlier in 2026 for non-combat logistics and reconnaissance tests, the outlet says, though reports later disagreed over how much they were used.",
+   "<h2>The weapons question</h2>",
+   "Pathak told Fast Company that current defence work is logistics, not combat, but that Foundation would consider arming its robots if the US military asked, with a human keeping final authority over any use of force, Interesting Engineering reports. \"I don't think you can build a utopia and then not defend it,\" he said.",
+   "<h2>Reasons for caution</h2>",
+   "Interesting Engineering also notes, citing CNBC and 36Kr, that the start-up recently faced cash-flow pressure, including a missed payroll in late October. The 200lb figure and the weatherproofing are Foundation's claims and have not been tested independently. The thing to watch is whether early production starts in the Bay Area in early 2027, as planned, and whether military research deals turn into orders."
+  ],
+  "sources": [
+   {
+    "title": "OpenEye Comms on X: US firm unveils Phantom MKII battlefield humanoid robot with bigger payload, tougher build",
+    "url": "https://x.com/OpenEyeComms/status/2124073420132384779"
+   },
+   {
+    "title": "Foundation: Phantom MKII",
+    "url": "https://foundation.bot/phantom"
+   },
+   {
+    "title": "Interesting Engineering: US firm unveils Phantom MKII battlefield humanoid robot with bigger payload, tougher build",
+    "url": "https://interestingengineering.com/ai-robotics/us-foundation-phantom-mkii-humanoid-robot"
+   }
+  ],
+  "image": {
+   "src": "src-img/foundation-phantom-mkii-humanoid-200-lb-payload-ip67-cortex-ii-military-hero.jpg",
+   "crop": [
+    0,
+    0,
+    1.0
+   ],
+   "ai": true,
+   "alt": "Grey humanoid robot carrying a crate of vegetables on a misty farm track at dawn, no people, logos or readable text",
+   "note": "Generic AI-generated scene; not a photo of the actual event, product or any named company's hardware.",
+   "licence": "Own AI-generated image (image bank / Grok Bot, 21 Nov 2026); rights held by the site owner",
+   "provenance": {
+    "origin": "ai-generated",
+    "prompt": "Photorealistic photo: Grey humanoid robot carrying a crate of vegetables on a misty farm track at dawn, no people, logos or readable text",
+    "sha256": "a4a01f19310a1d91f2f0a2ed6f5eb0b37a189e11a701584127d08a5b0c0c622e",
+    "recorded": "2026-11-21",
+    "approved_by": "Daily news brief 2026-11-21: image bank first"
+   }
+  },
+  "seo_title": "This humanoid carries 200 pounds through rain and snow, and its maker won't rule out arming it"
  }
 ]
