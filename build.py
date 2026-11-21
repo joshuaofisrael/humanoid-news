@@ -15,7 +15,7 @@ ISSUES = "https://github.com/joshuaofisrael/humanoid-news/issues"; BUILD_DATE = 
 CF_BEACON_TOKEN = os.environ.get("CF_BEACON_TOKEN", "c57c4cfd589c401789eda8ad19dece62")  # Cloudflare Web Analytics token; "" = disabled
 INDEXNOW_KEY = "7f3c2a9e4b1d4e8a9c6f0b2d5e7a1c34"
 DESC = "Independent, answer-first news on humanoid robots: Tesla Optimus, Figure, Agility, Boston Dynamics, Unitree, 1X and more."
-OUT = "docs"; ASSET_VER = "8"
+OUT = "docs"; ASSET_VER = "9"
 # ----------------------------------------------------------------
 
 TODO_IMAGES = []
@@ -201,7 +201,8 @@ def card(a, feat=False, eager=False):
     im = ""
     if has_img(a):
         sizes = "(max-width:760px) 100vw, 620px" if feat else "(max-width:760px) 100vw, 520px"
-        im = f'<div class="im">{img_tag(a["slug"], a["image"]["alt"], eager, sizes)}</div>'
+        cap = f'<figcaption><a class="src" href="{SITE_URL}/image-policy/">AI-generated image</a></figcaption>'
+        im = f'<figure class="shot"><div class="im">{img_tag(a["slug"], a["image"]["alt"], eager, sizes)}</div>{cap}</figure>'
     tag = '<span class="tag trend">Trending</span> ' if a.get("kind") == "trending" else ""
     return (f'<article class="card reveal{" feat" if feat else ""}">{im}<div class="tx">{tag}<span class="tag">{esc(a["cat"])}</span>'
             f'<h3><a href="news/{a["slug"]}.html">{esc(a["title"])}</a></h3><p class="meta">{published_html(a)}</p><p>{esc(a["summary"])}</p></div></article>')
@@ -221,21 +222,22 @@ HUB_DEFS = [  # (slug, name, h1, intro, regex on title+summary+cat). A hub is pu
 ]
 HUB_GUIDE = {  # optional evergreen overview per hub: every fact comes from a linked HumanoidBeat story (which cites its sources)
     "unitree": {
-        "asof": "30 October 2026",
+        "asof": "21 November 2026",
         "facts": [
-            'Unitree launched the H2-X on 21 October 2026 with a "Kung Fu Legend: Guardian" teaser showing martial-arts moves and staged security and rescue scenes. Unitree gave a maximum endurance of about eight hours (the on-screen text calls it standing time), but no price or release date, and outlets noted it had not said whether the demos were autonomous, remote-controlled or pre-programmed (<a href="../news/why-unitree-h2-x-guardian-video-is-trending.html">H2-X video report</a>).',
-            'At the World Physical AI Conference in Hangzhou, an H2-X lost its balance landing a side flip and its right lower leg came off at the joint, TechNode reported on 26 October. As of that report, Unitree had not commented or explained the cause (<a href="../news/unitree-h2-x-loses-leg-side-flip-hangzhou.html">Hangzhou demo report</a>).',
-            'The H2-X is based on the full-size H2, which Unitree describes as about 1.8 metres tall and 70 kg. Unitree\'s H2 product page lists battery life of about 3 hours and a price of $29,900 before tax and shipping (<a href="../news/published-humanoid-runtimes-and-recharge-times.html">runtime comparison</a>).',
-            'Founder Wang Xingxing said on 22 October that Unitree is developing "Unitree Rehearsal", a loop in which AI would write robot code, test it in simulation and then try it on real robots. He called it the company\'s most important project of the year; no technical details, results or release date were given (<a href="../news/unitree-rehearsal-self-evolving-robot-ai.html">Rehearsal report</a>).',
-            'In Denmark, Føtex is piloting humanoids built on Unitree hardware, with HIVE Robots software, to restock shelves after closing time at a store in Lyngby. HIVE is targeting commercial deployment by early 2027, ESM Magazine reports (<a href="../news/fotex-unitree-hive-grocery-restocking-pilot.html">Føtex pilot report</a>).',
-            'The smaller Unitree G1 is a common research platform: ETH Zürich (<a href="../news/eth-zurich-acp-humanoid-climbing-contact-planning.html">ladder climbing</a>), an Amazon-led team (<a href="../news/amazon-whole-body-dexterity-humanoid-torso-carrying.html">whole-body carrying</a>) and Alibaba\'s Amap team (<a href="../news/alibaba-amap-lambda0-humanoid-model-human-video.html">λ0 model</a>) all tested new methods on it. Their results are the authors\' own, from preprints.',
+            'Unitree launched the H2-X on 21 October 2026 with a "Kung Fu Legend: Guardian" teaser showing martial-arts moves and staged security and rescue scenes. Unitree gave a maximum endurance of about eight hours (the on-screen text calls it standing time), but no price or release date, and outlets noted it had not said whether the demos were autonomous, remote-controlled or pre-programmed. <a href="https://www.techradar.com/ai-platforms-assistants/unitree-reveals-its-h2-x-bodyguard-robot-a-kung-fu-humanoid-with-an-8-hour-battery-life-and-some-serious-martial-arts-skills" rel="noopener">TechRadar\'s 21 October report</a>, opened again on 21 November 2026, still gives that eight-hour standing figure and still has no price or on-sale date (<a href="../news/why-unitree-h2-x-guardian-video-is-trending.html">H2-X video report</a>).',
+            'At the World Physical AI Conference in Hangzhou, an H2-X lost its balance landing a side flip and its right lower leg came off at the joint. <a href="https://technode.com/2026/10/26/unitrees-newly-launched-h2-x-robot-loses-a-leg-in-public-demonstration/" rel="noopener">TechNode\'s 26 October report</a>, still online with the same account when opened on 21 November 2026, said Unitree had not issued a public response or explained the cause (<a href="../news/unitree-h2-x-loses-leg-side-flip-hangzhou.html">Hangzhou demo report</a>).',
+            'The H2-X is based on the full-size H2. Opened on 21 November 2026, <a href="https://www.unitree.com/H2/" rel="noopener">Unitree\'s H2 page</a> listed a standing height of 1,820 mm, a weight of about 70 kg, battery life of about 3 hours, a 15 Ah pack rated at 0.972 kWh, a maximum voltage of 75.6 V, a quick-release battery and a charger, and a price of $29,900 before tax and shipping. A footnote says some of those parameters may vary with the scenario and the configuration. The same battery and price figures are in our <a href="../news/published-humanoid-runtimes-and-recharge-times.html">runtime comparison</a>.',
+            'The smaller G1 is the model labs usually publish on. Opened the same day, <a href="https://www.unitree.com/g1" rel="noopener">Unitree\'s G1 page</a> listed it from $13,500 (shown as $13.5K), before tax and shipping, with a standing height of 1,320 mm, a weight of about 35 kg, 23 degrees of freedom on the base model and 23 to 43 on the G1 EDU, and battery life of about 2 hours. G1, H1 and H1-2 figures sit side by side in our <a href="../news/unitree-g1-vs-h1-specs-compared.html">spec comparison</a>.',
+            'Founder Wang Xingxing said on 22 October that Unitree is developing "Unitree Rehearsal", a loop in which AI would write robot code, test it in simulation and then try it on real robots. He called it the company\'s most important project of the year. <a href="https://www.scmp.com/tech/tech-trends/article/3371818/unitree-developing-ai-system-let-humanoid-robots-improve-themselves" rel="noopener">The South China Morning Post account</a>, opened again on 21 November 2026, still gives no results, technical specification or release date (<a href="../news/unitree-rehearsal-self-evolving-robot-ai.html">Rehearsal report</a>).',
+            'In Denmark, Føtex is piloting humanoids built on Unitree hardware, with HIVE Robots software, to restock shelves after closing time at a store in Lyngby. HIVE is targeting commercial deployment by early 2027. <a href="https://www.esmmagazine.com/technology/salling-groups-fotex-pilots-humanoid-robots-via-multi-year-hive-partnership-324091" rel="noopener">ESM Magazine\'s 22 October report</a>, opened again on 21 November 2026, still describes that pilot and that target (<a href="../news/fotex-unitree-hive-grocery-restocking-pilot.html">Føtex pilot report</a>).',
+            'The G1 is also a common research platform: ETH Zürich (<a href="../news/eth-zurich-acp-humanoid-climbing-contact-planning.html">ladder climbing</a>), an Amazon-led team (<a href="../news/amazon-whole-body-dexterity-humanoid-torso-carrying.html">whole-body carrying</a>) and Alibaba\'s Amap team (<a href="../news/alibaba-amap-lambda0-humanoid-model-human-video.html">λ0 model</a>) all tested new methods on it. Their results are the authors\' own, from preprints. Later G1 reporting is in <a href="../news/apple-halo-unitree-g1-simulation-trained-humanoid.html">Apple\'s HALO tests</a>, the <a href="../news/movens-5m-dataset-zhejiang-unitree-g1-5-million-motions-10000-hours-movens-zero.html">Movens-5M release</a> and <a href="../news/nvidia-motionbricks-open-source-real-time-motion-model-unitree-g1-soma.html">NVIDIA MotionBricks</a>. A November delivery of a compute module to Unitree is in our <a href="../news/joyson-delivers-first-robot-brain-backpack-to-unitree.html">Joyson report</a>.',
         ],
         "faq": [
-            ("How much does a Unitree humanoid cost?", "Unitree's H2 product page lists the H2 at $29,900 before tax and shipping, as of our 29 October 2026 report. Unitree has not announced a price for the H2-X."),
-            ("Can you buy the Unitree H2-X?", "Not as far as our reports show. Unitree had announced no price or release date for the H2-X when it was unveiled on 21 October 2026."),
-            ("How long does a Unitree humanoid's battery last?", "Unitree lists about 3 hours of battery life for the H2 and says parameters vary with the scenario and configuration. For the H2-X it gave about eight hours, which the video's on-screen text describes as standing time."),
-            ("What happened to the Unitree H2-X in Hangzhou?", "During a demonstration at the World Physical AI Conference in Hangzhou, an H2-X fell while landing a side flip and its right lower leg detached at the joint, TechNode reported. Unitree had not explained the cause as of that report."),
-            ("Where are Unitree robots being used?", "Beyond research labs, the deployment we have reported is a multi-year pilot at a Føtex supermarket in Lyngby, Denmark, where Unitree hardware running HIVE Robots software is being trained to restock shelves after closing time."),
+            ("How much does a Unitree humanoid cost?", "Opened on 21 November 2026, Unitree's G1 page lists the G1 from $13,500 (shown as $13.5K) and the H2 page lists the H2 at $29,900, both before tax and shipping. Unitree has not published a price for the H2-X."),
+            ("Can you buy the Unitree H2-X?", "Not from anything Unitree has published on the pages we checked. TechRadar's 21 October 2026 report, opened again on 21 November 2026, still says Unitree gave no price or release date for the H2-X."),
+            ("How long does a Unitree humanoid's battery last?", "On the product pages opened 21 November 2026, Unitree lists about 2 hours for the G1 and about 3 hours for the H2, and says parameters may vary with the scenario and configuration. For the H2-X it gave about eight hours, which TechRadar says the video's on-screen text describes as standing time."),
+            ("What happened to the Unitree H2-X in Hangzhou?", "During a demonstration at the World Physical AI Conference in Hangzhou, an H2-X fell while landing a side flip and its right lower leg detached at the joint, TechNode reported on 26 October 2026. That report, still unchanged when opened on 21 November 2026, said Unitree had not explained the cause."),
+            ("Where are Unitree robots being used?", "Beyond research labs, the deployment we have reported is a multi-year pilot at a Føtex supermarket in Lyngby, Denmark, where Unitree hardware running HIVE Robots software is being trained to restock shelves after closing time. Research use of the G1, including later Apple, Movens and NVIDIA MotionBricks reports, is linked in the list above."),
         ],
     },
     "agility-robotics": {
@@ -357,11 +359,13 @@ def crumbs_ld(pairs):
 
 def next_reads(items, heading, img_prefix, href_for):
     lis = []
+    cap = f'<figcaption><a class="src" href="{SITE_URL}/image-policy/">AI-generated image</a></figcaption>'
     for b in items:
         thumb = ""
         if has_img(b):
             thumb = f'<img src="{img_prefix}{b["slug"]}-600.webp" width="600" height="315" alt="" loading="lazy" decoding="async">'
-        lis.append(f'<li><a href="{href_for(b)}">{thumb}<span>{esc(b["title"])}</span></a></li>')
+        photo = cap if thumb else ""
+        lis.append(f'<li><figure><a class="story" href="{href_for(b)}">{thumb}<span>{esc(b["title"])}</span></a>{photo}</figure></li>')
     if not lis:
         return ""
     return f'<aside class="next-reads"><h2>{esc(heading)}</h2><ul>{"".join(lis)}</ul></aside>'
@@ -404,6 +408,82 @@ def explainer_compare(a, used):
     pool = [b for b in A if b.get("cat") == "Explainers" and b is not a and id(b) not in skip]
     pool.sort(key=lambda b: sum(1 for h in a.get("_hubs", []) if b in h["items"]), reverse=True)
     return compare_box("Compare with", [(f'{b["slug"]}.html', b["title"]) for b in pool[:3]])
+
+GENERIC_CATS = {"Funding", "Policy", "Industry", "Research", "Deployments", "Explainers", "Companion robots"}
+
+def news_context(a):
+    """What happened next, and the background, for a news story.
+
+    A follow-up has to be about the same company or robot. A broad hub such as
+    Europe or funding is only the topic link, not a list of unrelated later stories.
+    Explainers keep the compare box instead.
+    """
+    if a.get("cat") == "Explainers":
+        return "", []
+    hubs = list(a.get("_hubs") or [])
+    specific = [h for h in hubs if h["slug"] not in BROAD_HUBS]
+    broad = [h for h in hubs if h["slug"] in BROAD_HUBS]
+    cat = a.get("cat") or ""
+
+    def hub_rank(h):
+        name = h["name"].lower()
+        c = cat.lower()
+        return 0 if (name in c or c in name) else 1
+
+    specific.sort(key=hub_rank)
+    label = (specific or broad or [None])[0]
+    if specific:
+        pool = [b for b in specific[0]["items"] if b is not a]
+    elif cat not in GENERIC_CATS:
+        pool = [b for b in A if b is not a and b.get("cat") == cat]
+    else:
+        # One-off funding or industry items: only stories that name the same thing.
+        words = re.findall(r"[A-Z][A-Za-z0-9-]{2,}", a["title"])
+        skip_words = {"The", "How", "Why", "What", "When", "New", "First", "Open", "Humanoid", "Robot", "Robots", "News", "After", "With"}
+        token = next((w for w in words if w not in skip_words), "")
+        pool = [b for b in A if b is not a and token and token.lower() in (b["title"] + " " + b["summary"] + " " + b["cat"]).lower()]
+    if label:
+        hub_line = f'<p class="meta">More {esc(label["name"])} coverage is on the <a href="../topics/{label["slug"]}.html">{esc(label["name"])} topic page</a>.</p>'
+    else:
+        hub_line = f'<p class="meta">Background: browse every story on the <a href="{SITE_URL}/topics/">topics page</a>.</p>'
+    me = article_sort_key(a)
+    explainers = [b for b in pool if b.get("cat") == "Explainers"]
+    news = [b for b in pool if b.get("cat") != "Explainers"]
+    later_all = sorted((b for b in news if article_sort_key(b) > me), key=article_sort_key)
+    if specific:
+        # Inside a company hub, "what happened next" has to name the same model.
+        # A later G1 lab paper is not the sequel to an H2-X video.
+        model_re = re.compile(r"\b(?:H2-X|H1-2|4NE1|Optimus|Digit|Apollo|Atlas|IRON|AGLT|NEO|G1|H2|H1)\b")
+        toks = list(dict.fromkeys(model_re.findall(a["title"] + " " + a["summary"])))
+        if toks:
+            later_all = [b for b in later_all if any(t.lower() in (b["title"] + " " + b["summary"]).lower() for t in toks)]
+        else:
+            later_all = []
+    later = []
+    if later_all:
+        later.append(later_all[0])
+        if later_all[-1] is not later_all[0]:
+            later.append(later_all[-1])
+    earlier = sorted((b for b in news if article_sort_key(b) <= me and b not in later), key=article_sort_key, reverse=True)
+    bg = []
+    if explainers:
+        bg.append(max(explainers, key=article_sort_key))
+    for b in earlier:
+        if len(bg) >= 2:
+            break
+        if b not in bg:
+            bg.append(b)
+    # No sequel and no earlier story: point at the closest stories on this beat, as background only.
+    if not later and not bg:
+        bg = [b for b in related(a, 4) if b is not a][:2]
+    parts = []
+    if later:
+        parts.append(next_reads(later, "What happened next", "../img/", lambda b: b["slug"] + ".html"))
+    if bg:
+        parts.append(next_reads(bg, "Background", "../img/", lambda b: b["slug"] + ".html"))
+    if not parts:
+        return hub_line, []
+    return "".join(parts) + hub_line, later + bg
 
 def seo_title(a):
     t = a.get("seo_title") or a["title"]
@@ -450,15 +530,16 @@ for a in A:
     for n, sp in enumerate(a.get("inline_images", []), 1):
         m = make_inline(a["slug"], n, sp)
         if m: ins.setdefault(int(sp["insert_after_paragraph"]), []).append(inline_fig(m, sp)); a["_inl"].append((m, sp))
+    follow_html, follow_used = news_context(a)
     rels = []
-    seen = set()
+    seen = {b["slug"] for b in follow_used}
     for slug in re.findall(r'href="(?:\.\./news/)?([a-z0-9-]+)\.html"', " ".join(a["body"])):
         b = _by_slug.get(slug)
         if not b or slug in seen:
             continue
         seen.add(slug)
         rels.append(b)
-    for b in related(a, 12):
+    for b in related(a, 16):
         if b["slug"] in seen:
             continue
         seen.add(b["slug"])
@@ -506,7 +587,7 @@ for a in A:
     bld = crumbs_ld([(name, absu) for name, _href, absu in trail])
     cmp = explainer_compare(a, rels)
     byline = f'<p class="byline">By <a rel="author" href="{SITE_URL}/about.html">{NAME} Staff</a> · Published {published_html(a)} · Last updated <time datetime="{upd}">{fd(upd)}</time></p>'
-    c = f'{fig}<article class="prose art">{crumbs}<p style="margin:18px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1>{byline}{body}{ana}{why}{dis}{cmp}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
+    c = f'{fig}<article class="prose art">{crumbs}<p style="margin:18px 0 0">{tag}<span class="tag">{esc(a["cat"])}</span></p><h1>{esc(a["title"])}</h1>{byline}{body}{ana}{why}{dis}{follow_html}{cmp}<div class="src"><h2>Sources</h2><p class="meta">Every factual claim above comes from these sources. See our <a href="../standards.html">editorial standards</a> and <a href="../corrections.html">corrections policy</a>.</p><ul>{src}</ul></div>{rel}<p><a href="{SITE_URL}/">← All news</a></p></article>'
     page(f"news/{a['slug']}.html", seo_title(a), META_DESC.get(a["slug"], a["summary"]), c, 1, [ld, bld], "article", a["_og"])
 
 L = f"<strong>{LLC}</strong>"
