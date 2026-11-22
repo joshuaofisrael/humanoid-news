@@ -479,7 +479,7 @@ def news_context(a):
     if later:
         parts.append(next_reads(later, "What happened next", "../img/", lambda b: b["slug"] + ".html"))
     if bg:
-        parts.append(next_reads(bg, "Background", "../img/", lambda b: b["slug"] + ".html"))
+        parts.append(next_reads(bg, "Background reading", "../img/", lambda b: b["slug"] + ".html"))
     if not parts:
         return hub_line, []
     return "".join(parts) + hub_line, later + bg
